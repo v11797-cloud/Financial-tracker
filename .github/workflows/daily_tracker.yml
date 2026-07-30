@@ -4,14 +4,19 @@ on:
   schedule:
     # 매일 한국 시간 오전 8시 (UTC 23시) 자동 실행
     - cron: '0 23 * * *'
-  # GitHub 웹상에서 수동으로 실행 가능하도록 설정
   workflow_dispatch:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
-  build-and-update:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
@@ -37,3 +42,15 @@ jobs:
         with:
           commit_message: "auto: 매일 규제 데이터 자동 업데이트 [skip ci]"
           file_pattern: 'data/regulatory_data.json data/regulatory_data.js'
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
