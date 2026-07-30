@@ -1,5 +1,221 @@
 window.regulatoryData = [
     {
+        "id": "no010101_87440",
+        "title": "코너스톤투자자 제도 등 도입 관련  자본시장법 하위법규 개정예고 실시. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87440?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-30",
+        "dept": "자본시장과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87439",
+        "title": "“국내 은행 업무 위해 국제우편 보내던 불편 사라진다”. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87439?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-30",
+        "dept": "은행과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87437",
+        "title": "“다음 금융은 이미 시작됐다. (Beyond Finance, Into the Future)” 「코리아 핀테크 위크 2026」 개최 안내. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87437?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-30",
+        "dept": "디지털금융총괄과",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4162",
+        "title": "｢증권의 발행 및 공시 등에 관한 규정｣ 일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4162&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-30",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4161",
+        "title": "「자본시장과 금융투자업에 관한 법률 시행령｣ 일부개정령안 입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4161&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-30",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "no030101_87436",
+        "title": "금융시장동향(26.07.29)",
+        "url": "https://www.fsc.go.kr/no030101/87436?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-29",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no030101_87425",
+        "title": "금융시장동향(26.07.28)",
+        "url": "https://www.fsc.go.kr/no030101/87425?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-28",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87419",
+        "title": "저PBR기업 공표제도 세부기준(안)에 대한 의견수렴을 시행합니다.",
+        "url": "https://www.fsc.go.kr/no010101/87419?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-28",
+        "dept": "자본시장과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87417",
+        "title": "시장 안정과 투자자 보호를 위해  단일종목 레버리지 상품 관련 보완방향을 금융투자업권과 함께 논의했습니다.  - 이억원 금융위원장, 단일종목 관련 금융투자업권 간담회 개최",
+        "url": "https://www.fsc.go.kr/no010101/87417?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-28",
+        "dept": "자산운용과,자본시장과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87416",
+        "title": "금융시장동향(26.07.27)",
+        "url": "https://www.fsc.go.kr/no030101/87416?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-27",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no030101_87412",
+        "title": "금융시장동향(26.07.24)",
+        "url": "https://www.fsc.go.kr/no030101/87412?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-27",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87413",
+        "title": "신용평가체계 개편, 소상공인부터 시작해 민생경제 활력을 불어넣겠습니다.",
+        "url": "https://www.fsc.go.kr/no010101/87413?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-27",
+        "dept": "금융데이터정책과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87411",
+        "title": "주가조작 신고포상금 제도 개편 등 2026년 상반기 적극행정 우수공무원 시상",
+        "url": "https://www.fsc.go.kr/no010101/87411?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-27",
+        "dept": "규제개혁법무담당관실",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87404",
+        "title": "금융시장동향(26.07.23)",
+        "url": "https://www.fsc.go.kr/no030101/87404?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-24",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87403",
+        "title": "단일종목 레버리지 상품(ETF·ETN) 기본예탁금 강화 조기시행 방안 안내",
+        "url": "https://www.fsc.go.kr/no010101/87403?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-24",
+        "dept": "자산운용과,자본시장과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87401",
+        "title": "외부감사 및 회계 등에 관한 규정 개정안 규정변경예고 실시",
+        "url": "https://www.fsc.go.kr/no010101/87401?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-24",
+        "dept": "회계제도팀",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4160",
+        "title": "｢외부감사 및 회계 등에 관한 규정 일부개정고시안｣ 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4160&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-24",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "no030101_87396",
+        "title": "금융시장동향(26.07.22)",
+        "url": "https://www.fsc.go.kr/no030101/87396?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-23",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87397",
+        "title": "금융위-산업부, 핵심광물 공급망 강화 지원 협력",
+        "url": "https://www.fsc.go.kr/no010101/87397?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-23",
+        "dept": "첨단산업1과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87386",
+        "title": "금융시장동향(26.07.21)",
+        "url": "https://www.fsc.go.kr/no030101/87386?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-22",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no030101_87364",
+        "title": "금융시장동향(26.07.20)",
+        "url": "https://www.fsc.go.kr/no030101/87364?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-21",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no030101_87355",
+        "title": "금융시장동향(26.07.16)",
+        "url": "https://www.fsc.go.kr/no030101/87355?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-20",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no030101_87345",
+        "title": "금융시장동향(26.07.15)",
+        "url": "https://www.fsc.go.kr/no030101/87345?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-16",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "notice_4159",
+        "title": "「전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법 시행령 일부개정령안」입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4159&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-15",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4158",
+        "title": "「신용정보업감독규정」 일부개정고시(안) 규정변경 예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4158&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-10",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4157",
+        "title": "「대부업 등의 등록 및 금융이용자 보호에 관한 법률 시행령 일부개정령(안)」입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4157&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-06",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4156",
+        "title": "「금융위원회와 그 소속기관 직제 시행규칙」 일부개정령(안) 입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4156&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-07-03",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
         "id": "no010101_87202",
         "title": "유동화회사의 장기연체채권 1.0조원 새도약기금 매각, 11만명 추심과 연체이자의 고통에서 벗어난다  - 유동화회사 전수조사 및 매각 추진상황 점검회의 개최. 금일 등록된 게시글",
         "url": "https://www.fsc.go.kr/no010101/87202?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
