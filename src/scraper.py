@@ -139,8 +139,8 @@ class FinancialRegulatoryScraper:
                     seen_ids.add(unique_id)
 
                     title = f"[{name}] (공포 제{prom_no}호 | 시행일 {enf_date_fmt})"
-                    # 법제처 '제·개정이유' 탭(chrClsCd=010202) 직통 웹페이지 딥링크
-                    detail_url = f"https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq={lsi_seq}&chrClsCd=010202"
+                    # 법제처 제·개정이유 및 주요내용 전용 독립 뷰어 (연혁 경고 표시 없는 깔끔한 뷰어)
+                    detail_url = f"https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq={lsi_seq}"
 
                     results.append({
                         "id": unique_id,
