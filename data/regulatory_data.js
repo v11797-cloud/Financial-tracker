@@ -170,7 +170,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21857_2026-10-02",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21857호 | 시행일 2026-10-02)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=288615",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21857호)",
         "date": "2026-08-04",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -629,7 +629,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21647_2026-11-13",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21647호 | 시행일 2026-11-13)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=285957",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21647호)",
         "date": "2026-05-12",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -648,7 +648,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_36287_2026-04-28",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제36287호 | 시행일 2026-04-28)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=285715",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제36287호)",
         "date": "2026-04-28",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -667,7 +667,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21503_2026-10-01",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21503호 | 시행일 2026-10-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=285183",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21503호)",
         "date": "2026-03-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -678,7 +678,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_36220_2026-03-24",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제36220호 | 시행일 2026-03-24)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=284695",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제36220호)",
         "date": "2026-03-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -689,7 +689,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21448_2026-03-06",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21448호 | 시행일 2026-03-06)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=284145",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21448호)",
         "date": "2026-03-06",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -700,7 +700,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21324_2027-02-04",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21324호 | 시행일 2027-02-04)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=283193",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21324호)",
         "date": "2026-02-03",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -711,7 +711,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21324_2026-08-04",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21324호 | 시행일 2026-08-04)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=283193",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21324호)",
         "date": "2026-02-03",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -722,7 +722,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21324_2026-02-03",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21324호 | 시행일 2026-02-03)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=283193",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21324호)",
         "date": "2026-02-03",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -733,7 +733,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_35947_2026-01-02",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제35947호 | 시행일 2026-01-02)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=281375",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제35947호)",
         "date": "2025-12-30",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -744,7 +744,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_21205_2026-12-17",
         "title": "[전자금융거래법] (공포 제21205호 | 시행일 2026-12-17)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=280277",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제21205호)",
         "date": "2025-12-16",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -755,7 +755,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_21205_2025-12-16",
         "title": "[전자금융거래법] (공포 제21205호 | 시행일 2025-12-16)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=280277",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제21205호)",
         "date": "2025-12-16",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -766,7 +766,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21134호 | 시행일 2025-11-11)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=279823",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21134호)",
         "date": "2025-11-11",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -777,7 +777,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21066_2025-10-01",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21066호 | 시행일 2025-10-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=277365",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21066호)",
         "date": "2025-10-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -788,7 +788,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_21065_2026-01-02",
         "title": "[금융소비자 보호에 관한 법률] (공포 제21065호 | 시행일 2026-01-02)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=277247",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21065호)",
         "date": "2025-10-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -799,7 +799,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_35811_2025-10-01",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제35811호 | 시행일 2025-10-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=278141",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제35811호)",
         "date": "2025-10-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -810,7 +810,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_21065_2026-01-02",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제21065호 | 시행일 2026-01-02)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=277253",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21065호)",
         "date": "2025-10-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -821,7 +821,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_21065_2025-10-01",
         "title": "[여신전문금융업법] (공포 제21065호 | 시행일 2025-10-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=277267",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제21065호)",
         "date": "2025-10-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -832,7 +832,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_35799_2025-12-31",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제35799호 | 시행일 2025-12-31)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=273929",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제35799호)",
         "date": "2025-09-30",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -843,7 +843,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21061_2026-03-17",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21061호 | 시행일 2026-03-17)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=273695",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제21061호)",
         "date": "2025-09-16",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -854,7 +854,7 @@ window.regulatoryData = [
     {
         "id": "law_가상자산 이용자 보호 등에 관한 법률 시행령_35472_2025-04-23",
         "title": "[가상자산 이용자 보호 등에 관한 법률 시행령] (공포 제35472호 | 시행일 2025-04-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=270729",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제35472호)",
         "date": "2025-04-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -865,7 +865,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20771_2025-03-06",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20771호 | 시행일 2025-03-06)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=269655",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20771호)",
         "date": "2025-03-06",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -876,7 +876,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20718_2025-07-22",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20718호 | 시행일 2025-07-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=268611",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20718호)",
         "date": "2025-01-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -887,7 +887,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20718_2025-01-21",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20718호 | 시행일 2025-01-21)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=268611",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20718호)",
         "date": "2025-01-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -898,7 +898,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_20716_2025-04-22",
         "title": "[여신전문금융업법] (공포 제20716호 | 시행일 2025-04-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=268623",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제20716호)",
         "date": "2025-01-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -909,7 +909,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20531_2025-04-23",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20531호 | 시행일 2025-04-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=265963",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20531호)",
         "date": "2024-10-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -920,7 +920,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20531_2025-03-31",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20531호 | 시행일 2025-03-31)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=265963",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20531호)",
         "date": "2024-10-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -931,7 +931,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_20436_2025-01-31",
         "title": "[보험업법] (공포 제20436호 | 시행일 2025-01-31)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=265389",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제20436호)",
         "date": "2024-09-20",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -942,7 +942,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_34888_2024-09-15",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제34888호 | 시행일 2024-09-15)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=265211",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제34888호)",
         "date": "2024-09-10",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -953,7 +953,7 @@ window.regulatoryData = [
     {
         "id": "law_가상자산 이용자 보호 등에 관한 법률 시행령_34658_2024-07-19",
         "title": "[가상자산 이용자 보호 등에 관한 법률 시행령] (공포 제34658호 | 시행일 2024-07-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=263547",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제34658호)",
         "date": "2024-07-02",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -964,7 +964,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_34584_2024-10-17",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제34584호 | 시행일 2024-10-17)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=263173",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제34584호)",
         "date": "2024-06-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -975,7 +975,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_34584_2024-07-19",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제34584호 | 시행일 2024-07-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=263173",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제34584호)",
         "date": "2024-06-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -986,7 +986,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_34584_2024-07-03",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제34584호 | 시행일 2024-07-03)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=263173",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제34584호)",
         "date": "2024-06-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -997,7 +997,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_34449_2024-04-23",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제34449호 | 시행일 2024-04-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=261895",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제34449호)",
         "date": "2024-04-23",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1008,7 +1008,7 @@ window.regulatoryData = [
     {
         "id": "law_가상자산 이용자 보호 등에 관한 법률_20372_2024-07-19",
         "title": "[가상자산 이용자 보호 등에 관한 법률] (공포 제20372호 | 시행일 2024-07-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=261099",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20372호)",
         "date": "2024-03-12",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1019,7 +1019,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20305_2024-08-14",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20305호 | 시행일 2024-08-14)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=260403",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20305호)",
         "date": "2024-02-13",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1030,7 +1030,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_20305_2024-08-14",
         "title": "[금융소비자 보호에 관한 법률] (공포 제20305호 | 시행일 2024-08-14)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=260405",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20305호)",
         "date": "2024-02-13",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1041,7 +1041,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_20242_2024-08-07",
         "title": "[보험업법] (공포 제20242호 | 시행일 2024-08-07)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=259985",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제20242호)",
         "date": "2024-02-06",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1052,7 +1052,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_20137_2024-07-24",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제20137호 | 시행일 2024-07-24)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=259249",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제20137호)",
         "date": "2024-01-23",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1063,7 +1063,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_19990_2024-07-10",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제19990호 | 시행일 2024-07-10)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=258521",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19990호)",
         "date": "2024-01-09",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1074,7 +1074,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_19913_2024-07-03",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제19913호 | 시행일 2024-07-03)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=257829",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19913호)",
         "date": "2024-01-02",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1085,7 +1085,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_33913_2023-12-12",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제33913호 | 시행일 2023-12-12)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=256547",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33913호)",
         "date": "2023-12-12",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1096,7 +1096,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_33899_2023-12-14",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제33899호 | 시행일 2023-12-14)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=256371",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33899호)",
         "date": "2023-12-05",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1107,7 +1107,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_19780_2024-10-25",
         "title": "[보험업법] (공포 제19780호 | 시행일 2024-10-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=255535",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제19780호)",
         "date": "2023-10-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1118,7 +1118,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_33784_2023-10-12",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제33784호 | 시행일 2023-10-12)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=255121",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33784호)",
         "date": "2023-10-04",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1129,7 +1129,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_19700_2023-09-14",
         "title": "[금융소비자 보호에 관한 법률] (공포 제19700호 | 시행일 2023-09-14)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=254779",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19700호)",
         "date": "2023-09-14",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1140,7 +1140,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_19734_2024-09-15",
         "title": "[전자금융거래법] (공포 제19734호 | 시행일 2024-09-15)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=254921",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제19734호)",
         "date": "2023-09-14",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1151,7 +1151,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_19700_2023-09-14",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제19700호 | 시행일 2023-09-14)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=254785",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19700호)",
         "date": "2023-09-14",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1162,7 +1162,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_33656_2023-11-02",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제33656호 | 시행일 2023-11-02)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=253255",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33656호)",
         "date": "2023-08-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1173,7 +1173,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_33656_2023-08-01",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제33656호 | 시행일 2023-08-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=253255",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33656호)",
         "date": "2023-08-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1184,7 +1184,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_19566_2024-01-19",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제19566호 | 시행일 2024-01-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=252793",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19566호)",
         "date": "2023-07-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1195,7 +1195,7 @@ window.regulatoryData = [
     {
         "id": "law_가상자산 이용자 보호 등에 관한 법률_19563_2024-07-19",
         "title": "[가상자산 이용자 보호 등에 관한 법률] (공포 제19563호 | 시행일 2024-07-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=252731",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19563호)",
         "date": "2023-07-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1206,7 +1206,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_19532_2023-10-12",
         "title": "[금융소비자 보호에 관한 법률] (공포 제19532호 | 시행일 2023-10-12)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=252409",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19532호)",
         "date": "2023-07-11",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1217,7 +1217,7 @@ window.regulatoryData = [
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_19438_2023-12-14",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제19438호 | 시행일 2023-12-14)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=251697",
+        "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제19438호)",
         "date": "2023-06-13",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1228,7 +1228,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_19260_2023-06-22",
         "title": "[여신전문금융업법] (공포 제19260호 | 시행일 2023-06-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=248927",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제19260호)",
         "date": "2023-03-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1239,7 +1239,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_19211_2023-07-01",
         "title": "[보험업법] (공포 제19211호 | 시행일 2023-07-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=247517",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제19211호)",
         "date": "2022-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1250,7 +1250,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_19211_2023-01-01",
         "title": "[보험업법] (공포 제19211호 | 시행일 2023-01-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=247517",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제19211호)",
         "date": "2022-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1261,7 +1261,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_33112_2022-12-20",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제33112호 | 시행일 2022-12-20)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=246273",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33112호)",
         "date": "2022-12-20",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1272,7 +1272,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_33037_2022-12-08",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제33037호 | 시행일 2022-12-08)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=245869",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제33037호)",
         "date": "2022-12-08",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1283,7 +1283,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_32881_2022-08-23",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제32881호 | 시행일 2022-08-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=244389",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제32881호)",
         "date": "2022-08-23",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1294,7 +1294,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_32449_2022-02-18",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제32449호 | 시행일 2022-02-18)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=240639",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제32449호)",
         "date": "2022-02-17",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1305,7 +1305,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_32274_2021-12-30",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제32274호 | 시행일 2021-12-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=238513",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제32274호)",
         "date": "2021-12-28",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1316,7 +1316,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_32274_2021-12-30",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제32274호 | 시행일 2021-12-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=238517",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제32274호)",
         "date": "2021-12-28",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1327,7 +1327,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률 시행령_32091_2021-10-21",
         "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제32091호 | 시행일 2021-10-21)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=236361",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제32091호)",
         "date": "2021-10-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1338,7 +1338,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_18435_2022-02-18",
         "title": "[보험업법] (공포 제18435호 | 시행일 2022-02-18)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=234835",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제18435호)",
         "date": "2021-08-17",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1349,7 +1349,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_18121_2021-07-21",
         "title": "[보험업법] (공포 제18121호 | 시행일 2021-07-21)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=231759",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제18121호)",
         "date": "2021-04-20",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1360,7 +1360,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_31553_2021-09-25",
         "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제31553호 | 시행일 2021-09-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=230479",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9/(제31553호)",
         "date": "2021-03-23",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1371,7 +1371,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_17799_2021-12-30",
         "title": "[금융소비자 보호에 관한 법률] (공포 제17799호 | 시행일 2021-12-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=224991",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제17799호)",
         "date": "2020-12-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1382,7 +1382,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_17799_2021-12-30",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제17799호 | 시행일 2021-12-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=224997",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제17799호)",
         "date": "2020-12-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1393,7 +1393,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_17636_2021-06-09",
         "title": "[보험업법] (공포 제17636호 | 시행일 2021-06-09)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=223641",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제17636호)",
         "date": "2020-12-08",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1404,7 +1404,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_17636_2020-12-08",
         "title": "[보험업법] (공포 제17636호 | 시행일 2020-12-08)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=223641",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제17636호)",
         "date": "2020-12-08",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1415,7 +1415,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_17354_2020-12-10",
         "title": "[전자금융거래법] (공포 제17354호 | 시행일 2020-12-10)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=218909",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제17354호)",
         "date": "2020-06-09",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1426,7 +1426,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_17292_2021-03-25",
         "title": "[금융소비자 보호에 관한 법률] (공포 제17292호 | 시행일 2021-03-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=218047",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제17292호)",
         "date": "2020-05-19",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1437,7 +1437,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_17297_2020-11-20",
         "title": "[전자금융거래법] (공포 제17297호 | 시행일 2020-11-20)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=218057",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제17297호)",
         "date": "2020-05-19",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1448,7 +1448,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_17297_2020-08-20",
         "title": "[전자금융거래법] (공포 제17297호 | 시행일 2020-08-20)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=218057",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제17297호)",
         "date": "2020-05-19",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1459,7 +1459,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_17292_2020-11-20",
         "title": "[보험업법] (공포 제17292호 | 시행일 2020-11-20)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=218045",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제17292호)",
         "date": "2020-05-19",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1470,7 +1470,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_17112_2021-09-25",
         "title": "[금융소비자 보호에 관한 법률] (공포 제17112호 | 시행일 2021-09-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=215931",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제17112호)",
         "date": "2020-03-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1481,7 +1481,7 @@ window.regulatoryData = [
     {
         "id": "law_금융소비자 보호에 관한 법률_17112_2021-03-25",
         "title": "[금융소비자 보호에 관한 법률] (공포 제17112호 | 시행일 2021-03-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=215931",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제17112호)",
         "date": "2020-03-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1492,7 +1492,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_17112_2021-03-25",
         "title": "[보험업법] (공포 제17112호 | 시행일 2021-03-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=215945",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제17112호)",
         "date": "2020-03-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1503,7 +1503,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_17112_2021-03-25",
         "title": "[여신전문금융업법] (공포 제17112호 | 시행일 2021-03-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=215957",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제17112호)",
         "date": "2020-03-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1514,7 +1514,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_16957_2020-08-05",
         "title": "[보험업법] (공포 제16957호 | 시행일 2020-08-05)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=213979",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제16957호)",
         "date": "2020-02-04",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1525,7 +1525,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_16957_2020-08-05",
         "title": "[여신전문금융업법] (공포 제16957호 | 시행일 2020-08-05)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=213987",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제16957호)",
         "date": "2020-02-04",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1536,7 +1536,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_16185_2019-07-01",
         "title": "[보험업법] (공포 제16185호 | 시행일 2019-07-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=206443",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제16185호)",
         "date": "2018-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1547,7 +1547,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_16189_2020-01-01",
         "title": "[여신전문금융업법] (공포 제16189호 | 시행일 2020-01-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=206447",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제16189호)",
         "date": "2018-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1558,7 +1558,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_15931_2019-06-12",
         "title": "[보험업법] (공포 제15931호 | 시행일 2019-06-12)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=205675",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제15931호)",
         "date": "2018-12-11",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1569,7 +1569,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_15934_2019-06-12",
         "title": "[여신전문금융업법] (공포 제15934호 | 시행일 2019-06-12)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=205678",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제15934호)",
         "date": "2018-12-11",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1580,7 +1580,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_15614_2018-04-17",
         "title": "[보험업법] (공포 제15614호 | 시행일 2018-04-17)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=203240",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제15614호)",
         "date": "2018-04-17",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1591,7 +1591,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_15615_2018-04-17",
         "title": "[여신전문금융업법] (공포 제15615호 | 시행일 2018-04-17)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=203241",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제15615호)",
         "date": "2018-04-17",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1602,7 +1602,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_15414_2018-08-22",
         "title": "[보험업법] (공포 제15414호 | 시행일 2018-08-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=202324",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제15414호)",
         "date": "2018-02-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1613,7 +1613,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_15416_2018-08-22",
         "title": "[여신전문금융업법] (공포 제15416호 | 시행일 2018-08-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=202326",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제15416호)",
         "date": "2018-02-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1624,7 +1624,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_15022_2018-11-01",
         "title": "[보험업법] (공포 제15022호 | 시행일 2018-11-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=198556",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제15022호)",
         "date": "2017-10-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1635,7 +1635,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_15019_2018-05-01",
         "title": "[보험업법] (공포 제15019호 | 시행일 2018-05-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=198539",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제15019호)",
         "date": "2017-10-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1646,7 +1646,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_15022_2018-11-01",
         "title": "[여신전문금융업법] (공포 제15022호 | 시행일 2018-11-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=198565",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제15022호)",
         "date": "2017-10-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1657,7 +1657,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_14839_2017-07-26",
         "title": "[전자금융거래법] (공포 제14839호 | 시행일 2017-07-26)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=195364",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제14839호)",
         "date": "2017-07-26",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1668,7 +1668,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_14828_2017-10-19",
         "title": "[전자금융거래법] (공포 제14828호 | 시행일 2017-10-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=193469",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제14828호)",
         "date": "2017-04-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1679,7 +1679,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_14818_2017-10-19",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제14818호 | 시행일 2017-10-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=193458",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제14818호)",
         "date": "2017-04-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1690,7 +1690,7 @@ window.regulatoryData = [
     {
         "id": "law_보험업법_14821_2017-10-19",
         "title": "[보험업법] (공포 제14821호 | 시행일 2017-10-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=193461",
+        "url": "https://www.law.go.kr/법령/%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제14821호)",
         "date": "2017-04-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1701,7 +1701,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_14825_2017-10-19",
         "title": "[여신전문금융업법] (공포 제14825호 | 시행일 2017-10-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=193465",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제14825호)",
         "date": "2017-04-18",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1712,7 +1712,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제14271호 | 시행일 2016-08-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=185213",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제14271호)",
         "date": "2016-05-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1723,7 +1723,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_14132_2016-06-30",
         "title": "[전자금융거래법] (공포 제14132호 | 시행일 2016-06-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=182143",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제14132호)",
         "date": "2016-03-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1734,7 +1734,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_14129_2016-08-01",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제14129호 | 시행일 2016-08-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=182196",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제14129호)",
         "date": "2016-03-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1745,7 +1745,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_14116_2017-03-30",
         "title": "[여신전문금융업법] (공포 제14116호 | 시행일 2017-03-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=182082",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제14116호)",
         "date": "2016-03-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1756,7 +1756,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_14127_2016-09-30",
         "title": "[여신전문금융업법] (공포 제14127호 | 시행일 2016-09-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=182126",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제14127호)",
         "date": "2016-03-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1767,7 +1767,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_14122_2016-09-30",
         "title": "[여신전문금융업법] (공포 제14122호 | 시행일 2016-09-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=182113",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제14122호)",
         "date": "2016-03-29",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1778,7 +1778,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_13929_2016-07-28",
         "title": "[전자금융거래법] (공포 제13929호 | 시행일 2016-07-28)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=180500",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제13929호)",
         "date": "2016-01-27",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1789,7 +1789,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_13929_2016-01-27",
         "title": "[전자금융거래법] (공포 제13929호 | 시행일 2016-01-27)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=180500",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제13929호)",
         "date": "2016-01-27",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1800,7 +1800,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_13613_2016-08-01",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제13613호 | 시행일 2016-08-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=177704",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제13613호)",
         "date": "2015-12-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1811,7 +1811,7 @@ window.regulatoryData = [
     {
         "id": "law_금융회사의 지배구조에 관한 법률_13453_2016-08-01",
         "title": "[금융회사의 지배구조에 관한 법률] (공포 제13453호 | 시행일 2016-08-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=173583",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0/(제13453호)",
         "date": "2015-07-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1822,7 +1822,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_13453_2016-08-01",
         "title": "[여신전문금융업법] (공포 제13453호 | 시행일 2016-08-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=173573",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제13453호)",
         "date": "2015-07-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1833,7 +1833,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_13448_2015-10-25",
         "title": "[여신전문금융업법] (공포 제13448호 | 시행일 2015-10-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=173346",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제13448호)",
         "date": "2015-07-24",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1844,7 +1844,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_13069_2015-01-20",
         "title": "[전자금융거래법] (공포 제13069호 | 시행일 2015-01-20)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=167420",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제13069호)",
         "date": "2015-01-20",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1855,7 +1855,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_13068_2015-07-21",
         "title": "[여신전문금융업법] (공포 제13068호 | 시행일 2015-07-21)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=167419",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제13068호)",
         "date": "2015-01-20",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1866,7 +1866,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_12837_2015-10-16",
         "title": "[전자금융거래법] (공포 제12837호 | 시행일 2015-10-16)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=160153",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제12837호)",
         "date": "2014-10-15",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1877,7 +1877,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_12837_2015-04-16",
         "title": "[전자금융거래법] (공포 제12837호 | 시행일 2015-04-16)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=160153",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제12837호)",
         "date": "2014-10-15",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1888,7 +1888,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_11814_2013-11-23",
         "title": "[전자금융거래법] (공포 제11814호 | 시행일 2013-11-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=140289",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제11814호)",
         "date": "2013-05-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1899,7 +1899,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_11758_2013-07-06",
         "title": "[여신전문금융업법] (공포 제11758호 | 시행일 2013-07-06)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=138805",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제11758호)",
         "date": "2013-04-05",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1910,7 +1910,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_11629_2013-09-23",
         "title": "[여신전문금융업법] (공포 제11629호 | 시행일 2013-09-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=133283",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제11629호)",
         "date": "2013-03-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1921,7 +1921,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_11461_2012-09-02",
         "title": "[전자금융거래법] (공포 제11461호 | 시행일 2012-09-02)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=125880",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제11461호)",
         "date": "2012-06-01",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1932,7 +1932,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_11407_2012-03-21",
         "title": "[전자금융거래법] (공포 제11407호 | 시행일 2012-03-21)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=124080",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제11407호)",
         "date": "2012-03-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1943,7 +1943,7 @@ window.regulatoryData = [
     {
         "id": "law_여신전문금융업법_11410_2012-12-22",
         "title": "[여신전문금융업법] (공포 제11410호 | 시행일 2012-12-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=124082",
+        "url": "https://www.law.go.kr/법령/%EC%97%AC%EC%8B%A0%EC%A0%84%EB%AC%B8%EA%B8%88%EC%9C%B5%EC%97%85%EB%B2%95/(제11410호)",
         "date": "2012-03-21",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1954,7 +1954,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_11087_2012-05-15",
         "title": "[전자금융거래법] (공포 제11087호 | 시행일 2012-05-15)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=118691",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제11087호)",
         "date": "2011-11-14",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1965,7 +1965,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_10303_2010-11-18",
         "title": "[전자금융거래법] (공포 제10303호 | 시행일 2010-11-18)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=105217",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제10303호)",
         "date": "2010-05-17",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1976,7 +1976,7 @@ window.regulatoryData = [
     {
         "id": "law_전자금융거래법_09325_2009-04-01",
         "title": "[전자금융거래법] (공포 제09325호 | 시행일 2009-04-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=91004",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95/(제09325호)",
         "date": "2008-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1987,7 +1987,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_05505_1998-04-01",
         "title": "[국민은행법] (공포 제05505호 | 시행일 1998-04-01)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7131",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제05505호)",
         "date": "1998-01-13",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -1998,7 +1998,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_14959_1996-03-28",
         "title": "[국민은행법시행령] (공포 제14959호 | 시행일 1996-03-28)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15576",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제14959호)",
         "date": "1996-03-28",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2009,7 +2009,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_04862_1995-01-05",
         "title": "[국민은행법] (공포 제04862호 | 시행일 1995-01-05)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7130",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제04862호)",
         "date": "1995-01-05",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2020,7 +2020,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_14438_1994-12-23",
         "title": "[국민은행법시행령] (공포 제14438호 | 시행일 1994-12-23)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15575",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제14438호)",
         "date": "1994-12-23",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2031,7 +2031,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_13176_1990-12-06",
         "title": "[국민은행법시행령] (공포 제13176호 | 시행일 1990-12-06)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15574",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제13176호)",
         "date": "1990-12-06",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2042,7 +2042,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_04169_1989-12-30",
         "title": "[국민은행법] (공포 제04169호 | 시행일 1989-12-30)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7129",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제04169호)",
         "date": "1989-12-30",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2053,7 +2053,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_11072_1983-03-16",
         "title": "[국민은행법시행령] (공포 제11072호 | 시행일 1983-03-16)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15573",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제11072호)",
         "date": "1983-03-16",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2064,7 +2064,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_03626_1982-12-31",
         "title": "[국민은행법] (공포 제03626호 | 시행일 1982-12-31)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7128",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제03626호)",
         "date": "1982-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2075,7 +2075,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_10886_1982-08-09",
         "title": "[국민은행법시행령] (공포 제10886호 | 시행일 1982-08-09)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15572",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제10886호)",
         "date": "1982-08-09",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2086,7 +2086,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_03479_1981-12-31",
         "title": "[국민은행법] (공포 제03479호 | 시행일 1981-12-31)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7127",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제03479호)",
         "date": "1981-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2097,7 +2097,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_10040_1980-10-13",
         "title": "[국민은행법시행령] (공포 제10040호 | 시행일 1980-10-13)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15571",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제10040호)",
         "date": "1980-10-13",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2108,7 +2108,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_09004_1978-05-03",
         "title": "[국민은행법시행령] (공포 제09004호 | 시행일 1978-05-03)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15570",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제09004호)",
         "date": "1978-05-03",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2119,7 +2119,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_03023_1977-12-19",
         "title": "[국민은행법] (공포 제03023호 | 시행일 1977-12-19)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7126",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제03023호)",
         "date": "1977-12-19",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2130,7 +2130,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_08456_1977-02-25",
         "title": "[국민은행법시행령] (공포 제08456호 | 시행일 1977-02-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15569",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제08456호)",
         "date": "1977-02-25",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2141,7 +2141,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법시행령_08035_1976-03-22",
         "title": "[국민은행법시행령] (공포 제08035호 | 시행일 1976-03-22)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=15568",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95%EC%8B%9C%ED%96%89%EB%A0%B9/(제08035호)",
         "date": "1976-03-22",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2152,7 +2152,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_02571_1973-03-05",
         "title": "[국민은행법] (공포 제02571호 | 시행일 1973-03-05)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7125",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제02571호)",
         "date": "1973-03-05",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2163,7 +2163,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_02043_1968-07-25",
         "title": "[국민은행법] (공포 제02043호 | 시행일 1968-07-25)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7124",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제02043호)",
         "date": "1968-07-25",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2174,7 +2174,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_01558_1963-12-17",
         "title": "[국민은행법] (공포 제01558호 | 시행일 1963-12-17)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=54248",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제01558호)",
         "date": "1963-12-16",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2185,7 +2185,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_01201_1962-12-07",
         "title": "[국민은행법] (공포 제01201호 | 시행일 1962-12-07)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7123",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제01201호)",
         "date": "1962-12-07",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2196,7 +2196,7 @@ window.regulatoryData = [
     {
         "id": "law_미군정청에의하여의용된보험업법_00973_1962-01-15",
         "title": "[미군정청에의하여의용된보험업법] (공포 제00973호 | 시행일 1962-01-15)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=6843",
+        "url": "https://www.law.go.kr/법령/%EB%AF%B8%EA%B5%B0%EC%A0%95%EC%B2%AD%EC%97%90%EC%9D%98%ED%95%98%EC%97%AC%EC%9D%98%EC%9A%A9%EB%90%9C%EB%B3%B4%ED%97%98%EC%97%85%EB%B2%95/(제00973호)",
         "date": "1962-01-15",
         "dept": "법제처/관보",
         "category": "공포법령",
@@ -2207,7 +2207,7 @@ window.regulatoryData = [
     {
         "id": "law_국민은행법_00944_1961-12-31",
         "title": "[국민은행법] (공포 제00944호 | 시행일 1961-12-31)",
-        "url": "https://www.law.go.kr/LSW/lsRvsReasonR.do?lsiSeq=7122",
+        "url": "https://www.law.go.kr/법령/%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89%EB%B2%95/(제00944호)",
         "date": "1961-12-31",
         "dept": "법제처/관보",
         "category": "공포법령",
