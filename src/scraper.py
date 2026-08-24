@@ -121,7 +121,7 @@ class FinancialRegulatoryScraper:
                     prom_no = law.findtext("공포번호") or ""
                     prom_date = law.findtext("공포일자") or ""
                     enf_date = law.findtext("시행일자") or ""
-                    mst = law.findtext("MST") or ""
+                    lsi_seq = law.findtext("법령일련번호") or law.findtext("MST") or ""
 
                     if len(prom_date) == 8:
                         prom_date_fmt = f"{prom_date[:4]}-{prom_date[4:6]}-{prom_date[6:]}"
@@ -139,8 +139,8 @@ class FinancialRegulatoryScraper:
                     seen_ids.add(unique_id)
 
                     title = f"[{name}] (공포 제{prom_no}호 | 시행일 {enf_date_fmt})"
-                    encoded_name = urllib.parse.quote(name)
-                    detail_url = f"https://www.law.go.kr/법령/{encoded_name}"
+                    # 법제처 '제·개정이유' 탭(chrClsCd=010202) 직통 웹페이지 딥링크
+                    detail_url = f"https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq={lsi_seq}&chrClsCd=010202"
 
                     results.append({
                         "id": unique_id,

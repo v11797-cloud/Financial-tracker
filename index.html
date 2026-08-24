@@ -243,6 +243,7 @@
                     else if (item.category === "공포법령") badgeClass = "law";
 
                     const badgeLabel = item.category === "공포법령" ? "공포/시행 법령" : item.category;
+                    const btnLabel = item.category === "공포법령" ? "개정이유 보기" : "바로가기";
 
                     return `
                         <article class="regulatory-card">
@@ -261,7 +262,7 @@
                                     <span>복사</span>
                                 </button>
                                 <a href="${item.url}" target="_blank" class="action-btn primary">
-                                    <span>법령보기</span>
+                                    <span>${btnLabel}</span>
                                     <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
                                 </a>
                             </div>
