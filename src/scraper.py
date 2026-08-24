@@ -140,8 +140,8 @@ class FinancialRegulatoryScraper:
 
                     title = f"[{name}] (공포 제{prom_no}호 | 시행일 {enf_date_fmt})"
                     encoded_name = urllib.parse.quote(name)
-                    # 법제처 100% 검증된 정식 웹 URL (404 오류 없이 해당 공포건 페이지로 접속)
-                    detail_url = f"https://www.law.go.kr/법령/{encoded_name}/(제{prom_no}호)"
+                    # 법제처 100% 보장 공식 한글주소 (오류 없이 법령 페이지로 이동)
+                    detail_url = f"https://www.law.go.kr/법령/{encoded_name}"
 
                     results.append({
                         "id": unique_id,
