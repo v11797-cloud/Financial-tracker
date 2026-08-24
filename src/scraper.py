@@ -139,9 +139,8 @@ class FinancialRegulatoryScraper:
                     seen_ids.add(unique_id)
 
                     title = f"[{name}] (공포 제{prom_no}호 | 시행일 {enf_date_fmt})"
-                    encoded_name = urllib.parse.quote(name)
-                    # 법제처 100% 보장 공식 한글주소 (오류 없이 법령 페이지로 이동)
-                    detail_url = f"https://www.law.go.kr/법령/{encoded_name}"
+                    # 법제처 제·개정이유 탭(chrClsCd=010202) 직통 웹 URL
+                    detail_url = f"https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq={lsi_seq}&chrClsCd=010202"
 
                     results.append({
                         "id": unique_id,
