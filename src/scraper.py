@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import re
 from datetime import datetime
 import xml.etree.ElementTree as ET
+import urllib.parse
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -138,7 +139,8 @@ class FinancialRegulatoryScraper:
                     seen_ids.add(unique_id)
 
                     title = f"[{name}] (공포 제{prom_no}호 | 시행일 {enf_date_fmt})"
-                    detail_url = f"https://www.law.go.kr/DRF/lawService.do?OC=test&target=eflaw&MST={mst}&type=HTML"
+                    encoded_name = urllib.parse.quote(name)
+                    detail_url = f"https://www.law.go.kr/법령/{encoded_name}"
 
                     results.append({
                         "id": unique_id,
