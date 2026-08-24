@@ -43,6 +43,10 @@
                 <div class="stat-label">입법/규정예고</div>
                 <div class="stat-value" id="stat-preview">0</div>
             </div>
+            <div class="stat-card law">
+                <div class="stat-label">공포/시행 법령</div>
+                <div class="stat-value" id="stat-law">0</div>
+            </div>
         </section>
 
         <!-- 검색 및 필터 패널 -->
@@ -59,6 +63,7 @@
                     <button class="filter-tab" data-category="금융시장동향">금융시장동향</button>
                     <button class="filter-tab" data-category="보도자료">보도자료</button>
                     <button class="filter-tab" data-category="입법예고">입법예고</button>
+                    <button class="filter-tab" data-category="공포법령">공포/시행 법령</button>
                 </div>
 
                 <!-- 주요 핵심 키워드 칩 필터 -->
@@ -132,6 +137,7 @@
             const statTrend = document.getElementById("stat-trend");
             const statPress = document.getElementById("stat-press");
             const statPreview = document.getElementById("stat-preview");
+            const statLaw = document.getElementById("stat-law");
 
             // 통계 세팅
             function updateStatistics(data) {
@@ -139,6 +145,7 @@
                 statTrend.textContent = data.filter(d => d.category === "금융시장동향").length;
                 statPress.textContent = data.filter(d => d.category === "보도자료").length;
                 statPreview.textContent = data.filter(d => d.category === "입법예고").length;
+                if (statLaw) statLaw.textContent = data.filter(d => d.category === "공포법령").length;
             }
 
             // 하이라이팅하고 싶은 금융 핵심 키워드 리스트
@@ -230,14 +237,21 @@
 
                 // 카드 생성
                 listSection.innerHTML = filtered.map(item => {
-                    const badgeClass = item.category === "금융시장동향" ? "trend" : (item.category === "보도자료" ? "press" : "preview");
+                    let badgeClass = "trend";
+                    if (item.category === "보도자료") badgeClass = "press";
+                    else if (item.category === "입법예고") badgeClass = "preview";
+                    else if (item.category === "공포법령") badgeClass = "law";
+
+                    const badgeLabel = item.category === "공포법령" ? "공포/시행 법령" : item.category;
+
                     return `
                         <article class="regulatory-card">
                             <div class="card-main-info">
                                 <div class="card-meta-row">
-                                    <span class="category-badge ${badgeClass}">${item.category}</span>
+                                    <span class="category-badge ${badgeClass}">${badgeLabel}</span>
                                     <span class="dept-tag">${item.dept}</span>
-                                    <span class="date-text">${item.date}</span>
+                                    <span class="date-text">공포일: ${item.date}</span>
+                                    ${item.enf_date ? `<span class="date-text" style="color: #EC4899; font-weight:600;">(시행일: ${item.enf_date})</span>` : ''}
                                 </div>
                                 <h3 class="card-title">${highlightTitle(item.title)}</h3>
                             </div>
@@ -247,7 +261,7 @@
                                     <span>복사</span>
                                 </button>
                                 <a href="${item.url}" target="_blank" class="action-btn primary">
-                                    <span>바로가기</span>
+                                    <span>법령보기</span>
                                     <i data-lucide="external-link" style="width: 14px; height: 14px;"></i>
                                 </a>
                             </div>

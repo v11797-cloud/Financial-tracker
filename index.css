@@ -19,6 +19,7 @@
     --color-trend: #8B5CF6;   /* 금융시장동향 (바이올렛) */
     --color-press: #10B981;   /* 보도자료 (에메랄드 청록) */
     --color-preview: #F59E0B; /* 입법예고 (앰버 오렌지) */
+    --color-law: #EC4899;     /* 공포/시행 법령 (로즈 핑키) */
     
     /* 하이라이트 키워드 컬러 */
     --color-highlight: #EF4444; /* 중요 규제 (로즈) */
@@ -140,6 +141,7 @@ body {
 .stat-card.trend::before { background-color: var(--color-trend); }
 .stat-card.press::before { background-color: var(--color-press); }
 .stat-card.preview::before { background-color: var(--color-preview); }
+.stat-card.law::before { background-color: var(--color-law); }
 .stat-card.total::before { background-color: var(--primary); }
 
 .stat-label {
@@ -343,6 +345,12 @@ body {
     background: rgba(245, 158, 11, 0.1);
     color: #FBBF24;
     border: 1px solid rgba(245, 158, 11, 0.2);
+}
+
+.category-badge.law {
+    background: rgba(236, 72, 153, 0.1);
+    color: #F472B6;
+    border: 1px solid rgba(236, 72, 153, 0.2);
 }
 
 .dept-tag {
