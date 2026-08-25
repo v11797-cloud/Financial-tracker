@@ -1,5 +1,13 @@
 window.regulatoryData = [
     {
+        "id": "no010101_87585",
+        "title": "“AI 시대 국민의 일상과 생업을 잇는 마이데이터 발전방안을 추진합니다.“",
+        "url": "https://www.fsc.go.kr/no010101/87585?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-08-25",
+        "dept": "금융데이터정책과",
+        "category": "보도자료"
+    },
+    {
         "id": "no030101_87584",
         "title": "금융시장동향(26.08.24)",
         "url": "https://www.fsc.go.kr/no030101/87584?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
