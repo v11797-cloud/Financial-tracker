@@ -1,7 +1,39 @@
 window.regulatoryData = [
     {
+        "id": "no010101_87625",
+        "title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87625?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-01",
+        "dept": "보험과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87624",
+        "title": "금융시장동향(26.08.31)",
+        "url": "https://www.fsc.go.kr/no030101/87624?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-08-31",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87622",
+        "title": "軍 복무기간이  ‘자산을 형성하고 금융역량을 키우는 기회’가 되도록 지원합니다.  - 2026년 제2차 금융교육협의회 개최",
+        "url": "https://www.fsc.go.kr/no010101/87622?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-08-31",
+        "dept": "금융소비자정책과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87620",
+        "title": "불법사채 200만원이 400만원이 될 뻔한 순간, 신고 한 번으로 막을 수 있습니다.  - 불법사금융 원스톱 지원체계 개선·보완",
+        "url": "https://www.fsc.go.kr/no010101/87620?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-08-31",
+        "dept": "가계금융과",
+        "category": "보도자료"
+    },
+    {
         "id": "no010101_87611",
-        "title": "주택공급 촉진을 위한 금융·건설업계 간담회 개최. 금일 등록된 게시글",
+        "title": "주택공급 촉진을 위한 금융·건설업계 간담회 개최",
         "url": "https://www.fsc.go.kr/no010101/87611?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "금융정책과",
@@ -9,10 +41,26 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87609",
-        "title": "국민성장펀드가 로봇산업의 경쟁력 강화와K-콘텐츠의 글로벌 영토 확장을 지원합니다.. 금일 등록된 게시글",
+        "title": "국민성장펀드가 로봇산업의 경쟁력 강화와K-콘텐츠의 글로벌 영토 확장을 지원합니다.",
         "url": "https://www.fsc.go.kr/no010101/87609?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "국민성장펀드총괄과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87616",
+        "title": "금융시장동향(26.08.28)",
+        "url": "https://www.fsc.go.kr/no030101/87616?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-08-28",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87614",
+        "title": "청년의 잠재력에 국가가 투자합니다!  청년 예산 언박싱(UNBOXING) 2027, ｢청년 성장단계별 종합투자 추진전략｣ 발표",
+        "url": "https://www.fsc.go.kr/no010101/87614?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-08-28",
+        "dept": "청년정책과",
         "category": "보도자료"
     },
     {
