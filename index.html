@@ -192,6 +192,26 @@
                 });
             }
 
+            // 동적 칩별 정밀 법령/하위법령 매칭 룰
+            const keywordFilterRules = {
+                "자본시장": (title) => {
+                    // 자본시장과 금융투자업에 관한 법률 및 시행령/시행규칙만 매칭 (집무규칙 등 기타 행정규칙 제외)
+                    return title.includes("자본시장과 금융투자업에 관한 법률") || title.includes("자본시장법");
+                },
+                "금융소비자": (title) => {
+                    // 금융소비자 보호에 관한 법률 및 시행령/시행규칙만 매칭 (감독규정 등 제외)
+                    return title.includes("금융소비자 보호에 관한 법률") || title.includes("금소법");
+                },
+                "금융투자업규정": (title) => {
+                    // 금융투자업규정 및 시행세칙만 매칭
+                    return title.includes("금융투자업규정");
+                },
+                "가상자산": (title) => {
+                    // 가상자산 이용자 보호 등에 관한 법률 및 시행령
+                    return title.includes("가상자산 이용자 보호") || title.includes("가상자산법");
+                }
+            };
+
             // 카드 리스트 렌더링
             function renderList() {
                 // 필터링 적용
@@ -201,11 +221,14 @@
                         return false;
                     }
 
-                    // 2. 키워드 칩 필터
+                    // 2. 키워드 칩 필터 (정밀 룰 적용)
                     if (activeKeywords.size > 0) {
-                        const matchesKeyword = Array.from(activeKeywords).every(kw => 
-                            item.title.toLowerCase().includes(kw.toLowerCase())
-                        );
+                        const matchesKeyword = Array.from(activeKeywords).every(kw => {
+                            if (keywordFilterRules[kw]) {
+                                return keywordFilterRules[kw](item.title);
+                            }
+                            return item.title.toLowerCase().includes(kw.toLowerCase());
+                        });
                         if (!matchesKeyword) return false;
                     }
 
