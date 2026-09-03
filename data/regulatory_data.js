@@ -1,10 +1,74 @@
 window.regulatoryData = [
     {
+        "id": "no030101_87631",
+        "title": "금융시장동향(26.09.01)",
+        "url": "https://www.fsc.go.kr/no030101/87631?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-02",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87639",
+        "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제15차 증권선물위원회(’26.9.2.) 조치 의결",
+        "url": "https://www.fsc.go.kr/no010101/87639?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-02",
+        "dept": "회계제도팀",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87638",
+        "title": "상장사 IR 담당 임원의  불공정거래 혐의 적발·조치  - 제15차 증권선물위원회(9.2.) 의결",
+        "url": "https://www.fsc.go.kr/no010101/87638?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-02",
+        "dept": "자본시장조사총괄과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87637",
+        "title": "‘보이스피싱 근절 종합대책’ 1년,  발생건수 40%·피해액 43% 감소 성과",
+        "url": "https://www.fsc.go.kr/no010101/87637?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-02",
+        "dept": "금융안전과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87634",
+        "title": "국민의 건전한 금융·투자 역량을 강화하는  “안전한 금융생활” 캠페인을 추진합니다.",
+        "url": "https://www.fsc.go.kr/no010101/87634?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-02",
+        "dept": "금융소비자정책과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87633",
+        "title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
+        "url": "https://www.fsc.go.kr/no010101/87633?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-02",
+        "dept": "금융데이터정책과",
+        "category": "보도자료"
+    },
+    {
         "id": "no010101_87625",
-        "title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.. 금일 등록된 게시글",
+        "title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.",
         "url": "https://www.fsc.go.kr/no010101/87625?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-01",
         "dept": "보험과",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87628",
+        "title": "2026년도 제61회 공인회계사시험최종 합격자 1,150명 발표",
+        "url": "https://www.fsc.go.kr/no010101/87628?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-01",
+        "dept": "회계제도팀",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87627",
+        "title": "성장잠재력 제고·서민생활 안정·청년 자산형성 지원을 위한 2027회계연도 금융위원회 예산안 편성",
+        "url": "https://www.fsc.go.kr/no010101/87627?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-01",
+        "dept": "혁신기획재정담당관",
         "category": "보도자료"
     },
     {
