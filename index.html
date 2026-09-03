@@ -19,9 +19,21 @@
                 <h1>금융 규제 실시간 대시보드</h1>
                 <p>자본시장법, 금융소비자보호법 등 금융위 고시/공고 및 보도자료 업데이트 내역</p>
             </div>
-            <div class="status-badge">
-                <span class="pulse-dot"></span>
-                <span>매일 자동 업데이트 구동 중</span>
+            <div style="display: flex; align-items: center; gap: 1rem; flex-wrap: wrap;">
+                <div class="view-switcher" id="view-switcher">
+                    <button class="view-btn active" data-view="list">
+                        <i data-lucide="list" style="width: 16px; height: 16px;"></i>
+                        <span>리스트 뷰</span>
+                    </button>
+                    <button class="view-btn" data-view="calendar">
+                        <i data-lucide="calendar" style="width: 16px; height: 16px;"></i>
+                        <span>시행일 캘린더 뷰</span>
+                    </button>
+                </div>
+                <div class="status-badge">
+                    <span class="pulse-dot"></span>
+                    <span>매일 자동 업데이트 구동 중</span>
+                </div>
             </div>
         </header>
 
@@ -81,6 +93,24 @@
         <main class="list-section" id="list-section">
             <!-- 동적으로 생성되는 규제 카드들 -->
         </main>
+
+        <!-- 시행일 캘린더 뷰 영역 -->
+        <section class="calendar-container" id="calendar-container" style="display: none;">
+            <div class="calendar-header">
+                <div class="calendar-title-group">
+                    <button class="calendar-nav-btn" id="cal-prev-btn"><i data-lucide="chevron-left" style="width: 18px; height: 18px;"></i></button>
+                    <h2 class="calendar-month-title" id="cal-month-title">2026년 9월</h2>
+                    <button class="calendar-nav-btn" id="cal-next-btn"><i data-lucide="chevron-right" style="width: 18px; height: 18px;"></i></button>
+                    <button class="calendar-today-btn" id="cal-today-btn">오늘로 이동</button>
+                </div>
+                <div style="font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem;">
+                    <span style="color: #F472B6; font-weight: 700;">●</span> <span>시행일 기준 캘린더 (클릭 시 상세/개정이유 페이지 이동)</span>
+                </div>
+            </div>
+            <div class="calendar-grid" id="calendar-grid">
+                <!-- 동적 캘린더 생성 -->
+            </div>
+        </section>
     </div>
 
     <!-- 복사 성공 토스트 알림창 -->
@@ -211,6 +241,181 @@
                     return title.includes("가상자산 이용자 보호") || title.includes("가상자산법");
                 }
             };
+
+            // 전역 뷰 및 캘린더 상태
+            let currentView = "list";
+            let calYear = new Date().getFullYear();
+            let calMonth = new Date().getMonth(); // 0 ~ 11
+
+            // 뷰 스위처 참조
+            const viewSwitcher = document.getElementById("view-switcher");
+            const filterPanel = document.querySelector(".filter-panel");
+            const calendarContainer = document.getElementById("calendar-container");
+            const calendarGrid = document.getElementById("calendar-grid");
+            const calMonthTitle = document.getElementById("cal-month-title");
+            const calPrevBtn = document.getElementById("cal-prev-btn");
+            const calNextBtn = document.getElementById("cal-next-btn");
+            const calTodayBtn = document.getElementById("cal-today-btn");
+
+            // 뷰 스위처 이벤트 바인딩
+            viewSwitcher.addEventListener("click", (e) => {
+                const btn = e.target.closest(".view-btn");
+                if (!btn) return;
+
+                document.querySelectorAll(".view-btn").forEach(b => b.classList.remove("active"));
+                btn.classList.add("active");
+
+                currentView = btn.dataset.view;
+                if (currentView === "list") {
+                    filterPanel.style.display = "flex";
+                    listSection.style.display = "flex";
+                    calendarContainer.style.display = "none";
+                    renderList();
+                } else {
+                    filterPanel.style.display = "none";
+                    listSection.style.display = "none";
+                    calendarContainer.style.display = "flex";
+                    renderCalendar();
+                }
+            });
+
+            // 캘린더 네비게이션 이벤트
+            calPrevBtn.addEventListener("click", () => {
+                calMonth--;
+                if (calMonth < 0) {
+                    calMonth = 11;
+                    calYear--;
+                }
+                renderCalendar();
+            });
+
+            calNextBtn.addEventListener("click", () => {
+                calMonth++;
+                if (calMonth > 11) {
+                    calMonth = 0;
+                    calYear++;
+                }
+                renderCalendar();
+            });
+
+            calTodayBtn.addEventListener("click", () => {
+                const today = new Date();
+                calYear = today.getFullYear();
+                calMonth = today.getMonth();
+                renderCalendar();
+            });
+
+            // D-Day 계산 헬퍼
+            function calculateDDay(dateStr) {
+                if (!dateStr) return null;
+                const target = new Date(dateStr);
+                const today = new Date();
+                today.setHours(0, 0, 0, 0);
+                target.setHours(0, 0, 0, 0);
+
+                const diffTime = target - today;
+                const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
+
+                if (diffDays === 0) return "D-Day";
+                if (diffDays > 0) return `D-${diffDays}`;
+                return `시행중`;
+            }
+
+            // 시행일 캘린더 렌더링
+            function renderCalendar() {
+                calMonthTitle.textContent = `${calYear}년 ${calMonth + 1}월`;
+
+                // 시행일자별 데이터 맵 구축 (YYYY-MM-DD -> items[])
+                const dateMap = {};
+                rawData.forEach(item => {
+                    const enfDate = item.enf_date || item.date;
+                    if (enfDate) {
+                        if (!dateMap[enfDate]) dateMap[enfDate] = [];
+                        dateMap[enfDate].push(item);
+                    }
+                });
+
+                // 달력 그리드 HTML 생성
+                const dayNames = ["일", "월", "화", "수", "목", "금", "토"];
+                let gridHtml = dayNames.map((day, idx) => {
+                    const cls = idx === 0 ? "sun" : (idx === 6 ? "sat" : "");
+                    return `<div class="calendar-day-header ${cls}">${day}</div>`;
+                }).join("");
+
+                const firstDay = new Date(calYear, calMonth, 1).getDay();
+                const lastDate = new Date(calYear, calMonth + 1, 0).getDate();
+                const prevLastDate = new Date(calYear, calMonth, 0).getDate();
+
+                const todayObj = new Date();
+                const todayYear = todayObj.getFullYear();
+                const todayMonth = todayObj.getMonth();
+                const todayDate = todayObj.getDate();
+
+                // 이전 달 날짜 채우기
+                for (let i = firstDay - 1; i >= 0; i--) {
+                    const num = prevLastDate - i;
+                    gridHtml += `
+                        <div class="calendar-cell other-month">
+                            <div class="calendar-date-header">
+                                <span class="calendar-date-num">${num}</span>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                // 현재 달 날짜 채우기
+                for (let date = 1; date <= lastDate; date++) {
+                    const isToday = calYear === todayYear && calMonth === todayMonth && date === todayDate;
+                    const todayCls = isToday ? "today-cell" : "";
+
+                    const monthStr = String(calMonth + 1).padStart(2, "0");
+                    const dateStr = String(date).padStart(2, "0");
+                    const keyDate = `${calYear}-${monthStr}-${dateStr}`;
+
+                    const items = dateMap[keyDate] || [];
+
+                    const chipsHtml = items.map(item => {
+                        const dDay = calculateDDay(keyDate);
+                        const isDDay = dDay && dDay.startsWith("D-");
+                        const chipCls = isDDay ? "d-day-chip" : "";
+                        const lawTitle = item.law_name || item.title;
+
+                        return `
+                            <div class="calendar-item-chip ${chipCls}" onclick="window.open('${item.url}', '_blank')" title="${item.title}">
+                                ${dDay ? `<span class="d-day-badge">${dDay}</span>` : ''}
+                                <span>${lawTitle}</span>
+                            </div>
+                        `;
+                    }).join("");
+
+                    gridHtml += `
+                        <div class="calendar-cell ${todayCls}">
+                            <div class="calendar-date-header">
+                                <span class="calendar-date-num">${date}</span>
+                            </div>
+                            ${chipsHtml}
+                        </div>
+                    `;
+                }
+
+                // 다음 달 날짜 채우기 (총 셀 수 35개 또는 42개 맞춤)
+                const totalCellsSoFar = firstDay + lastDate;
+                const totalCells = totalCellsSoFar > 35 ? 42 : 35;
+                const nextDays = totalCells - totalCellsSoFar;
+
+                for (let date = 1; date <= nextDays; date++) {
+                    gridHtml += `
+                        <div class="calendar-cell other-month">
+                            <div class="calendar-date-header">
+                                <span class="calendar-date-num">${date}</span>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                calendarGrid.innerHTML = gridHtml;
+                lucide.createIcons();
+            }
 
             // 카드 리스트 렌더링
             function renderList() {
