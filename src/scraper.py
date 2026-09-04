@@ -38,120 +38,131 @@ class FinancialRegulatoryScraper:
         return clean_url.replace("/", "_").replace(".", "").strip("_")
 
     def scrape_board(self, category, url):
-        """금융위 게시판 스크래핑"""
+        """금융위 게시판 multi-page 스크래핑 (1~3페이지)"""
         results = []
-        try:
-            response = requests.get(url, headers=self.headers, verify=False, timeout=10)
-            if response.status_code != 200:
-                print(f"[{category}] 페이지 요청 실패. 상태코드: {response.status_code}")
-                return results
-
-            soup = BeautifulSoup(response.text, "html.parser")
-            board_wrap = soup.find(class_="board-list-wrap")
-            if not board_wrap:
-                board_wrap = soup.find(class_=lambda x: x and "board-list" in x)
-                
-            if not board_wrap:
-                print(f"[{category}] board-list-wrap 요소를 찾을 수 없습니다.")
-                return results
-
-            items = board_wrap.find_all("li")
-            for item in items:
-                a_tag = item.find("a")
-                if not a_tag:
+        seen_ids = set()
+        
+        for page in range(1, 4):
+            page_url = f"{url}?curPage={page}"
+            try:
+                response = requests.get(page_url, headers=self.headers, verify=False, timeout=10)
+                if response.status_code != 200:
                     continue
-                
-                raw_href = a_tag.get("href", "").strip()
-                if not raw_href or raw_href == "#none":
-                    continue
-                
-                clean_href = raw_href
-                if clean_href.startswith("./"):
-                    clean_href = clean_href[1:]
-                elif not clean_href.startswith("/") and not clean_href.startswith("http"):
-                    clean_href = "/" + clean_href
+
+                soup = BeautifulSoup(response.text, "html.parser")
+                board_wrap = soup.find(class_="board-list-wrap")
+                if not board_wrap:
+                    board_wrap = soup.find(class_=lambda x: x and "board-list" in x)
                     
-                full_url = clean_href if clean_href.startswith("http") else self.base_url + clean_href
-                title = a_tag.get_text(strip=True)
-                title = re.sub(r"파일다운로드.*", "", title)
-                title = re.sub(r"파일뷰어.*", "", title)
-                title = title.strip()
+                if not board_wrap:
+                    continue
 
-                item_text = item.get_text(" ", strip=True)
-                date_match = re.search(r"(\d{4}-\d{2}-\d{2})", item_text)
-                date_str = date_match.group(1) if date_match else datetime.today().strftime("%Y-%m-%d")
+                items = board_wrap.find_all("li")
+                for item in items:
+                    a_tag = item.find("a")
+                    if not a_tag:
+                        continue
+                    
+                    raw_href = a_tag.get("href", "").strip()
+                    if not raw_href or raw_href == "#none":
+                        continue
+                    
+                    clean_href = raw_href
+                    if clean_href.startswith("./"):
+                        clean_href = clean_href[1:]
+                    elif not clean_href.startswith("/") and not clean_href.startswith("http"):
+                        clean_href = "/" + clean_href
+                        
+                    full_url = clean_href if clean_href.startswith("http") else self.base_url + clean_href
+                    title = a_tag.get_text(strip=True)
+                    title = re.sub(r"파일다운로드.*", "", title)
+                    title = re.sub(r"파일뷰어.*", "", title)
+                    title = title.strip()
 
-                dept_match = re.search(r"담당부서\s*:\s*([^\s\|]+)", item_text)
-                dept_str = dept_match.group(1) if dept_match else "금융위원회"
-                dept_str = dept_str.replace("조회수", "").replace(":", "").strip()
+                    post_id = self._extract_id_from_url(full_url)
+                    if post_id in seen_ids:
+                        continue
+                    seen_ids.add(post_id)
 
-                post_id = self._extract_id_from_url(full_url)
+                    item_text = item.get_text(" ", strip=True)
+                    date_match = re.search(r"(\d{4}-\d{2}-\d{2})", item_text)
+                    date_str = date_match.group(1) if date_match else datetime.today().strftime("%Y-%m-%d")
 
-                results.append({
-                    "id": post_id,
-                    "title": title,
-                    "url": full_url,
-                    "date": date_str,
-                    "dept": f"금융위원회({dept_str})" if "금융위" not in dept_str else dept_str,
-                    "category": category
-                })
-        except Exception as e:
-            print(f"[{category}] 크롤링 중 에러 발생: {e}")
+                    dept_match = re.search(r"담당부서\s*:\s*([^\s\|]+)", item_text)
+                    dept_str = dept_match.group(1) if dept_match else "금융위원회"
+                    dept_str = dept_str.replace("조회수", "").replace(":", "").strip()
+
+                    results.append({
+                        "id": post_id,
+                        "title": title,
+                        "url": full_url,
+                        "date": date_str,
+                        "dept": f"금융위원회({dept_str})" if "금융위" not in dept_str else dept_str,
+                        "category": category
+                    })
+            except Exception as e:
+                print(f"[{category}] 금융위 Page {page} 크롤링 에러: {e}")
         
         return results
 
     def scrape_fss_press(self):
-        """금융감독원(FSS) 보도자료 수집"""
+        """금융감독원(FSS) 보도자료 multi-page 수집 (1~5페이지)"""
         results = []
         category = "보도자료"
-        url = "https://www.fss.or.kr/fss/bbs/B0000188/list.do?menuNo=200218"
         base_fss_url = "https://www.fss.or.kr"
+        seen_ids = set()
         
-        try:
-            res = requests.get(url, headers=self.headers, verify=False, timeout=10)
-            if res.status_code == 200:
-                soup = BeautifulSoup(res.text, "html.parser")
-                table = soup.find("table")
-                if table:
-                    rows = table.find_all("tr")
-                    for r in rows[1:]:
-                        a_tag = r.find("a")
-                        if not a_tag:
-                            continue
-                        
-                        title = a_tag.get_text(strip=True)
-                        raw_href = a_tag.get("href", "").strip()
-                        if not title or not raw_href:
-                            continue
+        for page in range(1, 6):
+            url = f"https://www.fss.or.kr/fss/bbs/B0000188/list.do?menuNo=200218&pageIndex={page}"
+            try:
+                res = requests.get(url, headers=self.headers, verify=False, timeout=10)
+                if res.status_code == 200:
+                    soup = BeautifulSoup(res.text, "html.parser")
+                    table = soup.find("table")
+                    if table:
+                        rows = table.find_all("tr")
+                        for r in rows[1:]:
+                            a_tag = r.find("a")
+                            if not a_tag:
+                                continue
                             
-                        full_url = base_fss_url + raw_href if raw_href.startswith("/") else raw_href
-                        
-                        ntt_match = re.search(r"nttId=(\d+)", full_url)
-                        post_id = f"fss_press_{ntt_match.group(1)}" if ntt_match else f"fss_press_{hash(full_url)}"
+                            title = a_tag.get_text(strip=True)
+                            raw_href = a_tag.get("href", "").strip()
+                            if not title or not raw_href:
+                                continue
+                                
+                            full_url = base_fss_url + raw_href if raw_href.startswith("/") else raw_href
+                            
+                            ntt_match = re.search(r"nttId=(\d+)", full_url)
+                            post_id = f"fss_press_{ntt_match.group(1)}" if ntt_match else f"fss_press_{hash(full_url)}"
 
-                        row_text = r.get_text(" ", strip=True)
-                        date_match = re.search(r"(\d{4}-\d{2}-\d{2})", row_text)
-                        date_str = date_match.group(1) if date_match else datetime.today().strftime("%Y-%m-%d")
-                        
-                        cols = r.find_all("td")
-                        dept_name = "금융감독원"
-                        if len(cols) >= 4:
-                            possible_dept = cols[2].get_text(strip=True)
-                            if possible_dept and not re.match(r"\d{4}-\d{2}-\d{2}", possible_dept):
-                                dept_name = f"금융감독원({possible_dept})"
-                        
-                        results.append({
-                            "id": post_id,
-                            "title": f"[금감원] {title}",
-                            "url": full_url,
-                            "date": date_str,
-                            "dept": dept_name,
-                            "category": category
-                        })
-        except Exception as e:
-            print(f"[{category}] 금감원 보도자료 크롤링 에러: {e}")
-            
-        print(f"[{category}] 금감원 보도자료 {len(results)}건 수집 완료")
+                            if post_id in seen_ids:
+                                continue
+                            seen_ids.add(post_id)
+
+                            row_text = r.get_text(" ", strip=True)
+                            date_match = re.search(r"(\d{4}-\d{2}-\d{2})", row_text)
+                            date_str = date_match.group(1) if date_match else datetime.today().strftime("%Y-%m-%d")
+                            
+                            cols = r.find_all("td")
+                            dept_name = "금융감독원"
+                            if len(cols) >= 4:
+                                possible_dept = cols[2].get_text(strip=True)
+                                if possible_dept and not re.match(r"\d{4}-\d{2}-\d{2}", possible_dept):
+                                    dept_name = f"금융감독원({possible_dept})"
+                            
+                            results.append({
+                                "id": post_id,
+                                "title": f"[금감원] {title}",
+                                "url": full_url,
+                                "date": date_str,
+                                "dept": dept_name,
+                                "category": category
+                            })
+            except Exception as e:
+                print(f"[{category}] 금감원 보도자료 Page {page} 수집 에러: {e}")
+                
+        print(f"[{category}] 금감원 보도자료 총 {len(results)}건 수집 완료")
         return results
 
     def scrape_laws(self):
@@ -164,7 +175,7 @@ class FinancialRegulatoryScraper:
         # 1. 법률 및 시행령 수집 (target=eflaw)
         for kw in self.law_keywords:
             try:
-                url = f"https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=eflaw&type=XML&query={kw}&display=20"
+                url = f"https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=eflaw&type=XML&query={kw}&display=40"
                 res = requests.get(url, headers=self.headers, verify=False, timeout=10)
                 if res.status_code == 200:
                     root = ET.fromstring(res.content)
@@ -204,7 +215,7 @@ class FinancialRegulatoryScraper:
         admrul_keywords = ["금융투자업규정", "금융소비자", "자본시장", "가상자산", "전자금융", "지배구조"]
         for kw in admrul_keywords:
             try:
-                url = f"https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=admrul&type=XML&query={kw}&display=20"
+                url = f"https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=admrul&type=XML&query={kw}&display=40"
                 res = requests.get(url, headers=self.headers, verify=False, timeout=10)
                 if res.status_code == 200:
                     root = ET.fromstring(res.content)
@@ -245,7 +256,7 @@ class FinancialRegulatoryScraper:
         return results
 
     def scrape_all(self):
-        """모든 타겟 게시판(금융위+금감원 보도자료) 및 법제처 법령/행정규칙 통합 수집"""
+        """모든 타겟 게시판(금융위+금감원 멀티페이지) 및 법제처 법령/행정규칙 통합 수집"""
         all_data = []
         for category, url in self.targets.items():
             print(f"[{category}] 수집 시작: {url}")
@@ -253,7 +264,7 @@ class FinancialRegulatoryScraper:
             print(f"[{category}] 수집 완료: {len(data)}건")
             all_data.extend(data)
         
-        # 금감원 보도자료 추가 수집
+        # 금감원 멀티페이지 보도자료 수집
         fss_press_data = self.scrape_fss_press()
         all_data.extend(fss_press_data)
 
