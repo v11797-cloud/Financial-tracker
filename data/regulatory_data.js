@@ -1,5 +1,13 @@
 window.regulatoryData = [
     {
+        "id": "no010101_87648",
+        "title": "금융·외환·부동산 등 부문별 리스크 종합 점검. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87648?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-04",
+        "dept": "자본시장과,금융시장분석과",
+        "category": "보도자료"
+    },
+    {
         "id": "no030101_87642",
         "title": "금융시장동향(26.09.02)",
         "url": "https://www.fsc.go.kr/no030101/87642?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
