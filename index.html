@@ -30,9 +30,9 @@
                         <span>시행일 캘린더 뷰</span>
                     </button>
                 </div>
-                <div class="status-badge">
+                <div class="status-badge" id="status-badge">
                     <span class="pulse-dot"></span>
-                    <span>매일 자동 업데이트 구동 중</span>
+                    <span id="update-time-text">마지막 업데이트: 확인 중...</span>
                 </div>
             </div>
         </header>
@@ -124,6 +124,19 @@
 
             // 데이터 탑재 확인
             const rawData = window.regulatoryData || [];
+            
+            // 우측 상단 마지막 업데이트 일시 표출
+            const updateTimeText = document.getElementById("update-time-text");
+            if (updateTimeText) {
+                if (window.lastUpdated) {
+                    updateTimeText.textContent = `최근 수집: ${window.lastUpdated}`;
+                } else if (rawData.length > 0) {
+                    const latestDate = rawData[0].date;
+                    updateTimeText.textContent = `최근 수집: ${latestDate}`;
+                } else {
+                    updateTimeText.textContent = `자동 업데이트 구동 중`;
+                }
+            }
             
             // 전역 필터 상태
             let currentSearch = "";

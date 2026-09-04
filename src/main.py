@@ -1,5 +1,6 @@
 import os
 import json
+from datetime import datetime
 from scraper import FinancialRegulatoryScraper
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -39,14 +40,17 @@ def main():
     if len(final_data) > max_history_limit:
         final_data = final_data[:max_history_limit]
 
+    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+
     try:
         with open(DATA_FILE, "w", encoding="utf-8") as f:
             json.dump(final_data, f, indent=4, ensure_ascii=False)
             
         with open(JS_FILE, "w", encoding="utf-8") as f:
+            f.write(f'window.lastUpdated = "{now_str}";\n')
             f.write(f"window.regulatoryData = {json.dumps(final_data, indent=4, ensure_ascii=False)};")
             
-        print(f"전체 데이터 업데이트 완료: 총 {len(final_data)}건 최신화 저장됨")
+        print(f"전체 데이터 업데이트 완료: 총 {len(final_data)}건 최신화 저장됨 (업데이트 일시: {now_str})")
     except Exception as e:
         print(f"데이터 저장 중 에러 발생: {e}")
 
