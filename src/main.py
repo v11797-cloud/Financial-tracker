@@ -1,6 +1,6 @@
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 from scraper import FinancialRegulatoryScraper
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -61,7 +61,9 @@ def main():
     if len(final_data) > max_history_limit:
         final_data = final_data[:max_history_limit]
 
-    now_str = datetime.now().strftime("%Y-%m-%d %H:%M")
+    # ★ 한국 표준시 (KST = UTC+9) 적용 ★
+    kst = timezone(timedelta(hours=9))
+    now_str = datetime.now(kst).strftime("%Y-%m-%d %H:%M KST")
 
     try:
         with open(DATA_FILE, "w", encoding="utf-8") as f:
