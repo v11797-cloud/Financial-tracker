@@ -135,14 +135,6 @@
             const tabGroup = document.getElementById("tab-group");
             const listSection = document.getElementById("list-section");
             const toastMessage = document.getElementById("toast-message");
-
-                statTotal.textContent = data.length;
-                statTrend.textContent = data.filter(d => d.category === "금융시장동향").length;
-                statPress.textContent = data.filter(d => d.category === "보도자료").length;
-                statPreview.textContent = data.filter(d => d.category === "입법예고").length;
-                if (statLaw) statLaw.textContent = data.filter(d => d.category === "공포법령").length;
-            }
-
             // 하이라이팅하고 싶은 금융 핵심 키워드 리스트
             const targetKeywords = [
                 "자본시장법", "자본시장", "금융소비자보호법", "금융소비자", "금소법",
