@@ -321,17 +321,19 @@
                 return `시행중`;
             }
 
-            // 시행일 캘린더 렌더링
+            // 시행일 캘린더 렌더링 (오직 '공포/시행 법령' 항목만 깔끔하게 표시)
             function renderCalendar() {
                 calMonthTitle.textContent = `${calYear}년 ${calMonth + 1}월`;
 
-                // 시행일자별 데이터 맵 구축 (YYYY-MM-DD -> items[])
+                // 시행일자별 데이터 맵 구축 (오직 category === '공포법령' 만 필터링)
                 const dateMap = {};
                 rawData.forEach(item => {
-                    const enfDate = item.enf_date || item.date;
-                    if (enfDate) {
-                        if (!dateMap[enfDate]) dateMap[enfDate] = [];
-                        dateMap[enfDate].push(item);
+                    if (item.category === "공포법령") {
+                        const enfDate = item.enf_date || item.date;
+                        if (enfDate) {
+                            if (!dateMap[enfDate]) dateMap[enfDate] = [];
+                            dateMap[enfDate].push(item);
+                        }
                     }
                 });
 
