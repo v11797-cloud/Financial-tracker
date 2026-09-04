@@ -32,6 +32,27 @@ def main():
     for item in new_items:
         existing_dict[item["id"]] = item
 
+    # ★ 누적 DB 내 중복 금감원 보도자료 영구 퍼지(Purge) 정제 로직 ★
+    fsc_press_titles = [
+        item.get("title", "") for item in existing_dict.values() 
+        if item.get("category") == "보도자료" and not item.get("id", "").startswith("fss_press_") and not item.get("dept", "").startswith("금융감독원")
+    ]
+
+    to_delete_ids = []
+    for item_id, item in existing_dict.items():
+        if item_id.startswith("fss_press_") or item.get("dept", "").startswith("금융감독원"):
+            fss_title = item.get("title", "")
+            for fsc_title in fsc_press_titles:
+                if scraper._is_duplicate_press(fsc_title, fss_title):
+                    to_delete_ids.append(item_id)
+                    break
+
+    for did in to_delete_ids:
+        if did in existing_dict:
+            del existing_dict[did]
+
+    print(f"[DB 정제 완료] 기존 누적 DB에서 중복 금감원 보도자료 {len(to_delete_ids)}건 완전 영구 삭제!")
+
     final_data = list(existing_dict.values())
     # 날짜 최신순 정렬
     final_data.sort(key=lambda x: x.get("date", ""), reverse=True)
