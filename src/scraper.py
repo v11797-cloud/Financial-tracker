@@ -37,6 +37,13 @@ class FinancialRegulatoryScraper:
         clean_url = url.split("?")[0].replace("https://", "").replace("http://", "").replace("www.fsc.go.kr", "")
         return clean_url.replace("/", "_").replace(".", "").strip("_")
 
+    def _normalize_title(self, title):
+        """중복 판별용 제목 정규화 헬퍼 (특수문자, 괄호, 태그 제거)"""
+        clean = re.sub(r"\[.*?\]", "", title)
+        clean = re.sub(r"\(.*?\)", "", clean)
+        clean = re.sub(r"[^\w]", "", clean)
+        return clean.lower()
+
     def scrape_board(self, category, url):
         """금융위 게시판 multi-page 스크래핑 (1~3페이지)"""
         results = []
@@ -256,7 +263,7 @@ class FinancialRegulatoryScraper:
         return results
 
     def scrape_all(self):
-        """모든 타겟 게시판(금융위+금감원 멀티페이지) 및 법제처 법령/행정규칙 통합 수집"""
+        """금융위 및 금감원 수집 후 금융위-금감원 중복 보도자료는 금융위 보도자료로 자동 대체"""
         all_data = []
         for category, url in self.targets.items():
             print(f"[{category}] 수집 시작: {url}")
@@ -266,7 +273,27 @@ class FinancialRegulatoryScraper:
         
         # 금감원 멀티페이지 보도자료 수집
         fss_press_data = self.scrape_fss_press()
-        all_data.extend(fss_press_data)
+        
+        # 금융위 보도자료의 정규화 키 맵 생성
+        fsc_titles = set()
+        for item in all_data:
+            if item.get("category") == "보도자료":
+                norm_key = self._normalize_title(item.get("title", ""))
+                if norm_key:
+                    fsc_titles.add(norm_key)
+
+        # 금감원 보도자료 중 금융위 보도자료와 제목이 중복되는 항목 제거 (금융위 보도자료로 대체)
+        filtered_fss_data = []
+        dedup_count = 0
+        for item in fss_press_data:
+            norm_key = self._normalize_title(item.get("title", ""))
+            if norm_key in fsc_titles:
+                dedup_count += 1
+                continue
+            filtered_fss_data.append(item)
+            
+        print(f"[보도자료] 금융위-금감원 중복 보도자료 {dedup_count}건 금융위 보도자료로 우선 대체 완료")
+        all_data.extend(filtered_fss_data)
 
         # 법제처 공포 법령/고시 수집
         law_data = self.scrape_laws()
