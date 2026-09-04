@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-04 13:49";
+window.lastUpdated = "2026-09-04 04:50";
 window.regulatoryData = [
     {
         "id": "no010101_87648",
