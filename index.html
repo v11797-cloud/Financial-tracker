@@ -84,7 +84,7 @@
                     <button class="keyword-chip" data-keyword="자본시장">자본시장법</button>
                     <button class="keyword-chip" data-keyword="금융소비자">금융소비자 보호법</button>
                     <button class="keyword-chip" data-keyword="금융투자업규정">금융투자업규정</button>
-                    <button class="keyword-chip" data-keyword="가상자산">가상자산</button>
+                    <button class="keyword-chip" data-keyword="지배구조">지배구조법</button>
                 </div>
             </div>
         </section>
@@ -236,9 +236,9 @@
                     // 금융투자업규정 및 시행세칙만 매칭
                     return title.includes("금융투자업규정");
                 },
-                "가상자산": (title) => {
-                    // 가상자산 이용자 보호 등에 관한 법률 및 시행령
-                    return title.includes("가상자산 이용자 보호") || title.includes("가상자산법");
+                "지배구조": (title) => {
+                    // 금융회사의 지배구조에 관한 법률 및 시행령/시행규칙만 매칭
+                    return title.includes("금융회사의 지배구조에 관한 법률") || title.includes("지배구조법");
                 }
             };
 
