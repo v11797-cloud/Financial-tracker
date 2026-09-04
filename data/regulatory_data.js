@@ -1,7 +1,7 @@
 window.regulatoryData = [
     {
         "id": "no030101_87642",
-        "title": "금융시장동향(26.09.02). 금일 등록된 게시글",
+        "title": "금융시장동향(26.09.02)",
         "url": "https://www.fsc.go.kr/no030101/87642?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-03",
         "dept": "금융위원회",
@@ -9,11 +9,27 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87646",
-        "title": "보다 다양한 금융회사들이  AI 보안위협에 철저히 대비할 수 있도록 제2차 망분리 규제 긴급 완화 조치를 추진합니다.. 금일 등록된 게시글",
+        "title": "보다 다양한 금융회사들이  AI 보안위협에 철저히 대비할 수 있도록 제2차 망분리 규제 긴급 완화 조치를 추진합니다.",
         "url": "https://www.fsc.go.kr/no010101/87646?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-03",
         "dept": "금융안전과",
         "category": "보도자료"
+    },
+    {
+        "id": "notice_4167",
+        "title": "「전기통신금융사기 신고포상금에 관한 규정」일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4167&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-03",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4166",
+        "title": "「전기통신금융사기 피해 방지에 관한 규정」일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4166&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-03",
+        "dept": "금융위원회",
+        "category": "입법예고"
     },
     {
         "id": "no030101_87631",
