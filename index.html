@@ -37,30 +37,6 @@
             </div>
         </header>
 
-        <!-- 통계 요약 카드 섹션 -->
-        <section class="stats-grid">
-            <div class="stat-card total">
-                <div class="stat-label">누적 수집 규제</div>
-                <div class="stat-value" id="stat-total">0</div>
-            </div>
-            <div class="stat-card trend">
-                <div class="stat-label">금융시장동향</div>
-                <div class="stat-value" id="stat-trend">0</div>
-            </div>
-            <div class="stat-card press">
-                <div class="stat-label">보도자료/참고</div>
-                <div class="stat-value" id="stat-press">0</div>
-            </div>
-            <div class="stat-card preview">
-                <div class="stat-label">입법/규정예고</div>
-                <div class="stat-value" id="stat-preview">0</div>
-            </div>
-            <div class="stat-card law">
-                <div class="stat-label">공포/시행 법령</div>
-                <div class="stat-value" id="stat-law">0</div>
-            </div>
-        </section>
-
         <!-- 검색 및 필터 패널 -->
         <section class="filter-panel">
             <div class="search-box">
@@ -160,15 +136,6 @@
             const listSection = document.getElementById("list-section");
             const toastMessage = document.getElementById("toast-message");
 
-            // 통계 요소 참조
-            const statTotal = document.getElementById("stat-total");
-            const statTrend = document.getElementById("stat-trend");
-            const statPress = document.getElementById("stat-press");
-            const statPreview = document.getElementById("stat-preview");
-            const statLaw = document.getElementById("stat-law");
-
-            // 통계 세팅
-            function updateStatistics(data) {
                 statTotal.textContent = data.length;
                 statTrend.textContent = data.filter(d => d.category === "금융시장동향").length;
                 statPress.textContent = data.filter(d => d.category === "보도자료").length;
@@ -537,7 +504,6 @@
             });
 
             // 데이터 초기 세팅 및 렌더링
-            updateStatistics(rawData);
             renderList();
         });
     </script>
