@@ -92,12 +92,66 @@ class FinancialRegulatoryScraper:
                     "title": title,
                     "url": full_url,
                     "date": date_str,
-                    "dept": dept_str,
+                    "dept": f"금융위원회({dept_str})" if "금융위" not in dept_str else dept_str,
                     "category": category
                 })
         except Exception as e:
             print(f"[{category}] 크롤링 중 에러 발생: {e}")
         
+        return results
+
+    def scrape_fss_press(self):
+        """금융감독원(FSS) 보도자료 수집"""
+        results = []
+        category = "보도자료"
+        url = "https://www.fss.or.kr/fss/bbs/B0000188/list.do?menuNo=200218"
+        base_fss_url = "https://www.fss.or.kr"
+        
+        try:
+            res = requests.get(url, headers=self.headers, verify=False, timeout=10)
+            if res.status_code == 200:
+                soup = BeautifulSoup(res.text, "html.parser")
+                table = soup.find("table")
+                if table:
+                    rows = table.find_all("tr")
+                    for r in rows[1:]:
+                        a_tag = r.find("a")
+                        if not a_tag:
+                            continue
+                        
+                        title = a_tag.get_text(strip=True)
+                        raw_href = a_tag.get("href", "").strip()
+                        if not title or not raw_href:
+                            continue
+                            
+                        full_url = base_fss_url + raw_href if raw_href.startswith("/") else raw_href
+                        
+                        ntt_match = re.search(r"nttId=(\d+)", full_url)
+                        post_id = f"fss_press_{ntt_match.group(1)}" if ntt_match else f"fss_press_{hash(full_url)}"
+
+                        row_text = r.get_text(" ", strip=True)
+                        date_match = re.search(r"(\d{4}-\d{2}-\d{2})", row_text)
+                        date_str = date_match.group(1) if date_match else datetime.today().strftime("%Y-%m-%d")
+                        
+                        cols = r.find_all("td")
+                        dept_name = "금융감독원"
+                        if len(cols) >= 4:
+                            possible_dept = cols[2].get_text(strip=True)
+                            if possible_dept and not re.match(r"\d{4}-\d{2}-\d{2}", possible_dept):
+                                dept_name = f"금융감독원({possible_dept})"
+                        
+                        results.append({
+                            "id": post_id,
+                            "title": f"[금감원] {title}",
+                            "url": full_url,
+                            "date": date_str,
+                            "dept": dept_name,
+                            "category": category
+                        })
+        except Exception as e:
+            print(f"[{category}] 금감원 보도자료 크롤링 에러: {e}")
+            
+        print(f"[{category}] 금감원 보도자료 {len(results)}건 수집 완료")
         return results
 
     def scrape_laws(self):
@@ -147,7 +201,7 @@ class FinancialRegulatoryScraper:
                 print(f"[{category}] 법령 키워드 '{kw}' 수집 에러: {e}")
 
         # 2. 행정규칙 / 금융위 고시 수집 (target=admrul) -> 금융투자업규정 개정고시 등
-        admrul_keywords = ["금융투자업규정", "금융소비자", "자본시장", "가상자산", "전자금융"]
+        admrul_keywords = ["금융투자업규정", "금융소비자", "자본시장", "가상자산", "전자금융", "지배구조"]
         for kw in admrul_keywords:
             try:
                 url = f"https://www.law.go.kr/DRF/lawSearch.do?OC=test&target=admrul&type=XML&query={kw}&display=20"
@@ -191,7 +245,7 @@ class FinancialRegulatoryScraper:
         return results
 
     def scrape_all(self):
-        """모든 타겟 게시판 및 법제처 법령/행정규칙 통합 수집"""
+        """모든 타겟 게시판(금융위+금감원 보도자료) 및 법제처 법령/행정규칙 통합 수집"""
         all_data = []
         for category, url in self.targets.items():
             print(f"[{category}] 수집 시작: {url}")
@@ -199,6 +253,11 @@ class FinancialRegulatoryScraper:
             print(f"[{category}] 수집 완료: {len(data)}건")
             all_data.extend(data)
         
+        # 금감원 보도자료 추가 수집
+        fss_press_data = self.scrape_fss_press()
+        all_data.extend(fss_press_data)
+
+        # 법제처 공포 법령/고시 수집
         law_data = self.scrape_laws()
         all_data.extend(law_data)
 
