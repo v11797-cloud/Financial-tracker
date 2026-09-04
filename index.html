@@ -71,8 +71,7 @@
             <div class="filter-row">
                 <!-- 카테고리 탭 필터 -->
                 <div class="tab-group" id="tab-group">
-                    <button class="filter-tab active" data-category="all">전체 내역</button>
-                    <button class="filter-tab" data-category="금융시장동향">금융시장동향</button>
+                    <button class="filter-tab active" data-category="금융시장동향">금융시장동향</button>
                     <button class="filter-tab" data-category="보도자료">보도자료</button>
                     <button class="filter-tab" data-category="입법예고">입법예고</button>
                     <button class="filter-tab" data-category="공포법령">공포/시행 법령</button>
@@ -152,7 +151,7 @@
             
             // 전역 필터 상태
             let currentSearch = "";
-            let currentCategory = "all";
+            let currentCategory = "금융시장동향";
             let activeKeywords = new Set();
 
             // 엘리먼트 참조
@@ -424,7 +423,7 @@
                 // 필터링 적용
                 let filtered = rawData.filter(item => {
                     // 1. 카테고리 필터
-                    if (currentCategory !== "all" && item.category !== currentCategory) {
+                    if (item.category !== currentCategory) {
                         return false;
                     }
 
