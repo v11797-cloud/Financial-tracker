@@ -5,6 +5,7 @@ import re
 from datetime import datetime
 import xml.etree.ElementTree as ET
 import urllib.parse
+from difflib import SequenceMatcher
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -37,12 +38,44 @@ class FinancialRegulatoryScraper:
         clean_url = url.split("?")[0].replace("https://", "").replace("http://", "").replace("www.fsc.go.kr", "")
         return clean_url.replace("/", "_").replace(".", "").strip("_")
 
-    def _normalize_title(self, title):
-        """중복 판별용 제목 정규화 헬퍼 (특수문자, 괄호, 태그 제거)"""
-        clean = re.sub(r"\[.*?\]", "", title)
-        clean = re.sub(r"\(.*?\)", "", clean)
-        clean = re.sub(r"[^\w]", "", clean)
-        return clean.lower()
+    def _clean_title_for_dedup(self, title):
+        """중복 판별용 제목 정제 헬퍼"""
+        t = re.sub(r"\[.*?\]", "", title)
+        t = re.sub(r"\(.*?\)", "", t)
+        t = re.sub(r"\.\s*금일\s*등록된\s*게시글.*", "", t)
+        t = re.sub(r"[^\w\s]", " ", t)
+        return t.strip()
+
+    def _get_head_title(self, title):
+        cleaned = self._clean_title_for_dedup(title)
+        parts = re.split(r"[-:]", cleaned)
+        return parts[0].strip()
+
+    def _is_duplicate_press(self, fsc_title, fss_title):
+        """고도화된 지능형 중복 보도자료 판별 알고리즘"""
+        clean_fsc = self._clean_title_for_dedup(fsc_title)
+        clean_fss = self._clean_title_for_dedup(fss_title)
+        
+        head_fsc = self._get_head_title(fsc_title)
+        head_fss = self._get_head_title(fss_title)
+        
+        ns_fsc = clean_fsc.replace(" ", "").lower()
+        ns_fss = clean_fss.replace(" ", "").lower()
+        
+        if len(ns_fss) >= 5 and (ns_fss in ns_fsc or ns_fsc in ns_fss):
+            return True
+            
+        ns_head_fsc = head_fsc.replace(" ", "").lower()
+        ns_head_fss = head_fss.replace(" ", "").lower()
+        
+        if len(ns_head_fss) >= 5 and (ns_head_fss in ns_fsc or ns_head_fsc in ns_fss):
+            return True
+
+        ratio = SequenceMatcher(None, ns_fsc, ns_fss).ratio()
+        if ratio >= 0.6:
+            return True
+            
+        return False
 
     def scrape_board(self, category, url):
         """금융위 게시판 multi-page 스크래핑 (1~3페이지)"""
@@ -263,7 +296,7 @@ class FinancialRegulatoryScraper:
         return results
 
     def scrape_all(self):
-        """금융위 및 금감원 수집 후 금융위-금감원 중복 보도자료는 금융위 보도자료로 자동 대체"""
+        """지능형 유사도/핵심제목 기반 금융위-금감원 중복 보도자료 자동 정제 알고리즘 적용"""
         all_data = []
         for category, url in self.targets.items():
             print(f"[{category}] 수집 시작: {url}")
@@ -271,28 +304,30 @@ class FinancialRegulatoryScraper:
             print(f"[{category}] 수집 완료: {len(data)}건")
             all_data.extend(data)
         
-        # 금감원 멀티페이지 보도자료 수집
+        # 금감원 보도자료 수집
         fss_press_data = self.scrape_fss_press()
         
-        # 금융위 보도자료의 정규화 키 맵 생성
-        fsc_titles = set()
-        for item in all_data:
-            if item.get("category") == "보도자료":
-                norm_key = self._normalize_title(item.get("title", ""))
-                if norm_key:
-                    fsc_titles.add(norm_key)
+        # 금융위 보도자료 리스트 확보
+        fsc_press_items = [item for item in all_data if item.get("category") == "보도자료"]
 
-        # 금감원 보도자료 중 금융위 보도자료와 제목이 중복되는 항목 제거 (금융위 보도자료로 대체)
+        # 지능형 중복 탐지: 금감원 보도자료 중 금융위 보도자료와 중복되는 항목 제거
         filtered_fss_data = []
         dedup_count = 0
-        for item in fss_press_data:
-            norm_key = self._normalize_title(item.get("title", ""))
-            if norm_key in fsc_titles:
-                dedup_count += 1
-                continue
-            filtered_fss_data.append(item)
+        for fss_item in fss_press_data:
+            fss_title = fss_item.get("title", "")
+            is_dup = False
+            for fsc_item in fsc_press_items:
+                fsc_title = fsc_item.get("title", "")
+                if self._is_duplicate_press(fsc_title, fss_title):
+                    is_dup = True
+                    break
             
-        print(f"[보도자료] 금융위-금감원 중복 보도자료 {dedup_count}건 금융위 보도자료로 우선 대체 완료")
+            if is_dup:
+                dedup_count += 1
+            else:
+                filtered_fss_data.append(fss_item)
+            
+        print(f"[보도자료] 금융위-금감원 지능형 중복 보도자료 {dedup_count}건 금융위 보도자료로 대체 완료")
         all_data.extend(filtered_fss_data)
 
         # 법제처 공포 법령/고시 수집
