@@ -6,7 +6,7 @@ const path = require('node:path');
 const vm = require('node:vm');
 const core = require('../app.js');
 const data = JSON.parse(fs.readFileSync(path.join(__dirname, '../../data/regulatory_data.json'), 'utf8'));
-const state = overrides => ({ scope:'all', category:'all', unread:false, focus:'all', laws:new Set(), search:'', ...overrides });
+const state = overrides => ({ scope:'all', category:'all', unread:false, focus:'all', law:'all', search:'', ...overrides });
 const item = overrides => ({ id:'test', title:'일반 공지', dept:'금융위원회', category:'보도자료', date:'2026-09-04', url:'https://example.com/notice/1', ...overrides });
 const TODAY = '2026-09-07';
 
@@ -43,7 +43,7 @@ test('preserves every original category and full population', () => {
   assert.equal(core.filterItems(data,state(),TODAY,{}).length,data.length);
   for (const category of ['보도자료','입법예고','공포법령','금융시장동향']) assert.deepEqual(core.filterItems(data,state({category}),TODAY,{}),data.filter(i=>i.category===category));
 });
-test('precise original law filters and multiple AND selections', () => {
+test('precise law filters select one rule at a time', () => {
   const examples = [
     item({id:'a',title:'자본시장과 금융투자업에 관한 법률 시행령'}),
     item({id:'b',title:'자본시장특별사법경찰 집무규칙'}),
@@ -53,9 +53,9 @@ test('precise original law filters and multiple AND selections', () => {
     item({id:'f',title:'금융소비자 보호에 관한 법률 시행령'}),
     item({id:'g',title:'자본시장법 및 금융투자업규정 개정'})
   ];
-  assert.deepEqual(core.filterItems(examples,state({laws:new Set(['자본시장'])}),TODAY,{}).map(i=>i.id),['a','g']);
-  assert.deepEqual(core.filterItems(examples,state({laws:new Set(['자본시장','금융투자업규정'])}),TODAY,{}).map(i=>i.id),['g']);
-  assert.deepEqual(core.filterItems(examples,state({laws:new Set(['금융소비자'])}),TODAY,{}).map(i=>i.id),['f']);
+  assert.deepEqual(core.filterItems(examples,state({law:'자본시장'}),TODAY,{}).map(i=>i.id),['a','g']);
+  assert.deepEqual(core.filterItems(examples,state({law:'금융투자업규정'}),TODAY,{}).map(i=>i.id),['d','g']);
+  assert.deepEqual(core.filterItems(examples,state({law:'금융소비자'}),TODAY,{}).map(i=>i.id),['f']);
   assert.equal(core.LAW_RULES.금융투자업규정('금융투자업규정시행세칙'),true);
 });
 test('search covers title, department, category; trims and ignores Latin case', () => {
