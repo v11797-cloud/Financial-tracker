@@ -497,11 +497,12 @@ h2 {
   color:var(--amber);
   background:#34291d
 }
-.and-note {
-  font-size:.75rem;
-  color:var(--muted);
-  margin-left:2px
-}
+.filter-section { padding: 12px 0; border-bottom: 1px solid var(--line); }
+.filter-section-heading { display:flex; justify-content:space-between; gap:12px; margin-bottom:8px; font-size:.75rem; color:var(--muted); }
+.filter-section-heading > span:first-child { color:var(--text); font-weight:600; white-space:nowrap; }
+.filter-section .category-tabs { margin:0; }
+.option-count { margin-left:6px; font-size:.75rem; opacity:.75; font-variant-numeric:tabular-nums; }
+.filter-help { margin:8px 0 0; font-size:.75rem; line-height:1.6; color:var(--muted); }
 .filter-bottom {
   display:flex;
   align-items:center;
@@ -1775,3 +1776,9 @@ mark {
     padding-bottom:8px
   }
 }
+
+/* Separate collection timestamps: a failed provider never hides other sources. */
+.source-status { color:var(--muted); font-size:.75rem; margin:-4px 0 12px; overflow-wrap:anywhere; }
+.source-error { color:var(--amber); }
+.source-bridge { max-width:640px; padding:32px 20px; }
+.source-bridge p, .source-bridge form { margin-top:20px; }
