@@ -16,6 +16,46 @@
         "category": "보도자료"
     },
     {
+        "id": "no010101_87675",
+        "title": "2026년 8월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87675?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-09",
+        "dept": "금융위원회(금융정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87674",
+        "title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87674?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-09",
+        "dept": "금융위원회(금융정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_227558",
+        "title": "[금감원] 프런티어 AI 기반 보안위협 대비 강화 등을 위한 전금융권 CISO 간담회",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227558&menuNo=200218&pageIndex=1",
+        "date": "2026-09-09",
+        "dept": "금융감독원(디지털금융총괄국/IT검사국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_227559",
+        "title": "[금감원] 금융감독원, 금융업계의 다크패턴 예방을 위한 상시협의체 킥오프 회의 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227559&menuNo=200218&pageIndex=1",
+        "date": "2026-09-09",
+        "dept": "금융감독원(소비자피해예방국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_227554",
+        "title": "[금감원] 공모 목표전환형 펀드 현황 및 투자자 유의사항 안내",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227554&menuNo=200218&pageIndex=1",
+        "date": "2026-09-09",
+        "dept": "금융감독원(자산운용감독국)",
+        "category": "보도자료"
+    },
+    {
         "id": "fss_press_227394",
         "title": "[금감원] 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요",
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227394&menuNo=200218&pageIndex=1",
@@ -44,6 +84,14 @@
         "law_name": "보험업법",
         "prom_no": "21907",
         "enf_date": "2027-03-09"
+    },
+    {
+        "id": "no010101_87667",
+        "title": "제2차 국민참여성장펀드가  9.30일(수)부터 2주간(10영업일) 일반국민을 대상으로 판매됩니다.",
+        "url": "https://www.fsc.go.kr/no010101/87667?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-08",
+        "dept": "금융위원회(국민지역참여지원과)",
+        "category": "보도자료"
     },
     {
         "id": "no010101_87657",
@@ -88,7 +136,7 @@
     {
         "id": "fss_press_226953",
         "title": "[금감원] 금융감독원, 제4차 소비자위험대응협의회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226953&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226953&menuNo=200218&pageIndex=2",
         "date": "2026-09-06",
         "dept": "금융감독원(소비자피해예방국)",
         "category": "보도자료"
@@ -96,7 +144,7 @@
     {
         "id": "fss_press_226952",
         "title": "[금감원] 금융 인허가, 등록 사전협의 절차가 더욱 편리해집니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226952&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226952&menuNo=200218&pageIndex=2",
         "date": "2026-09-06",
         "dept": "금융감독원(감독혁신국/디지털금융총괄국/정보화전략국/자본시장감독국/자산운용감독국/보험감독국/여신금융감독국/전자금융감독국)",
         "category": "보도자료"
@@ -104,7 +152,7 @@
     {
         "id": "fss_press_226951",
         "title": "[금감원] 2026 범금융권 보이스피싱 예방 주간 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226951&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226951&menuNo=200218&pageIndex=2",
         "date": "2026-09-06",
         "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
@@ -256,7 +304,7 @@
     {
         "id": "no010101_87637",
         "title": "‘보이스피싱 근절 종합대책’ 1년,  발생건수 40%·피해액 43% 감소 성과",
-        "url": "https://www.fsc.go.kr/no010101/87637?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87637?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-02",
         "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
@@ -264,7 +312,7 @@
     {
         "id": "no010101_87634",
         "title": "국민의 건전한 금융·투자 역량을 강화하는  “안전한 금융생활” 캠페인을 추진합니다.",
-        "url": "https://www.fsc.go.kr/no010101/87634?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87634?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-02",
         "dept": "금융위원회(금융소비자정책과)",
         "category": "보도자료"
@@ -280,7 +328,7 @@
     {
         "id": "fss_press_226318",
         "title": "[금감원] 26.9.10.부터 자동차보험 치료비 보상 절차가 개편됩니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226318&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226318&menuNo=200218&pageIndex=3",
         "date": "2026-09-02",
         "dept": "금융감독원(보험감독국)",
         "category": "보도자료"
@@ -336,7 +384,7 @@
     {
         "id": "fss_press_226139",
         "title": "[금감원] 금융소비자 울리는 허위, 과장광고를 근절하기 위해 금융투자회사 광고 업무절차를 전면 개선합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226139&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226139&menuNo=200218&pageIndex=4",
         "date": "2026-09-01",
         "dept": "금융감독원(금융투자검사1국/소비자피해예방국)",
         "category": "보도자료"
@@ -368,7 +416,7 @@
     {
         "id": "fss_press_225867",
         "title": "[금감원] 금융감독원, 토스뱅크와 공동으로 찾아가는 「FSS 어린이 금융스쿨」 병원학교편 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225867&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225867&menuNo=200218&pageIndex=4",
         "date": "2026-08-31",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -376,7 +424,7 @@
     {
         "id": "fss_press_225866",
         "title": "[금감원] 금융소비자보호 성과 대국민 보고대회 개최 예정",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225866&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225866&menuNo=200218&pageIndex=4",
         "date": "2026-08-31",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
@@ -384,7 +432,7 @@
     {
         "id": "fss_press_225832",
         "title": "[금감원] 26.6월말 국내은행 BIS기준 자본비율 현황(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225832&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225832&menuNo=200218&pageIndex=4",
         "date": "2026-08-31",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -408,7 +456,7 @@
     {
         "id": "no010101_87609",
         "title": "국민성장펀드가 로봇산업의 경쟁력 강화와K-콘텐츠의 글로벌 영토 확장을 지원합니다.",
-        "url": "https://www.fsc.go.kr/no010101/87609?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87609?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "금융위원회(국민성장펀드총괄과)",
         "category": "보도자료"
@@ -448,7 +496,7 @@
     {
         "id": "fss_press_225382",
         "title": "[금감원] 2026년 상반기 저축은행 및 상호금융조합 영업실적(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225382&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225382&menuNo=200218&pageIndex=5",
         "date": "2026-08-28",
         "dept": "금융감독원(중소금융감독국)",
         "category": "보도자료"
@@ -456,7 +504,7 @@
     {
         "id": "fss_press_225381",
         "title": "[금감원] 감사인 지정제도 온라인 설명회 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225381&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225381&menuNo=200218&pageIndex=5",
         "date": "2026-08-28",
         "dept": "금융감독원(회계감독국)",
         "category": "보도자료"
@@ -464,7 +512,7 @@
     {
         "id": "fss_press_225383",
         "title": "[금감원] 26.6월말 보험회사 대출채권 현황",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225383&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225383&menuNo=200218&pageIndex=5",
         "date": "2026-08-28",
         "dept": "금융감독원(보험감독국)",
         "category": "보도자료"
@@ -488,7 +536,7 @@
     {
         "id": "no010101_87605",
         "title": "｢대부업등 감독규정｣ 개정안 규정변경예고 (‘26.8.27. ~ ’26.10.6.)",
-        "url": "https://www.fsc.go.kr/no010101/87605?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87605?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-27",
         "dept": "금융위원회(가계금융과)",
         "category": "보도자료"
@@ -536,7 +584,7 @@
     {
         "id": "fss_press_225267",
         "title": "[금감원] 2026년 상반기 여신전문금융회사 영업실적(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225267&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225267&menuNo=200218&pageIndex=5",
         "date": "2026-08-27",
         "dept": "금융감독원(여신금융감독국)",
         "category": "보도자료"
