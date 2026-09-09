@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-09 16:29 KST";
+window.lastUpdated = "2026-09-09 16:34 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87669",
@@ -62,6 +62,14 @@ window.regulatoryData = [
         "url": "https://www.fsc.go.kr/no010101/87676?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_227573",
+        "title": "[금감원] 금감원, 보험회사 성과평가 관행 개선 워크숍 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227573&menuNo=200218&pageIndex=1",
+        "date": "2026-09-09",
+        "dept": "금융감독원(보험검사1국/보험검사2국)",
         "category": "보도자료"
     },
     {
@@ -137,7 +145,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227218",
         "title": "[금감원] 누군가에게 비상장주식 투자 권유를 받고 있다면 회사정보와 투자권유자의 실체를 반드시 확인하세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227218&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227218&menuNo=200218&pageIndex=2",
         "date": "2026-09-07",
         "dept": "금융감독원(공시심사국)",
         "category": "보도자료"
@@ -273,7 +281,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226486",
         "title": "[금감원] 투자성 상품 가입시간 단축을 위한 가입절차 합리화,간소화 방안 마련",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226486&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226486&menuNo=200218&pageIndex=3",
         "date": "2026-09-03",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
@@ -385,7 +393,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226145",
         "title": "[금감원] 금감원장, 임원회의(9.1.) 당부사항",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226145&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226145&menuNo=200218&pageIndex=4",
         "date": "2026-09-01",
         "dept": "금융감독원(중소금융검사1국/기획조정국)",
         "category": "보도자료"
