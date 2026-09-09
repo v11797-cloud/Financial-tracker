@@ -42,7 +42,12 @@
       (item.category === '공포법령' && /^kofia_revision_\d+$/.test(item.id) && ['협회규정', '모범규준'].includes(item.source_group) && Array.isArray(item.classification_path) && item.classification_path[0] === item.source_group)
     ));
   }
+  function hasReasonView(item) {
+    const name = String(item.law_name || '').replace(/\s+/g, '');
+    return item.category === '공포법령' && item.source !== 'KOFIA' && ['자본시장과금융투자업에관한법률', '금융소비자보호에관한법률', '금융투자업규정'].some(prefix => name.startsWith(prefix));
+  }
   function sourceURL(item, baseURI) {
+    if (hasReasonView(item)) return new URL(`./law-reason.html?id=${encodeURIComponent(item.id)}`, baseURI).href;
     if (item.source === 'KOFIA' && item.category === '입법예고') {
       return /^\d{1,12}$/.test(item.notice_seq) ? new URL(`./kofia-notice.html?revisionSeq=${item.notice_seq}`, baseURI).href : null;
     }
@@ -116,7 +121,7 @@
   }
   // CommonJS exposes pure functions only for the optional, dependency-free test suite.
   if (typeof module !== 'undefined' && module.exports) {
-    module.exports = { dayNumber, kstToday, daysUntil, dDay, effectiveDate, noticeEndDate, kofiaItems, sourceURL, safeURL, fingerprint, relevance, priority, isRead, filterItems, sortItems, calendarCells, LAW_RULES, matchesLaw };
+    module.exports = { dayNumber, kstToday, daysUntil, dDay, effectiveDate, noticeEndDate, kofiaItems, hasReasonView, sourceURL, safeURL, fingerprint, relevance, priority, isRead, filterItems, sortItems, calendarCells, LAW_RULES, matchesLaw };
     return;
   }
   const $ = id => document.getElementById(id);
@@ -125,7 +130,7 @@
   const categoryClass = value => ({ 보도자료: 'press', 입법예고: 'notice', 공포법령: 'law', 금융시장동향: 'trend' }[value] || 'neutral');
   const badge = item => `<span class="badge ${categoryClass(item.category)}">${esc(item.source === 'KOFIA' ? item.source_group || '규정 제·개정예고' : categoryName(item.category))}</span>`;
   const dateLabel = item => item.source === 'KOFIA' ? (item.category === '입법예고' ? '예고시작일' : '제·개정일') : item.category !== '공포법령' ? '게시일' : item.id.startsWith('admrul_') ? '발령일' : '공포일';
-  const originalLabel = item => item.source === 'KOFIA' ? '협회 원문 보기' : item.category === '공포법령' ? '법령·개정이유 원문' : '원문 보기';
+  const originalLabel = item => hasReasonView(item) ? '제·개정이유 보기' : item.source === 'KOFIA' ? '협회 원문 보기' : item.category === '공포법령' ? '법령·개정이유 원문' : '원문 보기';
   const dateDisplay = value => dayNumber(value) === null ? '날짜 미수집' : value;
   const lawTitle = item => item.law_name || item.title;
   const STORAGE_KEY = 'financial-tracker:ui-v2:reviews:v1';
@@ -278,7 +283,7 @@
   }
   function detailContent(item) {
     const related = relevance(item), p = priority(item, today), href = sourceURL(item, document.baseURI), read = isRead(item, records);
-    $('detail-content').innerHTML = `${badge(item)}<h2 id="detail-title" class="detail-title">${esc(item.title)}</h2><section class="detail-section"><dl class="detail-meta"><dt>담당 부서</dt><dd>${esc(item.dept)}</dd><dt>${dateLabel(item)}</dt><dd>${esc(dateDisplay(item.date))}</dd>${item.prom_no ? `<dt>공포·발령번호</dt><dd>제${esc(item.prom_no)}호</dd>` : ''}<dt>시행일</dt><dd>${effectiveDate(item) ? `${esc(item.enf_date)} · ${esc(dDay(item.enf_date, today))}` : '미수집 · 원문 확인 필요'}</dd>${noticeEndDate(item) ? `<dt>예고종료일</dt><dd>${esc(item.notice_end_date)}<small>협회 예고종료일 기준 · 상세 제출 조건은 원문 확인</small></dd>` : item.category === '입법예고' ? '<dt>의견제출 마감</dt><dd>미수집 · 입법예고 원문에서 확인</dd>' : ''}${item.source === 'KOFIA' ? `<dt>자료 구분</dt><dd>${esc(item.source_group || item.source_type)} · ${esc(item.revision_type || '')}</dd>${item.classification_path ? `<dt>현행규정 분류</dt><dd>${esc(item.classification_path.join(' → '))}</dd>` : ''}` : ''}<dt>확인 상태</dt><dd>${read ? '확인 완료' : '미확인'}<small>이 브라우저의 UI 2.0 기록</small></dd></dl></section><section class="detail-section"><h3>검토 우선순위 근거</h3><p>${esc(p.reason)}${p.tier ? ' · 규칙 기반 후보' : ''}</p><p>자산운용 관련 키워드: ${related.direct.length ? esc(related.direct.join(', ')) : '일치 없음'}</p><p>공통 준법 키워드: ${related.common.length ? esc(related.common.join(', ')) : '일치 없음'}</p><p>제목·부서 기준 분류입니다. 실제 적용 여부와 대응 기한은 원문 및 회사 업무를 대조해 확인하세요.</p></section><section class="detail-section"><h3>원문 확인</h3><p>${item.source === 'KOFIA' ? '협회 자료입니다. 제·개정일과 예고 기간은 시행일이 아닙니다. 시행일 및 적용·제출 조건은 해당 협회 원문과 첨부에서 확인하세요. 협회 예고 원문은 전용 연결 페이지를 통해 열립니다.' : item.category === '공포법령' ? '법령 링크는 법령명 기준 주소입니다. 수집된 개정본을 확인하려면 원문의 연혁·제정개정이유에서 공포번호와 날짜를 대조하세요. 시행일 경과는 현재 유효함을 의미하지 않습니다.' : '수집 데이터에는 본문·요약·첨부파일이 포함되지 않습니다. 원문에서 세부 내용과 기한을 확인하세요.'}</p><div class="detail-actions"><button class="primary-action" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}">${read ? '미확인으로 변경' : '확인 완료'}</button>${href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${originalLabel(item)} ↗</a><button data-action="copy" data-id="${esc(item.id)}">링크 복사</button>` : '<span>원문 링크 미확인</span>'}</div></section>`;
+    $('detail-content').innerHTML = `${badge(item)}<h2 id="detail-title" class="detail-title">${esc(item.title)}</h2><section class="detail-section"><dl class="detail-meta"><dt>담당 부서</dt><dd>${esc(item.dept)}</dd><dt>${dateLabel(item)}</dt><dd>${esc(dateDisplay(item.date))}</dd>${item.prom_no ? `<dt>공포·발령번호</dt><dd>제${esc(item.prom_no)}호</dd>` : ''}<dt>시행일</dt><dd>${effectiveDate(item) ? `${esc(item.enf_date)} · ${esc(dDay(item.enf_date, today))}` : '미수집 · 원문 확인 필요'}</dd>${noticeEndDate(item) ? `<dt>예고종료일</dt><dd>${esc(item.notice_end_date)}<small>협회 예고종료일 기준 · 상세 제출 조건은 원문 확인</small></dd>` : item.category === '입법예고' ? '<dt>의견제출 마감</dt><dd>미수집 · 입법예고 원문에서 확인</dd>' : ''}${item.source === 'KOFIA' ? `<dt>자료 구분</dt><dd>${esc(item.source_group || item.source_type)} · ${esc(item.revision_type || '')}</dd>${item.classification_path ? `<dt>현행규정 분류</dt><dd>${esc(item.classification_path.join(' → '))}</dd>` : ''}` : ''}<dt>확인 상태</dt><dd>${read ? '확인 완료' : '미확인'}<small>이 브라우저의 UI 2.0 기록</small></dd></dl></section><section class="detail-section"><h3>검토 우선순위 근거</h3><p>${esc(p.reason)}${p.tier ? ' · 규칙 기반 후보' : ''}</p><p>자산운용 관련 키워드: ${related.direct.length ? esc(related.direct.join(', ')) : '일치 없음'}</p><p>공통 준법 키워드: ${related.common.length ? esc(related.common.join(', ')) : '일치 없음'}</p><p>제목·부서 기준 분류입니다. 실제 적용 여부와 대응 기한은 원문 및 회사 업무를 대조해 확인하세요.</p></section><section class="detail-section"><h3>원문 확인</h3><p>${item.source === 'KOFIA' ? '협회 자료입니다. 제·개정일과 예고 기간은 시행일이 아닙니다. 시행일 및 적용·제출 조건은 해당 협회 원문과 첨부에서 확인하세요. 협회 예고 원문은 전용 연결 페이지를 통해 열립니다.' : item.category === '공포법령' ? hasReasonView(item) ? '제·개정이유 보기는 이 게시글의 공포번호·날짜와 일치하는 개정이유를 표시합니다. 원문에 포함된 주요내용도 함께 표시됩니다. 시행일 경과는 현재 유효함을 의미하지 않습니다.' : '법령 링크는 법령명 기준 주소입니다. 수집된 개정본을 확인하려면 원문의 연혁·제정개정이유에서 공포번호와 날짜를 대조하세요. 시행일 경과는 현재 유효함을 의미하지 않습니다.' : '수집 데이터에는 본문·요약·첨부파일이 포함되지 않습니다. 원문에서 세부 내용과 기한을 확인하세요.'}</p><div class="detail-actions"><button class="primary-action" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}">${read ? '미확인으로 변경' : '확인 완료'}</button>${href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${originalLabel(item)} ↗</a><button data-action="copy" data-id="${esc(item.id)}">링크 복사</button>` : '<span>원문 링크 미확인</span>'}</div></section>`;
   }
   function openDetail(id) {
     const item = byId.get(id); if (!item) return;
