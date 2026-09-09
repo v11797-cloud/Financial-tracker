@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-09 15:01 KST";
+window.lastUpdated = "2026-09-09 16:29 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87669",
@@ -57,6 +57,14 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
+        "id": "no010101_87676",
+        "title": "삼성증권㈜에 대한 단기금융업 인가. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87676?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-09",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
         "id": "fss_press_227394",
         "title": "[금감원] 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요",
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227394&menuNo=200218&pageIndex=1",
@@ -105,7 +113,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227195",
         "title": "[금감원] 개정 상법 정착 등을 위한 26.3분기 찾아가는 기업공시 설명회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227195&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227195&menuNo=200218&pageIndex=2",
         "date": "2026-09-07",
         "dept": "금융감독원(기업공시국)",
         "category": "보도자료"
@@ -273,7 +281,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226484",
         "title": "[금감원] 신속한 주택공급 촉진을 위해 수도권 주거용 PF 사업장의 지연요인을 파악하고 현장 맞춤형 밀착관리를 실시합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226484&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226484&menuNo=200218&pageIndex=3",
         "date": "2026-09-03",
         "dept": "금융감독원(중소금융검사1국/감독혁신국)",
         "category": "보도자료"
@@ -297,7 +305,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87638",
         "title": "상장사 IR 담당 임원의  불공정거래 혐의 적발·조치  - 제15차 증권선물위원회(9.2.) 의결",
-        "url": "https://www.fsc.go.kr/no010101/87638?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87638?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-02",
         "dept": "금융위원회(자본시장조사총괄과)",
         "category": "보도자료"
@@ -449,7 +457,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87611",
         "title": "주택공급 촉진을 위한 금융·건설업계 간담회 개최",
-        "url": "https://www.fsc.go.kr/no010101/87611?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87611?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "금융위원회(금융정책과)",
         "category": "보도자료"
@@ -489,7 +497,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_225391",
         "title": "[금감원] 충실한 증권신고서는 신속하게, 부실한 신고서는 엄정하게 심사하겠습니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225391&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225391&menuNo=200218&pageIndex=5",
         "date": "2026-08-28",
         "dept": "금융감독원(공시심사국/기업공시국/공시심사국)",
         "category": "보도자료"
