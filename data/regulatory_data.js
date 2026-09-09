@@ -1,5 +1,13 @@
-window.lastUpdated = "2026-09-09 16:34 KST";
+window.lastUpdated = "2026-09-10 08:10 KST";
 window.regulatoryData = [
+    {
+        "id": "fss_press_227674",
+        "title": "[금감원] 2026년 2분기 증권, 선물회사 영업실적",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227674&menuNo=200218&pageIndex=1",
+        "date": "2026-09-10",
+        "dept": "금융감독원(자본시장감독국)",
+        "category": "보도자료"
+    },
     {
         "id": "no030101_87669",
         "title": "금융시장동향(26.09.08). 금일 등록된 게시글",
@@ -75,7 +83,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227394",
         "title": "[금감원] 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227394&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227394&menuNo=200218&pageIndex=2",
         "date": "2026-09-08",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -137,7 +145,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227219",
         "title": "[금감원] 금융권 보이스피싱 대응역량 제고를 위한 우수사례 포상 추진",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227219&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227219&menuNo=200218&pageIndex=2",
         "date": "2026-09-07",
         "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
@@ -273,7 +281,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226487",
         "title": "[금감원] 2024 회계연도 감사전 재무제표 점검결과 및 유의사항 안내",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226487&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226487&menuNo=200218&pageIndex=3",
         "date": "2026-09-03",
         "dept": "금융감독원(회계감리1국)",
         "category": "보도자료"
@@ -353,7 +361,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226303",
         "title": "[금감원] 금융감독원, 이화여대와 공동으로 Future Climate Finance in the era of Green Transition 국제 컨퍼런스 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226303&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226303&menuNo=200218&pageIndex=4",
         "date": "2026-09-02",
         "dept": "금융감독원(금융시장안정국)",
         "category": "보도자료"
@@ -361,7 +369,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226296",
         "title": "[금감원] 26.6말 국내은행 부실채권 현황(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226296&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226296&menuNo=200218&pageIndex=4",
         "date": "2026-09-02",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -457,7 +465,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_225621",
         "title": "[금감원] 금융소비자 중심의 금융감독 실현을 위한 제4차 금융소비자보호자문위원회 회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225621&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225621&menuNo=200218&pageIndex=5",
         "date": "2026-08-30",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
@@ -497,7 +505,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_225405",
         "title": "[금감원] 금융감독원 제14기 FSS 대학생 금융교육 봉사단 출범",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225405&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225405&menuNo=200218&pageIndex=5",
         "date": "2026-08-28",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
