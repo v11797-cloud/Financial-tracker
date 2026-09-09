@@ -149,13 +149,18 @@
   const byId = new Map(items.map(item => [item.id, item]));
   // The library opens current official full texts independently of amendment-specific links.
   const primaryNames = new Set(['자본시장과금융투자업에관한법률', '금융소비자보호에관한법률', '금융투자업규정', '금융회사의지배구조에관한법률']);
+  // These historical laws have no name-only landing page; their dated official URLs were verified.
+  const archiveNames = new Set(['규제재검토기한설정을위한은행법시행령등일부개정령', '국민은행법', '국민은행법시행령', '미군정청에의하여의용된보험업법', '농업은행법', '농업은행법시행령']);
   const library = new Map();
   for (const item of items) {
     if (item.category !== '공포법령' || item.source === 'KOFIA' || !item.law_name) continue;
     const name = item.law_name.replace(/\s+/g, '');
-    const url = safeURL(item.url);
+    let url = safeURL(item.url);
     if (!url || !['law.go.kr', 'www.law.go.kr'].includes(new URL(url).hostname) || primaryNames.has(name)) continue;
-    library.set(name, { name: item.law_name, url });
+    if (library.has(name) && library.get(name).date >= item.date) continue;
+    const archived = archiveNames.has(name);
+    if (archived) url = `https://www.law.go.kr/법령/${encodeURIComponent(item.law_name)}/(${encodeURIComponent(item.prom_no)},${item.date.replace(/-/g, '')})`;
+    library.set(name, { name: archived ? `${item.law_name} (공포 ${item.date})` : item.law_name, url, date: item.date });
   }
   if (library.size) {
     $('law-library-all').innerHTML = [...library.values()].sort((a, b) => a.name.localeCompare(b.name, 'ko')).map(item => `<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.name)} <span aria-hidden="true">↗</span></a>`).join('');
