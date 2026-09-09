@@ -60,6 +60,17 @@
             <div class="filter-bottom"><label class="check-label"><input type="checkbox" id="unread-only">미확인만</label><span id="filter-summary">전체 항목</span><button class="text-button reset-button" id="reset-filters">필터 초기화</button></div>
             </div>
           </div>
+          <nav class="law-library" aria-label="법령 전문 바로가기">
+            <div class="law-library-heading"><strong>법령 전문 바로가기</strong><span>공식 원문 · 새 창 ↗</span></div>
+            <div class="law-library-links">
+              <a href="https://www.law.go.kr/법령/자본시장과금융투자업에관한법률" target="_blank" rel="noopener noreferrer">자본시장법 <span aria-hidden="true">↗</span></a>
+              <a href="https://www.law.go.kr/법령/금융소비자보호에관한법률" target="_blank" rel="noopener noreferrer">금융소비자보호법 <span aria-hidden="true">↗</span></a>
+              <a href="https://www.law.go.kr/행정규칙/금융투자업규정" target="_blank" rel="noopener noreferrer">금융투자업규정 <span aria-hidden="true">↗</span></a>
+              <a href="https://www.law.go.kr/법령/금융회사의지배구조에관한법률" target="_blank" rel="noopener noreferrer">지배구조법 <span aria-hidden="true">↗</span></a>
+              <a href="https://law.kofia.or.kr/" target="_blank" rel="noopener noreferrer">협회규정·모범규준 <span aria-hidden="true">↗</span></a>
+            </div>
+            <details id="more-law-links" hidden><summary>시행령·시행규칙 및 기타 관리 법령 <span id="law-library-count"></span></summary><div id="law-library-all" class="law-library-links"></div></details>
+          </nav>
           <div id="list-view">
             <div class="results-toolbar"><p id="result-count" role="status">불러오는 중…</p><label class="sort-label">정렬<select id="sort-select"><option value="latest">최신순</option><option value="priority">검토 우선순</option><option value="effective">시행 임박순</option><option value="oldest">오래된순</option></select></label></div>
             <div class="row-heading" aria-hidden="true"><span>규제 / 담당 부서</span><span>게시·제개정일</span><span>시행 / 의견 마감</span><span>확인</span></div>

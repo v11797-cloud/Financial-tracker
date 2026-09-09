@@ -147,6 +147,21 @@
   const inputData = [...(validBaseData ? window.regulatoryData : []), ...extraData];
   const items = inputData.filter(item => item && typeof item === 'object' && typeof item.id === 'string' && typeof item.title === 'string').map(item => ({ ...item, dept: String(item.dept || '담당 부서 미수집'), category: String(item.category || '기타') }));
   const byId = new Map(items.map(item => [item.id, item]));
+  // The library opens current official full texts independently of amendment-specific links.
+  const primaryNames = new Set(['자본시장과금융투자업에관한법률', '금융소비자보호에관한법률', '금융투자업규정', '금융회사의지배구조에관한법률']);
+  const library = new Map();
+  for (const item of items) {
+    if (item.category !== '공포법령' || item.source === 'KOFIA' || !item.law_name) continue;
+    const name = item.law_name.replace(/\s+/g, '');
+    const url = safeURL(item.url);
+    if (!url || !['law.go.kr', 'www.law.go.kr'].includes(new URL(url).hostname) || primaryNames.has(name)) continue;
+    library.set(name, { name: item.law_name, url });
+  }
+  if (library.size) {
+    $('law-library-all').innerHTML = [...library.values()].sort((a, b) => a.name.localeCompare(b.name, 'ko')).map(item => `<a href="${esc(item.url)}" target="_blank" rel="noopener noreferrer">${esc(item.name)} <span aria-hidden="true">↗</span></a>`).join('');
+    $('law-library-count').textContent = `(${library.size})`;
+    $('more-law-links').hidden = false;
+  }
   const state = { search: '', category: 'all', law: 'all', scope: 'all', unread: false, focus: 'all', sort: 'latest', view: 'list', page: 1, year: Number(today.slice(0, 4)), month: Number(today.slice(5, 7)) - 1 };
   const focusLabels = { all: '전체 항목', today: '오늘 게시', priority: '우선 검토', upcoming: '30일 내 시행', unread: '미확인 항목' };
   const scopeItems = () => items.filter(item => state.scope !== 'asset' || relevance(item).candidate);
