@@ -1,5 +1,21 @@
-window.lastUpdated = "2026-09-08 16:13 KST";
+window.lastUpdated = "2026-09-09 10:01 KST";
 window.regulatoryData = [
+    {
+        "id": "no030101_87669",
+        "title": "금융시장동향(26.09.08). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no030101/87669?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-09",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "fss_press_227544",
+        "title": "[금감원] 해외 부동산펀드 등 고위험 펀드의 투자자 보호를 강화하기 위한 간담회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227544&menuNo=200218&pageIndex=1",
+        "date": "2026-09-09",
+        "dept": "금융감독원(자산운용감독국)",
+        "category": "보도자료"
+    },
     {
         "id": "fss_press_227394",
         "title": "[금감원] 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요",
@@ -257,7 +273,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87633",
         "title": "소상공인의 금융접근성이 높아집니다.   - 이제 미래 성장성이 높은 소상공인은 은행에서 더 많은 대출을 받으실 수 있게 됩니다.",
-        "url": "https://www.fsc.go.kr/no010101/87633?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87633?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-02",
         "dept": "금융위원회(금융데이터정책과)",
         "category": "보도자료"
@@ -481,7 +497,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87604",
         "title": "FIU, 자금세탁방지 유관기관 협의회 개최 - 16개 유관기관과 국가위험평가 결과를 공유하고, 자금세탁 위협에 대한 금융권의 대응역량 강화방안을 논의",
-        "url": "https://www.fsc.go.kr/no010101/87604?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87604?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-27",
         "dept": "금융위원회(제도운영과)",
         "category": "보도자료"
@@ -529,7 +545,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_225268",
         "title": "[금감원] 2026년 상반기 보험회사 경영실적(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225268&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225268&menuNo=200218&pageIndex=5",
         "date": "2026-08-27",
         "dept": "금융감독원(보험검사1국/보험검사2국)",
         "category": "보도자료"
@@ -537,7 +553,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87591",
         "title": "금융시장동향(26.08.25)",
-        "url": "https://www.fsc.go.kr/no030101/87591?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87591?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-26",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -809,7 +825,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87494",
         "title": "금융시장동향(26.08.10)",
-        "url": "https://www.fsc.go.kr/no030101/87494?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87494?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-10",
         "dept": "금융위원회",
         "category": "금융시장동향"
