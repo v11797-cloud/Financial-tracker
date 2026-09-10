@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-10 08:10 KST";
+window.lastUpdated = "2026-09-10 09:57 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_227674",
@@ -10,7 +10,7 @@ window.regulatoryData = [
     },
     {
         "id": "no030101_87669",
-        "title": "금융시장동향(26.09.08). 금일 등록된 게시글",
+        "title": "금융시장동향(26.09.08)",
         "url": "https://www.fsc.go.kr/no030101/87669?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회",
@@ -26,7 +26,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87675",
-        "title": "2026년 8월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최. 금일 등록된 게시글",
+        "title": "2026년 8월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최",
         "url": "https://www.fsc.go.kr/no010101/87675?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(금융정책과)",
@@ -34,7 +34,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87674",
-        "title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최. 금일 등록된 게시글",
+        "title": "주택공급 촉진을 위한 금융지원 대책 점검회의 개최",
         "url": "https://www.fsc.go.kr/no010101/87674?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(금융정책과)",
@@ -66,7 +66,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87676",
-        "title": "삼성증권㈜에 대한 단기금융업 인가. 금일 등록된 게시글",
+        "title": "삼성증권㈜에 대한 단기금융업 인가",
         "url": "https://www.fsc.go.kr/no010101/87676?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(자본시장과)",
@@ -78,6 +78,14 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227573&menuNo=200218&pageIndex=1",
         "date": "2026-09-09",
         "dept": "금융감독원(보험검사1국/보험검사2국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87687",
+        "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제15차 금융위원회(’26.9.9.) 조치 의결",
+        "url": "https://www.fsc.go.kr/no010101/87687?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-09",
+        "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
     },
     {
@@ -313,7 +321,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87639",
         "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제15차 증권선물위원회(’26.9.2.) 조치 의결",
-        "url": "https://www.fsc.go.kr/no010101/87639?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87639?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-02",
         "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
@@ -497,7 +505,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87614",
         "title": "청년의 잠재력에 국가가 투자합니다!  청년 예산 언박싱(UNBOXING) 2027, ｢청년 성장단계별 종합투자 추진전략｣ 발표",
-        "url": "https://www.fsc.go.kr/no010101/87614?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87614?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "금융위원회(청년정책과)",
         "category": "보도자료"
