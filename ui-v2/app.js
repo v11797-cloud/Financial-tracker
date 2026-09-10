@@ -349,8 +349,8 @@
   $('workspace-nav').addEventListener('click', event => { const btn = event.target.closest('[data-workspace]'); if (btn) btn.dataset.workspace === 'calendar' ? openCalendar() : applyFocus(btn.dataset.workspace); });
   $('metrics').addEventListener('click', event => { const btn = event.target.closest('[data-focus]'); if (btn) applyFocus(state.focus === btn.dataset.focus ? 'all' : btn.dataset.focus); });
   document.querySelectorAll('[data-view]').forEach(btn => btn.addEventListener('click', () => { state.view = btn.dataset.view; render(); }));
-  $('category-tabs').addEventListener('click', event => { const btn = event.target.closest('[data-category]'); if (btn) { state.category = btn.dataset.category; state.page = 1; render(); [...$('category-tabs').children].find(el => el.dataset.category === state.category)?.focus(); } });
-  $('law-filters').addEventListener('click', event => { const btn = event.target.closest('[data-law]'); if (btn) { state.law = btn.dataset.law; state.page = 1; render(); } });
+  $('category-tabs').addEventListener('click', event => { const btn = event.target.closest('[data-category]'); if (btn) { state.category = state.category === btn.dataset.category ? 'all' : btn.dataset.category; state.page = 1; render(); [...$('category-tabs').children].find(el => el.dataset.category === state.category)?.focus(); } });
+  $('law-filters').addEventListener('click', event => { const btn = event.target.closest('[data-law]'); if (btn) { state.law = state.law === btn.dataset.law ? 'all' : btn.dataset.law; state.page = 1; render(); } });
   $('search-input').addEventListener('input', event => { state.search = event.target.value; state.page = 1; render(); });
   $('toggle-filters').addEventListener('click', () => { const expanded = $('toggle-filters').getAttribute('aria-expanded') !== 'true'; $('toggle-filters').setAttribute('aria-expanded', String(expanded)); $('filter-controls').classList.toggle('is-open', expanded); });
   $('scope-select').addEventListener('change', event => { state.scope = event.target.value; state.page = 1; render(); });
