@@ -1,4 +1,7 @@
 /* UI 2.0 only. No imports from or overrides to the production stylesheet. */
+.bulk-review-bar { display:flex; align-items:center; justify-content:flex-end; flex-wrap:wrap; gap:10px; margin:-4px 0 18px; font-size:.78rem; color:var(--muted); }
+.bulk-review-bar #bulk-review-open { border-color:#5678a5; color:#c5ddff; background:#172d4e; }
+.bulk-review-bar #bulk-review-status { flex-basis:100%; text-align:right; }
 :root {
   color-scheme:dark;
   --bg:#090f19;

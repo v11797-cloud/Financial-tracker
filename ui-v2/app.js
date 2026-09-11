@@ -147,6 +147,7 @@
   const inputData = [...(validBaseData ? window.regulatoryData : []), ...extraData];
   const items = inputData.filter(item => item && typeof item === 'object' && typeof item.id === 'string' && typeof item.title === 'string').map(item => ({ ...item, dept: String(item.dept || '담당 부서 미수집'), category: String(item.category || '기타') }));
   const byId = new Map(items.map(item => [item.id, item]));
+  let bulkUndo = null;
   // The library opens current official full texts independently of amendment-specific links.
   const primaryNames = new Set(['자본시장과금융투자업에관한법률', '금융소비자보호에관한법률', '금융투자업규정', '금융회사의지배구조에관한법률']);
   // These historical laws have no name-only landing page; their dated official URLs were verified.
@@ -299,6 +300,9 @@
     const filtered = filterItems(items, state, today, records);
     if (state.view === 'calendar') renderCalendar(filtered); else renderList(filtered);
     renderRail();
+    const unreadCount = items.filter(item => !isRead(item, records)).length;
+    $('bulk-review-open').textContent = `미확인 전체 확인 (${unreadCount.toLocaleString('ko-KR')}건)`;
+    $('bulk-review-open').disabled = unreadCount === 0;
     if (dateChanged && selectedId && $('detail-dialog').open) detailContent(byId.get(selectedId));
   }
   function detailContent(item) {
@@ -369,6 +373,36 @@
   $('rules-button').addEventListener('click', () => $('rules-dialog').showModal());
   $('footer-rules').addEventListener('click', () => $('rules-dialog').showModal());
   $('close-rules').addEventListener('click', () => $('rules-dialog').close());
+  $('bulk-review-open').addEventListener('click', () => {
+    const count = items.filter(item => !isRead(item, records)).length;
+    $('bulk-review-description').textContent = `현재 미확인 ${count.toLocaleString('ko-KR')}건을 확인 완료로 변경합니다.`;
+    $('bulk-review-dialog').showModal();
+    $('bulk-review-close').focus();
+  });
+  $('bulk-review-close').addEventListener('click', () => $('bulk-review-dialog').close());
+  $('bulk-review-confirm').addEventListener('click', () => {
+    const changes = items.filter(item => !isRead(item, records)).map(item => ({ id: item.id, before: records[item.id], after: fingerprint(item) }));
+    if (changes.length) {
+      bulkUndo = changes;
+      for (const change of changes) records[change.id] = change.after;
+      persist(); render();
+      $('bulk-review-undo').hidden = false;
+      $('bulk-review-status').textContent = `${changes.length.toLocaleString('ko-KR')}건 확인 완료.${storageAvailable ? '' : ' 저장이 차단되어 현재 화면에서만 유지됩니다.'}`;
+    }
+    $('bulk-review-dialog').close();
+    $('bulk-review-undo').focus();
+  });
+  $('bulk-review-undo').addEventListener('click', () => {
+    if (!bulkUndo) return;
+    for (const change of bulkUndo) {
+      if (records[change.id] !== change.after) continue;
+      if (change.before === undefined) delete records[change.id]; else records[change.id] = change.before;
+    }
+    bulkUndo = null; persist(); render();
+    $('bulk-review-undo').hidden = true;
+    $('bulk-review-status').textContent = `일괄 확인을 되돌렸습니다.${storageAvailable ? '' : ' 저장이 차단되어 현재 화면에서만 유지됩니다.'}`;
+    $('bulk-review-open').focus();
+  });
   document.addEventListener('keydown', event => { if (event.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) && !document.querySelector('dialog[open]')) { event.preventDefault(); $('search-input').focus(); } });
   window.addEventListener('storage', event => {
     if (event.key !== STORAGE_KEY && event.key !== null) return;
