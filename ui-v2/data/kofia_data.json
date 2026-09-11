@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-09-11 09:55 KST",
+  "updated_at": "2026-09-11 16:37 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-09-11 09:55 KST",
+  "classification_checked_at": "2026-09-11 16:37 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
     "notices": 152,
@@ -14,6 +14,25 @@
     "모범규준": 415
   },
   "items": [
+    {
+      "id": "kofia_revision_1803",
+      "title": "금융투자회사의 영업 및 업무에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1803",
+      "date": "2026-09-10",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "136",
+      "history_seq": "1803",
+      "law_name": "금융투자회사의 영업 및 업무에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "금융투자회사의 영업 및 업무에 관한 규정"
+      ]
+    },
     {
       "id": "kofia_revision_1793",
       "title": "금융투자전문인력과 자격시험에 관한 규정",
@@ -31,6 +50,25 @@
       "classification_path": [
         "협회규정",
         "금융투자전문인력과 자격시험에 관한 규정"
+      ]
+    },
+    {
+      "id": "kofia_revision_1745",
+      "title": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1745",
+      "date": "2026-09-10",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "339",
+      "history_seq": "1745",
+      "law_name": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
+      "revision_type": "개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙"
       ]
     },
     {
@@ -207,25 +245,6 @@
         "모범규준",
         "설명서 및 위험고지",
         "외화증권거래설명서"
-      ]
-    },
-    {
-      "id": "kofia_revision_1803",
-      "title": "금융투자회사의 영업 및 업무에 관한 규정",
-      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1803",
-      "date": "2026-08-19",
-      "dept": "금융투자협회 · 협회규정",
-      "category": "공포법령",
-      "source": "KOFIA",
-      "source_type": "최신 제·개정정보",
-      "law_seq": "136",
-      "history_seq": "1803",
-      "law_name": "금융투자회사의 영업 및 업무에 관한 규정",
-      "revision_type": "개정",
-      "source_group": "협회규정",
-      "classification_path": [
-        "협회규정",
-        "금융투자회사의 영업 및 업무에 관한 규정"
       ]
     },
     {
@@ -1557,25 +1576,6 @@
       "classification_path": [
         "모범규준",
         "정비사업 업무처리 가이드라인"
-      ]
-    },
-    {
-      "id": "kofia_revision_1745",
-      "title": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
-      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1745",
-      "date": "2025-09-11",
-      "dept": "금융투자협회 · 모범규준",
-      "category": "공포법령",
-      "source": "KOFIA",
-      "source_type": "최신 제·개정정보",
-      "law_seq": "339",
-      "history_seq": "1745",
-      "law_name": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
-      "revision_type": "개정",
-      "source_group": "모범규준",
-      "classification_path": [
-        "모범규준",
-        "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙"
       ]
     },
     {
