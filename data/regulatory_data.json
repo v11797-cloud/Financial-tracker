@@ -8,6 +8,14 @@
         "category": "보도자료"
     },
     {
+        "id": "fss_press_227769",
+        "title": "[금감원] IFRS17 체계下 계리가정 보고서 도입으로 보험부채 평가의 합리성과 신뢰성을 제고하겠습니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227769&menuNo=200218&pageIndex=1",
+        "date": "2026-09-11",
+        "dept": "금융감독원(계리리스크감독국/보험감독국/보험상품분쟁2국)",
+        "category": "보도자료"
+    },
+    {
         "id": "fss_press_227674",
         "title": "[금감원] 2026년 2분기 증권, 선물회사 영업실적",
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227674&menuNo=200218&pageIndex=1",
@@ -224,7 +232,7 @@
     {
         "id": "fss_press_226951",
         "title": "[금감원] 2026 범금융권 보이스피싱 예방 주간 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226951&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226951&menuNo=200218&pageIndex=3",
         "date": "2026-09-06",
         "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
@@ -400,7 +408,7 @@
     {
         "id": "fss_press_226318",
         "title": "[금감원] 26.9.10.부터 자동차보험 치료비 보상 절차가 개편됩니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226318&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226318&menuNo=200218&pageIndex=4",
         "date": "2026-09-02",
         "dept": "금융감독원(보험감독국)",
         "category": "보도자료"
@@ -496,7 +504,7 @@
     {
         "id": "fss_press_225866",
         "title": "[금감원] 금융소비자보호 성과 대국민 보고대회 개최 예정",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225866&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225866&menuNo=200218&pageIndex=5",
         "date": "2026-08-31",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
