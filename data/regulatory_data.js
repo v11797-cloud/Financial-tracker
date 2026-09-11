@@ -1,5 +1,13 @@
-window.lastUpdated = "2026-09-10 13:17 KST";
+window.lastUpdated = "2026-09-11 09:53 KST";
 window.regulatoryData = [
+    {
+        "id": "fss_press_227746",
+        "title": "[금감원] 2026년 2분기 자산운용회사 영업실적(잠정)",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=1",
+        "date": "2026-09-11",
+        "dept": "금융감독원(자산운용감독국)",
+        "category": "보도자료"
+    },
     {
         "id": "fss_press_227674",
         "title": "[금감원] 2026년 2분기 증권, 선물회사 영업실적",
@@ -10,7 +18,7 @@ window.regulatoryData = [
     },
     {
         "id": "no030101_87691",
-        "title": "금융시장동향(26.09.09). 금일 등록된 게시글",
+        "title": "금융시장동향(26.09.09)",
         "url": "https://www.fsc.go.kr/no030101/87691?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-10",
         "dept": "금융위원회",
@@ -18,7 +26,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87690",
-        "title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문. 금일 등록된 게시글",
+        "title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
         "url": "https://www.fsc.go.kr/no010101/87690?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-10",
         "dept": "금융위원회(금융정책과)",
@@ -31,6 +39,14 @@ window.regulatoryData = [
         "date": "2026-09-10",
         "dept": "금융감독원(국제업무국(금융중심지지원센터))",
         "category": "보도자료"
+    },
+    {
+        "id": "no030101_87697",
+        "title": "금융시장동향(26.09.10)",
+        "url": "https://www.fsc.go.kr/no030101/87697?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-10",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
     },
     {
         "id": "no030101_87669",
@@ -489,7 +505,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_225832",
         "title": "[금감원] 26.6월말 국내은행 BIS기준 자본비율 현황(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225832&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225832&menuNo=200218&pageIndex=5",
         "date": "2026-08-31",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -577,7 +593,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87606",
         "title": "금융시장동향(26.08.27)",
-        "url": "https://www.fsc.go.kr/no030101/87606?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87606?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-27",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -897,7 +913,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87516",
         "title": "금융시장동향(26.08.12)",
-        "url": "https://www.fsc.go.kr/no030101/87516?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87516?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-13",
         "dept": "금융위원회",
         "category": "금융시장동향"
