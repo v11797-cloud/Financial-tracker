@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-11 16:36 KST";
+window.lastUpdated = "2026-09-12 09:59 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_227746",
@@ -9,12 +9,36 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
-        "id": "fss_press_227769",
-        "title": "[금감원] IFRS17 체계下 계리가정 보고서 도입으로 보험부채 평가의 합리성과 신뢰성을 제고하겠습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227769&menuNo=200218&pageIndex=1",
+        "id": "no030101_87704",
+        "title": "금융시장동향(26.09.11)",
+        "url": "https://www.fsc.go.kr/no030101/87704?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-11",
-        "dept": "금융감독원(계리리스크감독국/보험감독국/보험상품분쟁2국)",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87702",
+        "title": "“당일 대출·무서류” 추석 급전을 노린 불법사금융입니다  - 명절 급전 수요를 노린 불법사금융 주의 - - 불법사금융 피해예방 수칙 및 원스톱 지원 이용방법 안내",
+        "url": "https://www.fsc.go.kr/no010101/87702?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-11",
+        "dept": "금융위원회(가계금융과)",
         "category": "보도자료"
+    },
+    {
+        "id": "no010101_87701",
+        "title": "IFRS17 체계下 계리가정 보고서 도입으로 보험부채 평가의 합리성과 신뢰성을 제고하겠습니다.",
+        "url": "https://www.fsc.go.kr/no010101/87701?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-11",
+        "dept": "금융위원회(보험과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4171",
+        "title": "「보험업감독규정」 일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4171&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-11",
+        "dept": "금융위원회",
+        "category": "입법예고"
     },
     {
         "id": "fss_press_227674",
@@ -241,7 +265,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87648",
         "title": "금융·외환·부동산 등 부문별 리스크 종합 점검",
-        "url": "https://www.fsc.go.kr/no010101/87648?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87648?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회(자본시장과,금융시장분석과)",
         "category": "보도자료"
@@ -265,7 +289,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87650",
         "title": "토큰증권 정책방향 발표- 민·관 합동 토큰증권 협의체 3차회의 개최",
-        "url": "https://www.fsc.go.kr/no010101/87650?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87650?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -433,7 +457,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87625",
         "title": "보험업권이 7개 지방자치단체와 함께지역 소상공인·취약계층을 위한 무료 상생보험 상품을 9월 출시합니다.",
-        "url": "https://www.fsc.go.kr/no010101/87625?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87625?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-01",
         "dept": "금융위원회(보험과)",
         "category": "보도자료"
@@ -481,7 +505,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87622",
         "title": "軍 복무기간이  ‘자산을 형성하고 금융역량을 키우는 기회’가 되도록 지원합니다.  - 2026년 제2차 금융교육협의회 개최",
-        "url": "https://www.fsc.go.kr/no010101/87622?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87622?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-31",
         "dept": "금융위원회(금융소비자정책과)",
         "category": "보도자료"
@@ -545,7 +569,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87616",
         "title": "금융시장동향(26.08.28)",
-        "url": "https://www.fsc.go.kr/no030101/87616?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87616?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -913,7 +937,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87523",
         "title": "금융시장동향(26.08.13)",
-        "url": "https://www.fsc.go.kr/no030101/87523?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87523?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-13",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1052,7 +1076,7 @@ window.regulatoryData = [
     {
         "id": "notice_4161",
         "title": "「자본시장과 금융투자업에 관한 법률 시행령｣ 일부개정령안 입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4161&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4161&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-30",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1488,7 +1512,7 @@ window.regulatoryData = [
     {
         "id": "notice_4150",
         "title": "｢금융감독원의 경영공시에 관한 기준｣ 일부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4150&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4150&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-05-21",
         "dept": "금융위원회",
         "category": "입법예고"
