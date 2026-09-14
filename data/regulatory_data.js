@@ -1,5 +1,29 @@
-window.lastUpdated = "2026-09-13 09:46 KST";
+window.lastUpdated = "2026-09-14 09:51 KST";
 window.regulatoryData = [
+    {
+        "id": "no010101_87706",
+        "title": "추석 연휴에도 국민 여러분의 금융이용 불편이 없도록 최선을 다하겠습니다.. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87706?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-14",
+        "dept": "금융위원회(은행과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87705",
+        "title": "’26년 3분기 혁신금융서비스 지정 정기신청 개시. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87705?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-14",
+        "dept": "금융위원회(디지털금융총괄과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_228069",
+        "title": "[금감원] 금융감독원, 테크파인더 쇼케이스 2026 참가기업 공개모집",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228069&menuNo=200218&pageIndex=1",
+        "date": "2026-09-13",
+        "dept": "금융감독원(디지털금융총괄국)",
+        "category": "보도자료"
+    },
     {
         "id": "fss_press_227746",
         "title": "[금감원] 2026년 2분기 자산운용회사 영업실적(잠정)",
@@ -123,7 +147,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227559",
         "title": "[금감원] 금융감독원, 금융업계의 다크패턴 예방을 위한 상시협의체 킥오프 회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227559&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227559&menuNo=200218&pageIndex=2",
         "date": "2026-09-09",
         "dept": "금융감독원(소비자피해예방국)",
         "category": "보도자료"
@@ -131,7 +155,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227554",
         "title": "[금감원] 공모 목표전환형 펀드 현황 및 투자자 유의사항 안내",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227554&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227554&menuNo=200218&pageIndex=2",
         "date": "2026-09-09",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
@@ -159,6 +183,17 @@ window.regulatoryData = [
         "date": "2026-09-09",
         "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
+    },
+    {
+        "id": "admrul_금융투자업규정_2026-38_2026-09-09",
+        "title": "[금융투자업규정] (금융위 고시 제2026-38호 | 발령일 2026-09-09)",
+        "url": "https://www.law.go.kr/행정규칙/%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EA%B7%9C%EC%A0%95",
+        "date": "2026-09-09",
+        "dept": "금융위원회",
+        "category": "공포법령",
+        "law_name": "금융투자업규정",
+        "prom_no": "2026-38",
+        "enf_date": "2026-09-15"
     },
     {
         "id": "fss_press_227394",
@@ -201,7 +236,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87657",
         "title": "사망자 명의의 불법 금융거래, 사망신고 ‘다음 날’부터 즉시 막는다.",
-        "url": "https://www.fsc.go.kr/no010101/87657?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87657?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-07",
         "dept": "금융위원회(금융데이터정책과)",
         "category": "보도자료"
@@ -241,7 +276,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226953",
         "title": "[금감원] 금융감독원, 제4차 소비자위험대응협의회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226953&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226953&menuNo=200218&pageIndex=3",
         "date": "2026-09-06",
         "dept": "금융감독원(소비자피해예방국)",
         "category": "보도자료"
@@ -249,7 +284,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226952",
         "title": "[금감원] 금융 인허가, 등록 사전협의 절차가 더욱 편리해집니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226952&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226952&menuNo=200218&pageIndex=3",
         "date": "2026-09-06",
         "dept": "금융감독원(감독혁신국/디지털금융총괄국/정보화전략국/자본시장감독국/자산운용감독국/보험감독국/여신금융감독국/전자금융감독국)",
         "category": "보도자료"
@@ -297,7 +332,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87652",
         "title": "지역 밀착형 서민금융 복합지원으로  강원도민의 경제적 자립을 돕겠습니다.  - 이억원 금융위원장, 강원 지역 밀착형 복합지원 업무협약식 참석",
-        "url": "https://www.fsc.go.kr/no010101/87652?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87652?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회(복합지원팀)",
         "category": "보도자료"
@@ -465,7 +500,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87628",
         "title": "2026년도 제61회 공인회계사시험최종 합격자 1,150명 발표",
-        "url": "https://www.fsc.go.kr/no010101/87628?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87628?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-01",
         "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
@@ -473,7 +508,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87627",
         "title": "성장잠재력 제고·서민생활 안정·청년 자산형성 지원을 위한 2027회계연도 금융위원회 예산안 편성",
-        "url": "https://www.fsc.go.kr/no010101/87627?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87627?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-01",
         "dept": "금융위원회(혁신기획재정담당관)",
         "category": "보도자료"
@@ -521,7 +556,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_225867",
         "title": "[금감원] 금융감독원, 토스뱅크와 공동으로 찾아가는 「FSS 어린이 금융스쿨」 병원학교편 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225867&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=225867&menuNo=200218&pageIndex=5",
         "date": "2026-08-31",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
