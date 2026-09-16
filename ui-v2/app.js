@@ -140,18 +140,19 @@
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
     if (saved && typeof saved === 'object' && !Array.isArray(saved)) for (const [key, value] of Object.entries(saved)) if (typeof value === 'string') records[key] = value;
   } catch { storageAvailable = false; }
-  const validBaseData = Array.isArray(window.regulatoryData);
-  const extraData = kofiaItems(window.kofiaData);
-  const validKofiaData = Boolean(window.kofiaData && window.kofiaData.schema_version === 1 && window.kofiaData.source === 'KOFIA' && Array.isArray(window.kofiaData.items) && extraData.length === window.kofiaData.items.length);
-  const validData = validBaseData || validKofiaData;
-  const inputData = [...(validBaseData ? window.regulatoryData : []), ...extraData];
-  const items = inputData.filter(item => item && typeof item === 'object' && typeof item.id === 'string' && typeof item.title === 'string').map(item => ({ ...item, dept: String(item.dept || '담당 부서 미수집'), category: String(item.category || '기타') }));
-  const byId = new Map(items.map(item => [item.id, item]));
+  let validBaseData = Array.isArray(window.regulatoryData);
+  let extraData = kofiaItems(window.kofiaData);
+  let validKofiaData = Boolean(window.kofiaData && window.kofiaData.schema_version === 1 && window.kofiaData.source === 'KOFIA' && Array.isArray(window.kofiaData.items) && extraData.length === window.kofiaData.items.length);
+  let validData = validBaseData || validKofiaData;
+  let inputData = [...(validBaseData ? window.regulatoryData : []), ...extraData];
+  let items = inputData.filter(item => item && typeof item === 'object' && typeof item.id === 'string' && typeof item.title === 'string').map(item => ({ ...item, dept: String(item.dept || '담당 부서 미수집'), category: String(item.category || '기타') }));
+  let byId = new Map(items.map(item => [item.id, item]));
   let bulkUndo = null;
   // The library opens current official full texts independently of amendment-specific links.
   const primaryNames = new Set(['자본시장과금융투자업에관한법률', '금융소비자보호에관한법률', '금융투자업규정', '금융회사의지배구조에관한법률']);
   // These historical laws have no name-only landing page; their dated official URLs were verified.
   const archiveNames = new Set(['규제재검토기한설정을위한은행법시행령등일부개정령', '국민은행법', '국민은행법시행령', '미군정청에의하여의용된보험업법', '농업은행법', '농업은행법시행령']);
+  function rebuildLibrary() {
   const library = new Map();
   for (const item of items) {
     if (item.category !== '공포법령' || item.source === 'KOFIA' || !item.law_name) continue;
@@ -168,6 +169,19 @@
     $('law-library-count').textContent = `(${library.size})`;
     $('more-law-links').hidden = false;
   }
+  }
+  rebuildLibrary();
+  window.applyCollectedData = (base, kofia) => {
+    const extra = kofiaItems(kofia);
+    if (!kofia || kofia.schema_version !== 1 || kofia.source !== 'KOFIA' || !Array.isArray(kofia.items) || !extra.length || extra.length !== kofia.items.length || !extra.every(item => typeof item.title === 'string')) throw new Error('Invalid KOFIA data');
+    window.regulatoryData = base.items; window.lastUpdated = base.updated; window.kofiaData = kofia;
+    validBaseData = validKofiaData = validData = true; extraData = extra;
+    inputData = [...base.items, ...extra];
+    items = inputData.map(item => ({ ...item, dept: String(item.dept || '담당 부서 미수집'), category: String(item.category || '기타') }));
+    byId = new Map(items.map(item => [item.id, item]));
+    rebuildLibrary(); render();
+    if (selectedId && byId.has(selectedId)) detailContent(byId.get(selectedId));
+  };
   const state = { search: '', category: 'all', law: 'all', scope: 'all', unread: false, focus: 'all', sort: 'latest', view: 'list', page: 1, year: Number(today.slice(0, 4)), month: Number(today.slice(5, 7)) - 1 };
   const focusLabels = { all: '전체 항목', today: '오늘 게시', priority: '우선 검토', upcoming: '30일 내 시행', unread: '미확인 항목' };
   const scopeItems = () => items.filter(item => state.scope !== 'asset' || relevance(item).candidate);
@@ -361,7 +375,7 @@
   $('unread-only').addEventListener('change', event => { state.unread = event.target.checked; state.page = 1; render(); });
   $('sort-select').addEventListener('change', event => { state.sort = event.target.value; state.page = 1; render(); });
   $('reset-filters').addEventListener('click', () => { resetFilters(); render(); });
-  $('reload-button').addEventListener('click', () => window.location.reload());
+  // collection.js refreshes data without resetting filters or confirmation records.
   $('show-priority').addEventListener('click', () => { applyFocus('priority'); $('feed-title').scrollIntoView({ block: 'start' }); });
   $('show-calendar').addEventListener('click', openCalendar);
   $('show-notices').addEventListener('click', () => { resetFilters(); state.category = '입법예고'; state.view = 'list'; render(); });

@@ -89,3 +89,20 @@ UI 2.0 전체를 제거하려면 `ui-v2/`와 새 `.github/workflows/ui-v2-kofia.
 협회 연동 기준 커밋: `6ec1271b6a35aa5e011b691a0dcc1e11215033ec`. 2026-09-07 검증: 기존 기관 462건 + 협회 1,110건 = 1,572건. 협회 예고 152건, 제·개정정보 1,437건 중 협회규정 543건·모범규준 415건 포함, 479건 제외. 건수는 수집 시점에 따라 달라집니다.
 
 Node 20개 및 Python 7개 검증 통과. 기존 필터·날짜·확인 기록 검증에 협회 분류·전체 페이지·개정별 식별·데이터 불변성·예고 종료일·원문 연결 검증을 추가했습니다. 브라우저에서 입법예고 152건, 제·개정 958건과 예고 원문 정상 연결을 확인했습니다. 기준 커밋 대비 기존 운영 파일·공용 데이터·수집기·배포 workflow 변경은 없습니다. 새 GitHub Actions의 원격 실행은 배포 후 확인이 필요합니다.
+
+
+## 자료 재수집 (2026-09-16)
+
+상단 수집 시각 아래 `↻ 자료 재수집`을 누르면 기존 Daily Financial Regulatory Tracker의 GitHub 실행 화면이 열립니다. GitHub 로그인 및 저장소 Actions 실행 권한이 있는 사용자가 `Run workflow → main → Run workflow`를 눌러 실행합니다. 이 버튼 자체는 실행 요청 API를 호출하지 않습니다. backend/serverless가 없는 정적 Pages이므로 외부 서비스와 secret을 추가하지 않는 fallback입니다.
+
+- 기존 `daily_tracker.yml`의 workflow_dispatch → `python src/main.py` → data 저장/commit/push/Pages 배포 → 기존 `ui-v2-kofia.yml`의 workflow_run → `python ui-v2/scripts/collect_kofia.py` 및 `python ui-v2/scripts/collect_law_reasons.py` → 보조 데이터 검증/commit/push/Pages 배포를 재사용합니다. workflow와 수집기 변경 없음.
+- 기존 기관 출력: `data/regulatory_data.json`, `data/regulatory_data.js`. 협회 출력: `ui-v2/data/kofia_data.json`, `.js`. 개정이유: `ui-v2/data/law_reasons.js`.
+- 최근 수집은 기존 `window.lastUpdated`와 협회 `updated_at` 값을 각각 표시합니다. 별도 상태 파일을 만들지 않습니다.
+- 공개 GitHub API를 인증 없이 GET으로만 조회합니다. 페이지가 보일 때 2분 간격으로 두 workflow 각각의 최신 main 실행 상태와 실행 기록 링크를 표시합니다. 두 기록을 같은 요청으로 추정하지 않습니다. API 제한/통신 실패 시 GitHub 화면에서 확인하도록 안내합니다.
+- 버튼을 누른 후 60초간, 실제 진행 상태를 확인한 동안 버튼을 비활성화합니다. 정적 페이지이므로 GitHub의 직접 실행이나 다른 브라우저까지 막지는 않습니다. 기존 workflow의 pages concurrency를 유지합니다.
+- 배포 성공 감지 시 데이터만 갱신합니다. 기존 JS 데이터는 텍스트로 받아 JSON 부분만 파싱하며 eval하지 않습니다. cache=no-store와 시각 쿼리를 사용하고 CDN 지연에 대비해 후속 조회에서도 다시 확인합니다. `다시 불러오기`도 같은 갱신 기능입니다. 검색/필터/확인 기록을 유지하며 잘못된 응답은 기존 화면을 보존합니다.
+- 기존 수집기는 기관 오류를 로그에 남기고 이전 누적 자료를 유지하지만, 일부 오류와 저장 오류를 프로세스 실패로 반환하지 않습니다. 따라서 workflow 성공이 모든 기관의 수집 성공을 보증하지 않습니다. 개별 기관 상태는 실행 로그를 확인하세요. 협회 수집기는 검증 실패 시 기존 스냅샷을 보존하고 실패합니다.
+- 데이터 미변경 시 기존 auto-commit action과 보조 workflow의 cached diff 검사로 commit을 생략합니다.
+- 새 Secret, PAT, 외부 서비스 가입 및 Pages 설정 변경은 필요 없습니다.
+
+검증: `node --test ui-v2/tests/*.test.cjs`, `python -m unittest discover -s ui-v2/tests -p 'test_*.py'`. 기존 운영 파일과 ui-ax 작업은 변경하지 않습니다.

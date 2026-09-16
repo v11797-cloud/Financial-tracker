@@ -1798,3 +1798,11 @@ mark {
 .source-error { color:var(--amber); }
 .source-bridge { max-width:640px; padding:32px 20px; }
 .source-bridge p, .source-bridge form { margin-top:20px; }
+
+.collection-panel { margin: 12px 0 20px; padding: 14px 16px; border: 1px solid var(--border, #26364a); border-radius: 8px; background: #101c2c; font-size: 12px; }
+.collection-actions, .collection-details { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 20px; }
+.collection-panel a { color: #91bcdf; }
+.collection-panel p { margin: 9px 0; line-height: 1.6; }
+.collection-help { color: #9caec4; font-size: 11px; }
+#collect-button { border-color: #507a9f; padding: 8px 14px; }
+#collect-button:disabled { opacity: .65; cursor: wait; }
