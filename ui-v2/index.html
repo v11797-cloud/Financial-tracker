@@ -6,10 +6,11 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="color-scheme" content="dark">
   <title>UI 2.0 테스트 · Financial Tracker</title>
-  <link rel="stylesheet" href="./style.css?v=20260911-bulk">
+  <link rel="stylesheet" href="./style.css?v=20260916-collection">
   <script src="../data/regulatory_data.js" defer></script>
   <script src="./data/kofia_data.js" defer></script>
-  <script src="./app.js?v=20260911-bulk" defer></script>
+  <script src="./app.js?v=20260916-collection" defer></script>
+  <script src="./collection.js?v=20260916-collection" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 이동</a>
@@ -43,6 +44,12 @@
       </section>
       <div id="data-status" class="data-status" role="status"><span class="status-dot" aria-hidden="true"></span><span id="data-status-text">기존 수집 데이터를 불러오는 중…</span><button id="reload-button" class="text-button">다시 불러오기 ↻</button></div>
       <p id="kofia-status" class="source-status" role="status">금융투자협회 데이터 확인 중…</p>
+      <section class="collection-panel" aria-label="자료 재수집">
+        <div class="collection-actions"><button id="collect-button" class="small-button">↻ 자료 재수집</button><a href="https://github.com/v11797-cloud/Financial-tracker/actions/workflows/daily_tracker.yml" target="_blank" rel="noopener noreferrer">GitHub 실행 화면 ↗</a></div>
+        <p id="collection-status" role="status" aria-live="polite">최근 실행 상태 확인 중…</p>
+        <div id="collection-details" class="collection-details"></div>
+        <p class="collection-help">버튼은 GitHub 실행 화면을 엽니다. Run workflow에서 main을 선택해 실행하세요. 약 2분마다 상태를 확인하며 배포 완료 시 자료를 자동 갱신합니다. 기관별 수집 성공 여부는 실행 로그에서 확인하세요.</p>
+      </section>
       <section class="metrics" aria-label="업무 관점 내 요약" id="metrics">
         <button class="metric" data-focus="today" aria-pressed="false"><span class="metric-label">오늘 게시 <span>↗</span></span><strong id="count-today">—</strong><span class="metric-note">기관 표시일 기준</span></button>
         <button class="metric priority-metric" data-focus="priority" aria-pressed="false"><span class="metric-label">우선 검토 <span>↗</span></span><strong id="count-priority">—</strong><span class="metric-note">일정·키워드 규칙 기반</span></button>
