@@ -1,0 +1,13 @@
+name = "regwatch-ai"
+main = "src/index.js"
+compatibility_date = "2026-09-16"
+
+[vars]
+# Override this variable to select another compatible Gemini model.
+GEMINI_MODEL = "gemini-3.6-flash"
+ALLOW_LOCALHOST = "false"
+
+[[ratelimits]]
+name = "AI_RATE_LIMITER"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }

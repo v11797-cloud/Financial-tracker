@@ -1,0 +1,9 @@
+.gemini-actions { display:flex; flex-wrap:wrap; align-items:center; gap:8px; margin:12px 0; }
+.gemini-actions .small-button { white-space:normal; text-align:left; max-width:100%; overflow-wrap:anywhere; }
+.gemini-button { color:var(--blue); background:var(--blue-bg); }
+.gemini-preview { width:min(760px, calc(100vw - 24px)); max-height:90vh; }
+.gemini-preview textarea { box-sizing:border-box; width:100%; min-height:38vh; margin:10px 0; padding:12px; border:1px solid var(--line); border-radius:8px; color:var(--text); background:var(--bg); font:inherit; font-size:.85rem; resize:vertical; }
+.gemini-preview code { overflow-wrap:anywhere; }
+#gemini-toast { white-space:pre-line; max-width:calc(100vw - 32px); }
+.gemini-actions [hidden] { display:none; }
+@media(max-width:600px) { .gemini-actions { gap:8px; } .gemini-preview .rules-content { padding:16px; } }

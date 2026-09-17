@@ -1,0 +1,47 @@
+/* Compact presentation, using the existing UI 2.0 color and spacing tokens. */
+.ai-daily { margin:0 0 20px; padding:24px; }
+.ai-daily h2 { font-size:1rem; margin:0 0 6px; }
+.brief-subtitle,.brief-label,.brief-meta,.brief-reason { color:var(--muted); }
+.brief-subtitle { font-size:.8rem; margin:0 0 18px; }
+#ai-daily-summary { font-size:1.08rem; font-weight:600; margin:0 0 18px; }
+#ai-daily-top { padding:0 0 14px; }
+#ai-daily-top .brief-label { font-size:.72rem; margin:0 0 6px; }
+#ai-daily-top button { padding:0; text-align:left; background:none; color:var(--text); font-size:.95rem; font-weight:600; overflow-wrap:anywhere; }
+#ai-daily-top button:hover { color:var(--blue); }
+.brief-reason { font-size:.82rem; margin:8px 0 0; line-height:1.7; }
+#ai-daily-counts { font-size:.8rem; color:var(--muted); margin:0 0 16px; }
+#ai-daily-link { font-size:.82rem; }
+.ai-priority-row { border-top:1px solid var(--line); }
+.priority-summary { display:grid; grid-template-columns:18px minmax(0,1fr) 14px; gap:10px; width:100%; padding:18px 0; background:none; text-align:left; align-items:start; color:var(--text); }
+.priority-summary strong { display:block; font-size:.86rem; font-weight:600; line-height:1.65; overflow-wrap:anywhere; }
+.priority-summary small { display:block; font-size:.73rem; color:var(--muted); line-height:1.7; margin-top:6px; }
+.priority-number,.priority-arrow { font-size:.8rem; color:var(--muted); padding-top:3px; }
+.priority-summary:hover strong,.priority-summary:hover .priority-arrow { color:var(--blue); }
+.brief-header { padding-bottom:20px; }
+.brief-header .detail-title { margin-bottom:10px; }
+.brief-meta { font-size:.8rem; line-height:1.7; margin:0; }
+.brief-review { margin-top:12px; font-size:.76rem; }
+.brief-section { border-top:1px solid var(--line); padding:20px 0; }
+.brief-section h3 { margin:0 0 10px; font-size:.9rem; font-weight:600; }
+.brief-section p,.brief-section li { font-size:.86rem; line-height:1.8; overflow-wrap:anywhere; }
+.brief-section p { margin:0; }
+.brief-section ul { margin:0; padding-left:20px; }
+.brief-section li+li { margin-top:6px; }
+.ai-questions { display:grid; gap:10px; }
+.ai-questions label { display:grid; grid-template-columns:16px minmax(0,1fr); gap:9px; align-items:start; font-size:.85rem; line-height:1.7; }
+.ai-questions input { accent-color:var(--blue); width:16px; height:16px; min-height:16px; margin:4px 0 0; }
+.brief-footer { border-top:1px solid var(--line); padding-top:20px; }
+.brief-cta { display:flex; flex-wrap:wrap; align-items:center; gap:10px; }
+.brief-cta .gemini-actions { margin:0; }
+.brief-cta a { text-decoration:none; }
+.gemini-preview-toggle { margin-top:14px; font-size:.75rem; color:var(--muted); }
+.gemini-preview-toggle summary { cursor:pointer; }
+.gemini-preview-toggle button { margin-top:8px; font-size:.75rem; }
+.ai-disclaimer { color:var(--muted); font-size:.73rem; line-height:1.7; margin:18px 0 0; }
+@media(max-width:600px) {
+  .ai-daily { padding:18px; }
+  .brief-section { padding:18px 0; }
+  .brief-cta { display:grid; grid-template-columns:minmax(0,1fr); }
+  .brief-cta > a,.brief-cta .gemini-button { width:100%; text-align:center; }
+  .brief-cta .gemini-actions { display:flex; flex-wrap:nowrap; }
+}

@@ -9,7 +9,15 @@
   <link rel="stylesheet" href="./style.css?v=20260916-collection">
   <script src="../data/regulatory_data.js" defer></script>
   <script src="./data/kofia_data.js" defer></script>
-  <script src="./app.js?v=20260916-collection" defer></script>
+  <link rel="stylesheet" href="./ai.css?v=5">
+  <script src="./ai-config.js?v=5" defer></script>
+  <script src="./ai-schema.js?v=3" defer></script>
+  <script src="./ai-analysis.js?v=6" defer></script>
+  <script src="./ai-presentation.js?v=1" defer></script>
+  <script src="./ai-ui.js?v=6" defer></script>
+  <link rel="stylesheet" href="./gemini-enterprise.css?v=1">
+  <script src="./gemini-enterprise.js?v=2" defer></script>
+  <script src="./app.js?v=20260917-simple" defer></script>
   <script src="./collection.js?v=20260916-collection" defer></script>
 </head>
 <body>
@@ -40,8 +48,9 @@
     <main id="main" tabindex="-1">
       <section class="page-heading">
         <div><p class="eyebrow">COMPLIANCE COMMAND CENTER</p><h1>규제 모니터링</h1><p class="subheading" id="today-label">한국시간 기준 규제 현황</p></div>
-        <label class="scope-control">업무 관점<select id="scope-select"><option value="all">전체 금융회사</option><option value="asset">자산운용사 관련 후보</option></select></label>
+        <label class="scope-control">업무 관점<select id="scope-select"><option value="all">전체 금융회사</option><option value="asset">자산운용사 관련 후보</option><option value="compliance">준법감시</option><option value="aml">AML</option><option value="internal_control">내부통제</option><option value="risk">리스크</option><option value="investment">운용</option><option value="sales">영업</option><option value="product">상품</option><option value="disclosure">공시</option><option value="it">IT</option><option value="privacy">개인정보</option><option value="finance">재무</option><option value="hr">인사</option></select></label>
       </section>
+      <section id="ai-daily" class="rail-panel ai-daily" aria-labelledby="ai-daily-title" hidden><h2 id="ai-daily-title">AI 오늘의 Regulatory Brief</h2><p class="brief-subtitle">오늘 봐야 할 규제만, 이유와 함께.</p><p id="ai-daily-summary"></p><div id="ai-daily-top"></div><p id="ai-daily-counts" title="현재 업무 관점 기준 · 신규: 오늘 게시 · 우선검토: 상위 최대 3건 · 시행임박: 30일 이내"></p><button id="ai-daily-link" class="text-button">오늘의 우선검토 보기 →</button></section>
       <div id="data-status" class="data-status" role="status"><span class="status-dot" aria-hidden="true"></span><span id="data-status-text">기존 수집 데이터를 불러오는 중…</span><button id="reload-button" class="text-button">다시 불러오기 ↻</button></div>
       <p id="kofia-status" class="source-status" role="status">금융투자협회 데이터 확인 중…</p>
       <section class="collection-panel" aria-label="자료 재수집">
@@ -94,7 +103,7 @@
           </div>
         </section>
         <aside class="insight-rail" aria-label="업무 관점 내 검토 및 일정 요약">
-          <section class="rail-panel priority-panel"><div class="panel-heading"><h2>먼저 확인하세요</h2><span class="tiny-label">미확인</span></div><p class="rail-caption">업무 관점 기준 · 우선 검토 상위 3건</p><div id="priority-list"></div><button id="show-priority" class="rail-link">우선 검토 전체 보기 <span>→</span></button></section>
+          <section class="rail-panel priority-panel"><div class="panel-heading"><h2>먼저 확인하세요</h2></div><p class="rail-caption">현재 업무 관점에서 먼저 볼 안건</p><div id="priority-list"></div><button id="show-priority" class="rail-link">우선 검토 전체 보기 <span>→</span></button></section>
           <section class="rail-panel"><div class="panel-heading"><h2>다가오는 시행일</h2><span class="tiny-label">전체 일정</span></div><div id="upcoming-list"></div><button id="show-calendar" class="rail-link">시행일 캘린더 열기 <span>→</span></button></section>
           <section class="coverage-note"><span class="note-symbol" aria-hidden="true">i</span><div><h3>예고 기간과 시행일을 구분하세요</h3><p>협회 예고는 예고종료일을 표시합니다. 금융위 예고의 의견 마감 및 협회 규정의 시행일은 원문에서 확인하세요.</p><button id="show-notices" class="text-button">입법예고 보기 →</button></div></section>
         </aside>
@@ -102,11 +111,11 @@
       <footer class="page-footer"><span>Financial Tracker <span class="footer-divider">/</span> UI 2.0 테스트</span><button class="text-button footer-rules" id="footer-rules">분류·날짜 기준</button><span>수집 데이터 기준 · KST <span class="footer-divider">/</span> <a href="../index.html">기존 버전</a></span></footer>
     </main>
   </div>
-  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">REGULATION BRIEF</span><button id="close-detail" class="icon-button" aria-label="상세 닫기">✕</button></div><div id="detail-content"></div></dialog>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div class="dialog-top"><span class="eyebrow">검토 요약</span><button id="close-detail" class="text-button" aria-label="검토 요약 닫고 돌아가기">← 돌아가기</button></div><div id="detail-content"></div></dialog>
   <dialog id="rules-dialog" class="rules-dialog" aria-labelledby="rules-title"><div class="dialog-top"><h2 id="rules-title">분류·날짜 기준</h2><button id="close-rules" class="icon-button" aria-label="기준 안내 닫기">✕</button></div><div class="rules-content">
     <h3>오늘 게시와 수집 시각</h3><p>오늘은 한국시간(KST) 기준입니다. ‘오늘 게시’는 데이터의 게시일·공포일·제개정일(협회 예고는 예고시작일)이 오늘인 항목 수이며, 오늘 새로 수집된 건수를 뜻하지 않습니다. 최근 수집 시각은 수집기 실행 시각으로, 모든 기관의 수집 성공을 보증하지 않습니다.</p>
     <h3>우선 검토 선정</h3><p>① 30일 이내 시행 예정인 법령 ② 30일 내 예고종료가 확인된 항목 또는 최근 30일 입법예고 중 자산운용·공통 준법 키워드가 있는 항목 ③ 최근 14일 관련 변경 보도 순입니다. 예고종료일이 지난 협회 예고는 우선 검토에서 제외합니다. 같은 단계에서는 가까운 시행·예고종료일, 최신 게시일 순으로 표시합니다.</p>
-    <h3>자산운용사 관련 후보</h3><p>제목·담당 부서에서 자산운용, 집합투자, 펀드, 투자신탁, ETF, ETN, 자본시장, 금융투자, 증권, 파생상품, 공매도, 의결권 또는 내부통제, 책무구조도, 지배구조, 금융소비자, 금소법, 자금세탁, 특금법, 전자금융, 개인정보가 발견된 항목입니다. 실제 적용 여부는 원문과 회사 업무를 대조해 판단하세요. 상세에서 일치 키워드를 볼 수 있습니다.</p>
+    <h3>우선검토 목록</h3><p>먼저 확인하세요는 미확인 후보 중 일정과 업무 관련성을 고려해 상위 3건을 보여줍니다. 선택한 업무 관점에 따라 순서가 달라질 수 있습니다. 상세에서 원문을 확인하거나 Gemini Enterprise로 심층분석을 이어가세요. 전체 피드와 우선검토 필터는 기존 기준을 유지합니다.</p><h3>자산운용사 관련 후보</h3><p>제목·담당 부서에서 자산운용, 집합투자, 펀드, 투자신탁, ETF, ETN, 자본시장, 금융투자, 증권, 파생상품, 공매도, 의결권 또는 내부통제, 책무구조도, 지배구조, 금융소비자, 금소법, 자금세탁, 특금법, 전자금융, 개인정보가 발견된 항목입니다. 실제 적용 여부는 원문과 회사 업무를 대조해 판단하세요. 상세에서 일치 키워드를 볼 수 있습니다.</p>
     <h3>시행일과 의견제출 마감</h3><p>시행일은 수집된 enf_date만 사용합니다. 없는 시행일을 게시·제개정일로 대체하지 않습니다. 협회 예고는 ‘예고시작일’과 ‘예고종료일’, 협회 제·개정정보는 ‘제·개정일’로 표시합니다. 행정규칙은 ‘발령일’, 법률은 ‘공포일’, 나머지는 ‘게시일’입니다. 과거 시행일은 ‘시행일 경과’이며 현행 유효성을 의미하지 않습니다. 금융위 예고의 의견 마감은 원문 확인이 필요합니다.</p>
     <h3>금융투자협회 분류</h3><p>규정 제·개정예고는 입법예고 탭에 통합합니다. 최신 제·개정정보는 협회 현행규정 트리에서 ‘협회규정’ 또는 ‘모범규준’의 하위 규정으로 확인된 항목만 공포/시행 법령 탭에 표시합니다. 표준약관과 현행 트리에서 분류를 확인할 수 없는 항목은 제외합니다. 제목이 아닌 규정 식별번호로 대조하며, 상세에 실제 분류 경로를 표시합니다. ‘모범규준’ 하위의 설명서·가이드라인도 포함됩니다. 협회 규정은 법률과 구분하여 표시합니다.</p>
     <h3>기존 법령 필터와 확인 기록</h3><p>법령·규정 필터는 하나씩 선택합니다. 4개 법령은 기존 정밀 제목 규칙을 사용하고 협회규정·모범규준은 협회 현행 분류로 구분합니다. 자료 종류와 법령·규정은 함께 적용됩니다. 자료 종류의 전체 버튼은 자료 종류 조건을 해제하며, 선택한 필터를 다시 누르면 해당 조건만 해제합니다. 필터 초기화로 모든 조건을 해제할 수도 있습니다. 항목 상세를 열거나 원문 링크를 눌러도 자동 확인 처리되지 않습니다. ‘확인 완료’ 버튼을 눌러야 기록되며, 동일 법령의 서로 다른 개정은 별도 항목입니다. 내용이 바뀐 항목은 다시 미확인으로 표시합니다. 기록은 UI 2.0 전용 브라우저 저장소에만 저장됩니다.</p>

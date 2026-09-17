@@ -292,6 +292,7 @@
     const scoped = scopeItems();
     const prioritized = sortItems(scoped.filter(item => !isRead(item, records) && priority(item, today).tier > 0), 'priority', today).slice(0, 3);
     $('priority-list').innerHTML = prioritized.length ? prioritized.map((item, i) => `<article class="priority-item"><span class="priority-rank">0${i + 1}</span><div><div class="reason">${esc(priority(item, today).reason)}</div><button data-action="detail" data-id="${esc(item.id)}">${esc(lawTitle(item))}</button><p>${item.prom_no ? `제${esc(item.prom_no)}호 · ` : ''}${esc(dateDisplay(item.date))}</p></div></article>`).join('') : `<p class="rail-empty">${validData ? '미확인 우선 검토 항목이 없습니다.' : '데이터 확인이 필요합니다.'}</p>`;
+    try { window.RegWatchAIUI?.render({ items: scoped, today, records, isRead, priority, sortItems, scope: state.scope }); } catch { /* Optional AI layer cannot break the rule rail. */ }
     const upcoming = sortItems(scoped.filter(item => { const n = daysUntil(effectiveDate(item), today); return n !== null && n >= 0; }), 'effective', today).slice(0, 3);
     $('upcoming-list').innerHTML = upcoming.length ? upcoming.map(item => `<article class="upcoming-item"><div class="date-block"><small>${Number(item.enf_date.slice(5, 7))}월</small><strong>${item.enf_date.slice(8)}</strong></div><div><button data-action="detail" data-id="${esc(item.id)}">${esc(lawTitle(item))}</button><p><span>${dDay(item.enf_date, today)}</span>제${esc(item.prom_no || '미상')}호 · ${item.enf_date.slice(0, 4)}</p></div></article>`).join('') : '<p class="rail-empty">수집된 향후 시행 일정이 없습니다.</p>';
   }
@@ -320,8 +321,12 @@
     if (dateChanged && selectedId && $('detail-dialog').open) detailContent(byId.get(selectedId));
   }
   function detailContent(item) {
-    const related = relevance(item), p = priority(item, today), href = sourceURL(item, document.baseURI), read = isRead(item, records);
-    $('detail-content').innerHTML = `${badge(item)}<h2 id="detail-title" class="detail-title">${esc(item.title)}</h2><section class="detail-section"><dl class="detail-meta"><dt>담당 부서</dt><dd>${esc(item.dept)}</dd><dt>${dateLabel(item)}</dt><dd>${esc(dateDisplay(item.date))}</dd>${item.prom_no ? `<dt>공포·발령번호</dt><dd>제${esc(item.prom_no)}호</dd>` : ''}<dt>시행일</dt><dd>${effectiveDate(item) ? `${esc(item.enf_date)} · ${esc(dDay(item.enf_date, today))}` : '미수집 · 원문 확인 필요'}</dd>${noticeEndDate(item) ? `<dt>예고종료일</dt><dd>${esc(item.notice_end_date)}<small>협회 예고종료일 기준 · 상세 제출 조건은 원문 확인</small></dd>` : item.category === '입법예고' ? '<dt>의견제출 마감</dt><dd>미수집 · 입법예고 원문에서 확인</dd>' : ''}${item.source === 'KOFIA' ? `<dt>자료 구분</dt><dd>${esc(item.source_group || item.source_type)} · ${esc(item.revision_type || '')}</dd>${item.classification_path ? `<dt>현행규정 분류</dt><dd>${esc(item.classification_path.join(' → '))}</dd>` : ''}` : ''}<dt>확인 상태</dt><dd>${read ? '확인 완료' : '미확인'}<small>이 브라우저의 UI 2.0 기록</small></dd></dl></section><section class="detail-section"><h3>검토 우선순위 근거</h3><p>${esc(p.reason)}${p.tier ? ' · 규칙 기반 후보' : ''}</p><p>자산운용 관련 키워드: ${related.direct.length ? esc(related.direct.join(', ')) : '일치 없음'}</p><p>공통 준법 키워드: ${related.common.length ? esc(related.common.join(', ')) : '일치 없음'}</p><p>제목·부서 기준 분류입니다. 실제 적용 여부와 대응 기한은 원문 및 회사 업무를 대조해 확인하세요.</p></section><section class="detail-section"><h3>원문 확인</h3><p>${item.source === 'KOFIA' ? '협회 자료입니다. 제·개정일과 예고 기간은 시행일이 아닙니다. 시행일 및 적용·제출 조건은 해당 협회 원문과 첨부에서 확인하세요. 협회 예고 원문은 전용 연결 페이지를 통해 열립니다.' : item.category === '공포법령' ? hasReasonView(item) ? '제·개정이유 보기는 이 게시글의 공포번호·날짜와 일치하는 개정이유를 표시합니다. 원문에 포함된 주요내용도 함께 표시됩니다. 시행일 경과는 현재 유효함을 의미하지 않습니다.' : '법령 링크는 법령명 기준 주소입니다. 수집된 개정본을 확인하려면 원문의 연혁·제정개정이유에서 공포번호와 날짜를 대조하세요. 시행일 경과는 현재 유효함을 의미하지 않습니다.' : '수집 데이터에는 본문·요약·첨부파일이 포함되지 않습니다. 원문에서 세부 내용과 기한을 확인하세요.'}</p><div class="detail-actions"><button class="primary-action" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}">${read ? '미확인으로 변경' : '확인 완료'}</button>${href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${originalLabel(item)} ↗</a><button data-action="copy" data-id="${esc(item.id)}">링크 복사</button>` : '<span>원문 링크 미확인</span>'}</div></section>`;
+    const href = sourceURL(item, document.baseURI), read = isRead(item, records);
+    const normalized = window.RegWatchAI?.normalize(item), source = item.source === 'KOFIA' ? '금융투자협회' : normalized?.source || item.source || item.dept || '기관 미수집';
+    const timing = window.RegWatchPresentation?.deadline(normalized || {},today) || '';
+    $('detail-content').innerHTML = `<header class="brief-header"><h2 id="detail-title" class="detail-title">${esc(item.title)}</h2><p class="brief-meta">${esc(source)} · ${esc(dateDisplay(item.date))}${timing ? ` · ${esc(timing)}` : ''}</p><button class="text-button brief-review" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}">${read ? '✓ 확인 완료 · 취소' : '확인 완료로 표시'}</button></header><div id="ai-detail-section" class="ai-detail"><section class="brief-section"><h3>검토 요약</h3><p>${esc(priority(item,today).reason)}</p></section><section class="brief-section"><h3>왜 확인해야 하나요?</h3><p>공식 원문과 당사 업무의 관련성을 확인하세요.</p></section><section class="brief-section"><h3>무엇을 확인하면 되나요?</h3><p>당사 적용 대상 여부 · 관련 내규 · 업무 영향 여부</p></section><section class="brief-section"><h3>관련 업무</h3><p>공식 원문 확인 필요</p></section></div><footer class="brief-footer"><div class="brief-cta">${href ? `<a class="small-button" href="${esc(href)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(item.title)} 공식 원문 보기">공식 원문 ↗</a>` : '<span class="brief-meta">공식 원문 링크가 없습니다.</span>'}</div><p class="ai-disclaimer">검토를 보조하기 위한 참고자료입니다. 최종 적용 여부는 공식 원문과 회사 업무를 대조해 판단하세요.</p></footer>`;
+    try { window.RegWatchAIUI?.detail(item, today); } catch { /* Preserve original details. */ }
+    try { window.RegWatchGemini?.mountDetail(item); } catch { /* Preserve existing details. */ }
   }
   function openDetail(id) {
     const item = byId.get(id); if (!item) return;
@@ -350,6 +355,10 @@
       if (action.dataset.action === 'reset') { resetFilters(); render(); return; }
       const item = byId.get(action.dataset.id); if (!item) return;
       if (action.dataset.action === 'detail') openDetail(item.id);
+      if (action.dataset.action === 'ai-detail') {
+        if (!$('detail-dialog').open || selectedId !== item.id) openDetail(item.id);
+        window.RegWatchAIUI?.analyze(item).catch(() => {});
+      }
       if (action.dataset.action === 'copy') copyLink(item);
       if (action.dataset.action === 'read') {
         const read = isRead(item, records);
