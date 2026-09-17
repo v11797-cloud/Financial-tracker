@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-17 09:56 KST";
+window.lastUpdated = "2026-09-17 10:13 KST";
 window.regulatoryData = [
     {
         "id": "no010101_87731",
@@ -6,6 +6,22 @@ window.regulatoryData = [
         "url": "https://www.fsc.go.kr/no010101/87731?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(회계제도팀)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_229066",
+        "title": "[금감원] 금감원, 금융상황 점검회의 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229066&menuNo=200218&pageIndex=1",
+        "date": "2026-09-17",
+        "dept": "금융감독원(금융시장안정국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_229065",
+        "title": "[금감원] 부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229065&menuNo=200218&pageIndex=1",
+        "date": "2026-09-17",
+        "dept": "금융감독원(중소금융검사1국)",
         "category": "보도자료"
     },
     {
@@ -155,7 +171,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228616",
         "title": "[금감원] 주택공급 금융지원 프로그램 및 PF 사업장 매각설명회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228616&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228616&menuNo=200218&pageIndex=2",
         "date": "2026-09-15",
         "dept": "금융감독원(중소금융검사1국)",
         "category": "보도자료"
@@ -163,7 +179,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228611",
         "title": "[금감원] 보이스피싱으로 인한 카드결제 피해 예방 및 구제를 강화하겠습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228611&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228611&menuNo=200218&pageIndex=2",
         "date": "2026-09-15",
         "dept": "금융감독원(여신금융감독국/금융사기대응단)",
         "category": "보도자료"
@@ -267,7 +283,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227674",
         "title": "[금감원] 2026년 2분기 증권, 선물회사 영업실적",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227674&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227674&menuNo=200218&pageIndex=3",
         "date": "2026-09-10",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -291,7 +307,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227683",
         "title": "[금감원] 금감원장, 금감원-지자체-금융권 공동개최 해외IR 참석 및 영국 금융감독당국 최고위급 등 면담",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227683&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227683&menuNo=200218&pageIndex=3",
         "date": "2026-09-10",
         "dept": "금융감독원(국제업무국(금융중심지지원센터))",
         "category": "보도자료"
@@ -315,7 +331,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227544",
         "title": "[금감원] 해외 부동산펀드 등 고위험 펀드의 투자자 보호를 강화하기 위한 간담회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227544&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227544&menuNo=200218&pageIndex=4",
         "date": "2026-09-09",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
@@ -398,7 +414,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227394",
         "title": "[금감원] 고령층의 금융사기 피해 예방 및 디지털 금융 소외 방지를 위한 FSS 시니어 금융아카데미를 신청하세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227394&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227394&menuNo=200218&pageIndex=4",
         "date": "2026-09-08",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
