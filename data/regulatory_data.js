@@ -1,8 +1,16 @@
-window.lastUpdated = "2026-09-17 10:13 KST";
+window.lastUpdated = "2026-09-18 08:17 KST";
 window.regulatoryData = [
     {
+        "id": "fss_press_229235",
+        "title": "[금감원] 2026년 8월 외국인 증권투자 동향",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229235&menuNo=200218&pageIndex=1",
+        "date": "2026-09-18",
+        "dept": "금융감독원(자본시장감독국)",
+        "category": "보도자료"
+    },
+    {
         "id": "no010101_87731",
-        "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제16차 증권선물위원회(‘26.9.16.) 조치 의결. 금일 등록된 게시글",
+        "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제16차 증권선물위원회(‘26.9.16.) 조치 의결",
         "url": "https://www.fsc.go.kr/no010101/87731?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(회계제도팀)",
@@ -17,11 +25,51 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
-        "id": "fss_press_229065",
-        "title": "[금감원] 부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229065&menuNo=200218&pageIndex=1",
+        "id": "no030101_87740",
+        "title": "금융시장동향(26.09.16)",
+        "url": "https://www.fsc.go.kr/no030101/87740?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
-        "dept": "금융감독원(중소금융검사1국)",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87742",
+        "title": "국민성장펀드에 더 많은 전문가들이 참여하여의사결정의 객관성과 투명성을 강화합니다. - 9월 기금운용심의회, 약 1조원 규모 5건 사업도 함께 승인의결",
+        "url": "https://www.fsc.go.kr/no010101/87742?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-17",
+        "dept": "금융위원회(국민성장펀드총괄과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87741",
+        "title": "청소년에서 군 장병까지, 도박문제 예방·치유 안전망 확대",
+        "url": "https://www.fsc.go.kr/no010101/87741?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-17",
+        "dept": "금융위원회(가계금융과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87738",
+        "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
+        "url": "https://www.fsc.go.kr/no010101/87738?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-17",
+        "dept": "금융위원회(금융정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87735",
+        "title": "“투자자와 벤처기업, 전문가의 의견을 균형있게 청취하였습니다.”  - 신기술금융업권 제3자 연대책임 관련 간담회 개최",
+        "url": "https://www.fsc.go.kr/no010101/87735?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-17",
+        "dept": "금융위원회(중소금융과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_229095",
+        "title": "[금감원] 금융소비자보호 성과 대국민 보고대회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=1",
+        "date": "2026-09-17",
+        "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
     },
     {
@@ -59,7 +107,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87721",
         "title": "금융위원장-카자흐 ARDFM 청장 면담 및 한-카자흐 금융협력세미나 개최",
-        "url": "https://www.fsc.go.kr/no010101/87721?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87721?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(글로벌금융과)",
         "category": "보도자료"
@@ -131,7 +179,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87716",
         "title": "이억원 금융위원장, 독일 연방하원 재정위원회 위원장 면담",
-        "url": "https://www.fsc.go.kr/no010101/87716?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87716?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-15",
         "dept": "금융위원회(글로벌금융과)",
         "category": "보도자료"
@@ -139,7 +187,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87715",
         "title": "합병가액 산정방식 변경(시가→공정가액) 등 자본시장법 개정에 따른 하위법규 개정예고 실시 ※예고기간 ‘26.9.16일 ~ 10.6일",
-        "url": "https://www.fsc.go.kr/no010101/87715?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87715?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-15",
         "dept": "금융위원회(공정시장과)",
         "category": "보도자료"
@@ -147,7 +195,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87714",
         "title": "“아시아에서 가장 역동적인 자본시장을 향한 관문 (Gateway to Asia’s Most Dynamic Capital Market)”  「Korea Premium Weeks 2026」 개최 안내",
-        "url": "https://www.fsc.go.kr/no010101/87714?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87714?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-15",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -163,7 +211,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228620",
         "title": "[금감원] 금감원장, 임원회의(9.15.) 당부사항",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228620&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228620&menuNo=200218&pageIndex=2",
         "date": "2026-09-15",
         "dept": "금융감독원(은행검사1국/은행검사2국)",
         "category": "보도자료"
@@ -243,7 +291,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227746",
         "title": "[금감원] 2026년 2분기 자산운용회사 영업실적(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=3",
         "date": "2026-09-11",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
@@ -299,7 +347,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87690",
         "title": "PF보증이 주택공급으로 이억원 금융위원장, 김포 PF사업장 방문",
-        "url": "https://www.fsc.go.kr/no010101/87690?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87690?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-10",
         "dept": "금융위원회(금융정책과)",
         "category": "보도자료"
@@ -339,7 +387,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87675",
         "title": "2026년 8월 가계대출 동향(잠정) 및  ｢가계부채 점검회의｣ 개최",
-        "url": "https://www.fsc.go.kr/no010101/87675?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87675?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(금융정책과)",
         "category": "보도자료"
@@ -379,7 +427,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87676",
         "title": "삼성증권㈜에 대한 단기금융업 인가",
-        "url": "https://www.fsc.go.kr/no010101/87676?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87676?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -395,7 +443,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87687",
         "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제15차 금융위원회(’26.9.9.) 조치 의결",
-        "url": "https://www.fsc.go.kr/no010101/87687?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87687?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
@@ -508,7 +556,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226951",
         "title": "[금감원] 2026 범금융권 보이스피싱 예방 주간 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226951&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226951&menuNo=200218&pageIndex=5",
         "date": "2026-09-06",
         "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
@@ -532,7 +580,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87649",
         "title": "금융시장동향(26.09.03)",
-        "url": "https://www.fsc.go.kr/no030101/87649?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87649?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1052,7 +1100,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87575",
         "title": "금융시장동향(26.08.20)",
-        "url": "https://www.fsc.go.kr/no030101/87575?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87575?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-21",
         "dept": "금융위원회",
         "category": "금융시장동향"
