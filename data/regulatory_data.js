@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-18 08:17 KST";
+window.lastUpdated = "2026-09-18 10:09 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_229235",
@@ -6,6 +6,30 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229235&menuNo=200218&pageIndex=1",
         "date": "2026-09-18",
         "dept": "금융감독원(자본시장감독국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4174",
+        "title": "「외부감사 및 회계 등에 관한 규정」일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4174&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-18",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "fss_press_229241",
+        "title": "[금감원] 금융감독원, 금융권과 함께하는 추석맞이 전통시장 나눔 활동 실시",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229241&menuNo=200218&pageIndex=1",
+        "date": "2026-09-18",
+        "dept": "금융감독원(기획조정국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_229239",
+        "title": "[금감원] 2026년 제49회 보험계리사 및 손해사정사 최종 합격자 발표",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229239&menuNo=200218&pageIndex=1",
+        "date": "2026-09-18",
+        "dept": "금융감독원(보험감독국)",
         "category": "보도자료"
     },
     {
@@ -34,7 +58,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87742",
-        "title": "국민성장펀드에 더 많은 전문가들이 참여하여의사결정의 객관성과 투명성을 강화합니다. - 9월 기금운용심의회, 약 1조원 규모 5건 사업도 함께 승인의결",
+        "title": "국민성장펀드에 더 많은 전문가들이 참여하여 의사결정의 객관성과 투명성을 강화합니다. - 9월 기금운용심의회, 약 1조원 규모 5건 사업도 함께 승인의결",
         "url": "https://www.fsc.go.kr/no010101/87742?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(국민성장펀드총괄과)",
@@ -123,7 +147,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228836",
         "title": "[금감원] 26.6월말 기준 보험회사 지급여력비율 현황",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228836&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228836&menuNo=200218&pageIndex=2",
         "date": "2026-09-16",
         "dept": "금융감독원(계리리스크감독국)",
         "category": "보도자료"
@@ -131,7 +155,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228833",
         "title": "[금감원] 의료기관 부당청구 방지 및 보험사기 근절을 위한금융감독원-건강보험심사평가원 간 업무협약 체결",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228833&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228833&menuNo=200218&pageIndex=2",
         "date": "2026-09-16",
         "dept": "금융감독원(보험사기대응단/보험감독국/보험상품분쟁2국)",
         "category": "보도자료"
@@ -283,7 +307,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228069",
         "title": "[금감원] 금융감독원, 테크파인더 쇼케이스 2026 참가기업 공개모집",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228069&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228069&menuNo=200218&pageIndex=3",
         "date": "2026-09-13",
         "dept": "금융감독원(디지털금융총괄국)",
         "category": "보도자료"
@@ -411,7 +435,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227559",
         "title": "[금감원] 금융감독원, 금융업계의 다크패턴 예방을 위한 상시협의체 킥오프 회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227559&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227559&menuNo=200218&pageIndex=4",
         "date": "2026-09-09",
         "dept": "금융감독원(소비자피해예방국)",
         "category": "보도자료"
@@ -419,7 +443,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227554",
         "title": "[금감원] 공모 목표전환형 펀드 현황 및 투자자 유의사항 안내",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227554&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227554&menuNo=200218&pageIndex=4",
         "date": "2026-09-09",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
@@ -540,7 +564,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226953",
         "title": "[금감원] 금융감독원, 제4차 소비자위험대응협의회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226953&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226953&menuNo=200218&pageIndex=5",
         "date": "2026-09-06",
         "dept": "금융감독원(소비자피해예방국)",
         "category": "보도자료"
@@ -548,7 +572,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_226952",
         "title": "[금감원] 금융 인허가, 등록 사전협의 절차가 더욱 편리해집니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226952&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=226952&menuNo=200218&pageIndex=5",
         "date": "2026-09-06",
         "dept": "금융감독원(감독혁신국/디지털금융총괄국/정보화전략국/자본시장감독국/자산운용감독국/보험감독국/여신금융감독국/전자금융감독국)",
         "category": "보도자료"
@@ -1268,7 +1292,7 @@ window.regulatoryData = [
     {
         "id": "notice_4164",
         "title": "「금융위원회와 그 소속기관 직제 시행규칙」 일부개정령(안) 입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4164&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4164&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-11",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1768,7 +1792,7 @@ window.regulatoryData = [
     {
         "id": "notice_4154",
         "title": "「공인회계사 실무수습기관 지정고시」 전부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4154&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4154&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-06-16",
         "dept": "금융위원회",
         "category": "입법예고"
