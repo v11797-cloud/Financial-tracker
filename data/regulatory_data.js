@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-18 10:09 KST";
+window.lastUpdated = "2026-09-19 10:03 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_229235",
@@ -30,6 +30,22 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229239&menuNo=200218&pageIndex=1",
         "date": "2026-09-18",
         "dept": "금융감독원(보험감독국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87744",
+        "title": "금융시장동향(26.9.17)",
+        "url": "https://www.fsc.go.kr/no030101/87744?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-18",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87745",
+        "title": "금융정보분석원, 타지키스탄 국립은행과  정보교환 협력을 위한 양해각서(MOU) 체결",
+        "url": "https://www.fsc.go.kr/no010101/87745?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-18",
+        "dept": "금융위원회(금융정보분석원)",
         "category": "보도자료"
     },
     {
@@ -123,7 +139,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87722",
         "title": "신용정보법 과징금 산정의 투명성과 합리성을 높이도록 하겠습니다.  - 신용정보법 과징금 산정기준 개선을 위한 T/F 회의 개최",
-        "url": "https://www.fsc.go.kr/no010101/87722?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87722?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(금융데이터정책과)",
         "category": "보도자료"
@@ -339,7 +355,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87701",
         "title": "IFRS17 체계下 계리가정 보고서 도입으로 보험부채 평가의 합리성과 신뢰성을 제고하겠습니다.",
-        "url": "https://www.fsc.go.kr/no010101/87701?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87701?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-11",
         "dept": "금융위원회(보험과)",
         "category": "보도자료"
@@ -628,7 +644,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87656",
         "title": "금융시장동향(26.09.04)",
-        "url": "https://www.fsc.go.kr/no030101/87656?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87656?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1116,7 +1132,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87580",
         "title": "금융시장동향(26.08.21)",
-        "url": "https://www.fsc.go.kr/no030101/87580?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87580?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-21",
         "dept": "금융위원회",
         "category": "금융시장동향"
