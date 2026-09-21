@@ -1,19 +1,38 @@
 window.kofiaData = {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-09-21 09:58 KST",
+  "updated_at": "2026-09-22 08:12 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-09-21 09:58 KST",
+  "classification_checked_at": "2026-09-22 08:12 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
     "notices": 152,
-    "revisions_scanned": 1437,
-    "revisions_included": 958,
+    "revisions_scanned": 1438,
+    "revisions_included": 959,
     "revisions_excluded": 479,
-    "협회규정": 543,
+    "협회규정": 544,
     "모범규준": 415
   },
   "items": [
+    {
+      "id": "kofia_revision_1810",
+      "title": "금융투자회사의 영업 및 업무에 관한 규정 시행세칙",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1810",
+      "date": "2026-09-21",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "137",
+      "history_seq": "1810",
+      "law_name": "금융투자회사의 영업 및 업무에 관한 규정 시행세칙",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "금융투자회사의 영업 및 업무에 관한 규정 시행세칙"
+      ]
+    },
     {
       "id": "kofia_revision_1803",
       "title": "금융투자회사의 영업 및 업무에 관한 규정",
