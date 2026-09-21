@@ -95,7 +95,7 @@
       if (state.category !== 'all' && item.category !== state.category) return false;
       if (state.unread && isRead(item, records)) return false;
       if (state.focus === 'today' && item.date !== today) return false;
-      if (state.focus === 'priority' && !priority(item, today).tier) return false;
+      if (state.focus === 'priority' && (state.priorityIds ? !state.priorityIds.includes(item.id) : !priority(item, today).tier)) return false;
       if (state.focus === 'unread' && isRead(item, records)) return false;
       if (state.focus === 'upcoming') { const due = daysUntil(effectiveDate(item), today); if (due === null || due < 0 || due > 30) return false; }
       if (!matchesLaw(item, state.law)) return false;
@@ -135,6 +135,7 @@
   const lawTitle = item => item.law_name || item.title;
   const STORAGE_KEY = 'financial-tracker:ui-v2:reviews:v1';
   const PAGE_SIZE = 25;
+  const personalPriority = window.RegWatchPriority;
   let today = kstToday(), records = Object.create(null), storageAvailable = true, selectedId = null, toastTimer, previousFocus;
   try {
     const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
@@ -185,11 +186,65 @@
   const state = { search: '', category: 'all', law: 'all', scope: 'all', unread: false, focus: 'all', sort: 'latest', view: 'list', page: 1, year: Number(today.slice(0, 4)), month: Number(today.slice(5, 7)) - 1 };
   const focusLabels = { all: '전체 항목', today: '오늘 게시', priority: '우선 검토', upcoming: '30일 내 시행', unread: '미확인 항목' };
   const scopeItems = () => items.filter(item => state.scope !== 'asset' || relevance(item).candidate);
-  function toast(message) {
+  function toast(message, undo) {
     clearTimeout(toastTimer);
     const host = document.querySelector('dialog[open]') || document.body;
     host.append($('toast')); $('toast').textContent = message; $('toast').hidden = false;
-    toastTimer = setTimeout(() => { $('toast').hidden = true; }, 3200);
+    if (undo) {
+      const button = document.createElement('button'); button.textContent = '되돌리기'; button.className = 'text-button';
+      button.addEventListener('click', () => { clearTimeout(toastTimer); undo(); $('toast').hidden = true; }, {once:true});
+      $('toast').append(button);
+    }
+    toastTimer = setTimeout(() => { $('toast').hidden = true; }, undo ? 5000 : 3200);
+  }
+  function priorityButton(item) {
+    const active = personalPriority?.isVisiblePriorityItem(item.id) || false;
+    return `<button class="priority-toggle" data-action="priority-toggle" data-id="${esc(item.id)}" aria-pressed="${active}" aria-label="${esc(item.title)}을 우선검토${active ? '에서 제외' : '에 추가'}">${active ? '★ 우선검토 중' : '☆ 우선검토에 추가'}</button>`;
+  }
+  function syncPriorityButtons() {
+    document.querySelectorAll('.priority-toggle').forEach(button => {
+      const item = byId.get(button.dataset.id); if (!item) return;
+      const active = personalPriority?.isVisiblePriorityItem(item.id) || false;
+      button.textContent = active ? '★ 우선검토 중' : '☆ 우선검토에 추가';
+      button.setAttribute('aria-pressed',String(active));
+      button.setAttribute('aria-label',`${item.title}을 우선검토${active ? '에서 제외' : '에 추가'}`);
+    });
+  }
+  function syncPriorityView() {
+    state.priorityIds = personalPriority ? personalPriority.getVisiblePriorityRegulations().map(item => item.id) : null;
+    syncPriorityButtons();
+    if (state.focus === 'priority') {
+      controls(); const filtered = filterItems(items,state,today,records);
+      if (state.view === 'calendar') renderCalendar(filtered); else renderList(filtered);
+    }
+  }
+  function refreshPriority(id) {
+    render(); syncPriorityButtons();
+    const host = $('detail-dialog').open ? $('detail-content') : document;
+    const button = [...host.querySelectorAll('.priority-toggle')].find(b => b.dataset.id === id);
+    (button || $('priority-excluded')).focus({preventScroll:true});
+  }
+  function priorityWarning() { return personalPriority?.storageAvailable() ? '' : ' 저장이 차단되어 현재 화면에서만 유지됩니다.'; }
+  function togglePriorityItem(item, forceExclude = false) {
+    if (!personalPriority) return;
+    let before;
+    if (forceExclude) before = personalPriority.excludePriorityItem(item.id);
+    else if (personalPriority.isVisiblePriorityItem(item.id)) {
+      before = personalPriority.isManuallyAdded(item.id) ? personalPriority.removeManualPriorityItem(item.id) : personalPriority.excludePriorityItem(item.id);
+    } else personalPriority.addManualPriorityItem(item.id);
+    refreshPriority(item.id);
+    toast((before ? '우선검토에서 제외했습니다.' : '우선검토에 추가했습니다.') + priorityWarning(),
+      before ? () => { personalPriority.undoPriorityChange(before); refreshPriority(item.id); } : null);
+  }
+  function existingExcludedItems() {
+    return (personalPriority?.getExcludedPriorityIds() || []).map(id => byId.get(id)).filter(Boolean);
+  }
+  function renderExcluded() {
+    const excluded = existingExcludedItems();
+    $('priority-excluded').textContent = `제외한 안건 보기 (${excluded.length})`;
+    if (!$('priority-excluded-dialog').open) return;
+    $('priority-excluded-list').innerHTML = excluded.length ? excluded.map(item => `<article class="excluded-priority-row"><div><strong>${esc(item.title)}</strong><p>${esc(item.source === 'KOFIA' ? '금융투자협회' : item.dept)} · ${esc(dateDisplay(item.date))}</p></div><button class="small-button" data-action="priority-restore" data-id="${esc(item.id)}" aria-label="${esc(item.title)} 제외 취소">제외 취소</button></article>`).join('') : '<p class="rail-empty">제외한 안건이 없습니다.</p>';
+    $('priority-restore-all').disabled = !personalPriority?.getExcludedPriorityIds().length;
   }
   function persist() {
     try { localStorage.setItem(STORAGE_KEY, JSON.stringify(records)); storageAvailable = true; }
@@ -266,12 +321,13 @@
     $('feed-title').textContent = state.view === 'calendar' ? '시행일 캘린더' : state.focus === 'all' ? '전체 규제 피드' : `${focusLabels[state.focus]} 피드`;
     $('list-view').hidden = state.view !== 'list'; $('calendar-view').hidden = state.view !== 'calendar';
     $('count-today').textContent = validData ? scoped.filter(item => item.date === today).length : '—';
-    $('count-priority').textContent = validData ? scoped.filter(item => priority(item, today).tier > 0).length : '—';
+    $('count-priority').textContent = validData ? scoped.filter(item => state.priorityIds ? state.priorityIds.includes(item.id) : priority(item, today).tier > 0).length : '—';
+    document.querySelector('.priority-metric .metric-note').textContent = state.priorityIds ? '자동 추천 + 직접 추가' : '일정·키워드 규칙 기반';
     $('count-upcoming').textContent = validData ? scoped.filter(item => { const n = daysUntil(effectiveDate(item), today); return n !== null && n >= 0 && n <= 30; }).length : '—';
     $('count-unread').textContent = validData ? scoped.filter(item => !isRead(item, records)).length : '—';
   }
   function renderList(filtered) {
-    const sorted = sortItems(filtered, state.sort, today), pages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
+    const sorted = state.focus === 'priority' && state.priorityIds ? [...filtered].sort((a,b) => state.priorityIds.indexOf(a.id)-state.priorityIds.indexOf(b.id)) : sortItems(filtered, state.sort, today), pages = Math.max(1, Math.ceil(sorted.length / PAGE_SIZE));
     state.page = Math.min(state.page, pages);
     const start = (state.page - 1) * PAGE_SIZE, pageItems = sorted.slice(start, start + PAGE_SIZE);
     $('result-count').innerHTML = `<strong>${sorted.length.toLocaleString('ko-KR')}건</strong> / 업무 관점 ${scopeItems().length}건${sorted.length ? ` · ${start + 1}–${start + pageItems.length}` : ''}`;
@@ -283,16 +339,18 @@
     } else {
       $('regulation-list').innerHTML = pageItems.map(item => {
         const read = isRead(item, records), p = priority(item, today), href = sourceURL(item, document.baseURI);
-        return `<article class="reg-row${read ? ' is-read' : ''}" data-item-id="${esc(item.id)}"><div class="row-content"><div class="row-meta">${read ? '' : '<span class="unread-dot" aria-label="미확인"></span>'}${badge(item)}${p.tier ? `<span class="priority-flag">↑ 우선 검토</span>` : ''}</div><h3><button class="reg-title" data-action="detail" data-id="${esc(item.id)}">${highlight(item.title)}</button></h3><p class="dept-line">${highlight(item.dept)}<span class="mobile-posted">${dateLabel(item)} ${esc(dateDisplay(item.date))}</span></p><div class="row-actions">${href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${originalLabel(item)} ↗</a><button data-action="copy" data-id="${esc(item.id)}" aria-label="${esc(item.title)} 링크 복사">링크 복사</button>` : '<span class="unknown-date">원문 링크 미확인</span>'}</div></div><div class="row-date">${esc(dateDisplay(item.date))}<span class="date-label">${dateLabel(item)}</span></div><div class="row-deadline">${deadlineHTML(item)}</div><button class="read-toggle" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}" aria-label="${esc(item.title)} ${read ? '미확인으로 변경' : '확인 완료 처리'}" title="${read ? '미확인으로 변경' : '확인 완료 처리'}">${read ? '✓' : '○'}</button></article>`;
+        return `<article class="reg-row${read ? ' is-read' : ''}" data-item-id="${esc(item.id)}"><div class="row-content"><div class="row-meta">${read ? '' : '<span class="unread-dot" aria-label="미확인"></span>'}${badge(item)}${p.tier ? `<span class="priority-flag">↑ 우선 검토</span>` : ''}</div><h3><button class="reg-title" data-action="detail" data-id="${esc(item.id)}">${highlight(item.title)}</button></h3><p class="dept-line">${highlight(item.dept)}<span class="mobile-posted">${dateLabel(item)} ${esc(dateDisplay(item.date))}</span></p><div class="row-actions">${priorityButton(item)}${href ? `<a href="${esc(href)}" target="_blank" rel="noopener noreferrer">${originalLabel(item)} ↗</a><button data-action="copy" data-id="${esc(item.id)}" aria-label="${esc(item.title)} 링크 복사">링크 복사</button>` : '<span class="unknown-date">원문 링크 미확인</span>'}</div></div><div class="row-date">${esc(dateDisplay(item.date))}<span class="date-label">${dateLabel(item)}</span></div><div class="row-deadline">${deadlineHTML(item)}</div><button class="read-toggle" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}" aria-label="${esc(item.title)} ${read ? '미확인으로 변경' : '확인 완료 처리'}" title="${read ? '미확인으로 변경' : '확인 완료 처리'}">${read ? '✓' : '○'}</button></article>`;
       }).join('');
     }
     $('pagination').innerHTML = sorted.length ? `<button class="small-button" data-page="${state.page - 1}" ${state.page === 1 ? 'disabled' : ''}>← 이전</button><span>${state.page} / ${pages} 페이지</span><button class="small-button" data-page="${state.page + 1}" ${state.page >= pages ? 'disabled' : ''}>다음 →</button>` : '';
   }
   function renderRail() {
     const scoped = scopeItems();
-    const prioritized = sortItems(scoped.filter(item => !isRead(item, records) && priority(item, today).tier > 0), 'priority', today).slice(0, 3);
-    $('priority-list').innerHTML = prioritized.length ? prioritized.map((item, i) => `<article class="priority-item"><span class="priority-rank">0${i + 1}</span><div><div class="reason">${esc(priority(item, today).reason)}</div><button data-action="detail" data-id="${esc(item.id)}">${esc(lawTitle(item))}</button><p>${item.prom_no ? `제${esc(item.prom_no)}호 · ` : ''}${esc(dateDisplay(item.date))}</p></div></article>`).join('') : `<p class="rail-empty">${validData ? '미확인 우선 검토 항목이 없습니다.' : '데이터 확인이 필요합니다.'}</p>`;
-    try { window.RegWatchAIUI?.render({ items: scoped, today, records, isRead, priority, sortItems, scope: state.scope }); } catch { /* Optional AI layer cannot break the rule rail. */ }
+    const prioritized = sortItems(scoped.filter(item => !isRead(item, records) && priority(item, today).tier > 0), 'priority', today);
+    personalPriority?.configure(prioritized, scoped);
+    const visible = personalPriority ? personalPriority.getVisiblePriorityRegulations() : prioritized.slice(0,3);
+    $('priority-list').innerHTML = visible.length ? visible.map((item,i) => `<article class="ai-priority-row"><button class="priority-summary" data-action="detail" data-id="${esc(item.id)}"><span>${i+1}</span><span><strong>${esc(item.title)}</strong><small>${esc(priority(item,today).reason)}</small></span><span aria-hidden="true">→</span></button><button class="priority-remove" data-action="priority-exclude" data-id="${esc(item.id)}" title="우선검토에서 제외" aria-label="${esc(item.title)}을 우선검토에서 제외">×</button></article>`).join('') : `<p class="rail-empty">${validData ? '현재 표시할 우선검토 안건이 없습니다. 제외한 안건을 복원하거나 전체 규제에서 직접 추가할 수 있습니다.' : '데이터 확인이 필요합니다.'}</p>`;
+    try { window.RegWatchAIUI?.render({ items: scoped, today, records, isRead, priority, sortItems, scope: state.scope, syncPriorityButtons: syncPriorityView }); } catch { /* Optional AI layer cannot break the rule rail. */ }
     const upcoming = sortItems(scoped.filter(item => { const n = daysUntil(effectiveDate(item), today); return n !== null && n >= 0; }), 'effective', today).slice(0, 3);
     $('upcoming-list').innerHTML = upcoming.length ? upcoming.map(item => `<article class="upcoming-item"><div class="date-block"><small>${Number(item.enf_date.slice(5, 7))}월</small><strong>${item.enf_date.slice(8)}</strong></div><div><button data-action="detail" data-id="${esc(item.id)}">${esc(lawTitle(item))}</button><p><span>${dDay(item.enf_date, today)}</span>제${esc(item.prom_no || '미상')}호 · ${item.enf_date.slice(0, 4)}</p></div></article>`).join('') : '<p class="rail-empty">수집된 향후 시행 일정이 없습니다.</p>';
   }
@@ -311,10 +369,13 @@
   }
   function render() {
     const dateChanged = today !== kstToday();
-    today = kstToday(); updateStatus(); controls();
+    today = kstToday(); updateStatus();
+    renderRail();
+    state.priorityIds = personalPriority ? personalPriority.getVisiblePriorityRegulations().map(item => item.id) : null;
+    renderExcluded();
+    controls();
     const filtered = filterItems(items, state, today, records);
     if (state.view === 'calendar') renderCalendar(filtered); else renderList(filtered);
-    renderRail();
     const unreadCount = items.filter(item => !isRead(item, records)).length;
     $('bulk-review-open').textContent = `미확인 전체 확인 (${unreadCount.toLocaleString('ko-KR')}건)`;
     $('bulk-review-open').disabled = unreadCount === 0;
@@ -324,7 +385,7 @@
     const href = sourceURL(item, document.baseURI), read = isRead(item, records);
     const normalized = window.RegWatchAI?.normalize(item), source = item.source === 'KOFIA' ? '금융투자협회' : normalized?.source || item.source || item.dept || '기관 미수집';
     const timing = window.RegWatchPresentation?.deadline(normalized || {},today) || '';
-    $('detail-content').innerHTML = `<header class="brief-header"><h2 id="detail-title" class="detail-title">${esc(item.title)}</h2><p class="brief-meta">${esc(source)} · ${esc(dateDisplay(item.date))}${timing ? ` · ${esc(timing)}` : ''}</p><button class="text-button brief-review" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}">${read ? '✓ 확인 완료 · 취소' : '확인 완료로 표시'}</button></header><div id="ai-detail-section" class="ai-detail"><section class="brief-section"><h3>검토 요약</h3><p>${esc(priority(item,today).reason)}</p></section><section class="brief-section"><h3>왜 확인해야 하나요?</h3><p>공식 원문과 당사 업무의 관련성을 확인하세요.</p></section><section class="brief-section"><h3>무엇을 확인하면 되나요?</h3><p>당사 적용 대상 여부 · 관련 내규 · 업무 영향 여부</p></section><section class="brief-section"><h3>관련 업무</h3><p>공식 원문 확인 필요</p></section></div><footer class="brief-footer"><div class="brief-cta">${href ? `<a class="small-button" href="${esc(href)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(item.title)} 공식 원문 보기">공식 원문 ↗</a>` : '<span class="brief-meta">공식 원문 링크가 없습니다.</span>'}</div><p class="ai-disclaimer">검토를 보조하기 위한 참고자료입니다. 최종 적용 여부는 공식 원문과 회사 업무를 대조해 판단하세요.</p></footer>`;
+    $('detail-content').innerHTML = `<header class="brief-header"><h2 id="detail-title" class="detail-title">${esc(item.title)}</h2><p class="brief-meta">${esc(source)} · ${esc(dateDisplay(item.date))}${timing ? ` · ${esc(timing)}` : ''}</p><button class="text-button brief-review" data-action="read" data-id="${esc(item.id)}" aria-pressed="${read}">${read ? '✓ 확인 완료 · 취소' : '확인 완료로 표시'}</button>${priorityButton(item)}</header><div id="ai-detail-section" class="ai-detail"><section class="brief-section"><h3>검토 요약</h3><p>${esc(priority(item,today).reason)}</p></section><section class="brief-section"><h3>왜 확인해야 하나요?</h3><p>공식 원문과 당사 업무의 관련성을 확인하세요.</p></section><section class="brief-section"><h3>무엇을 확인하면 되나요?</h3><p>당사 적용 대상 여부 · 관련 내규 · 업무 영향 여부</p></section><section class="brief-section"><h3>관련 업무</h3><p>공식 원문 확인 필요</p></section></div><footer class="brief-footer"><div class="brief-cta">${href ? `<a class="small-button" href="${esc(href)}" target="_blank" rel="noopener noreferrer" aria-label="${esc(item.title)} 공식 원문 보기">공식 원문 ↗</a>` : '<span class="brief-meta">공식 원문 링크가 없습니다.</span>'}</div><p class="ai-disclaimer">검토를 보조하기 위한 참고자료입니다. 최종 적용 여부는 공식 원문과 회사 업무를 대조해 판단하세요.</p></footer>`;
     try { window.RegWatchAIUI?.detail(item, today); } catch { /* Preserve original details. */ }
     try { window.RegWatchGemini?.mountDetail(item); } catch { /* Preserve existing details. */ }
   }
@@ -353,7 +414,15 @@
     const action = event.target.closest('[data-action]');
     if (action) {
       if (action.dataset.action === 'reset') { resetFilters(); render(); return; }
+      if (action.dataset.action === 'priority-excluded') { $('priority-restore-confirmation').hidden = true; $('priority-excluded-dialog').showModal(); renderExcluded(); $('priority-excluded-close').focus(); return; }
       const item = byId.get(action.dataset.id); if (!item) return;
+      if (['priority-toggle','priority-exclude'].includes(action.dataset.action)) { event.preventDefault(); event.stopPropagation(); togglePriorityItem(item, action.dataset.action === 'priority-exclude'); return; }
+      if (action.dataset.action === 'priority-restore') {
+        personalPriority?.restoreExcludedPriorityItem(item.id); render(); syncPriorityButtons();
+        $('priority-excluded-list').querySelector('button')?.focus();
+        if (!$('priority-excluded-list').querySelector('button')) $('priority-excluded-close').focus();
+        toast((personalPriority?.isVisiblePriorityItem(item.id) ? '우선검토에 다시 표시합니다.' : '제외 상태를 해제했습니다. 현재 자동추천 대상이 아니거나 다른 업무 관점의 안건은 바로 표시되지 않을 수 있습니다.') + priorityWarning()); return;
+      }
       if (action.dataset.action === 'detail') openDetail(item.id);
       if (action.dataset.action === 'ai-detail') {
         if (!$('detail-dialog').open || selectedId !== item.id) openDetail(item.id);
@@ -391,6 +460,16 @@
   function moveMonth(offset) { const next = new Date(Date.UTC(state.year, state.month + offset, 1)); state.year = next.getUTCFullYear(); state.month = next.getUTCMonth(); render(); }
   $('cal-prev').addEventListener('click', () => moveMonth(-1)); $('cal-next').addEventListener('click', () => moveMonth(1));
   $('cal-today').addEventListener('click', () => { today = kstToday(); state.year = Number(today.slice(0, 4)); state.month = Number(today.slice(5, 7)) - 1; render(); });
+  $('priority-excluded-close').addEventListener('click', () => $('priority-excluded-dialog').close());
+  $('priority-excluded-dialog').addEventListener('close', () => {
+    $('priority-restore-confirmation').hidden = true; $('toast').hidden = true; document.body.append($('toast')); $('priority-excluded').focus();
+  });
+  $('priority-restore-all').addEventListener('click', () => { $('priority-restore-confirmation').hidden = false; $('priority-restore-cancel').focus(); });
+  $('priority-restore-cancel').addEventListener('click', () => { $('priority-restore-confirmation').hidden = true; $('priority-restore-all').focus(); });
+  $('priority-restore-confirm').addEventListener('click', () => {
+    personalPriority?.restoreAllExcludedPriorityItems(); $('priority-restore-confirmation').hidden = true;
+    render(); syncPriorityButtons(); $('priority-excluded-close').focus(); toast('모든 제외 상태를 해제했습니다.' + priorityWarning());
+  });
   $('close-detail').addEventListener('click', () => $('detail-dialog').close());
   $('detail-dialog').addEventListener('close', () => { $('toast').hidden = true; document.body.append($('toast')); if (previousFocus?.isConnected) previousFocus.focus(); else $('search-input').focus(); selectedId = null; });
   $('rules-button').addEventListener('click', () => $('rules-dialog').showModal());
@@ -428,6 +507,7 @@
   });
   document.addEventListener('keydown', event => { if (event.key === '/' && !/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName) && !document.querySelector('dialog[open]')) { event.preventDefault(); $('search-input').focus(); } });
   window.addEventListener('storage', event => {
+    if (event.key === null || ['regwatch_priority_excluded_v1','regwatch_priority_added_v1'].includes(event.key)) { personalPriority?.reload(); render(); syncPriorityButtons(); }
     if (event.key !== STORAGE_KEY && event.key !== null) return;
     try { const value = JSON.parse(event.newValue || '{}'); records = Object.create(null); if (value && typeof value === 'object' && !Array.isArray(value)) for (const [key, val] of Object.entries(value)) if (typeof val === 'string') records[key] = val; render(); if (selectedId) detailContent(byId.get(selectedId)); } catch { /* A malformed external value must not break rendering. */ }
   });
