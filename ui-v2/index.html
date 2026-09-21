@@ -9,15 +9,16 @@
   <link rel="stylesheet" href="./style.css?v=20260916-collection">
   <script src="../data/regulatory_data.js" defer></script>
   <script src="./data/kofia_data.js" defer></script>
-  <link rel="stylesheet" href="./ai.css?v=5">
+  <link rel="stylesheet" href="./ai.css?v=7">
   <script src="./ai-config.js?v=5" defer></script>
   <script src="./ai-schema.js?v=3" defer></script>
   <script src="./ai-analysis.js?v=6" defer></script>
   <script src="./ai-presentation.js?v=1" defer></script>
-  <script src="./ai-ui.js?v=6" defer></script>
+  <script src="./priority.js?v=2" defer></script>
+  <script src="./ai-ui.js?v=8" defer></script>
   <link rel="stylesheet" href="./gemini-enterprise.css?v=1">
   <script src="./gemini-enterprise.js?v=2" defer></script>
-  <script src="./app.js?v=20260917-simple" defer></script>
+  <script src="./app.js?v=20260921-exclusions" defer></script>
   <script src="./collection.js?v=20260916-collection" defer></script>
 </head>
 <body>
@@ -103,7 +104,7 @@
           </div>
         </section>
         <aside class="insight-rail" aria-label="업무 관점 내 검토 및 일정 요약">
-          <section class="rail-panel priority-panel"><div class="panel-heading"><h2>먼저 확인하세요</h2></div><p class="rail-caption">현재 업무 관점에서 먼저 볼 안건</p><div id="priority-list"></div><button id="show-priority" class="rail-link">우선 검토 전체 보기 <span>→</span></button></section>
+          <section class="rail-panel priority-panel"><div class="panel-heading"><h2>먼저 확인하세요</h2></div><p class="rail-caption">자동 추천 + 직접 추가 · 필요 없는 안건은 제외</p><button id="priority-excluded" class="text-button" data-action="priority-excluded">제외한 안건 보기 (0)</button><div id="priority-list"></div><button id="show-priority" class="rail-link">우선 검토 전체 보기 <span>→</span></button></section>
           <section class="rail-panel"><div class="panel-heading"><h2>다가오는 시행일</h2><span class="tiny-label">전체 일정</span></div><div id="upcoming-list"></div><button id="show-calendar" class="rail-link">시행일 캘린더 열기 <span>→</span></button></section>
           <section class="coverage-note"><span class="note-symbol" aria-hidden="true">i</span><div><h3>예고 기간과 시행일을 구분하세요</h3><p>협회 예고는 예고종료일을 표시합니다. 금융위 예고의 의견 마감 및 협회 규정의 시행일은 원문에서 확인하세요.</p><button id="show-notices" class="text-button">입법예고 보기 →</button></div></section>
         </aside>
@@ -121,6 +122,7 @@
     <h3>기존 법령 필터와 확인 기록</h3><p>법령·규정 필터는 하나씩 선택합니다. 4개 법령은 기존 정밀 제목 규칙을 사용하고 협회규정·모범규준은 협회 현행 분류로 구분합니다. 자료 종류와 법령·규정은 함께 적용됩니다. 자료 종류의 전체 버튼은 자료 종류 조건을 해제하며, 선택한 필터를 다시 누르면 해당 조건만 해제합니다. 필터 초기화로 모든 조건을 해제할 수도 있습니다. 항목 상세를 열거나 원문 링크를 눌러도 자동 확인 처리되지 않습니다. ‘확인 완료’ 버튼을 눌러야 기록되며, 동일 법령의 서로 다른 개정은 별도 항목입니다. 내용이 바뀐 항목은 다시 미확인으로 표시합니다. 기록은 UI 2.0 전용 브라우저 저장소에만 저장됩니다.</p>
   </div></dialog>
   <dialog id="bulk-review-dialog" class="rules-dialog" aria-labelledby="bulk-review-title"><div class="dialog-top"><h2 id="bulk-review-title">미확인 전체 확인</h2><button id="bulk-review-close" class="icon-button" aria-label="일괄 확인 취소">✕</button></div><div class="rules-content"><p id="bulk-review-description"></p><p>검색·필터·업무 관점과 관계없이 전체 데이터에 적용합니다. 기록은 이 브라우저에만 저장됩니다.</p><p>직접 항목을 검토하지 않아도 확인 완료로 표시됩니다. 처리 후 새로고침 전까지 되돌릴 수 있습니다.</p><button id="bulk-review-confirm" class="small-button">전체 확인 완료로 변경</button></div></dialog>
+  <dialog id="priority-excluded-dialog" class="rules-dialog" aria-labelledby="priority-excluded-title"><div class="dialog-top"><h2 id="priority-excluded-title">제외한 우선검토</h2><button id="priority-excluded-close" class="text-button" aria-label="제외한 우선검토 닫기">닫기</button></div><div class="rules-content"><div id="priority-excluded-list"></div><button id="priority-restore-all" class="small-button" aria-label="제외한 모든 우선검토 안건 복원">모두 제외 취소</button><div id="priority-restore-confirmation" hidden><p>제외한 모든 안건을 다시 자동추천 대상에 포함할까요?</p><button id="priority-restore-cancel" class="small-button">취소</button><button id="priority-restore-confirm" class="small-button" aria-label="모든 제외 상태 해제 확인">모두 복원</button></div></div></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <noscript><p class="noscript">이 대시보드는 JavaScript가 필요합니다. <a href="../index.html">기존 버전 열기</a></p></noscript>
 </body>
