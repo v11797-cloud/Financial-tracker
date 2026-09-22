@@ -28,7 +28,7 @@
   function render(ctx) {
     context = ctx;
     if (window.REGWATCH_AI_CONFIG?.enabled === false) { document.getElementById('ai-daily').hidden = true; return; }
-    const eligible = ctx.items.filter(i => !ctx.isRead(i, ctx.records) && ctx.priority(i, ctx.today).tier > 0);
+    const eligible = ctx.items.filter(i => ctx.priority(i, ctx.today).tier > 0);
     allEligible = eligible;
     candidates = [...eligible].sort((a, b) => A.calculateRuleScore(b, ctx.today) - A.calculateRuleScore(a, ctx.today) || a.id.localeCompare(b.id)).slice(0, 10);
     paint();

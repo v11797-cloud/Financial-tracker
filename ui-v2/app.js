@@ -346,7 +346,7 @@
   }
   function renderRail() {
     const scoped = scopeItems();
-    const prioritized = sortItems(scoped.filter(item => !isRead(item, records) && priority(item, today).tier > 0), 'priority', today);
+    const prioritized = sortItems(scoped.filter(item => priority(item, today).tier > 0), 'priority', today);
     personalPriority?.configure(prioritized, scoped);
     const visible = personalPriority ? personalPriority.getVisiblePriorityRegulations() : prioritized.slice(0,3);
     $('priority-list').innerHTML = visible.length ? visible.map((item,i) => `<article class="ai-priority-row"><button class="priority-summary" data-action="detail" data-id="${esc(item.id)}"><span>${i+1}</span><span><strong>${esc(item.title)}</strong><small>${esc(priority(item,today).reason)}</small></span><span aria-hidden="true">→</span></button><button class="priority-remove" data-action="priority-exclude" data-id="${esc(item.id)}" title="우선검토에서 제외" aria-label="${esc(item.title)}을 우선검토에서 제외">×</button></article>`).join('') : `<p class="rail-empty">${validData ? '현재 표시할 우선검토 안건이 없습니다. 제외한 안건을 복원하거나 전체 규제에서 직접 추가할 수 있습니다.' : '데이터 확인이 필요합니다.'}</p>`;
