@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-22 08:11 KST";
+window.lastUpdated = "2026-09-22 10:35 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_230298",
@@ -6,6 +6,14 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=1",
         "date": "2026-09-22",
         "dept": "금융감독원(은행리스크감독국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_230317",
+        "title": "[금감원] 온라인투자연계금융업의 포용금융 역할 강화와 신뢰 회복을 지원하겠습니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230317&menuNo=200218&pageIndex=1",
+        "date": "2026-09-22",
+        "dept": "금융감독원(전자금융감독국)",
         "category": "보도자료"
     },
     {
@@ -203,7 +211,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229095",
         "title": "[금감원] 금융소비자보호 성과 대국민 보고대회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=2",
         "date": "2026-09-17",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
@@ -347,7 +355,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228620",
         "title": "[금감원] 금감원장, 임원회의(9.15.) 당부사항",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228620&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228620&menuNo=200218&pageIndex=3",
         "date": "2026-09-15",
         "dept": "금융감독원(은행검사1국/은행검사2국)",
         "category": "보도자료"
@@ -427,7 +435,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227746",
         "title": "[금감원] 2026년 2분기 자산운용회사 영업실적(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=4",
         "date": "2026-09-11",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
