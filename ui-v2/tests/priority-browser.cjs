@@ -22,6 +22,13 @@ const EK='regwatch_priority_excluded_v1',AK='regwatch_priority_added_v1';
  const out=path.resolve('../verification/priority-exclusions');fs.mkdirSync(out,{recursive:true});
  try {
   await p.goto(base);await p.locator('.priority-summary').first().waitFor();const ranking=await rank(),initial=ranking.slice(0,3);assert.deepEqual(await rows(),initial);
+  // Reading all data must not empty automatic recommendations or change exclusions.
+  await p.locator('#bulk-review-open').click();await p.locator('#bulk-review-confirm').click();
+  assert.equal(await p.locator('#count-unread').textContent(),'0');assert.deepEqual(await rows(),initial);
+  assert.equal(await p.locator('#count-priority').textContent(),'3');assert.deepEqual(await stored(EK),[]);
+  const readSnapshot=await stored('financial-tracker:ui-v2:reviews:v1');
+  await p.reload();assert.deepEqual(await rows(),initial);assert.equal(await p.locator('#count-unread').textContent(),'0');
+  assert.deepEqual(await stored('financial-tracker:ui-v2:reviews:v1'),readSnapshot);
   const b=initial[1];await exclude(b);assert.deepEqual(await rows(),[initial[0],initial[2],ranking[3]]);assert.equal(await p.locator('#detail-dialog').evaluate(d=>d.open),false);
   await p.getByRole('button',{name:'되돌리기',exact:true}).click();assert.deepEqual(await rows(),initial);
   await exclude(b);await p.reload();assert.ok(!(await rows()).includes(b));assert.deepEqual(await stored(EK),[b]);assert.equal((await rows()).length,3);
@@ -57,7 +64,7 @@ const EK='regwatch_priority_excluded_v1',AK='regwatch_priority_added_v1';
   await p.evaluate(k=>localStorage.setItem(k,JSON.stringify([...JSON.parse(localStorage.getItem(k)),'missing-id'])),EK);await p.reload();assert.match(await p.locator('#priority-excluded').textContent(),/\(1\)/);
   await p.locator('#show-priority').click();assert.equal(await p.locator('.reg-row').count(),(await rows()).length);await p.locator('#reset-filters').click();
   await p.locator('#search-input').fill('zzzz-no-match');assert.equal(await p.locator('.reg-row').count(),0);await p.locator('#search-input').fill('');
-  const reviewRecords=await p.evaluate(()=>localStorage.getItem('financial-tracker:ui-v2:reviews:v1'));assert.ok(reviewRecords.includes('manual-X'));
+  const reviewRecords=await p.evaluate(()=>localStorage.getItem('financial-tracker:ui-v2:reviews:v1'));assert.ok(!reviewRecords.includes('manual-X')); // Detail toggle returned this already-reviewed item to unread.
   // Keyboard restores are native buttons; mobile rail and excluded modal fit.
   await p.setViewportSize({width:390,height:844});await p.locator('#priority-list').scrollIntoViewIfNeeded();assert.equal(await p.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);await p.screenshot({path:path.join(out,'mobile.png')});
   await p.locator('#priority-excluded').click();await p.screenshot({path:path.join(out,'excluded-mobile.png')});await p.locator('[data-action="priority-restore"]').first().focus();await p.keyboard.press('Enter');assert.equal(await p.locator('.excluded-priority-row').count(),0);await p.keyboard.press('Escape');
