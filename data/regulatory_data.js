@@ -1,8 +1,8 @@
-window.lastUpdated = "2026-09-23 10:21 KST";
+window.lastUpdated = "2026-09-24 10:17 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87768",
-        "title": "금융시장동향(26.09.22). 금일 등록된 게시글",
+        "title": "금융시장동향(26.09.22)",
         "url": "https://www.fsc.go.kr/no030101/87768?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회",
@@ -10,7 +10,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87771",
-        "title": "온라인투자연계금융업의  포용금융 역할 강화와 신뢰 회복을 지원하겠습니다. - 중저신용자 자금공급 활성화를 위한 간담회 개최. 금일 등록된 게시글",
+        "title": "온라인투자연계금융업의  포용금융 역할 강화와 신뢰 회복을 지원하겠습니다. - 중저신용자 자금공급 활성화를 위한 간담회 개최",
         "url": "https://www.fsc.go.kr/no010101/87771?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(디지털금융총괄과)",
@@ -18,7 +18,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87770",
-        "title": "금융위원장, 「피지컬 AI 지역거점 발전 포럼」 참석, 피지컬 AI 지역거점 지원 의지 강조. 금일 등록된 게시글",
+        "title": "금융위원장, 「피지컬 AI 지역거점 발전 포럼」 참석, 피지컬 AI 지역거점 지원 의지 강조",
         "url": "https://www.fsc.go.kr/no010101/87770?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(산업금융과)",
@@ -30,6 +30,54 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230549&menuNo=200218&pageIndex=1",
         "date": "2026-09-23",
         "dept": "금융감독원(은행감독국/은행검사1국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87786",
+        "title": "금융시장동향(26.09.23)",
+        "url": "https://www.fsc.go.kr/no030101/87786?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-23",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87783",
+        "title": "가상자산시장 불공정거래 혐의자 수사기관 고발·통보 - 제16차 금융위원회 정례회의(’26.9.23.) 의결 -",
+        "url": "https://www.fsc.go.kr/no010101/87783?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-23",
+        "dept": "금융위원회(가상자산과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87782",
+        "title": "메리츠증권㈜에 대한  종합금융투자사업자 지정 및 단기금융업 인가   ✓ 자기자본 4조원 이상의 종투사 지정 및 단기금융업 인가로 메리츠증권㈜은 발행어음 업무영위 예정",
+        "url": "https://www.fsc.go.kr/no010101/87782?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-23",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87781",
+        "title": "기업의 가치를 보다 정확히 보여주기 위해 기업의 토지 ‘공시지가’가 주석에 공시됩니다.",
+        "url": "https://www.fsc.go.kr/no010101/87781?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-23",
+        "dept": "금융위원회(회계제도팀)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87778",
+        "title": "신라자산운용(주) 및 제니스투자자문(주)에 대한 금융투자업 인가(등록) 취소  - 제16차 금융위원회(‘26.9.23.) 조치 의결",
+        "url": "https://www.fsc.go.kr/no010101/87778?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-23",
+        "dept": "금융위원회",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87776",
+        "title": "Korea Premium Weeks 2026      Gateway to Asia's Most Dynamic Capital Market   -아시아에서 가장 역동적인 자본시장을 향한 관문",
+        "url": "https://www.fsc.go.kr/no010101/87776?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-23",
+        "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
     },
     {
@@ -115,7 +163,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87751",
         "title": "정책금융이 스타트업과 소상공인을 더욱 든든히 지원하겠습니다.    - 제14차 정책금융지원협의회 개최",
-        "url": "https://www.fsc.go.kr/no010101/87751?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87751?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-21",
         "dept": "금융위원회(산업금융과)",
         "category": "보도자료"
@@ -142,14 +190,6 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230042&menuNo=200218&pageIndex=1",
         "date": "2026-09-21",
         "dept": "금융감독원(금융투자검사1국)",
-        "category": "보도자료"
-    },
-    {
-        "id": "fss_press_229732",
-        "title": "[금감원] 추석 명절 전후 보이스피싱 피해에 주의하세요!",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229732&menuNo=200218&pageIndex=1",
-        "date": "2026-09-20",
-        "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
     },
     {
@@ -195,9 +235,17 @@ window.regulatoryData = [
     {
         "id": "no010101_87745",
         "title": "금융정보분석원, 타지키스탄 국립은행과  정보교환 협력을 위한 양해각서(MOU) 체결",
-        "url": "https://www.fsc.go.kr/no010101/87745?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87745?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-18",
         "dept": "금융위원회(금융정보분석원)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87779",
+        "title": "추석 명절 전후 보이스피싱 피해에 주의하세요!",
+        "url": "https://www.fsc.go.kr/no010101/87779?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-18",
+        "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
     },
     {
@@ -227,7 +275,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87742",
         "title": "국민성장펀드에 더 많은 전문가들이 참여하여 의사결정의 객관성과 투명성을 강화합니다. - 9월 기금운용심의회, 약 1조원 규모 5건 사업도 함께 승인의결",
-        "url": "https://www.fsc.go.kr/no010101/87742?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87742?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(국민성장펀드총괄과)",
         "category": "보도자료"
@@ -235,7 +283,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87741",
         "title": "청소년에서 군 장병까지, 도박문제 예방·치유 안전망 확대",
-        "url": "https://www.fsc.go.kr/no010101/87741?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87741?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(가계금융과)",
         "category": "보도자료"
@@ -243,7 +291,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87738",
         "title": "부실사업장 정상화를 통한 신속한 주택공급 권대영 금융위 부위원장, 캠코펀드 사업장 방문",
-        "url": "https://www.fsc.go.kr/no010101/87738?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87738?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(금융정책과)",
         "category": "보도자료"
@@ -291,7 +339,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87722",
         "title": "신용정보법 과징금 산정의 투명성과 합리성을 높이도록 하겠습니다.  - 신용정보법 과징금 산정기준 개선을 위한 T/F 회의 개최",
-        "url": "https://www.fsc.go.kr/no010101/87722?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87722?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(금융데이터정책과)",
         "category": "보도자료"
@@ -299,7 +347,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87721",
         "title": "금융위원장-카자흐 ARDFM 청장 면담 및 한-카자흐 금융협력세미나 개최",
-        "url": "https://www.fsc.go.kr/no010101/87721?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87721?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(글로벌금융과)",
         "category": "보도자료"
@@ -347,7 +395,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87727",
         "title": "PG업권 보안 리스크를 빈틈없이 점검하고 AI 보안위협에도 철저히 대비하겠습니다.  - 프런티어 AI 보안위협 금융권 상황대응반 제6차 회의 개최",
-        "url": "https://www.fsc.go.kr/no010101/87727?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87727?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
@@ -355,7 +403,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87726",
         "title": "10월 7일부터  청년미래적금 2차 가입 신청을 받습니다.",
-        "url": "https://www.fsc.go.kr/no010101/87726?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87726?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(청년정책과)",
         "category": "보도자료"
@@ -371,7 +419,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87716",
         "title": "이억원 금융위원장, 독일 연방하원 재정위원회 위원장 면담",
-        "url": "https://www.fsc.go.kr/no010101/87716?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87716?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-15",
         "dept": "금융위원회(글로벌금융과)",
         "category": "보도자료"
@@ -379,7 +427,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87715",
         "title": "합병가액 산정방식 변경(시가→공정가액) 등 자본시장법 개정에 따른 하위법규 개정예고 실시 ※예고기간 ‘26.9.16일 ~ 10.6일",
-        "url": "https://www.fsc.go.kr/no010101/87715?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87715?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-15",
         "dept": "금융위원회(공정시장과)",
         "category": "보도자료"
@@ -555,7 +603,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87697",
         "title": "금융시장동향(26.09.10)",
-        "url": "https://www.fsc.go.kr/no030101/87697?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87697?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-10",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1116,7 +1164,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87606",
         "title": "금융시장동향(26.08.27)",
-        "url": "https://www.fsc.go.kr/no030101/87606?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87606?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-27",
         "dept": "금융위원회",
         "category": "금융시장동향"
