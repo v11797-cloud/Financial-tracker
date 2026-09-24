@@ -1,17 +1,17 @@
 {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-09-23 10:22 KST",
+  "updated_at": "2026-09-24 10:19 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-09-23 10:22 KST",
+  "classification_checked_at": "2026-09-24 10:19 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
     "notices": 152,
-    "revisions_scanned": 1438,
-    "revisions_included": 959,
+    "revisions_scanned": 1440,
+    "revisions_included": 961,
     "revisions_excluded": 479,
-    "협회규정": 544,
-    "모범규준": 415
+    "협회규정": 545,
+    "모범규준": 416
   },
   "items": [
     {
@@ -34,18 +34,37 @@
       ]
     },
     {
-      "id": "kofia_revision_1803",
+      "id": "kofia_revision_1812",
+      "title": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1812",
+      "date": "2026-09-10",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "339",
+      "history_seq": "1812",
+      "law_name": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
+      "revision_type": "전문개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙"
+      ]
+    },
+    {
+      "id": "kofia_revision_1811",
       "title": "금융투자회사의 영업 및 업무에 관한 규정",
-      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1803",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1811",
       "date": "2026-09-10",
       "dept": "금융투자협회 · 협회규정",
       "category": "공포법령",
       "source": "KOFIA",
       "source_type": "최신 제·개정정보",
       "law_seq": "136",
-      "history_seq": "1803",
+      "history_seq": "1811",
       "law_name": "금융투자회사의 영업 및 업무에 관한 규정",
-      "revision_type": "개정",
+      "revision_type": "전문개정",
       "source_group": "협회규정",
       "classification_path": [
         "협회규정",
@@ -69,25 +88,6 @@
       "classification_path": [
         "협회규정",
         "금융투자전문인력과 자격시험에 관한 규정"
-      ]
-    },
-    {
-      "id": "kofia_revision_1745",
-      "title": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
-      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1745",
-      "date": "2026-09-10",
-      "dept": "금융투자협회 · 모범규준",
-      "category": "공포법령",
-      "source": "KOFIA",
-      "source_type": "최신 제·개정정보",
-      "law_seq": "339",
-      "history_seq": "1745",
-      "law_name": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
-      "revision_type": "개정",
-      "source_group": "모범규준",
-      "classification_path": [
-        "모범규준",
-        "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙"
       ]
     },
     {
@@ -264,6 +264,25 @@
         "모범규준",
         "설명서 및 위험고지",
         "외화증권거래설명서"
+      ]
+    },
+    {
+      "id": "kofia_revision_1803",
+      "title": "금융투자회사의 영업 및 업무에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1803",
+      "date": "2026-08-19",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "136",
+      "history_seq": "1803",
+      "law_name": "금융투자회사의 영업 및 업무에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "금융투자회사의 영업 및 업무에 관한 규정"
       ]
     },
     {
@@ -1595,6 +1614,25 @@
       "classification_path": [
         "모범규준",
         "정비사업 업무처리 가이드라인"
+      ]
+    },
+    {
+      "id": "kofia_revision_1745",
+      "title": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1745",
+      "date": "2025-09-11",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "339",
+      "history_seq": "1745",
+      "law_name": "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙",
+      "revision_type": "개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "고난도 금융투자상품 제조 및 판매에 관한 표준영업행위준칙"
       ]
     },
     {
