@@ -88,7 +88,19 @@
     if (item.category === '보도자료' && age !== null && age <= 0 && age >= -14 && related && CHANGE_RE.test(item.title)) return { tier: 1, reason: '최근 업무 변경 · 관련 키워드' };
     return { tier: 0, reason: '일반 모니터링' };
   }
-  function isRead(item, records) { return Object.prototype.hasOwnProperty.call(records, item.id) && records[item.id] === fingerprint(item); }
+  function isRead(item, records) {
+    if (!Object.prototype.hasOwnProperty.call(records, item.id)) return false;
+    const saved = records[item.id], current = fingerprint(item);
+    if (saved === current) return true;
+    // Association revision IDs identify a specific amendment. Preserve legacy read
+    // records across catalog corrections, but recheck effective/deadline changes.
+    if (item.source !== 'KOFIA' || !/^\d+$/.test(String(item.history_seq || '')) || item.id !== `kofia_revision_${item.history_seq}`) return false;
+    try {
+      const previous = JSON.parse(saved), next = JSON.parse(current);
+      if (!Array.isArray(previous) || previous.length !== 13 || !previous.every(value => typeof value === 'string')) return false;
+      return [2, 8, 10, 11].every(index => previous[index] === next[index]);
+    } catch { return false; }
+  }
   function filterItems(items, state, today, records) {
     return items.filter(item => {
       if (state.scope === 'asset' && !relevance(item).candidate) return false;
