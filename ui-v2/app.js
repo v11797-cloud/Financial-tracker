@@ -431,10 +431,18 @@
       if (action.dataset.action === 'copy') copyLink(item);
       if (action.dataset.action === 'read') {
         const read = isRead(item, records);
+        const scrollPosition = { left: window.scrollX, top: window.scrollY, behavior: 'instant' };
+        const readIndex = [...document.querySelectorAll('#regulation-list [data-action="read"]')].indexOf(action);
         if (read) delete records[item.id]; else records[item.id] = fingerprint(item);
         persist(); render();
-        if ($('detail-dialog').open && selectedId === item.id) { detailContent(item); $('detail-content').querySelector('[data-action="read"]').focus(); }
-        else { const matching = [...document.querySelectorAll('#regulation-list [data-action="read"]')].find(btn => btn.dataset.id === item.id); (matching || $('search-input')).focus(); }
+        if ($('detail-dialog').open && selectedId === item.id) { detailContent(item); $('detail-content').querySelector('[data-action="read"]').focus({ preventScroll: true }); }
+        else {
+          const buttons = [...document.querySelectorAll('#regulation-list [data-action="read"]')];
+          const matching = buttons.find(btn => btn.dataset.id === item.id);
+          // In an unread feed, continue at the row that replaces the reviewed item.
+          (matching || buttons[Math.min(Math.max(readIndex, 0), buttons.length - 1)] || $('search-input')).focus({ preventScroll: true });
+          window.scrollTo(scrollPosition);
+        }
         toast(`${read ? '미확인으로 변경했습니다.' : '확인 완료로 기록했습니다.'}${storageAvailable ? '' : ' 저장이 차단되어 현재 화면에서만 유지됩니다.'}`);
       }
       return;
