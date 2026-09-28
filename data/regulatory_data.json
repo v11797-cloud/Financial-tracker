@@ -1,5 +1,40 @@
 [
     {
+        "id": "no010101_87787",
+        "title": "｢금융소비자 보호에 관한 감독규정｣ 개정안 규정변경예고 (‘26.9.28. ~ ’26.11.9.). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87787?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-28",
+        "dept": "금융위원회(금융소비자정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4176",
+        "title": "｢금융소비자 보호에 관한 감독규정｣ 일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4176&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-28",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "fss_press_231785",
+        "title": "[금감원] 이찬진 금융감독원장, 여명학교 북향민 청소년 대상 특강 실시",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=231785&menuNo=200218&pageIndex=1",
+        "date": "2026-09-28",
+        "dept": "금융감독원(금융교육국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "admrul_체납자의 압류 가상자산 보관·관리에 관한 훈령_2498_2026-09-28",
+        "title": "[체납자의 압류 가상자산 보관·관리에 관한 훈령] (금융위 고시 제2498호 | 발령일 2026-09-28)",
+        "url": "https://www.law.go.kr/행정규칙/%EC%B2%B4%EB%82%A9%EC%9E%90%EC%9D%98%20%EC%95%95%EB%A5%98%20%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EB%B3%B4%EA%B4%80%C2%B7%EA%B4%80%EB%A6%AC%EC%97%90%20%EA%B4%80%ED%95%9C%20%ED%9B%88%EB%A0%B9",
+        "date": "2026-09-28",
+        "dept": "금융위원회",
+        "category": "공포법령",
+        "law_name": "체납자의 압류 가상자산 보관·관리에 관한 훈령",
+        "prom_no": "2498",
+        "enf_date": "2026-09-28"
+    },
+    {
         "id": "no030101_87768",
         "title": "금융시장동향(26.09.22)",
         "url": "https://www.fsc.go.kr/no030101/87768?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
@@ -154,7 +189,7 @@
     {
         "id": "no010101_87752",
         "title": "「미리 만나는 2027 금융위 청년 사업」 행사 개최",
-        "url": "https://www.fsc.go.kr/no010101/87752?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87752?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-21",
         "dept": "금융위원회(청년정책과)",
         "category": "보도자료"
@@ -170,7 +205,7 @@
     {
         "id": "fss_press_230052",
         "title": "[금감원] 풍성해야 할 한가위, ‘가짜 투자’에 눈물 흘리지 않으려면",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230052&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230052&menuNo=200218&pageIndex=2",
         "date": "2026-09-21",
         "dept": "금융감독원(민생침해대응총괄국)",
         "category": "보도자료"
@@ -386,7 +421,7 @@
     {
         "id": "no010101_87728",
         "title": "「국가 자금세탁·테러자금조달·확산금융방지 전략 및 정책 운영방향」 발표",
-        "url": "https://www.fsc.go.kr/no010101/87728?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87728?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회(금융정보분석원)",
         "category": "보도자료"
@@ -466,7 +501,7 @@
     {
         "id": "fss_press_228611",
         "title": "[금감원] 보이스피싱으로 인한 카드결제 피해 예방 및 구제를 강화하겠습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228611&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228611&menuNo=200218&pageIndex=4",
         "date": "2026-09-15",
         "dept": "금융감독원(여신금융감독국/금융사기대응단)",
         "category": "보도자료"
@@ -570,7 +605,7 @@
     {
         "id": "fss_press_227674",
         "title": "[금감원] 2026년 2분기 증권, 선물회사 영업실적",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227674&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227674&menuNo=200218&pageIndex=5",
         "date": "2026-09-10",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -891,7 +926,7 @@
     {
         "id": "notice_4166",
         "title": "「전기통신금융사기 피해 방지에 관한 규정」일부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4166&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4166&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-03",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1839,7 +1874,7 @@
     {
         "id": "notice_4156",
         "title": "「금융위원회와 그 소속기관 직제 시행규칙」 일부개정령(안) 입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4156&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4156&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-03",
         "dept": "금융위원회",
         "category": "입법예고"
