@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-29 10:32 KST";
+window.lastUpdated = "2026-09-29 11:36 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87801",
@@ -59,6 +59,14 @@ window.regulatoryData = [
         "law_name": "금융회사의 지배구조에 관한 법률 시행령",
         "prom_no": "36729",
         "enf_date": "2026-10-01"
+    },
+    {
+        "id": "fss_press_232253",
+        "title": "[금감원] 합동대응단은 명문대 경영동아리 출신 정보카르텔을 적발하여 압수수색을 실시하고 혐의자 재산을 동결하였습니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232253&menuNo=200218&pageIndex=1",
+        "date": "2026-09-29",
+        "dept": "금융감독원(조사3국)",
+        "category": "보도자료"
     },
     {
         "id": "no010101_87787",
@@ -138,7 +146,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230549",
         "title": "[금감원] 이찬진 금융감독원장, 은행지주회장 간담회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230549&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230549&menuNo=200218&pageIndex=2",
         "date": "2026-09-23",
         "dept": "금융감독원(은행감독국/은행검사1국)",
         "category": "보도자료"
@@ -333,7 +341,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229241",
         "title": "[금감원] 금융감독원, 금융권과 함께하는 추석맞이 전통시장 나눔 활동 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229241&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229241&menuNo=200218&pageIndex=3",
         "date": "2026-09-18",
         "dept": "금융감독원(기획조정국)",
         "category": "보도자료"
@@ -485,7 +493,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228836",
         "title": "[금감원] 26.6월말 기준 보험회사 지급여력비율 현황",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228836&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228836&menuNo=200218&pageIndex=4",
         "date": "2026-09-16",
         "dept": "금융감독원(계리리스크감독국)",
         "category": "보도자료"
