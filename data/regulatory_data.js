@@ -1,5 +1,65 @@
-window.lastUpdated = "2026-09-28 10:30 KST";
+window.lastUpdated = "2026-09-29 10:32 KST";
 window.regulatoryData = [
+    {
+        "id": "no030101_87801",
+        "title": "금융시장동향(26.09.28). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no030101/87801?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-29",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "fss_press_232216",
+        "title": "[금감원] 2026년 상반기 금융민원 접수 및 처리 동향",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232216&menuNo=200218&pageIndex=1",
+        "date": "2026-09-29",
+        "dept": "금융감독원(소비자소통국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "law_전자금융거래법_22048_2026-10-02",
+        "title": "[전자금융거래법] (공포 제22048호 | 시행일 2026-10-02)",
+        "url": "https://www.law.go.kr/법령/%EC%A0%84%EC%9E%90%EA%B8%88%EC%9C%B5%EA%B1%B0%EB%9E%98%EB%B2%95",
+        "date": "2026-09-29",
+        "dept": "법제처/관보",
+        "category": "공포법령",
+        "law_name": "전자금융거래법",
+        "prom_no": "22048",
+        "enf_date": "2026-10-02"
+    },
+    {
+        "id": "law_가상자산 이용자 보호 등에 관한 법률 시행령_36728_2026-10-02",
+        "title": "[가상자산 이용자 보호 등에 관한 법률 시행령] (공포 제36728호 | 시행일 2026-10-02)",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9",
+        "date": "2026-09-29",
+        "dept": "법제처/관보",
+        "category": "공포법령",
+        "law_name": "가상자산 이용자 보호 등에 관한 법률 시행령",
+        "prom_no": "36728",
+        "enf_date": "2026-10-02"
+    },
+    {
+        "id": "law_가상자산 이용자 보호 등에 관한 법률 시행령_36729_2026-10-01",
+        "title": "[가상자산 이용자 보호 등에 관한 법률 시행령] (공포 제36729호 | 시행일 2026-10-01)",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9",
+        "date": "2026-09-29",
+        "dept": "법제처/관보",
+        "category": "공포법령",
+        "law_name": "가상자산 이용자 보호 등에 관한 법률 시행령",
+        "prom_no": "36729",
+        "enf_date": "2026-10-01"
+    },
+    {
+        "id": "law_금융회사의 지배구조에 관한 법률 시행령_36729_2026-10-01",
+        "title": "[금융회사의 지배구조에 관한 법률 시행령] (공포 제36729호 | 시행일 2026-10-01)",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%EC%9D%98%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9",
+        "date": "2026-09-29",
+        "dept": "법제처/관보",
+        "category": "공포법령",
+        "law_name": "금융회사의 지배구조에 관한 법률 시행령",
+        "prom_no": "36729",
+        "enf_date": "2026-10-01"
+    },
     {
         "id": "no010101_87787",
         "title": "｢금융소비자 보호에 관한 감독규정｣ 개정안 규정변경예고 (‘26.9.28. ~ ’26.11.9.). 금일 등록된 게시글",
@@ -34,6 +94,22 @@ window.regulatoryData = [
         "law_name": "체납자의 압류 가상자산 보관·관리에 관한 훈령",
         "prom_no": "2498",
         "enf_date": "2026-09-28"
+    },
+    {
+        "id": "fss_press_231823",
+        "title": "[금감원] 2026년 상반기 보험사기 적발현황 및 대응방안",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=231823&menuNo=200218&pageIndex=1",
+        "date": "2026-09-28",
+        "dept": "금융감독원(보험사기대응단)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_231822",
+        "title": "[금감원] 휴면자산 환급실적 등을 공개하고 금융회사의 휴면자산 관리체계를 강화합니다.",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=231822&menuNo=200218&pageIndex=1",
+        "date": "2026-09-28",
+        "dept": "금융감독원(소비자보호감독총괄국)",
+        "category": "보도자료"
     },
     {
         "id": "no030101_87768",
@@ -116,9 +192,20 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
+        "id": "admrul_가상자산시장조사업무규정_2026-39_2026-09-23",
+        "title": "[가상자산시장조사업무규정] (금융위 고시 제2026-39호 | 발령일 2026-09-23)",
+        "url": "https://www.law.go.kr/행정규칙/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%EC%8B%9C%EC%9E%A5%EC%A1%B0%EC%82%AC%EC%97%85%EB%AC%B4%EA%B7%9C%EC%A0%95",
+        "date": "2026-09-23",
+        "dept": "금융위원회",
+        "category": "공포법령",
+        "law_name": "가상자산시장조사업무규정",
+        "prom_no": "2026-39",
+        "enf_date": "2026-10-02"
+    },
+    {
         "id": "fss_press_230298",
         "title": "[금감원] '26.7월말 국내은행의 원화대출 연체율 현황[잠정]",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=2",
         "date": "2026-09-22",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -134,7 +221,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230357",
         "title": "[금감원] 해외 카드결제 취소시 환율 하락으로 발생하는 소비자 환차손 보상을 한층 강화합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230357&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230357&menuNo=200218&pageIndex=2",
         "date": "2026-09-22",
         "dept": "금융감독원(여신금융감독국)",
         "category": "보도자료"
@@ -142,7 +229,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230356",
         "title": "[금감원] 최근 국제분쟁 등으로 변동성, 괴리율이 증가하는 원자재 ETP(ETN, ETF) 투자 시 유의하세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230356&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230356&menuNo=200218&pageIndex=2",
         "date": "2026-09-22",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -230,7 +317,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229235",
         "title": "[금감원] 2026년 8월 외국인 증권투자 동향",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229235&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229235&menuNo=200218&pageIndex=3",
         "date": "2026-09-18",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -254,7 +341,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229239",
         "title": "[금감원] 2026년 제49회 보험계리사 및 손해사정사 최종 합격자 발표",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229239&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229239&menuNo=200218&pageIndex=3",
         "date": "2026-09-18",
         "dept": "금융감독원(보험감독국)",
         "category": "보도자료"
@@ -294,7 +381,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229066",
         "title": "[금감원] 금감원, 금융상황 점검회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229066&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229066&menuNo=200218&pageIndex=3",
         "date": "2026-09-17",
         "dept": "금융감독원(금융시장안정국)",
         "category": "보도자료"
@@ -342,7 +429,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229095",
         "title": "[금감원] 금융소비자보호 성과 대국민 보고대회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=3",
         "date": "2026-09-17",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
@@ -406,7 +493,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228833",
         "title": "[금감원] 의료기관 부당청구 방지 및 보험사기 근절을 위한금융감독원-건강보험심사평가원 간 업무협약 체결",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228833&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228833&menuNo=200218&pageIndex=4",
         "date": "2026-09-16",
         "dept": "금융감독원(보험사기대응단/보험감독국/보험상품분쟁2국)",
         "category": "보도자료"
@@ -486,7 +573,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228620",
         "title": "[금감원] 금감원장, 임원회의(9.15.) 당부사항",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228620&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228620&menuNo=200218&pageIndex=4",
         "date": "2026-09-15",
         "dept": "금융감독원(은행검사1국/은행검사2국)",
         "category": "보도자료"
@@ -494,7 +581,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228616",
         "title": "[금감원] 주택공급 금융지원 프로그램 및 PF 사업장 매각설명회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228616&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228616&menuNo=200218&pageIndex=4",
         "date": "2026-09-15",
         "dept": "금융감독원(중소금융검사1국)",
         "category": "보도자료"
@@ -558,7 +645,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228069",
         "title": "[금감원] 금융감독원, 테크파인더 쇼케이스 2026 참가기업 공개모집",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228069&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228069&menuNo=200218&pageIndex=5",
         "date": "2026-09-13",
         "dept": "금융감독원(디지털금융총괄국)",
         "category": "보도자료"
@@ -566,7 +653,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227746",
         "title": "[금감원] 2026년 2분기 자산운용회사 영업실적(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227746&menuNo=200218&pageIndex=5",
         "date": "2026-09-11",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
@@ -574,7 +661,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87704",
         "title": "금융시장동향(26.09.11)",
-        "url": "https://www.fsc.go.kr/no030101/87704?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87704?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-11",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -630,7 +717,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_227683",
         "title": "[금감원] 금감원장, 금감원-지자체-금융권 공동개최 해외IR 참석 및 영국 금융감독당국 최고위급 등 면담",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227683&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=227683&menuNo=200218&pageIndex=5",
         "date": "2026-09-10",
         "dept": "금융감독원(국제업무국(금융중심지지원센터))",
         "category": "보도자료"
@@ -1143,7 +1230,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87616",
         "title": "금융시장동향(26.08.28)",
-        "url": "https://www.fsc.go.kr/no030101/87616?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87616?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-08-28",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1596,6 +1683,17 @@ window.regulatoryData = [
         "dept": "법제처/관보",
         "category": "공포법령",
         "law_name": "자본시장과 금융투자업에 관한 법률",
+        "prom_no": "21857",
+        "enf_date": "2026-10-02"
+    },
+    {
+        "id": "law_가상자산 이용자 보호 등에 관한 법률_21857_2026-10-02",
+        "title": "[가상자산 이용자 보호 등에 관한 법률] (공포 제21857호 | 시행일 2026-10-02)",
+        "url": "https://www.law.go.kr/법령/%EA%B0%80%EC%83%81%EC%9E%90%EC%82%B0%20%EC%9D%B4%EC%9A%A9%EC%9E%90%20%EB%B3%B4%ED%98%B8%20%EB%93%B1%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0",
+        "date": "2026-08-04",
+        "dept": "법제처/관보",
+        "category": "공포법령",
+        "law_name": "가상자산 이용자 보호 등에 관한 법률",
         "prom_no": "21857",
         "enf_date": "2026-10-02"
     },
