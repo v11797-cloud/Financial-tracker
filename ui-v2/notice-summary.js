@@ -1,0 +1,46 @@
+/* Official notice excerpts; never infer proposal details from a title. */
+(() => {
+  const pending = new Map();
+  const load = kind => {
+    if (!pending.has(kind)) pending.set(kind, fetch(`./data/${kind}_summaries.json`, {cache:'no-cache'})
+      .then(r => { if (!r.ok) throw new Error('unavailable'); return r.json(); })
+      .catch(() => { pending.delete(kind); return null; }));
+    return pending.get(kind);
+  };
+  function section(host, heading, text, max) {
+    const part = document.createElement('section'); part.className = 'brief-section';
+    const title = document.createElement('h3'); title.textContent = heading; part.append(title);
+    const lines = text.split('\n').map(s => s.trim()).filter(Boolean);
+    const list = document.createElement('ul');
+    for (const line of lines.slice(0,max)) {
+      const li = document.createElement('li'); li.textContent = line; list.append(li);
+    }
+    part.append(list);
+    if (lines.length > max) {
+      const details = document.createElement('details'), label = document.createElement('summary'), body = document.createElement('p');
+      label.textContent = '나머지 내용 펼치기'; body.textContent = lines.slice(max).join('\n'); body.style.whiteSpace = 'pre-line';
+      details.append(label,body); part.append(details);
+    }
+    host.append(part);
+  }
+  window.RegWatchNotice = { mount(item) {
+    if (!['입법예고','보도자료'].includes(item.category)) return;
+    const press = item.category === '보도자료';
+    const ai = document.getElementById('ai-detail-section');
+    const host = document.createElement('section'); host.className = 'ai-detail'; host.id = 'notice-summary'; host.setAttribute('aria-live','polite');
+    host.textContent = press ? '보도자료 내용을 불러오는 중입니다…' : '입법예고 내용을 불러오는 중입니다…'; ai.before(host); ai.hidden = true;
+    load(press ? 'press' : 'notice').then(payload => {
+      if (!host.isConnected) return;
+      const record = payload?.schema_version === 1 ? payload.items?.[item.id] : null;
+      host.replaceChildren();
+      const heading = document.createElement('h3'); heading.textContent = press ? '보도자료 요약' : '입법예고안 요약'; host.append(heading);
+      if (!record || record.status !== 'ready' || record.title !== item.title || record.date !== item.date) {
+        const p = document.createElement('p'); p.textContent = press ? '이 보도자료는 아직 본문 요약을 제공하지 못합니다. 아래 공식 원문과 첨부자료를 확인해 주세요.' : '이 예고안은 아직 본문 요약을 제공하지 못합니다. 아래 공식 원문과 첨부된 개정안을 확인해 주세요.'; host.append(p); return;
+      }
+      const note = document.createElement('p'); note.className = 'brief-meta'; note.textContent = press ? '공식 보도자료 본문에서 핵심 문단 발췌' : '공식 예고문에서 발췌 · 확정된 규정이 아닌 개정안입니다.'; host.append(note);
+      if (record.purpose) section(host,press ? '핵심 내용' : '개정 취지',record.purpose,3);
+      if (record.changes) section(host,press ? '주요 발표 내용' : '주요 변경 내용',record.changes,5);
+      const foot = document.createElement('p'); foot.className = 'brief-meta'; foot.textContent = press ? '보도자료 본문 기준입니다. 세부 수치·표·붙임자료는 공식 원문을 확인해 주세요.' : '예고문 본문 기준입니다. 세부 조문과 예외는 원문 첨부자료를 확인해 주세요.'; host.append(foot);
+    });
+  }};
+})();
