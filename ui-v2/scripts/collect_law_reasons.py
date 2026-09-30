@@ -12,9 +12,8 @@ OUTPUT = ROOT / 'ui-v2/data/law_reasons.js'
 
 
 def eligible(item):
-    name = re.sub(r'\s+', '', item.get('law_name', ''))
-    return item.get('category') == '공포법령' and item.get('source') != 'KOFIA' and any(
-        name.startswith(prefix) for prefix in ('자본시장과금융투자업에관한법률', '금융소비자보호에관한법률', '금융투자업규정'))
+    return (item.get('category') == '공포법령' and item.get('source') != 'KOFIA'
+            and item.get('law_name') and item.get('prom_no') and item.get('date'))
 
 
 def fetch(url):
@@ -75,8 +74,13 @@ def main():
         previous = records.get(item['id'])
         if previous and previous.get('status') == 'available' and all(previous.get(k) == item[k] for k in ('law_name', 'prom_no', 'date')):
             return item['id'], previous
-        return item['id'], collect(item)
-    # Fail without overwriting the last verified cache if the source/identity check fails.
+        try:
+            return item['id'], collect(item)
+        except Exception as error:
+            return item['id'], {key: item[key] for key in ('id', 'law_name', 'prom_no', 'date')} | {
+                'text': '', 'status': 'unavailable', 'error': type(error).__name__,
+            }
+    # Retain verified matching records; individual source failures remain unavailable.
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         result = dict(pool.map(resolve, items))
     payload = {'schema_version': 1, 'items': result}

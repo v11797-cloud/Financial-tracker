@@ -23,7 +23,25 @@
     }
     host.append(part);
   }
+  function mountLaw(item) {
+    const ai = document.getElementById('ai-detail-section');
+    const host = document.createElement('section'); host.className = 'ai-detail'; host.id = 'notice-summary';
+    const heading = document.createElement('h3'); heading.textContent = item.source === 'KOFIA' ? '협회 규정 제·개정 요약' : '공포·시행법령 요약'; host.append(heading);
+    ai.before(host); ai.hidden = true;
+    const payload = window.lawReasons;
+    const record = payload?.schema_version === 1 ? payload.items?.[item.id] : null;
+    const valid = record && ['id','law_name','prom_no','date'].every(key => record[key] === item[key]);
+    if (!valid || record.status !== 'available' || !record.text) {
+      const p = document.createElement('p'); p.textContent = '이 제·개정 건은 아직 공식 원문 요약을 제공하지 못합니다. 아래 공식 원문에서 제·개정이유와 세부 조문을 확인해 주세요.'; host.append(p); return;
+    }
+    const link = document.querySelector('#detail-content .brief-cta a');
+    try { const url = new URL(record.source_url); if (link && url.protocol === 'https:' && url.hostname === 'www.law.go.kr') link.href = url.href; } catch {}
+    const note = document.createElement('p'); note.className = 'brief-meta'; note.textContent = '국가법령정보센터의 해당 제·개정이유에서 발췌'; host.append(note);
+    section(host,'제·개정 취지 및 주요 내용',record.text,8);
+    const foot = document.createElement('p'); foot.className = 'brief-meta'; foot.textContent = '세부 조문·부칙·조항별 시행일은 공식 원문을 확인해 주세요.'; host.append(foot);
+  }
   window.RegWatchNotice = { mount(item) {
+    if (item.category === '공포법령') { mountLaw(item); return; }
     if (!['입법예고','보도자료'].includes(item.category)) return;
     const press = item.category === '보도자료';
     const ai = document.getElementById('ai-detail-section');
