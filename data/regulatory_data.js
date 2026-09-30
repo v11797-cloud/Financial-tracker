@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-30 14:25 KST";
+window.lastUpdated = "2026-09-30 17:10 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87811",
@@ -31,6 +31,22 @@ window.regulatoryData = [
         "date": "2026-09-30",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "fss_press_232662",
+        "title": "[금감원] 범 금융권, 유관기관과 함께 「사회진출前 금융소양교육」을 전면 실시합니다!",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232662&menuNo=200218&pageIndex=1",
+        "date": "2026-09-30",
+        "dept": "금융감독원(금융교육국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_232661",
+        "title": "[금감원] 주요 민원사례로 알아보는 금융채권추심 관련 소비자 유의사항",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232661&menuNo=200218&pageIndex=1",
+        "date": "2026-09-30",
+        "dept": "금융감독원(소비자소통국)",
+        "category": "보도자료"
     },
     {
         "id": "no030101_87801",
@@ -135,7 +151,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_231785",
         "title": "[금감원] 이찬진 금융감독원장, 여명학교 북향민 청소년 대상 특강 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=231785&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=231785&menuNo=200218&pageIndex=2",
         "date": "2026-09-28",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -261,7 +277,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230298",
         "title": "[금감원] '26.7월말 국내은행의 원화대출 연체율 현황[잠정]",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=3",
         "date": "2026-09-22",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -349,7 +365,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230052",
         "title": "[금감원] 풍성해야 할 한가위, ‘가짜 투자’에 눈물 흘리지 않으려면",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230052&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230052&menuNo=200218&pageIndex=3",
         "date": "2026-09-21",
         "dept": "금융감독원(민생침해대응총괄국)",
         "category": "보도자료"
@@ -437,7 +453,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229066",
         "title": "[금감원] 금감원, 금융상황 점검회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229066&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229066&menuNo=200218&pageIndex=4",
         "date": "2026-09-17",
         "dept": "금융감독원(금융시장안정국)",
         "category": "보도자료"
@@ -637,7 +653,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228616",
         "title": "[금감원] 주택공급 금융지원 프로그램 및 PF 사업장 매각설명회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228616&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228616&menuNo=200218&pageIndex=5",
         "date": "2026-09-15",
         "dept": "금융감독원(중소금융검사1국)",
         "category": "보도자료"
@@ -645,7 +661,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_228611",
         "title": "[금감원] 보이스피싱으로 인한 카드결제 피해 예방 및 구제를 강화하겠습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228611&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=228611&menuNo=200218&pageIndex=5",
         "date": "2026-09-15",
         "dept": "금융감독원(여신금융감독국/금융사기대응단)",
         "category": "보도자료"
