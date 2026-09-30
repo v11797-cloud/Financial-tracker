@@ -2527,8 +2527,8 @@ window.lawReasons = {
       "prom_no": "09004",
       "date": "1978-05-03",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15570&lsRvsGubun=Rsn"
     },
     "law_국민은행법_03023_1977-12-19": {
       "id": "law_국민은행법_03023_1977-12-19",
