@@ -53,15 +53,15 @@
       return `<article class="ai-priority-row"><button class="priority-summary" data-action="ai-detail" data-id="${e(item.id)}" aria-label="${e(item.title)} 검토 요약 보기"><span class="priority-number" aria-hidden="true">${index+1}</span><span><strong>${e(item.title)}</strong><small>${e(meta.join(' · '))}</small></span><span class="priority-arrow" aria-hidden="true">→</span></button><button class="priority-remove" data-action="priority-exclude" data-id="${e(item.id)}" title="우선검토에서 제외" aria-label="${e(item.title)}을 우선검토에서 제외">×</button></article>`;
     }).join('') : '<div class="rail-empty"><p>현재 표시할 우선검토 안건이 없습니다.</p><p>제외한 안건을 복원하거나 전체 규제에서 직접 추가할 수 있습니다.</p><button class="text-button" data-action="priority-excluded">제외한 안건 보기</button></div>';
     const daily = document.getElementById('ai-daily'); daily.hidden = false;
-    document.getElementById('ai-daily-summary').textContent = top.length ? `오늘 우선 확인할 규제 ${top.length}건이 있습니다.` : '오늘 우선 확인할 규제가 없습니다.';
+    document.getElementById('ai-daily-summary').textContent = top.length ? `전체 우선검토 후보 중 ${top.length}건을 먼저 추천합니다.` : '오늘 우선 확인할 규제가 없습니다.';
     const spotlight = document.getElementById('ai-daily-top');
     const highest = [...top].sort((a,b) => scores(b).final - scores(a).final || a.id.localeCompare(b.id))[0];
     spotlight.innerHTML = top.length ? `<p class="brief-label">가장 중요한 변화</p><button data-action="ai-detail" data-id="${e(highest.id)}">${e(highest.title)}</button><p class="brief-reason">${e(P.short(entry(highest).data.one_line_summary,100))}</p>` : '<p class="brief-reason">최근 업데이트된 규제를 확인하거나 전체 규제 피드를 살펴보세요.</p>';
     const fresh = context.items.filter(i => A.normalize(i).published_date === context.today).length;
     const upcoming = context.items.filter(i => { const n = P.days(A.normalize(i).effective_date,context.today); return n !== null && n >= 0 && n <= 30; }).length;
-    document.getElementById('ai-daily-counts').textContent = `신규 ${fresh} · 우선검토 ${top.length} · 시행임박 ${upcoming}`;
+    document.getElementById('ai-daily-counts').textContent = `신규 ${fresh} · 우선검토 후보 ${store ? store.getAllPriorityRegulations().length : ordered.length} · 시행임박 ${upcoming}`;
     const link = document.getElementById('ai-daily-link');
-    link.textContent = top.length ? `오늘의 우선검토 ${top.length}건 보기 →` : '전체 규제 피드 보기 →';
+    link.textContent = top.length ? `먼저 추천한 ${top.length}건 보기 →` : '전체 규제 피드 보기 →';
     link.onclick = () => { const target = document.getElementById(top.length ? 'priority-list' : 'regulation-list'); target.scrollIntoView({block:'center',behavior:'smooth'}); target.querySelector('button')?.focus({preventScroll:true}); };
   }
   function detail(item, today) {

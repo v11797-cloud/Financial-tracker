@@ -36,6 +36,14 @@
       const seen = new Set(excluded);
       return merged.filter(item => { if (seen.has(item.id)) return false; seen.add(item.id); return true; });
     }
+    function getAllPriorityRegulations() {
+      const byId = new Map(scopedItems.map(item => [item.id,item]));
+      const seen = new Set(excluded);
+      return [...candidates, ...added.map(id => byId.get(id)).filter(Boolean)].filter(item => {
+        if (seen.has(item.id)) return false; seen.add(item.id); return true;
+      });
+    }
+    function isPriorityItem(id) { return getAllPriorityRegulations().some(item => item.id === id); }
     function isVisiblePriorityItem(id) { return getVisiblePriorityRegulations().some(item => item.id === id); }
     function snapshot(id) { return { id, addedIndex: added.indexOf(id), excluded: excluded.includes(id) }; }
     function excludePriorityItem(id) {
@@ -50,7 +58,7 @@
     function removeManualPriorityItem(id) {
       const before = snapshot(id); added = added.filter(v => v !== id);
       // If this is also recommended, exclude it too so the toggle actually removes the row.
-      if (getAutoPriorityRegulations().some(item => item.id === id) && !excluded.includes(id)) excluded.push(id);
+      if (candidates.some(item => item.id === id) && !excluded.includes(id)) excluded.push(id);
       persist(); return before;
     }
     function undoPriorityChange(before) {
@@ -60,7 +68,7 @@
       persist();
     }
     reload();
-    return { configure, reload, getExcludedPriorityIds, getManuallyAddedPriorityIds, isPriorityExcluded, isManuallyAdded, getAutoPriorityCandidates, getAutoPriorityRegulations, getVisiblePriorityRegulations, isVisiblePriorityItem, excludePriorityItem, restoreExcludedPriorityItem, restoreAllExcludedPriorityItems, addManualPriorityItem, removeManualPriorityItem, undoPriorityChange, storageAvailable: () => available };
+    return { getAllPriorityRegulations, isPriorityItem, configure, reload, getExcludedPriorityIds, getManuallyAddedPriorityIds, isPriorityExcluded, isManuallyAdded, getAutoPriorityCandidates, getAutoPriorityRegulations, getVisiblePriorityRegulations, isVisiblePriorityItem, excludePriorityItem, restoreExcludedPriorityItem, restoreAllExcludedPriorityItems, addManualPriorityItem, removeManualPriorityItem, undoPriorityChange, storageAvailable: () => available };
   }
   if (typeof module !== 'undefined') module.exports = { create, EXCLUDED_KEY, ADDED_KEY };
   else root.RegWatchPriority = create({ getItem: key => root.localStorage.getItem(key), setItem: (key,value) => root.localStorage.setItem(key,value) });

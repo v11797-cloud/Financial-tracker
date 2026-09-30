@@ -38,3 +38,21 @@ test('malformed storage, duplicate IDs and blocked storage are safe',()=>{
  const p=create(fixture({[ADDED_KEY]:'["X","X",2,null]',[EXCLUDED_KEY]:'invalid'}).storage);p.configure(items,items);assert.deepEqual(ids(p),['A','B','C','X']);
  const denied=create({getItem(){throw Error()},setItem(){throw Error()}});denied.configure(items,items);denied.excludePriorityItem('B');assert.deepEqual(ids(denied),['A','C','D']);assert.equal(denied.storageAvailable(),false);
 });
+
+test('total candidates include beyond top three and decrease on exclusion', () => {
+  const store = require('../priority.js').create({getItem:()=>null,setItem:()=>{}});
+  const items = Array.from({length:8},(_,i)=>({id:String(i)}));
+  store.configure(items, [...items,{id:'manual'}]);
+  assert.equal(store.getAllPriorityRegulations().length,8);
+  assert.equal(store.getVisiblePriorityRegulations().length,3);
+  store.excludePriorityItem('0');
+  assert.equal(store.getAllPriorityRegulations().length,7);
+  assert.equal(store.getVisiblePriorityRegulations().length,3);
+  assert.equal(store.isPriorityItem('7'),true);
+  store.addManualPriorityItem('7');
+  assert.equal(store.getAllPriorityRegulations().length,7);
+  store.removeManualPriorityItem('7');
+  assert.equal(store.isPriorityItem('7'),false);
+  store.addManualPriorityItem('manual');
+  assert.equal(store.getAllPriorityRegulations().length,7);
+});
