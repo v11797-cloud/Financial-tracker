@@ -1,0 +1,22 @@
+const assert=require('node:assert/strict');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{
+ const p=await browser.newPage({viewport:{width:1440,height:1000}});const errors=[];p.on('pageerror',e=>errors.push(e.message));
+ await p.route('https://api.github.com/**',r=>r.fulfill({json:{workflow_runs:[]}}));
+ await p.goto('http://127.0.0.1:8765/Financial-tracker/ui-v2/');
+ await p.locator('#search-input').fill('증권의 발행 및 공시');
+ await p.locator('[data-action="detail"][data-id="notice_4173"]').click();
+ await p.getByRole('heading',{name:'개정 취지',exact:true}).waitFor();
+ assert.match(await p.locator('#notice-summary').innerText(),/공정가액/);
+ assert.match(await p.locator('#notice-summary').innerText(),/이사회/);
+ assert.equal(await p.locator('#ai-detail-section').isVisible(),false);
+ assert.equal(await p.locator('#detail-content a').filter({hasText:'공식 원문'}).count(),1);
+ await p.setViewportSize({width:390,height:844});
+ assert.ok(await p.locator('#notice-summary').evaluate(n=>n.scrollWidth<=n.clientWidth+1));
+ await p.locator('#close-detail').click();
+ await p.route('**/data/notice_summaries.json',r=>r.fulfill({json:{schema_version:1,items:{notice_4173:{status:'ready',title:'wrong',date:'2026-09-16',purpose:'unsafe wrong notice'}}}}));
+ await p.reload();await p.locator('#search-input').fill('증권의 발행 및 공시');await p.locator('[data-action="detail"][data-id="notice_4173"]').click();
+ await p.getByText('이 예고안은 아직 본문 요약을 제공하지 못합니다.',{exact:false}).waitFor();
+ assert.ok(!(await p.locator('#notice-summary').innerText()).includes('unsafe'));assert.deepEqual(errors,[]);
+ console.log('PASS official source summary, identity mismatch fallback, original link, mobile layout');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});
