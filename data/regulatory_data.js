@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-09-30 09:15 KST";
+window.lastUpdated = "2026-09-30 10:56 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87811",
@@ -14,6 +14,14 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232572&menuNo=200218&pageIndex=1",
         "date": "2026-09-30",
         "dept": "금융감독원(기업공시국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_232597",
+        "title": "[금감원] 의료계,플랫폼 협력으로 “실손24” 연계율 제고 나선다.",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232597&menuNo=200218&pageIndex=1",
+        "date": "2026-09-30",
+        "dept": "금융감독원(보험상품분쟁2국)",
         "category": "보도자료"
     },
     {
@@ -341,7 +349,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230051",
         "title": "[금감원] 무료 강연, 박람회에서 보험 가입 시 소비자 유의사항",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230051&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230051&menuNo=200218&pageIndex=3",
         "date": "2026-09-21",
         "dept": "금융감독원(소비자피해예방국)",
         "category": "보도자료"
