@@ -196,7 +196,7 @@
     if (selectedId && byId.has(selectedId)) detailContent(byId.get(selectedId));
   };
   const state = { search: '', category: 'all', law: 'all', scope: 'all', unread: false, focus: 'all', sort: 'latest', view: 'list', page: 1, year: Number(today.slice(0, 4)), month: Number(today.slice(5, 7)) - 1 };
-  const focusLabels = { all: '전체 항목', today: '오늘 게시', priority: '우선 검토', upcoming: '30일 내 시행', unread: '미확인 항목' };
+  const focusLabels = { all: '전체 항목', today: '오늘 게시', priority: '우선검토 전체 후보', upcoming: '30일 내 시행', unread: '미확인 항목' };
   const scopeItems = () => items.filter(item => state.scope !== 'asset' || relevance(item).candidate);
   function toast(message, undo) {
     clearTimeout(toastTimer);
@@ -210,20 +210,20 @@
     toastTimer = setTimeout(() => { $('toast').hidden = true; }, undo ? 5000 : 3200);
   }
   function priorityButton(item) {
-    const active = personalPriority?.isVisiblePriorityItem(item.id) || false;
+    const active = personalPriority?.isPriorityItem(item.id) || false;
     return `<button class="priority-toggle" data-action="priority-toggle" data-id="${esc(item.id)}" aria-pressed="${active}" aria-label="${esc(item.title)}을 우선검토${active ? '에서 제외' : '에 추가'}">${active ? '★ 우선검토 중' : '☆ 우선검토에 추가'}</button>`;
   }
   function syncPriorityButtons() {
     document.querySelectorAll('.priority-toggle').forEach(button => {
       const item = byId.get(button.dataset.id); if (!item) return;
-      const active = personalPriority?.isVisiblePriorityItem(item.id) || false;
+      const active = personalPriority?.isPriorityItem(item.id) || false;
       button.textContent = active ? '★ 우선검토 중' : '☆ 우선검토에 추가';
       button.setAttribute('aria-pressed',String(active));
       button.setAttribute('aria-label',`${item.title}을 우선검토${active ? '에서 제외' : '에 추가'}`);
     });
   }
   function syncPriorityView() {
-    state.priorityIds = personalPriority ? personalPriority.getVisiblePriorityRegulations().map(item => item.id) : null;
+    state.priorityIds = personalPriority ? personalPriority.getAllPriorityRegulations().map(item => item.id) : null;
     syncPriorityButtons();
     if (state.focus === 'priority') {
       controls(); const filtered = filterItems(items,state,today,records);
@@ -241,7 +241,7 @@
     if (!personalPriority) return;
     let before;
     if (forceExclude) before = personalPriority.excludePriorityItem(item.id);
-    else if (personalPriority.isVisiblePriorityItem(item.id)) {
+    else if (personalPriority.isPriorityItem(item.id)) {
       before = personalPriority.isManuallyAdded(item.id) ? personalPriority.removeManualPriorityItem(item.id) : personalPriority.excludePriorityItem(item.id);
     } else personalPriority.addManualPriorityItem(item.id);
     refreshPriority(item.id);
@@ -334,7 +334,7 @@
     $('list-view').hidden = state.view !== 'list'; $('calendar-view').hidden = state.view !== 'calendar';
     $('count-today').textContent = validData ? scoped.filter(item => item.date === today).length : '—';
     $('count-priority').textContent = validData ? scoped.filter(item => state.priorityIds ? state.priorityIds.includes(item.id) : priority(item, today).tier > 0).length : '—';
-    document.querySelector('.priority-metric .metric-note').textContent = state.priorityIds ? '자동 추천 + 직접 추가' : '일정·키워드 규칙 기반';
+    document.querySelector('.priority-metric .metric-note').textContent = '자동 후보 + 직접 추가 · 제외한 안건 제외';
     $('count-upcoming').textContent = validData ? scoped.filter(item => { const n = daysUntil(effectiveDate(item), today); return n !== null && n >= 0 && n <= 30; }).length : '—';
     $('count-unread').textContent = validData ? scoped.filter(item => !isRead(item, records)).length : '—';
   }
@@ -383,7 +383,7 @@
     const dateChanged = today !== kstToday();
     today = kstToday(); updateStatus();
     renderRail();
-    state.priorityIds = personalPriority ? personalPriority.getVisiblePriorityRegulations().map(item => item.id) : null;
+    state.priorityIds = personalPriority ? personalPriority.getAllPriorityRegulations().map(item => item.id) : null;
     renderExcluded();
     controls();
     const filtered = filterItems(items, state, today, records);
@@ -434,7 +434,7 @@
         personalPriority?.restoreExcludedPriorityItem(item.id); render(); syncPriorityButtons();
         $('priority-excluded-list').querySelector('button')?.focus();
         if (!$('priority-excluded-list').querySelector('button')) $('priority-excluded-close').focus();
-        toast((personalPriority?.isVisiblePriorityItem(item.id) ? '우선검토에 다시 표시합니다.' : '제외 상태를 해제했습니다. 현재 자동추천 대상이 아니거나 다른 업무 관점의 안건은 바로 표시되지 않을 수 있습니다.') + priorityWarning()); return;
+        toast((personalPriority?.isPriorityItem(item.id) ? '우선검토에 다시 표시합니다.' : '제외 상태를 해제했습니다. 현재 자동추천 대상이 아니거나 다른 업무 관점의 안건은 바로 표시되지 않을 수 있습니다.') + priorityWarning()); return;
       }
       if (action.dataset.action === 'detail') openDetail(item.id);
       if (action.dataset.action === 'ai-detail') {
