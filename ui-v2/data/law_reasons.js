@@ -37,6 +37,15 @@ window.lawReasons = {
       "status": "available",
       "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=290289&lsRvsGubun=Rsn"
     },
+    "admrul_금융소비자 보호에 관한 감독규정_2026-40_2026-09-29": {
+      "id": "admrul_금융소비자 보호에 관한 감독규정_2026-40_2026-09-29",
+      "law_name": "금융소비자 보호에 관한 감독규정",
+      "prom_no": "2026-40",
+      "date": "2026-09-29",
+      "text": "1. 형사사법체계 개편에 따른 종전 검찰청 관련 명칭 정비\n◇ 제ㆍ개정 이유 및 내용\n○ 수사ㆍ기소 기관간 상호 견제가 가능한 체계를 구축하기 위하여 검찰청을 폐지하고 공소청과 중대범죄수사청을 신설하는 내용으로 「공소청법」과 「중대범죄수사청 설치 및 운영에 관한 법률」이 제정되고, 수사와 기소가 제도적으로 분리되는 새로운 형사사법 체계의 행정 조직 기반을 마련하는 등의 내용으로 「형사소송법」이 개정됨에 따라, 종전 검찰청과 관련된 명칭을 정비하려는 사항",
+      "status": "available",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000285608&lsRvsGubun=Rsn"
+    },
     "admrul_체납자의 압류 가상자산 보관·관리에 관한 훈령_2498_2026-09-28": {
       "id": "admrul_체납자의 압류 가상자산 보관·관리에 관한 훈령_2498_2026-09-28",
       "law_name": "체납자의 압류 가상자산 보관·관리에 관한 훈령",
@@ -2707,8 +2716,8 @@ window.lawReasons = {
       "prom_no": "01353",
       "date": "1958-03-20",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17042&lsRvsGubun=Rsn"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_농업은행법_00473_1958-03-07": {
       "id": "law_농업은행법_00473_1958-03-07",
