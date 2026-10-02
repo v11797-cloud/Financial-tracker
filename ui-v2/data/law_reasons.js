@@ -2716,8 +2716,8 @@ window.lawReasons = {
       "prom_no": "01353",
       "date": "1958-03-20",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17042&lsRvsGubun=Rsn"
     },
     "law_농업은행법_00473_1958-03-07": {
       "id": "law_농업은행법_00473_1958-03-07",
