@@ -1,13 +1,5 @@
-window.lastUpdated = "2026-10-02 11:09 KST";
+window.lastUpdated = "2026-10-02 12:25 KST";
 window.regulatoryData = [
-    {
-        "id": "fss_press_234367",
-        "title": "[금감원] 불법사금융 근절을 위한 4대 추가 제도 개선 추진",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=234367&menuNo=200218&pageIndex=1",
-        "date": "2026-10-02",
-        "dept": "금융감독원(민생침해대응총괄국)",
-        "category": "보도자료"
-    },
     {
         "id": "fss_press_234345",
         "title": "[금감원] 금융감독원, 신설 사모운용사 CEO 대상 설명회 개최",
@@ -33,20 +25,84 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
-        "id": "no030101_87830",
-        "title": "금융시장동향(26.09.30). 금일 등록된 게시글",
-        "url": "https://www.fsc.go.kr/no030101/87830?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
-        "date": "2026-10-01",
+        "id": "no030101_87848",
+        "title": "금융시장동향(26.10.01). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no030101/87848?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
         "dept": "금융위원회",
         "category": "금융시장동향"
     },
     {
-        "id": "fss_press_233557",
-        "title": "[금감원] 대형 IB의 모험자본 공급 현황을 점검하고 리서치보고서의 독립성, 신뢰성 제고 및 중소형주 커버리지 확대 방안을 마련하였습니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=233557&menuNo=200218&pageIndex=1",
-        "date": "2026-10-01",
-        "dept": "금융감독원(자본시장감독국)",
+        "id": "no010101_87852",
+        "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87852?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회(가계금융과)",
         "category": "보도자료"
+    },
+    {
+        "id": "no010101_87847",
+        "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87847?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회(서민금융과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87846",
+        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87846?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회(국민지역참여지원과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4183",
+        "title": "｢전자등록업규정｣ 일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4183&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4182",
+        "title": "「주식ㆍ사채 등의 전자등록에 관한 법률 시행령」 일부개정령안 입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4182&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4181",
+        "title": "｢증권의 발행 및 공시 등에 관한 규정｣ 일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4181&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4180",
+        "title": "｢금융투자업규정｣ 일부개정고시안 규정변경예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4180&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4179",
+        "title": "「자본시장과 금융투자업에 관한 법률 시행령」 일부개정령안 입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4179&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "no030101_87830",
+        "title": "금융시장동향(26.09.30)",
+        "url": "https://www.fsc.go.kr/no030101/87830?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-01",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
     },
     {
         "id": "fss_press_233554",
@@ -57,20 +113,60 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
-        "id": "fss_press_233555",
-        "title": "[금감원] 금융시장 상황점검회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=233555&menuNo=200218&pageIndex=1",
+        "id": "no010101_87840",
+        "title": "법인 대표이사의 시세조종행위 등 불공정거래 행위에 대한 적발·조치(3건)     - 제17차 증권선물위원회(9.30.) 의결",
+        "url": "https://www.fsc.go.kr/no010101/87840?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
-        "dept": "금융감독원(금융시장안정국)",
+        "dept": "금융위원회(자본시장조사총괄과)",
         "category": "보도자료"
     },
     {
-        "id": "fss_press_233627",
-        "title": "[금감원] 26년 상반기 가상자산사업자 실태조사 결과",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=233627&menuNo=200218&pageIndex=1",
+        "id": "no010101_87839",
+        "title": "모태펀드와 국민성장펀드가 협력하여첨단혁신기업의 지속성장을 지원하는 ‘이어달리기’를 이어갑니다.",
+        "url": "https://www.fsc.go.kr/no010101/87839?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
-        "dept": "금융감독원(가상자산감독국)",
+        "dept": "금융위원회(국민성장펀드총괄과)",
         "category": "보도자료"
+    },
+    {
+        "id": "no010101_87838",
+        "title": "토큰증권 관련 전자증권법·자본시장법 하위법규 개정안 입법예고 실시 ※예고기간 ‘26.10.2일 ~ 11.11일",
+        "url": "https://www.fsc.go.kr/no010101/87838?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-01",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87835",
+        "title": "’26년 상반기 가상자산사업자 실태조사 결과",
+        "url": "https://www.fsc.go.kr/no010101/87835?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-01",
+        "dept": "금융위원회(가상자산검사과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87831",
+        "title": "대형 IB의 모험자본 공급 현황을 점검하고 리서치보고서의 독립성‧신뢰성 제고 및 중소형주 커버리지 확대 방안을 마련하였습니다.",
+        "url": "https://www.fsc.go.kr/no010101/87831?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-01",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87829",
+        "title": "｢금융시장 상황점검회의｣ 개최",
+        "url": "https://www.fsc.go.kr/no010101/87829?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-01",
+        "dept": "금융위원회(금융시장분석과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4178",
+        "title": "「신용정보업감독규정」 일부개정고시(안) 규정변경 예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4178&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-01",
+        "dept": "금융위원회",
+        "category": "입법예고"
     },
     {
         "id": "no030101_87811",
@@ -86,14 +182,6 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232572&menuNo=200218&pageIndex=2",
         "date": "2026-09-30",
         "dept": "금융감독원(기업공시국)",
-        "category": "보도자료"
-    },
-    {
-        "id": "fss_press_232597",
-        "title": "[금감원] 의료계,플랫폼 협력으로 “실손24” 연계율 제고 나선다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232597&menuNo=200218&pageIndex=2",
-        "date": "2026-09-30",
-        "dept": "금융감독원(보험상품분쟁2국)",
         "category": "보도자료"
     },
     {
@@ -121,12 +209,72 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
-        "id": "fss_press_232881",
-        "title": "[금감원] 법인 대표이사의 시세조종행위 등 불공정거래 행위에 대한 적발 조치(3건)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232881&menuNo=200218&pageIndex=1",
+        "id": "no010101_87825",
+        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(9.30일)",
+        "url": "https://www.fsc.go.kr/no010101/87825?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
-        "dept": "금융감독원(조사1국/조사4국)",
+        "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
+    },
+    {
+        "id": "no010101_87824",
+        "title": "은행업감독규정 규정변경예고 실시  ※예고기간 ‘26.9.30일 ~ 11.9일",
+        "url": "https://www.fsc.go.kr/no010101/87824?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-30",
+        "dept": "금융위원회(은행과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87821",
+        "title": "전남광주에서 서민·취약계층과 소상공인을 위한  희망사다리를 놓겠습니다  - 이억원 금융위원장, 「전남광주 서민금융 복합지원센터」 개소식  및 지역 소상공인 현장 간담회 참석",
+        "url": "https://www.fsc.go.kr/no010101/87821?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-30",
+        "dept": "금융위원회(복합지원팀)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87820",
+        "title": "10월 7일부터 2차 가입신청 시작! 청년미래적금 가입 전  달라진 절차와 주요일정을 확인하세요.",
+        "url": "https://www.fsc.go.kr/no010101/87820?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-30",
+        "dept": "금융위원회(청년정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87819",
+        "title": "권대영 부위원장,제2차 국민참여성장펀드 출시 첫날펀드가입 및 현장점검",
+        "url": "https://www.fsc.go.kr/no010101/87819?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-30",
+        "dept": "금융위원회(국민지역참여지원과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87818",
+        "title": "의료계·플랫폼 협력으로 “실손24” 연계율 제고 나선다.",
+        "url": "https://www.fsc.go.kr/no010101/87818?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-30",
+        "dept": "금융위원회(보험과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87812",
+        "title": "이억원 금융위원장, 글로벌 증시 핵심 인프라 기관  美 나스닥(Nasdaq), 美 DTCC*, 홍콩거래소(HKEX) 면담",
+        "url": "https://www.fsc.go.kr/no010101/87812?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-30",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_notice_4385",
+        "title": "은행업감독업무시행세칙",
+        "law_name": "은행업감독업무시행세칙",
+        "date": "2026-09-30",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4385",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4385&menuNo=200489",
+        "notice_end_date": "2026-11-09"
     },
     {
         "id": "no030101_87801",
@@ -189,14 +337,6 @@ window.regulatoryData = [
         "enf_date": "2026-10-01"
     },
     {
-        "id": "fss_press_232253",
-        "title": "[금감원] 합동대응단은 명문대 경영동아리 출신 정보카르텔을 적발하여 압수수색을 실시하고 혐의자 재산을 동결하였습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232253&menuNo=200218&pageIndex=2",
-        "date": "2026-09-29",
-        "dept": "금융감독원(조사3국)",
-        "category": "보도자료"
-    },
-    {
         "id": "fss_press_232288",
         "title": "[금감원] 이찬진 금융감독원장, 증권회사 CEO 간담회 개최",
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232288&menuNo=200218&pageIndex=2",
@@ -224,9 +364,36 @@ window.regulatoryData = [
         "enf_date": "2026-10-02"
     },
     {
+        "id": "no010101_87807",
+        "title": "합동대응단은 명문대 경영동아리 출신 정보카르텔을 적발하여 압수수색을 실시하고 혐의자 재산을 동결하였습니다.",
+        "url": "https://www.fsc.go.kr/no010101/87807?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-29",
+        "dept": "금융위원회(자본시장조사과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87805",
+        "title": "이억원 금융위원장 일본 금융청장 면담  - 한-일 금융시장 정책‧동향을 공유하고,     양국 간 지속적인 금융 협력 강화를 약속",
+        "url": "https://www.fsc.go.kr/no010101/87805?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-29",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "admrul_금융회사 지배구조 감독규정_2026-40_2026-09-29",
+        "title": "[금융회사 지배구조 감독규정] (금융위 고시 제2026-40호 | 발령일 2026-09-29)",
+        "url": "https://www.law.go.kr/행정규칙/%EA%B8%88%EC%9C%B5%ED%9A%8C%EC%82%AC%20%EC%A7%80%EB%B0%B0%EA%B5%AC%EC%A1%B0%20%EA%B0%90%EB%8F%85%EA%B7%9C%EC%A0%95",
+        "date": "2026-09-29",
+        "dept": "금융위원회",
+        "category": "공포법령",
+        "law_name": "금융회사 지배구조 감독규정",
+        "prom_no": "2026-40",
+        "enf_date": "2026-10-02"
+    },
+    {
         "id": "no010101_87787",
-        "title": "｢금융소비자 보호에 관한 감독규정｣ 개정안 규정변경예고 (‘26.9.28. ~ ’26.11.9.). 금일 등록된 게시글",
-        "url": "https://www.fsc.go.kr/no010101/87787?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "title": "｢금융소비자 보호에 관한 감독규정｣ 개정안 규정변경예고 (‘26.9.28. ~ ’26.11.9.)",
+        "url": "https://www.fsc.go.kr/no010101/87787?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-28",
         "dept": "금융위원회(금융소비자정책과)",
         "category": "보도자료"
@@ -267,11 +434,35 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
-        "id": "fss_press_231822",
-        "title": "[금감원] 휴면자산 환급실적 등을 공개하고 금융회사의 휴면자산 관리체계를 강화합니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=231822&menuNo=200218&pageIndex=2",
+        "id": "no010101_87800",
+        "title": "이억원 금융위원장,  유엔 책임투자원칙(PRI) 이사회 의장 면담",
+        "url": "https://www.fsc.go.kr/no010101/87800?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-28",
-        "dept": "금융감독원(소비자보호감독총괄국)",
+        "dept": "금융위원회(공정시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87797",
+        "title": "이억원 금융위원장,  골드만삭스(Goldman Sachs) 아‧태 대표 및  블랙록(Blackrock) 글로벌 파트너스 공동 총괄 면담",
+        "url": "https://www.fsc.go.kr/no010101/87797?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-28",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87793",
+        "title": "골드만삭스, 블랙록, 日 금융청, UN PRI 등 글로벌 핵심 투자자‧기관 등 한 자리에... 「Korea Premium Weeks 2026」 성황리 개막  - 금융위원회‧한국거래소 공동으로 최초 개최,     3주간 K-자본시장 대표 IR 대장정 돌입 -",
+        "url": "https://www.fsc.go.kr/no010101/87793?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-28",
+        "dept": "금융위원회(자본시장과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87789",
+        "title": "휴면자산 환급실적 등을 공개하고 금융회사의 휴면자산 관리체계를 강화합니다.",
+        "url": "https://www.fsc.go.kr/no010101/87789?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-09-28",
+        "dept": "금융위원회(금융소비자정책과)",
         "category": "보도자료"
     },
     {
@@ -285,7 +476,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87771",
         "title": "온라인투자연계금융업의  포용금융 역할 강화와 신뢰 회복을 지원하겠습니다. - 중저신용자 자금공급 활성화를 위한 간담회 개최",
-        "url": "https://www.fsc.go.kr/no010101/87771?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87771?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(디지털금융총괄과)",
         "category": "보도자료"
@@ -293,7 +484,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87770",
         "title": "금융위원장, 「피지컬 AI 지역거점 발전 포럼」 참석, 피지컬 AI 지역거점 지원 의지 강조",
-        "url": "https://www.fsc.go.kr/no010101/87770?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87770?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(산업금융과)",
         "category": "보도자료"
@@ -317,7 +508,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87783",
         "title": "가상자산시장 불공정거래 혐의자 수사기관 고발·통보 - 제16차 금융위원회 정례회의(’26.9.23.) 의결 -",
-        "url": "https://www.fsc.go.kr/no010101/87783?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87783?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(가상자산과)",
         "category": "보도자료"
@@ -325,7 +516,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87782",
         "title": "메리츠증권㈜에 대한  종합금융투자사업자 지정 및 단기금융업 인가   ✓ 자기자본 4조원 이상의 종투사 지정 및 단기금융업 인가로 메리츠증권㈜은 발행어음 업무영위 예정",
-        "url": "https://www.fsc.go.kr/no010101/87782?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87782?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -333,7 +524,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87781",
         "title": "기업의 가치를 보다 정확히 보여주기 위해 기업의 토지 ‘공시지가’가 주석에 공시됩니다.",
-        "url": "https://www.fsc.go.kr/no010101/87781?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87781?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
@@ -341,7 +532,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87778",
         "title": "신라자산운용(주) 및 제니스투자자문(주)에 대한 금융투자업 인가(등록) 취소  - 제16차 금융위원회(‘26.9.23.) 조치 의결",
-        "url": "https://www.fsc.go.kr/no010101/87778?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87778?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회",
         "category": "보도자료"
@@ -349,7 +540,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87776",
         "title": "Korea Premium Weeks 2026      Gateway to Asia's Most Dynamic Capital Market   -아시아에서 가장 역동적인 자본시장을 향한 관문",
-        "url": "https://www.fsc.go.kr/no010101/87776?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87776?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-23",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -534,19 +725,35 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
+        "id": "fss_notice_4347",
+        "title": "외부감사 및 회계 등에 관한 규정 시행세칙",
+        "law_name": "외부감사 및 회계 등에 관한 규정 시행세칙",
+        "date": "2026-09-18",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4347",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4347&menuNo=200489",
+        "notice_end_date": "2026-09-28"
+    },
+    {
+        "id": "fss_notice_4365",
+        "title": "신용정보업 감독업무 시행세칙",
+        "law_name": "신용정보업 감독업무 시행세칙",
+        "date": "2026-09-18",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4365",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4365&menuNo=200489",
+        "notice_end_date": "2026-10-08"
+    },
+    {
         "id": "no010101_87731",
         "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제16차 증권선물위원회(‘26.9.16.) 조치 의결",
         "url": "https://www.fsc.go.kr/no010101/87731?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회(회계제도팀)",
-        "category": "보도자료"
-    },
-    {
-        "id": "fss_press_229066",
-        "title": "[금감원] 금감원, 금융상황 점검회의 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229066&menuNo=200218&pageIndex=4",
-        "date": "2026-09-17",
-        "dept": "금융감독원(금융시장안정국)",
         "category": "보도자료"
     },
     {
@@ -598,9 +805,21 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
+        "id": "fss_notice_4345",
+        "title": "전기통신금융사기 피해 방지 및 신고포상금에 관한 규정 시행세칙",
+        "law_name": "전기통신금융사기 피해 방지 및 신고포상금에 관한 규정 시행세칙",
+        "date": "2026-09-17",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4345",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4345&menuNo=200489",
+        "notice_end_date": "2026-09-28"
+    },
+    {
         "id": "no030101_87718",
         "title": "금융시장동향(26.09.15)",
-        "url": "https://www.fsc.go.kr/no030101/87718?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87718?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -608,7 +827,7 @@ window.regulatoryData = [
     {
         "id": "notice_4173",
         "title": "｢증권의 발행 및 공시 등에 관한 규정｣ 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4173&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4173&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -616,7 +835,7 @@ window.regulatoryData = [
     {
         "id": "notice_4172",
         "title": "｢자본시장과 금융투자업에 관한 법률 시행령 일부개정령안｣ 입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4172&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4172&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-16",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -848,7 +1067,7 @@ window.regulatoryData = [
     {
         "id": "notice_4171",
         "title": "「보험업감독규정」 일부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4171&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4171&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-11",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -892,6 +1111,18 @@ window.regulatoryData = [
         "date": "2026-09-10",
         "dept": "금융위원회",
         "category": "금융시장동향"
+    },
+    {
+        "id": "fss_notice_4325",
+        "title": "금융감독원 특별사법경찰관리 집무규칙",
+        "law_name": "금융감독원 특별사법경찰관리 집무규칙",
+        "date": "2026-09-10",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4325",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4325&menuNo=200489",
+        "notice_end_date": "2026-09-21"
     },
     {
         "id": "no030101_87669",
@@ -1097,7 +1328,7 @@ window.regulatoryData = [
     {
         "id": "notice_4168",
         "title": "「단기매매차익 반환 및 불공정거래 조사·신고 등에 관한 규정」일부개정고시안 행정예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4168&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4168&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1137,7 +1368,7 @@ window.regulatoryData = [
     {
         "id": "notice_4170",
         "title": "「자본시장특별사법경찰 집무규칙」일부개정훈령안 행정예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4170&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4170&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1145,15 +1376,27 @@ window.regulatoryData = [
     {
         "id": "notice_4169",
         "title": "「자본시장조사 업무규정」일부개정고시안 행정예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4169&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4169&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "입법예고"
     },
     {
+        "id": "fss_notice_4305",
+        "title": "금융소비자 보호에 관한 감독규정 시행세칙",
+        "law_name": "금융소비자 보호에 관한 감독규정 시행세칙",
+        "date": "2026-09-04",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원 · 자산운용 관련",
+        "notice_seq": "4305",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4305&menuNo=200489",
+        "notice_end_date": "2026-10-14"
+    },
+    {
         "id": "no030101_87642",
         "title": "금융시장동향(26.09.02)",
-        "url": "https://www.fsc.go.kr/no030101/87642?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87642?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-03",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1903,7 +2146,7 @@ window.regulatoryData = [
     {
         "id": "notice_4162",
         "title": "｢증권의 발행 및 공시 등에 관한 규정｣ 일부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4162&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4162&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-30",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1911,7 +2154,7 @@ window.regulatoryData = [
     {
         "id": "notice_4161",
         "title": "「자본시장과 금융투자업에 관한 법률 시행령｣ 일부개정령안 입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4161&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4161&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-30",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1919,7 +2162,7 @@ window.regulatoryData = [
     {
         "id": "notice_4163",
         "title": "｢자본시장과 금융투자업에 관한 법률 시행령｣ 일부개정령안 입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4163&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4163&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-30",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -2023,7 +2266,7 @@ window.regulatoryData = [
     {
         "id": "notice_4160",
         "title": "｢외부감사 및 회계 등에 관한 규정 일부개정고시안｣ 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4160&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4160&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-24",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -2079,7 +2322,7 @@ window.regulatoryData = [
     {
         "id": "notice_4159",
         "title": "「전기통신금융사기 피해 방지 및 피해금 환급에 관한 특별법 시행령 일부개정령안」입법예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4159&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4159&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-15",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -2098,7 +2341,7 @@ window.regulatoryData = [
     {
         "id": "notice_4158",
         "title": "「신용정보업감독규정」 일부개정고시(안) 규정변경 예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4158&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4158&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-07-10",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -2113,6 +2356,18 @@ window.regulatoryData = [
         "law_name": "금융투자업규정",
         "prom_no": "2026-28",
         "enf_date": "2026-07-08"
+    },
+    {
+        "id": "fss_notice_4285",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-07-07",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4285",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4285&menuNo=200489",
+        "notice_end_date": "2026-08-18"
     },
     {
         "id": "notice_4157",
@@ -2156,6 +2411,18 @@ window.regulatoryData = [
         "date": "2026-06-29",
         "dept": "청년정책과",
         "category": "보도자료"
+    },
+    {
+        "id": "fss_notice_4265",
+        "title": "전기통신금융사기 피해 방지 및 신고포상금에 관한 규정 시행세칙",
+        "law_name": "전기통신금융사기 피해 방지 및 신고포상금에 관한 규정 시행세칙",
+        "date": "2026-06-29",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4265",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4265&menuNo=200489",
+        "notice_end_date": "2026-07-20"
     },
     {
         "id": "no030101_87198",
@@ -2246,6 +2513,18 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
+        "id": "fss_notice_4245",
+        "title": "외부감사 및 회계 등에 관한 규정 시행세칙",
+        "law_name": "외부감사 및 회계 등에 관한 규정 시행세칙",
+        "date": "2026-06-24",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4245",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4245&menuNo=200489",
+        "notice_end_date": "2026-08-03"
+    },
+    {
         "id": "no030101_87175",
         "title": "금융시장동향(26.06.23)",
         "url": "https://www.fsc.go.kr/no030101/87175?srchCtgry=&curPage=&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
@@ -2276,6 +2555,18 @@ window.regulatoryData = [
         "date": "2026-06-19",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "fss_notice_4225",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-06-19",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4225",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4225&menuNo=200489",
+        "notice_end_date": "2026-07-29"
     },
     {
         "id": "no030101_87146",
@@ -2318,6 +2609,30 @@ window.regulatoryData = [
         "category": "금융시장동향"
     },
     {
+        "id": "fss_notice_4206",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-06-10",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4206",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4206&menuNo=200489",
+        "notice_end_date": "2026-06-30"
+    },
+    {
+        "id": "fss_notice_4205",
+        "title": "금융기관채권대손인정업무세칙",
+        "law_name": "금융기관채권대손인정업무세칙",
+        "date": "2026-06-10",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4205",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4205&menuNo=200489",
+        "notice_end_date": "2026-07-21"
+    },
+    {
         "id": "notice_4153",
         "title": "「신용협동조합법 시행령」 일부개정령(안) 입법예고",
         "url": "https://www.fsc.go.kr/po040301/view?noticeId=4153&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
@@ -2337,6 +2652,18 @@ window.regulatoryData = [
         "enf_date": "2026-06-01"
     },
     {
+        "id": "fss_notice_4165",
+        "title": "금융투자업규정시행세칙",
+        "law_name": "금융투자업규정시행세칙",
+        "date": "2026-06-01",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4165",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4165&menuNo=200489",
+        "notice_end_date": "2026-07-10"
+    },
+    {
         "id": "notice_4151",
         "title": "「금융투자업규정」 일부개정고시안 규정변경예고",
         "url": "https://www.fsc.go.kr/po040301/view?noticeId=4151&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
@@ -2351,6 +2678,30 @@ window.regulatoryData = [
         "date": "2026-05-21",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "fss_notice_4145",
+        "title": "은행업감독업무시행세칙",
+        "law_name": "은행업감독업무시행세칙",
+        "date": "2026-05-21",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4145",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4145&menuNo=200489",
+        "notice_end_date": "2026-06-10"
+    },
+    {
+        "id": "fss_notice_4125",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-05-21",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4125",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4125&menuNo=200489",
+        "notice_end_date": "2026-06-10"
     },
     {
         "id": "notice_4149",
@@ -2394,6 +2745,18 @@ window.regulatoryData = [
         "date": "2026-05-11",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "fss_notice_4105",
+        "title": "외부감사 및 회계 등에 관한 규정 시행세칙",
+        "law_name": "외부감사 및 회계 등에 관한 규정 시행세칙",
+        "date": "2026-04-30",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4105",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4105&menuNo=200489",
+        "notice_end_date": "2026-05-15"
     },
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_36287_2026-04-28",
@@ -2459,6 +2822,18 @@ window.regulatoryData = [
         "enf_date": "2026-04-15"
     },
     {
+        "id": "fss_notice_4065",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-04-08",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4065",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4065&menuNo=200489",
+        "notice_end_date": "2026-05-18"
+    },
+    {
         "id": "notice_4144",
         "title": "「자본시장과 금융투자업에 관한 법률 시행령｣ 입법예고 및 ｢증권의 발행 및 공시 등에 관한 규정｣ 규정변경예고",
         "url": "https://www.fsc.go.kr/po040301/view?noticeId=4144&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
@@ -2492,6 +2867,18 @@ window.regulatoryData = [
         "date": "2026-04-02",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "fss_notice_4045",
+        "title": "금융투자업규정시행세칙",
+        "law_name": "금융투자업규정시행세칙",
+        "date": "2026-04-02",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4045",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4045&menuNo=200489",
+        "notice_end_date": "2026-04-17"
     },
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21503_2026-10-01",
@@ -2556,6 +2943,42 @@ window.regulatoryData = [
         "category": "입법예고"
     },
     {
+        "id": "fss_notice_4025",
+        "title": "은행업감독업무시행세칙",
+        "law_name": "은행업감독업무시행세칙",
+        "date": "2026-03-16",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4025",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4025&menuNo=200489",
+        "notice_end_date": "2026-03-23"
+    },
+    {
+        "id": "fss_notice_4005",
+        "title": "금융감독원 특별사법경찰관리 집무규칙",
+        "law_name": "금융감독원 특별사법경찰관리 집무규칙",
+        "date": "2026-03-16",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4005",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4005&menuNo=200489",
+        "notice_end_date": "2026-03-26"
+    },
+    {
+        "id": "fss_notice_3985",
+        "title": "상호금융업감독업무시행세칙",
+        "law_name": "상호금융업감독업무시행세칙",
+        "date": "2026-03-12",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3985",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3985&menuNo=200489",
+        "notice_end_date": "2026-03-25"
+    },
+    {
         "id": "law_자본시장과 금융투자업에 관한 법률_21448_2026-03-06",
         "title": "[자본시장과 금융투자업에 관한 법률] (공포 제21448호 | 시행일 2026-03-06)",
         "url": "https://www.law.go.kr/법령/%EC%9E%90%EB%B3%B8%EC%8B%9C%EC%9E%A5%EA%B3%BC%20%EA%B8%88%EC%9C%B5%ED%88%AC%EC%9E%90%EC%97%85%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0",
@@ -2576,6 +2999,42 @@ window.regulatoryData = [
         "law_name": "상호저축은행법",
         "prom_no": "21446",
         "enf_date": "2026-07-01"
+    },
+    {
+        "id": "fss_notice_3965",
+        "title": "금융투자업규정시행세칙",
+        "law_name": "금융투자업규정시행세칙",
+        "date": "2026-02-20",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3965",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3965&menuNo=200489",
+        "notice_end_date": "2026-03-04"
+    },
+    {
+        "id": "fss_notice_3945",
+        "title": "은행업감독업무시행세칙",
+        "law_name": "은행업감독업무시행세칙",
+        "date": "2026-02-10",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3945",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3945&menuNo=200489",
+        "notice_end_date": "2026-03-03"
+    },
+    {
+        "id": "fss_notice_3925",
+        "title": "금융투자업규정시행세칙",
+        "law_name": "금융투자업규정시행세칙",
+        "date": "2026-02-05",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3925",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3925&menuNo=200489",
+        "notice_end_date": "2026-02-09"
     },
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21324_2027-02-04",
@@ -2609,6 +3068,78 @@ window.regulatoryData = [
         "law_name": "자본시장과 금융투자업에 관한 법률",
         "prom_no": "21324",
         "enf_date": "2026-02-03"
+    },
+    {
+        "id": "fss_notice_3905",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-02-03",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3905",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3905&menuNo=200489",
+        "notice_end_date": "2026-03-16"
+    },
+    {
+        "id": "fss_notice_3886",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-01-30",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3886",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3886&menuNo=200489",
+        "notice_end_date": "2026-02-19"
+    },
+    {
+        "id": "fss_notice_3885",
+        "title": "금융투자업규정시행세칙",
+        "law_name": "금융투자업규정시행세칙",
+        "date": "2026-01-30",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3885",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3885&menuNo=200489",
+        "notice_end_date": "2026-02-09"
+    },
+    {
+        "id": "fss_notice_3865",
+        "title": "전자금융감독규정시행세칙",
+        "law_name": "전자금융감독규정시행세칙",
+        "date": "2026-01-20",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3865",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3865&menuNo=200489",
+        "notice_end_date": "2026-02-09"
+    },
+    {
+        "id": "fss_notice_3845",
+        "title": "퇴직연금감독규정시행세칙",
+        "law_name": "퇴직연금감독규정시행세칙",
+        "date": "2026-01-13",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3845",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3845&menuNo=200489",
+        "notice_end_date": "2026-02-23"
+    },
+    {
+        "id": "fss_notice_3825",
+        "title": "상호금융업감독업무시행세칙",
+        "law_name": "상호금융업감독업무시행세칙",
+        "date": "2026-01-12",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "3825",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3825&menuNo=200489",
+        "notice_end_date": "2026-01-22"
     },
     {
         "id": "admrul_자본시장조사 업무규정_2026-1_2026-01-02",
