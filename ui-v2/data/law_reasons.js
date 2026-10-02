@@ -46,6 +46,16 @@ window.lawReasons = {
       "status": "available",
       "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000285608&lsRvsGubun=Rsn"
     },
+    "admrul_금융회사 지배구조 감독규정_2026-40_2026-09-29": {
+      "id": "admrul_금융회사 지배구조 감독규정_2026-40_2026-09-29",
+      "law_name": "금융회사 지배구조 감독규정",
+      "prom_no": "2026-40",
+      "date": "2026-09-29",
+      "text": "1. 형사사법체계 개편에 따른 종전 검찰청 관련 명칭 정비\n◇ 제ㆍ개정 이유 및 내용\n○ 수사ㆍ기소 기관간 상호 견제가 가능한 체계를 구축하기 위하여 검찰청을 폐지하고 공소청과 중대범죄수사청을 신설하는 내용으로 「공소청법」과 「중대범죄수사청 설치 및 운영에 관한 법률」이 제정되고, 수사와 기소가 제도적으로 분리되는 새로운 형사사법 체계의 행정 조직 기반을 마련하는 등의 내용으로 「형사소송법」이 개정됨에 따라, 종전 검찰청과 관련된 명칭을 정비하려는 사항",
+      "status": "available",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000285614&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000285614&chrClsCd=010201"
+    },
     "admrul_체납자의 압류 가상자산 보관·관리에 관한 훈령_2498_2026-09-28": {
       "id": "admrul_체납자의 압류 가상자산 보관·관리에 관한 훈령_2498_2026-09-28",
       "law_name": "체납자의 압류 가상자산 보관·관리에 관한 훈령",
@@ -134,7 +144,8 @@ window.lawReasons = {
       "date": "2026-07-06",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108855&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108855&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108855&chrClsCd=010201"
     },
     "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01": {
       "id": "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01",
@@ -179,7 +190,8 @@ window.lawReasons = {
       "date": "2026-04-20",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108629&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108629&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108629&chrClsCd=010201"
     },
     "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15": {
       "id": "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15",
@@ -332,7 +344,8 @@ window.lawReasons = {
       "date": "2025-12-05",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000271738&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000271738&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000271738&chrClsCd=010201"
     },
     "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01": {
       "id": "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01",
@@ -341,7 +354,8 @@ window.lawReasons = {
       "date": "2025-12-01",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108171&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108171&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108171&chrClsCd=010201"
     },
     "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11": {
       "id": "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11",
@@ -494,7 +508,8 @@ window.lawReasons = {
       "date": "2024-12-28",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000252980&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000252980&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000252980&chrClsCd=010201"
     },
     "law_전자금융거래법 시행령_35038_2024-12-27": {
       "id": "law_전자금융거래법 시행령_35038_2024-12-27",
@@ -575,7 +590,8 @@ window.lawReasons = {
       "date": "2024-07-19",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082741&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082741&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082741&chrClsCd=010201"
     },
     "admrul_가상자산업 감독규정 시행세칙_9999_2024-07-19": {
       "id": "admrul_가상자산업 감독규정 시행세칙_9999_2024-07-19",
@@ -584,7 +600,8 @@ window.lawReasons = {
       "date": "2024-07-19",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082783&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082783&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082783&chrClsCd=010201"
     },
     "admrul_가상자산업감독규정_2024-37_2024-07-10": {
       "id": "admrul_가상자산업감독규정_2024-37_2024-07-10",
@@ -611,7 +628,8 @@ window.lawReasons = {
       "date": "2024-07-01",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082677&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082677&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082677&chrClsCd=010201"
     },
     "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26": {
       "id": "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26",
@@ -1808,7 +1826,8 @@ window.lawReasons = {
       "date": "2016-06-01",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000048773&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000048773&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000048773&chrClsCd=010201"
     },
     "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01": {
       "id": "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01",
@@ -2528,7 +2547,8 @@ window.lawReasons = {
       "date": "1980-10-13",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15571&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15571&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15571&chrClsCd=010201"
     },
     "law_국민은행법시행령_09004_1978-05-03": {
       "id": "law_국민은행법시행령_09004_1978-05-03",
@@ -2537,7 +2557,8 @@ window.lawReasons = {
       "date": "1978-05-03",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15570&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15570&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15570&chrClsCd=010201"
     },
     "law_국민은행법_03023_1977-12-19": {
       "id": "law_국민은행법_03023_1977-12-19",
@@ -2555,7 +2576,8 @@ window.lawReasons = {
       "date": "1977-02-25",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15569&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15569&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15569&chrClsCd=010201"
     },
     "law_국민은행법시행령_08035_1976-03-22": {
       "id": "law_국민은행법시행령_08035_1976-03-22",
@@ -2564,7 +2586,8 @@ window.lawReasons = {
       "date": "1976-03-22",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15568&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15568&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15568&chrClsCd=010201"
     },
     "law_국민은행법시행령_06663_1973-05-03": {
       "id": "law_국민은행법시행령_06663_1973-05-03",
@@ -2573,7 +2596,8 @@ window.lawReasons = {
       "date": "1973-05-03",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15567&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15567&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15567&chrClsCd=010201"
     },
     "law_국민은행법_02571_1973-03-05": {
       "id": "law_국민은행법_02571_1973-03-05",
@@ -2591,7 +2615,8 @@ window.lawReasons = {
       "date": "1972-09-01",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15566&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15566&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15566&chrClsCd=010201"
     },
     "law_국민은행법시행령_04141_1969-10-20": {
       "id": "law_국민은행법시행령_04141_1969-10-20",
@@ -2600,7 +2625,8 @@ window.lawReasons = {
       "date": "1969-10-20",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=53961&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=53961&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=53961&chrClsCd=010201"
     },
     "law_국민은행법시행령_03656_1968-12-09": {
       "id": "law_국민은행법시행령_03656_1968-12-09",
@@ -2609,7 +2635,8 @@ window.lawReasons = {
       "date": "1968-12-09",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15456&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15456&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15456&chrClsCd=010201"
     },
     "law_국민은행법_02043_1968-07-25": {
       "id": "law_국민은행법_02043_1968-07-25",
@@ -2627,7 +2654,8 @@ window.lawReasons = {
       "date": "1966-06-08",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15455&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15455&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15455&chrClsCd=010201"
     },
     "law_국민은행법시행령_01676_1964-03-11": {
       "id": "law_국민은행법시행령_01676_1964-03-11",
@@ -2636,7 +2664,8 @@ window.lawReasons = {
       "date": "1964-03-11",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15454&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15454&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15454&chrClsCd=010201"
     },
     "law_국민은행법_01558_1963-12-17": {
       "id": "law_국민은행법_01558_1963-12-17",
@@ -2654,7 +2683,8 @@ window.lawReasons = {
       "date": "1963-02-19",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15453&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15453&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15453&chrClsCd=010201"
     },
     "law_국민은행법시행령_01077_1962-12-15": {
       "id": "law_국민은행법시행령_01077_1962-12-15",
@@ -2663,7 +2693,8 @@ window.lawReasons = {
       "date": "1962-12-15",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15452&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15452&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15452&chrClsCd=010201"
     },
     "law_국민은행법_01201_1962-12-07": {
       "id": "law_국민은행법_01201_1962-12-07",
@@ -2681,7 +2712,8 @@ window.lawReasons = {
       "date": "1962-01-27",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=54526&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=54526&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=54526&chrClsCd=010201"
     },
     "law_미군정청에의하여의용된보험업법_00973_1962-01-15": {
       "id": "law_미군정청에의하여의용된보험업법_00973_1962-01-15",
@@ -2717,7 +2749,8 @@ window.lawReasons = {
       "date": "1958-03-20",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17042&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17042&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17042&chrClsCd=010201"
     },
     "law_농업은행법_00473_1958-03-07": {
       "id": "law_농업은행법_00473_1958-03-07",
@@ -2735,7 +2768,8 @@ window.lawReasons = {
       "date": "1957-04-04",
       "text": "",
       "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17041&lsRvsGubun=Rsn"
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17041&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17041&chrClsCd=010201"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",
@@ -2745,16 +2779,6 @@ window.lawReasons = {
       "text": "[신규제정]\n농업신용제도를 확립함으로써 농업협동조합의 발전, 농촌경제의 부흥과 농민의 경제적 지위의 향상을 도모하려는 것임.\n①농업은행은 법인으로 하고, 자본금은 300억환으로 하며 농업협동조합이 출자하도록 하되 출좌 1좌당 금액은 1만환으로 함.\n②농업은행이 아닌 자는 농업은행 또는 이와 유사한 명칭을 사용할 수 없도록 함.\n③농업은행의 재산과 업무에 대하여는 정부 또는 지방공공단체의 세금과 부과금을 면제하도록 함.\n④농업은행에 운영위원회를 두어 이 법에서 정한 범위내에서 은행의 업무, 운영, 관리에 관하여 기본방침을 수립하여 지시와 감독을 하도록 함.\n⑤운영위원회의 구성인원은 재무부장관, 농림부장관, 한국은행총재, 농업은행총재, 농업협동조합중앙회회장 및 총회에서 선출한 4인으로 함.\n⑥운영위원회가 의결한 사항이 위법 또는 부당하다고 인정할 때에는 재무부장관과 농림부장관이 합의하여 국무회의의 의결을 거쳐 그 전부 또는 일부를 취소하거나 집행을 정지시킬 수 있도록 함.\n⑦농업은행에 총재, 부총재, 감사 각 1인을 두도록 함.\n⑧농업은행에 자본금, 정부 또는 한국은행으로부터의 차입금, 1년을 초과하는 기한부예금 또는 농업금융채권발행에 의하여 획득한 자금에 한하여 대출기간이 1년을 초과하는 대출을 할 수 있도록 함.\n⑨농업은행은 여신을 함에 있어 특히 류의할 사항을 정함.\n⑩농업은행은 농업금융채권을 발행할 수 있게 하되 그 한도는 불입자본금의 10배를 초과할 수 없도록 하고, 그 원리금상환에 대하여 정부가 전액 보증하도록 함.\n⑪농업은행은 조합, 농업단체 또는 농민에게 여신한 자금에 관련된 조합과 농업단체의 재산상태에 관하여 검사할 수 있도록 함.\n⑫농업은행은 자본금중 정부출자가 있을 때에는 회계에 관하여 심계원의 검사를 받도록 함.",
       "status": "available",
       "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=2030&lsRvsGubun=Rsn"
-    },
-    "admrul_금융회사 지배구조 감독규정_2026-40_2026-09-29": {
-      "id": "admrul_금융회사 지배구조 감독규정_2026-40_2026-09-29",
-      "law_name": "금융회사 지배구조 감독규정",
-      "prom_no": "2026-40",
-      "date": "2026-09-29",
-      "text": "1. 형사사법체계 개편에 따른 종전 검찰청 관련 명칭 정비\n◇ 제ㆍ개정 이유 및 내용\n○ 수사ㆍ기소 기관간 상호 견제가 가능한 체계를 구축하기 위하여 검찰청을 폐지하고 공소청과 중대범죄수사청을 신설하는 내용으로 「공소청법」과 「중대범죄수사청 설치 및 운영에 관한 법률」이 제정되고, 수사와 기소가 제도적으로 분리되는 새로운 형사사법 체계의 행정 조직 기반을 마련하는 등의 내용으로 「형사소송법」이 개정됨에 따라, 종전 검찰청과 관련된 명칭을 정비하려는 사항",
-      "status": "available",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000285614&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000285614&chrClsCd=010201"
     }
   }
 };
