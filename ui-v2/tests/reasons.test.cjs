@@ -19,7 +19,14 @@ test('each targeted amendment routes to its own reasons and preserves original d
     assert.equal(url.searchParams.get('id'), item.id);
     assert.ok(records[item.id], item.id);
     for (const key of ['id','law_name','date','prom_no']) assert.equal(records[item.id][key], item[key]);
-    assert.ok(['available', 'not_provided'].includes(records[item.id].status));
+    assert.ok(['available', 'not_provided', 'unavailable'].includes(records[item.id].status));
+    if (records[item.id].status === 'unavailable') {
+      assert.equal(records[item.id].text, '');
+      assert.equal(typeof records[item.id].error, 'string');
+    } else if (records[item.id].status === 'available') {
+      assert.ok(records[item.id].text.trim());
+      assert.match(records[item.id].source_url, /^https:\/\/www\.law\.go\.kr\/LSW\//);
+    }
   }
   assert.equal(JSON.stringify(base), before);
   const press = {...items[0], category:'보도자료'};
