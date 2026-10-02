@@ -6,6 +6,7 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 import urllib.parse
 from difflib import SequenceMatcher
+from fss_notices import collect as collect_fss_notices
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -304,6 +305,10 @@ class FinancialRegulatoryScraper:
             print(f"[{category}] 수집 완료: {len(data)}건")
             all_data.extend(data)
         
+        try:
+            all_data.extend(collect_fss_notices())
+        except requests.RequestException as error:
+            print(f'[금감원 세칙 예고] 수집 실패: {type(error).__name__}')
         # 금감원 보도자료 수집
         fss_press_data = self.scrape_fss_press()
         
