@@ -2595,9 +2595,8 @@ window.lawReasons = {
       "prom_no": "06663",
       "date": "1973-05-03",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15567&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15567&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법_02571_1973-03-05": {
       "id": "law_국민은행법_02571_1973-03-05",
@@ -2624,9 +2623,8 @@ window.lawReasons = {
       "prom_no": "04141",
       "date": "1969-10-20",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=53961&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=53961&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법시행령_03656_1968-12-09": {
       "id": "law_국민은행법시행령_03656_1968-12-09",
