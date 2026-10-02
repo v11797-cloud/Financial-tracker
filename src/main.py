@@ -40,7 +40,7 @@ def main():
 
     to_delete_ids = []
     for item_id, item in existing_dict.items():
-        if item_id.startswith("fss_press_") or item.get("dept", "").startswith("금융감독원"):
+        if item.get("category") == "보도자료" and (item_id.startswith("fss_press_") or item.get("dept", "").startswith("금융감독원")):
             fss_title = item.get("title", "")
             for fsc_title in fsc_press_titles:
                 if scraper._is_duplicate_press(fsc_title, fss_title):
