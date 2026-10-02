@@ -323,7 +323,7 @@ h1 {
 }
 .metrics {
   display:grid;
-  grid-template-columns:repeat(4,minmax(0,1fr));
+  grid-template-columns:repeat(5,minmax(0,1fr));
   gap:12px;
   margin-bottom:22px
 }
@@ -1806,3 +1806,7 @@ mark {
 .collection-help { color: #9caec4; font-size: 11px; }
 #collect-button { border-color: #507a9f; padding: 8px 14px; }
 #collect-button:disabled { opacity: .65; cursor: wait; }
+
+@media (max-width: 760px) {
+  .metrics .all-metric { grid-column: 1 / -1; }
+}

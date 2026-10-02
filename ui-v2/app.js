@@ -332,6 +332,7 @@
     $('toggle-filters').innerHTML = `자료·규정 필터${activeFilterCount ? ` · ${activeFilterCount}개 적용` : ''} <span aria-hidden="true">⌄</span>`;
     $('feed-title').textContent = state.view === 'calendar' ? '시행일 캘린더' : state.focus === 'all' ? '전체 규제 피드' : `${focusLabels[state.focus]} 피드`;
     $('list-view').hidden = state.view !== 'list'; $('calendar-view').hidden = state.view !== 'calendar';
+    $('count-all').textContent = validData ? scoped.length : '—';
     $('count-today').textContent = validData ? scoped.filter(item => item.date === today).length : '—';
     $('count-priority').textContent = validData ? scoped.filter(item => state.priorityIds ? state.priorityIds.includes(item.id) : priority(item, today).tier > 0).length : '—';
     document.querySelector('.priority-metric .metric-note').textContent = '자동 후보 + 직접 추가 · 제외한 안건 제외';

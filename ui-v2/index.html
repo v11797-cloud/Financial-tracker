@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="color-scheme" content="dark">
   <title>UI 2.0 테스트 · Financial Tracker</title>
-  <link rel="stylesheet" href="./style.css?v=20260916-collection">
+  <link rel="stylesheet" href="./style.css?v=20261002-all-monitoring">
   <script src="../data/regulatory_data.js" defer></script>
   <script src="./data/kofia_data.js" defer></script>
   <link rel="stylesheet" href="./ai.css?v=7">
@@ -20,7 +20,7 @@
   <script src="./gemini-enterprise.js?v=2" defer></script>
   <script src="./data/law_reasons.js" defer></script>
   <script src="./notice-summary.js?v=2" defer></script>
-  <script src="./app.js?v=20260930-priority-total" defer></script>
+  <script src="./app.js?v=20261002-all-monitoring" defer></script>
   <script src="./collection.js?v=20260916-collection" defer></script>
 </head>
 <body>
@@ -63,6 +63,7 @@
         <p class="collection-help">버튼은 GitHub 실행 화면을 엽니다. Run workflow에서 main을 선택해 실행하세요. 약 2분마다 상태를 확인하며 배포 완료 시 자료를 자동 갱신합니다. 기관별 수집 성공 여부는 실행 로그에서 확인하세요.</p>
       </section>
       <section class="metrics" aria-label="업무 관점 내 요약" id="metrics">
+        <button class="metric all-metric" data-focus="all" aria-pressed="true"><span class="metric-label">전체 모니터링 <span>↗</span></span><strong id="count-all">—</strong><span class="metric-note">과거 자료 포함 · 확인 상태 전체</span></button>
         <button class="metric" data-focus="today" aria-pressed="false"><span class="metric-label">오늘 게시 <span>↗</span></span><strong id="count-today">—</strong><span class="metric-note">기관 표시일 기준</span></button>
         <button class="metric priority-metric" data-focus="priority" aria-pressed="false"><span class="metric-label">우선검토 후보 총 <span>↗</span></span><strong id="count-priority">—</strong><span class="metric-note">일정·키워드 규칙 기반</span></button>
         <button class="metric deadline-metric" data-focus="upcoming" aria-pressed="false"><span class="metric-label">30일 내 시행 <span>↗</span></span><strong id="count-upcoming">—</strong><span class="metric-note">오늘 포함 · 수집된 시행일</span></button>
