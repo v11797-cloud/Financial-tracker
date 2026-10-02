@@ -62,6 +62,7 @@ def collect(item):
     text = extract_reason(soup, item, admin)
     return {key: item[key] for key in ('id', 'law_name', 'prom_no', 'date')} | {
         'text': text, 'status': 'available' if text else 'not_provided', 'source_url': url,
+        'original_url': f'https://www.law.go.kr/LSW/{"admRulInfoP" if admin else "lsInfoP"}.do?{key}={seq}&chrClsCd=010201',
     }
 
 
