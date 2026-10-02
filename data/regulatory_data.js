@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-10-02 12:59 KST";
+window.lastUpdated = "2026-10-02 14:16 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_234345",
@@ -95,6 +95,14 @@ window.regulatoryData = [
         "date": "2026-10-02",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "no010101_87857",
+        "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87857?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회(혁신기획재정담당관)",
+        "category": "보도자료"
     },
     {
         "id": "no030101_87830",
@@ -211,7 +219,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87825",
         "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(9.30일)",
-        "url": "https://www.fsc.go.kr/no010101/87825?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87825?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
         "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
@@ -444,7 +452,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87797",
         "title": "이억원 금융위원장,  골드만삭스(Goldman Sachs) 아‧태 대표 및  블랙록(Blackrock) 글로벌 파트너스 공동 총괄 면담",
-        "url": "https://www.fsc.go.kr/no010101/87797?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87797?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-28",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
