@@ -1,5 +1,6 @@
 """Collect identity-checked official notice excerpts for the static detail view."""
 import argparse
+import sys
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 import json
@@ -10,12 +11,16 @@ import requests
 from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
+from fss_notices import extract_detail
 OUTPUT = ROOT / 'ui-v2/data/notice_summaries.json'
 
 def key(value):
     return re.sub(r'\s+', '', unicodedata.normalize('NFKC', value))
 
 def extract(html, item):
+    if item.get('source') == 'FSS':
+        return {k:v for k,v in extract_detail(html,item).items() if k in ('purpose','changes')}
     soup = BeautifulSoup(html, 'html.parser')
     if item.get('source') == 'KOFIA':
         table = soup.select_one('table.brdComView')
@@ -60,6 +65,9 @@ def collect(item):
         if item.get('source') == 'KOFIA' and re.fullmatch(r'\d{1,12}', str(item.get('notice_seq', ''))):
             url = 'https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do'
             response = requests.post(url, data={'revisionSeq': item['notice_seq']}, timeout=25, allow_redirects=False)
+        elif re.fullmatch(r'fss_notice_\d+', item['id']):
+            url = 'https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=' + item['id'].split('_')[-1] + '&menuNo=200489'
+            response = requests.get(url, timeout=25, allow_redirects=False)
         elif re.fullmatch(r'notice_\d+', item['id']):
             url = 'https://www.fsc.go.kr/po040301/view?noticeId=' + item['id'].split('_')[1]
             response = requests.get(url, timeout=25, allow_redirects=False)
