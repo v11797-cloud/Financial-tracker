@@ -5,7 +5,7 @@
   const CATEGORIES = ['보도자료', '입법예고', '공포법령', '금융시장동향'];
   const LAW_RULES = {
     자본시장: title => title.includes('자본시장과 금융투자업에 관한 법률') || title.includes('자본시장법'),
-    금융소비자: title => title.includes('금융소비자 보호에 관한 법률') || title.includes('금소법'),
+    금융소비자: title => title.includes('금융소비자 보호에 관한 법률') || title.includes('금소법') || /금융소비자\s*보호에 관한 감독규정/.test(title),
     금융투자업규정: title => title.includes('금융투자업규정'),
     지배구조: title => title.includes('금융회사의 지배구조에 관한 법률') || title.includes('지배구조법')
   };
