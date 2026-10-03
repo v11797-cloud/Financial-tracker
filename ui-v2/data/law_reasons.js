@@ -2595,8 +2595,9 @@ window.lawReasons = {
       "prom_no": "06663",
       "date": "1973-05-03",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15567&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15567&chrClsCd=010201"
     },
     "law_국민은행법_02571_1973-03-05": {
       "id": "law_국민은행법_02571_1973-03-05",
