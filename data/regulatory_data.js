@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-10-02 14:56 KST";
+window.lastUpdated = "2026-10-03 10:49 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_234345",
@@ -26,7 +26,7 @@ window.regulatoryData = [
     },
     {
         "id": "no030101_87848",
-        "title": "금융시장동향(26.10.01). 금일 등록된 게시글",
+        "title": "금융시장동향(26.10.01)",
         "url": "https://www.fsc.go.kr/no030101/87848?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회",
@@ -34,7 +34,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87852",
-        "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진. 금일 등록된 게시글",
+        "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진",
         "url": "https://www.fsc.go.kr/no010101/87852?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(가계금융과)",
@@ -42,7 +42,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87847",
-        "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각. 금일 등록된 게시글",
+        "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
         "url": "https://www.fsc.go.kr/no010101/87847?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(서민금융과)",
@@ -50,7 +50,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87846",
-        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일). 금일 등록된 게시글",
+        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
         "url": "https://www.fsc.go.kr/no010101/87846?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(국민지역참여지원과)",
@@ -98,10 +98,26 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87857",
-        "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상. 금일 등록된 게시글",
+        "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상",
         "url": "https://www.fsc.go.kr/no010101/87857?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(혁신기획재정담당관)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no030101_87870",
+        "title": "금융시장동향(26.10.02)",
+        "url": "https://www.fsc.go.kr/no030101/87870?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87869",
+        "title": "최근 발생하는 금융권 침해위협에 면밀히 대응해 나가겠습니다.  - 금융위원회 사무처장 주재 「긴급 상황대응 회의」 개최",
+        "url": "https://www.fsc.go.kr/no010101/87869?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-02",
+        "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
     },
     {
@@ -163,7 +179,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87829",
         "title": "｢금융시장 상황점검회의｣ 개최",
-        "url": "https://www.fsc.go.kr/no010101/87829?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87829?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
         "dept": "금융위원회(금융시장분석과)",
         "category": "보도자료"
@@ -203,7 +219,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_232662",
         "title": "[금감원] 범 금융권, 유관기관과 함께 「사회진출前 금융소양교육」을 전면 실시합니다!",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232662&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232662&menuNo=200218&pageIndex=2",
         "date": "2026-09-30",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -444,7 +460,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87800",
         "title": "이억원 금융위원장,  유엔 책임투자원칙(PRI) 이사회 의장 면담",
-        "url": "https://www.fsc.go.kr/no010101/87800?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87800?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-28",
         "dept": "금융위원회(공정시장과)",
         "category": "보도자료"
@@ -567,7 +583,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230298",
         "title": "[금감원] '26.7월말 국내은행의 원화대출 연체율 현황[잠정]",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=4",
         "date": "2026-09-22",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -767,7 +783,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87740",
         "title": "금융시장동향(26.09.16)",
-        "url": "https://www.fsc.go.kr/no030101/87740?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87740?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-17",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1344,7 +1360,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87649",
         "title": "금융시장동향(26.09.03)",
-        "url": "https://www.fsc.go.kr/no030101/87649?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87649?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "금융시장동향"
