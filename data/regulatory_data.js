@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-10-03 10:49 KST";
+window.lastUpdated = "2026-10-04 11:30 KST";
 window.regulatoryData = [
     {
         "id": "fss_press_234345",
