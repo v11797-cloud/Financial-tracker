@@ -2624,8 +2624,9 @@ window.lawReasons = {
       "prom_no": "04141",
       "date": "1969-10-20",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=53961&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=53961&chrClsCd=010201"
     },
     "law_국민은행법시행령_03656_1968-12-09": {
       "id": "law_국민은행법시행령_03656_1968-12-09",
