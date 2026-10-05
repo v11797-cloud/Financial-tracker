@@ -1,5 +1,13 @@
-window.lastUpdated = "2026-10-04 11:30 KST";
+window.lastUpdated = "2026-10-05 10:46 KST";
 window.regulatoryData = [
+    {
+        "id": "fss_press_236976",
+        "title": "[금감원] 全금융권이 비상한 경각심을 갖고 침해위협에 대응해 나가겠습니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=236976&menuNo=200218&pageIndex=1",
+        "date": "2026-10-04",
+        "dept": "금융감독원(IT검사국)",
+        "category": "보도자료"
+    },
     {
         "id": "fss_press_234345",
         "title": "[금감원] 금융감독원, 신설 사모운용사 CEO 대상 설명회 개최",
@@ -823,7 +831,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_229095",
         "title": "[금감원] 금융소비자보호 성과 대국민 보고대회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=229095&menuNo=200218&pageIndex=5",
         "date": "2026-09-17",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
