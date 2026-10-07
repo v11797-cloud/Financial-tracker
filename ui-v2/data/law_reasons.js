@@ -350,8 +350,9 @@ window.lawReasons = {
       "prom_no": "5",
       "date": "2025-12-05",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000271738&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000271738&chrClsCd=010201"
     },
     "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01": {
       "id": "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01",
@@ -359,8 +360,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2025-12-01",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108171&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108171&chrClsCd=010201"
     },
     "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11": {
       "id": "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11",
@@ -433,6 +435,16 @@ window.lawReasons = {
       "text": "[일부개정]\n◇ 개정이유 및 주요내용\n금융분쟁조정위원회에 분쟁조정이 신청된 사건에 대한 소송절차 중지 제도의 실효성을 제고하기 위하여, 당사자는 분쟁조정 신청 사건이 금융분쟁조정위원회에 회부되기 전 또는 회부된 후에 소(訴)를 제기한 경우 지체 없이 그 사실을 금융감독원장에게 알리도록 하고, 금융감독원장은 당사자로부터 소 제기 사실의 통지를 받은 경우 당사자의 동의를 받아 분쟁조정이 신청된 사실 등을 수소법원(受訴法院)에 알리도록 하며, 금융분쟁조정위원회에 회부한 이후 소송절차가 중지된 분쟁조정 신청 사건의 조정절차가 종료된 경우에는 당사자의 동의를 받아 분쟁조정 절차의 종료 사유 및 조정의 결과 등을 수소법원에 알리도록 하는 등 현행 제도의 운영상 나타난 일부 미비점을 개선ㆍ보완하려는 것임.\n<법제처 제공>",
       "status": "available",
       "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=273929&lsRvsGubun=Rsn"
+    },
+    "law_금융소비자 보호에 관한 법률 시행령_35799_2026-01-01": {
+      "id": "law_금융소비자 보호에 관한 법률 시행령_35799_2026-01-01",
+      "law_name": "금융소비자 보호에 관한 법률 시행령",
+      "prom_no": "35799",
+      "date": "2025-09-30",
+      "text": "[일부개정]\n◇ 개정이유 및 주요내용\n금융분쟁조정위원회에 분쟁조정이 신청된 사건에 대한 소송절차 중지 제도의 실효성을 제고하기 위하여, 당사자는 분쟁조정 신청 사건이 금융분쟁조정위원회에 회부되기 전 또는 회부된 후에 소(訴)를 제기한 경우 지체 없이 그 사실을 금융감독원장에게 알리도록 하고, 금융감독원장은 당사자로부터 소 제기 사실의 통지를 받은 경우 당사자의 동의를 받아 분쟁조정이 신청된 사실 등을 수소법원(受訴法院)에 알리도록 하며, 금융분쟁조정위원회에 회부한 이후 소송절차가 중지된 분쟁조정 신청 사건의 조정절차가 종료된 경우에는 당사자의 동의를 받아 분쟁조정 절차의 종료 사유 및 조정의 결과 등을 수소법원에 알리도록 하는 등 현행 제도의 운영상 나타난 일부 미비점을 개선ㆍ보완하려는 것임.\n<법제처 제공>",
+      "status": "available",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=273929&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=273929&chrClsCd=010201"
     },
     "law_자본시장과 금융투자업에 관한 법률_21061_2026-03-17": {
       "id": "law_자본시장과 금융투자업에 관한 법률_21061_2026-03-17",
@@ -512,8 +524,9 @@ window.lawReasons = {
       "prom_no": "2024-37",
       "date": "2024-12-28",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000252980&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000252980&chrClsCd=010201"
     },
     "law_전자금융거래법 시행령_35038_2024-12-27": {
       "id": "law_전자금융거래법 시행령_35038_2024-12-27",
@@ -593,8 +606,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2024-07-19",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082741&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082741&chrClsCd=010201"
     },
     "admrul_가상자산업 감독규정 시행세칙_9999_2024-07-19": {
       "id": "admrul_가상자산업 감독규정 시행세칙_9999_2024-07-19",
@@ -602,8 +616,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2024-07-19",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082783&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082783&chrClsCd=010201"
     },
     "admrul_가상자산업감독규정_2024-37_2024-07-10": {
       "id": "admrul_가상자산업감독규정_2024-37_2024-07-10",
@@ -629,8 +644,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2024-07-01",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082677&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082677&chrClsCd=010201"
     },
     "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26": {
       "id": "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26",
@@ -1826,8 +1842,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2016-06-01",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000048773&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000048773&chrClsCd=010201"
     },
     "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01": {
       "id": "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01",
@@ -2546,8 +2563,9 @@ window.lawReasons = {
       "prom_no": "10040",
       "date": "1980-10-13",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15571&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15571&chrClsCd=010201"
     },
     "law_국민은행법시행령_09004_1978-05-03": {
       "id": "law_국민은행법시행령_09004_1978-05-03",
@@ -2555,8 +2573,9 @@ window.lawReasons = {
       "prom_no": "09004",
       "date": "1978-05-03",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15570&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15570&chrClsCd=010201"
     },
     "law_국민은행법_03023_1977-12-19": {
       "id": "law_국민은행법_03023_1977-12-19",
@@ -2573,8 +2592,9 @@ window.lawReasons = {
       "prom_no": "08456",
       "date": "1977-02-25",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15569&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15569&chrClsCd=010201"
     },
     "law_국민은행법시행령_08035_1976-03-22": {
       "id": "law_국민은행법시행령_08035_1976-03-22",
@@ -2591,8 +2611,9 @@ window.lawReasons = {
       "prom_no": "06663",
       "date": "1973-05-03",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15567&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15567&chrClsCd=010201"
     },
     "law_국민은행법_02571_1973-03-05": {
       "id": "law_국민은행법_02571_1973-03-05",
@@ -2609,8 +2630,9 @@ window.lawReasons = {
       "prom_no": "06343",
       "date": "1972-09-01",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15566&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15566&chrClsCd=010201"
     },
     "law_국민은행법시행령_04141_1969-10-20": {
       "id": "law_국민은행법시행령_04141_1969-10-20",
@@ -2618,8 +2640,9 @@ window.lawReasons = {
       "prom_no": "04141",
       "date": "1969-10-20",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=53961&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=53961&chrClsCd=010201"
     },
     "law_국민은행법시행령_03656_1968-12-09": {
       "id": "law_국민은행법시행령_03656_1968-12-09",
@@ -2627,8 +2650,9 @@ window.lawReasons = {
       "prom_no": "03656",
       "date": "1968-12-09",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15456&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15456&chrClsCd=010201"
     },
     "law_국민은행법_02043_1968-07-25": {
       "id": "law_국민은행법_02043_1968-07-25",
@@ -2645,8 +2669,9 @@ window.lawReasons = {
       "prom_no": "02556",
       "date": "1966-06-08",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15455&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15455&chrClsCd=010201"
     },
     "law_국민은행법시행령_01676_1964-03-11": {
       "id": "law_국민은행법시행령_01676_1964-03-11",
@@ -2654,8 +2679,9 @@ window.lawReasons = {
       "prom_no": "01676",
       "date": "1964-03-11",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15454&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15454&chrClsCd=010201"
     },
     "law_국민은행법_01558_1963-12-17": {
       "id": "law_국민은행법_01558_1963-12-17",
@@ -2672,8 +2698,9 @@ window.lawReasons = {
       "prom_no": "01212",
       "date": "1963-02-19",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15453&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15453&chrClsCd=010201"
     },
     "law_국민은행법시행령_01077_1962-12-15": {
       "id": "law_국민은행법시행령_01077_1962-12-15",
@@ -2681,8 +2708,9 @@ window.lawReasons = {
       "prom_no": "01077",
       "date": "1962-12-15",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15452&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15452&chrClsCd=010201"
     },
     "law_국민은행법_01201_1962-12-07": {
       "id": "law_국민은행법_01201_1962-12-07",
@@ -2699,8 +2727,9 @@ window.lawReasons = {
       "prom_no": "00400",
       "date": "1962-01-27",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=54526&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=54526&chrClsCd=010201"
     },
     "law_미군정청에의하여의용된보험업법_00973_1962-01-15": {
       "id": "law_미군정청에의하여의용된보험업법_00973_1962-01-15",
@@ -2735,8 +2764,9 @@ window.lawReasons = {
       "prom_no": "01353",
       "date": "1958-03-20",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17042&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17042&chrClsCd=010201"
     },
     "law_농업은행법_00473_1958-03-07": {
       "id": "law_농업은행법_00473_1958-03-07",
@@ -2753,8 +2783,9 @@ window.lawReasons = {
       "prom_no": "01267",
       "date": "1957-04-04",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17041&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17041&chrClsCd=010201"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",
