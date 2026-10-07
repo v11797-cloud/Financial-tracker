@@ -1,6 +1,15 @@
 window.lawReasons = {
   "schema_version": 1,
   "items": {
+    "admrul_공소청 공무원의 가상자산 보유 제한에 관한 지침_9_2026-10-02": {
+      "id": "admrul_공소청 공무원의 가상자산 보유 제한에 관한 지침_9_2026-10-02",
+      "law_name": "공소청 공무원의 가상자산 보유 제한에 관한 지침",
+      "prom_no": "9",
+      "date": "2026-10-02",
+      "text": "",
+      "status": "unavailable",
+      "error": "URLError"
+    },
     "law_전자금융거래법_22048_2026-10-02": {
       "id": "law_전자금융거래법_22048_2026-10-02",
       "law_name": "전자금융거래법",
