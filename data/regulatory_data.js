@@ -1,4 +1,4 @@
-window.lastUpdated = "2026-10-07 11:13 KST";
+window.lastUpdated = "2026-10-07 16:05 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87886",
@@ -3423,6 +3423,17 @@ window.regulatoryData = [
         "law_name": "금융소비자 보호에 관한 법률 시행령",
         "prom_no": "35799",
         "enf_date": "2025-12-31"
+    },
+    {
+        "id": "law_금융소비자 보호에 관한 법률 시행령_35799_2026-01-01",
+        "title": "[금융소비자 보호에 관한 법률 시행령] (공포 제35799호 | 시행일 2026-01-01)",
+        "url": "https://www.law.go.kr/법령/%EA%B8%88%EC%9C%B5%EC%86%8C%EB%B9%84%EC%9E%90%20%EB%B3%B4%ED%98%B8%EC%97%90%20%EA%B4%80%ED%95%9C%20%EB%B2%95%EB%A5%A0%20%EC%8B%9C%ED%96%89%EB%A0%B9",
+        "date": "2025-09-30",
+        "dept": "법제처/관보",
+        "category": "공포법령",
+        "law_name": "금융소비자 보호에 관한 법률 시행령",
+        "prom_no": "35799",
+        "enf_date": "2026-01-01"
     },
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21061_2026-03-17",
