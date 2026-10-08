@@ -1,8 +1,32 @@
-window.lastUpdated = "2026-10-07 16:05 KST";
+window.lastUpdated = "2026-10-08 11:38 KST";
 window.regulatoryData = [
     {
+        "id": "no030101_87901",
+        "title": "금융시장동향(26.10.07). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no030101/87901?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-08",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_87900",
+        "title": "제2차 국민참여성장펀드  첫 5영업일간 판매 현황(9.30일~10.7일). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87900?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-08",
+        "dept": "금융위원회(국민지역참여지원과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87899",
+        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.6일). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87899?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-08",
+        "dept": "금융위원회(국민지역참여지원과)",
+        "category": "보도자료"
+    },
+    {
         "id": "no030101_87886",
-        "title": "금융시장동향(26.10.06). 금일 등록된 게시글",
+        "title": "금융시장동향(26.10.06)",
         "url": "https://www.fsc.go.kr/no030101/87886?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-07",
         "dept": "금융위원회",
@@ -14,6 +38,30 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=238097&menuNo=200218&pageIndex=1",
         "date": "2026-10-07",
         "dept": "금융감독원(금융투자검사1국/금융투자검사2국/금융투자검사3국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87894",
+        "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제17차 금융위원회(’26.10.7.) 조치 의결 -",
+        "url": "https://www.fsc.go.kr/no010101/87894?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-07",
+        "dept": "금융위원회(회계제도팀)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87893",
+        "title": "“개인간 중고거래 신용카드 안전결제 서비스” 등  혁신금융서비스 24건 신규 지정 의결",
+        "url": "https://www.fsc.go.kr/no010101/87893?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-07",
+        "dept": "금융위원회(디지털금융총괄과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87890",
+        "title": "탄소 감축을 넘어 신성장동력으로,  정부 1,000조원 투자로 K-GX 본격 가동",
+        "url": "https://www.fsc.go.kr/no010101/87890?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-07",
+        "dept": "금융위원회(산업금융과)",
         "category": "보도자료"
     },
     {
@@ -107,7 +155,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87852",
         "title": "불법사금융 근절을 위한 4대 추가 제도 개선 추진",
-        "url": "https://www.fsc.go.kr/no010101/87852?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87852?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(가계금융과)",
         "category": "보도자료"
@@ -115,7 +163,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87847",
         "title": "새도약기금, 사회취약계층 장기연체채권 4차 소각",
-        "url": "https://www.fsc.go.kr/no010101/87847?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87847?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(서민금융과)",
         "category": "보도자료"
@@ -123,7 +171,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87846",
         "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.1일)",
-        "url": "https://www.fsc.go.kr/no010101/87846?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87846?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
@@ -171,7 +219,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87857",
         "title": "제3회 ‘금융위人상’, 수요자 중심 정책에 파격포상",
-        "url": "https://www.fsc.go.kr/no010101/87857?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87857?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(혁신기획재정담당관)",
         "category": "보도자료"
@@ -187,7 +235,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87869",
         "title": "최근 발생하는 금융권 침해위협에 면밀히 대응해 나가겠습니다.  - 금융위원회 사무처장 주재 「긴급 상황대응 회의」 개최",
-        "url": "https://www.fsc.go.kr/no010101/87869?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87869?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
@@ -262,7 +310,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87829",
         "title": "｢금융시장 상황점검회의｣ 개최",
-        "url": "https://www.fsc.go.kr/no010101/87829?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87829?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
         "dept": "금융위원회(금융시장분석과)",
         "category": "보도자료"
@@ -318,7 +366,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87825",
         "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(9.30일)",
-        "url": "https://www.fsc.go.kr/no010101/87825?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87825?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
         "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
@@ -326,7 +374,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87824",
         "title": "은행업감독규정 규정변경예고 실시  ※예고기간 ‘26.9.30일 ~ 11.9일",
-        "url": "https://www.fsc.go.kr/no010101/87824?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87824?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
         "dept": "금융위원회(은행과)",
         "category": "보도자료"
@@ -334,7 +382,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87821",
         "title": "전남광주에서 서민·취약계층과 소상공인을 위한  희망사다리를 놓겠습니다  - 이억원 금융위원장, 「전남광주 서민금융 복합지원센터」 개소식  및 지역 소상공인 현장 간담회 참석",
-        "url": "https://www.fsc.go.kr/no010101/87821?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87821?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
         "dept": "금융위원회(복합지원팀)",
         "category": "보도자료"
@@ -342,7 +390,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87820",
         "title": "10월 7일부터 2차 가입신청 시작! 청년미래적금 가입 전  달라진 절차와 주요일정을 확인하세요.",
-        "url": "https://www.fsc.go.kr/no010101/87820?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87820?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
         "dept": "금융위원회(청년정책과)",
         "category": "보도자료"
@@ -722,7 +770,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87749",
         "title": "금융시장동향(26.09.18)",
-        "url": "https://www.fsc.go.kr/no030101/87749?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87749?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-21",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1379,7 +1427,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87665",
         "title": "금융시장동향(26.09.07)",
-        "url": "https://www.fsc.go.kr/no030101/87665?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87665?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-07",
         "dept": "금융위원회",
         "category": "금융시장동향"
