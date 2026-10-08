@@ -6,9 +6,10 @@ window.lawReasons = {
       "law_name": "공소청 공무원의 가상자산 보유 제한에 관한 지침",
       "prom_no": "9",
       "date": "2026-10-02",
-      "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "text": "◇ 개정 이유\n○ 「공소청법」의 시행으로 검찰청 명칭이 공소청, 검찰직 공무원이 형사법무직 공무원으로 변경에 대응하기 위해 개정안 마련\n◇ 주요내용\n○ 훈령명, 기관 명칭 변경(훈령명, 제1조)\n○ ‘검찰직 공무원’을 ‘형사법무직 공무원’으로 변경(제4조, 제5조, 제7조, 제8조, 제9조, 제12조)\n○ 재검토기한 신설(제14조)",
+      "status": "available",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000285982&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000285982&chrClsCd=010201"
     },
     "law_전자금융거래법_22048_2026-10-02": {
       "id": "law_전자금융거래법_22048_2026-10-02",
@@ -152,8 +153,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2026-07-06",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108855&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108855&chrClsCd=010201"
     },
     "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01": {
       "id": "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01",
@@ -197,8 +199,9 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2026-04-20",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108629&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108629&chrClsCd=010201"
     },
     "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15": {
       "id": "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15",
@@ -2602,8 +2605,9 @@ window.lawReasons = {
       "prom_no": "08035",
       "date": "1976-03-22",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15568&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15568&chrClsCd=010201"
     },
     "law_국민은행법시행령_06663_1973-05-03": {
       "id": "law_국민은행법시행령_06663_1973-05-03",
@@ -2640,9 +2644,8 @@ window.lawReasons = {
       "prom_no": "04141",
       "date": "1969-10-20",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=53961&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=53961&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법시행령_03656_1968-12-09": {
       "id": "law_국민은행법시행령_03656_1968-12-09",
