@@ -1,8 +1,8 @@
-window.lastUpdated = "2026-10-08 11:38 KST";
+window.lastUpdated = "2026-10-09 11:51 KST";
 window.regulatoryData = [
     {
         "id": "no030101_87901",
-        "title": "금융시장동향(26.10.07). 금일 등록된 게시글",
+        "title": "금융시장동향(26.10.07)",
         "url": "https://www.fsc.go.kr/no030101/87901?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-08",
         "dept": "금융위원회",
@@ -10,7 +10,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87900",
-        "title": "제2차 국민참여성장펀드  첫 5영업일간 판매 현황(9.30일~10.7일). 금일 등록된 게시글",
+        "title": "제2차 국민참여성장펀드  첫 5영업일간 판매 현황(9.30일~10.7일)",
         "url": "https://www.fsc.go.kr/no010101/87900?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-08",
         "dept": "금융위원회(국민지역참여지원과)",
@@ -18,11 +18,19 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_87899",
-        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.6일). 금일 등록된 게시글",
+        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.6일)",
         "url": "https://www.fsc.go.kr/no010101/87899?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-08",
         "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
+    },
+    {
+        "id": "no030101_87904",
+        "title": "금융시장동향(26.10.08)",
+        "url": "https://www.fsc.go.kr/no030101/87904?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-08",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
     },
     {
         "id": "no030101_87886",
@@ -762,7 +770,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87755",
         "title": "금융시장동향(26.09.21)",
-        "url": "https://www.fsc.go.kr/no030101/87755?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87755?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-21",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1282,7 +1290,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87669",
         "title": "금융시장동향(26.09.08)",
-        "url": "https://www.fsc.go.kr/no030101/87669?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87669?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-09",
         "dept": "금융위원회",
         "category": "금융시장동향"
