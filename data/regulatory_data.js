@@ -1,5 +1,29 @@
-window.lastUpdated = "2026-10-11 10:42 KST";
+window.lastUpdated = "2026-10-12 11:12 KST";
 window.regulatoryData = [
+    {
+        "id": "no010101_87908",
+        "title": "청년미래적금,  10월 12일부터 16일까지  출생연도와 관계없이 가입신청 가능. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87908?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-12",
+        "dept": "금융위원회(청년정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87907",
+        "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.8일). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/87907?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-12",
+        "dept": "금융위원회(국민지역참여지원과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_239722",
+        "title": "[금감원] 금융권의 소멸시효 연장 관행을 개선하기 위해 조건부 대손인정제도가 시행됩니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=239722&menuNo=200218&pageIndex=1",
+        "date": "2026-10-12",
+        "dept": "금융감독원(은행감독국/중소금융감독국/소비자보호감독총괄국/여신금융감독국/자본시장감독국/자산운용감독국/보험감독국)",
+        "category": "보도자료"
+    },
     {
         "id": "no030101_87901",
         "title": "금융시장동향(26.10.07)",
@@ -91,7 +115,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87876",
         "title": "全금융권이 비상한 경각심을 갖고 침해위협에 대응해 나가겠습니다.  - 금융위원장 주재 금융위·금감원 합동 「全금융권 긴급 점검회의」 개최",
-        "url": "https://www.fsc.go.kr/no010101/87876?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87876?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-06",
         "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
@@ -99,7 +123,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87875",
         "title": "제2차 국민참여성장펀드 판매 결과 잔여물량 현황(10.2일)",
-        "url": "https://www.fsc.go.kr/no010101/87875?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87875?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-06",
         "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
@@ -318,7 +342,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87835",
         "title": "’26년 상반기 가상자산사업자 실태조사 결과",
-        "url": "https://www.fsc.go.kr/no010101/87835?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87835?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
         "dept": "금융위원회(가상자산검사과)",
         "category": "보도자료"
@@ -326,7 +350,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87831",
         "title": "대형 IB의 모험자본 공급 현황을 점검하고 리서치보고서의 독립성‧신뢰성 제고 및 중소형주 커버리지 확대 방안을 마련하였습니다.",
-        "url": "https://www.fsc.go.kr/no010101/87831?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87831?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -374,7 +398,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_232662",
         "title": "[금감원] 범 금융권, 유관기관과 함께 「사회진출前 금융소양교육」을 전면 실시합니다!",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232662&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232662&menuNo=200218&pageIndex=3",
         "date": "2026-09-30",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -738,7 +762,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_230298",
         "title": "[금감원] '26.7월말 국내은행의 원화대출 연체율 현황[잠정]",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=230298&menuNo=200218&pageIndex=5",
         "date": "2026-09-22",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -992,8 +1016,7 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4345",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4345&menuNo=200489",
-        "notice_end_date": "2026-09-28"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4345&menuNo=200489"
     },
     {
         "id": "no030101_87718",
