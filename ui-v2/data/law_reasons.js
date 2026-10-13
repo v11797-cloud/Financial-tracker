@@ -1,6 +1,16 @@
 window.lawReasons = {
   "schema_version": 1,
   "items": {
+    "admrul_자본시장조사 업무규정_2026-45_2026-10-07": {
+      "id": "admrul_자본시장조사 업무규정_2026-45_2026-10-07",
+      "law_name": "자본시장조사 업무규정",
+      "prom_no": "2026-45",
+      "date": "2026-10-07",
+      "text": "1. 검찰, 검찰청 등 용어 정비(안 제6조 등)\n◇ 개정 이유\n○ 형사사법체계 개편으로 검찰청법이 폐지되고, 공소청법, 중대범죄수사청 조직 및 운영에 관한 법률이 제정 및 시행(‘26.10.2일)됨에 따라 \"검찰\", \"검찰청\" 등 용어를 정비\n◇ 개정 내용\n○ 검찰청이 폐지되고, 중대범죄수사청(수사)과 공소청(기소)로 이원화됨에 따라 \"검찰\", \"검찰청\" 등을 \"수사기관\", \"공소청\" 등으로 변경\n2. 불공정거래 조사ㆍ심리기관협의회 운영사항(안 제47조제3항 신설)\n◇ 개정 이유\n○ 형사사법체계 개편이 진행됨에 따라 상위법령의 후속보완 등에 따라 동 고시의 해석 및 적용상 공백이 발생가능\n◇ 개정 내용\n○ 동 고시의 해석 및 적용상 공백 발생시 자본시장 불공정거래 관련 기관간 협의체인 불공정거래조사ㆍ심리기관협의회를 거쳐 적용 가능토록 규정",
+      "status": "available",
+      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000286744&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000286744&chrClsCd=010201"
+    },
     "admrul_공소청 공무원의 가상자산 보유 제한에 관한 지침_9_2026-10-02": {
       "id": "admrul_공소청 공무원의 가상자산 보유 제한에 관한 지침_9_2026-10-02",
       "law_name": "공소청 공무원의 가상자산 보유 제한에 관한 지침",
@@ -2673,8 +2683,9 @@ window.lawReasons = {
       "prom_no": "02556",
       "date": "1966-06-08",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15455&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15455&chrClsCd=010201"
     },
     "law_국민은행법시행령_01676_1964-03-11": {
       "id": "law_국민은행법시행령_01676_1964-03-11",
