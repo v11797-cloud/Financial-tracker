@@ -1,12 +1,12 @@
 window.kofiaData = {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-10-13 12:28 KST",
+  "updated_at": "2026-10-14 10:44 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-10-13 12:28 KST",
+  "classification_checked_at": "2026-10-14 10:44 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
-    "notices": 152,
+    "notices": 153,
     "revisions_scanned": 1440,
     "revisions_included": 961,
     "revisions_excluded": 479,
@@ -14,6 +14,20 @@ window.kofiaData = {
     "모범규준": 416
   },
   "items": [
+    {
+      "id": "kofia_notice_158",
+      "title": "금융투자전문인력과 자격시험에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-10-13",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "158",
+      "notice_end_date": "2026-11-02",
+      "revision_type": "개정"
+    },
     {
       "id": "kofia_revision_1810",
       "title": "금융투자회사의 영업 및 업무에 관한 규정 시행세칙",
