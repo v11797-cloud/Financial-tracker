@@ -1,19 +1,114 @@
 {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-10-15 10:21 KST",
+  "updated_at": "2026-10-16 10:08 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-10-15 10:21 KST",
+  "classification_checked_at": "2026-10-16 10:08 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
     "notices": 153,
-    "revisions_scanned": 1440,
-    "revisions_included": 961,
+    "revisions_scanned": 1445,
+    "revisions_included": 966,
     "revisions_excluded": 479,
-    "협회규정": 545,
-    "모범규준": 416
+    "협회규정": 548,
+    "모범규준": 418
   },
   "items": [
+    {
+      "id": "kofia_revision_1817",
+      "title": "금융투자회사의 금융소비자보호 표준내부통제기준",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1817",
+      "date": "2026-10-15",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "346",
+      "history_seq": "1817",
+      "law_name": "금융투자회사의 금융소비자보호 표준내부통제기준",
+      "revision_type": "개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "금융투자회사의 금융소비자보호 표준내부통제기준"
+      ]
+    },
+    {
+      "id": "kofia_revision_1816",
+      "title": "금융투자회사 표준내부통제기준",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1816",
+      "date": "2026-10-15",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "150",
+      "history_seq": "1816",
+      "law_name": "금융투자회사 표준내부통제기준",
+      "revision_type": "개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "금융투자회사 표준내부통제기준"
+      ]
+    },
+    {
+      "id": "kofia_revision_1815",
+      "title": "금융투자회사의 영업 및 업무에 관한 규정 시행세칙",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1815",
+      "date": "2026-10-15",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "137",
+      "history_seq": "1815",
+      "law_name": "금융투자회사의 영업 및 업무에 관한 규정 시행세칙",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "금융투자회사의 영업 및 업무에 관한 규정 시행세칙"
+      ]
+    },
+    {
+      "id": "kofia_revision_1814",
+      "title": "금융투자회사의 영업 및 업무에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1814",
+      "date": "2026-10-15",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "136",
+      "history_seq": "1814",
+      "law_name": "금융투자회사의 영업 및 업무에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "금융투자회사의 영업 및 업무에 관한 규정"
+      ]
+    },
+    {
+      "id": "kofia_revision_1813",
+      "title": "자율규제위원회 운영 및 제재에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1813",
+      "date": "2026-10-15",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "135",
+      "history_seq": "1813",
+      "law_name": "자율규제위원회 운영 및 제재에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "자율규제위원회 운영 및 제재에 관한 규정"
+      ]
+    },
     {
       "id": "kofia_notice_158",
       "title": "금융투자전문인력과 자격시험에 관한 규정",

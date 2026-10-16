@@ -2703,8 +2703,9 @@ window.lawReasons = {
       "prom_no": "01676",
       "date": "1964-03-11",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15454&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15454&chrClsCd=010201"
     },
     "law_국민은행법_01558_1963-12-17": {
       "id": "law_국민은행법_01558_1963-12-17",
