@@ -6,4 +6,16 @@
 .gemini-preview code { overflow-wrap:anywhere; }
 #gemini-toast { white-space:pre-line; max-width:calc(100vw - 32px); }
 .gemini-actions [hidden] { display:none; }
+.gemini-agent-settings { margin:18px 0; padding:14px; border:1px solid var(--line); border-radius:7px; }
+.gemini-agent-settings > summary { font-weight:600; cursor:pointer; }
+.gemini-setup-steps { padding-left:22px; margin:16px 0; font-size:.85rem; line-height:1.8; }
+.gemini-setup-steps li { margin:12px 0; padding-left:3px; }
+.gemini-agent-settings .gemini-setup-steps p { font-size:.82rem; margin:4px 0; }
+.gemini-agent-form { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0; }
+.gemini-agent-form label { flex-basis:100%; font-size:.85rem; font-weight:600; }
+.gemini-agent-form input { flex:1 1 230px; min-width:0; padding:10px; border:1px solid var(--line); border-radius:5px; background:var(--bg); color:var(--text); font:inherit; font-size:.85rem; }
+.gemini-agent-form input[aria-invalid=true] { border-color:#edc898; }
+.gemini-agent-form .small-button { flex-shrink:0; }
+.gemini-agent-form p { flex-basis:100%; margin:2px 0; }
+.gemini-agent-settings .gemini-setup-note { font-size:.8rem; line-height:1.8; }
 @media(max-width:600px) { .gemini-actions { gap:8px; } .gemini-preview .rules-content { padding:16px; } }

@@ -28,11 +28,12 @@ fs.mkdirSync(out, { recursive: true });
     const today=Core.kstToday();
     const expected=all.filter(i=>Core.priority(i,today).tier>0).sort((a,b)=>A.calculateRuleScore(b,today)-A.calculateRuleScore(a,today)||a.id.localeCompare(b.id)).slice(0,10).sort((a,b)=>A.calculateFinalPriorityScore(A.calculateRuleScore(b,today),A.buildFallbackAIAnalysis(b,today).ai_impact_score)-A.calculateFinalPriorityScore(A.calculateRuleScore(a,today),A.buildFallbackAIAnalysis(a,today).ai_impact_score)||a.id.localeCompare(b.id)).slice(0,3).map(i=>i.id);
     assert.deepEqual(await p.locator('#priority-list .priority-summary').evaluateAll(nodes=>nodes.map(n=>n.dataset.id)),expected);
-    assert.equal(await p.locator('#ai-daily-top [data-id]').getAttribute('data-id'),expected[0]);
-    assert.equal(await p.locator('#ai-daily .ai-score, #priority-list .ai-score, #priority-list .ai-tag, #priority-list .gemini-button').count(),0);
-    await p.locator('#ai-daily-link').click();
-    assert.equal(await p.evaluate(()=>document.activeElement.dataset.id),expected[0]);
-    passed.push('production data, unchanged score ranking, concise daily navigation and Pages subpath');
+    assert.equal(await p.getByRole('heading',{name:'My Workspace',exact:true}).count(),1);
+    assert.equal(await p.locator('#ai-daily').count(),0);
+    assert.equal(await p.locator('#ai-daily .ai-score, #priority-list .ai-score, #priority-list .ai-tag').count(),0);
+    assert.equal(await p.locator('#priority-list .gemini-button').count(),await p.locator('#priority-list .priority-summary').count());
+
+    passed.push('production data, unchanged score ranking, separate My Workspace and Pages subpath');
     await p.locator('#search-input').fill('금융투자'); assert.ok(await p.locator('.reg-row').count() > 0);
     await p.locator('#search-input').fill('zzzz-no-match'); assert.equal(await p.locator('.reg-row').count(), 0);
     await p.locator('#search-input').fill('');
@@ -59,15 +60,14 @@ fs.mkdirSync(out, { recursive: true });
     await p.locator('#reset-filters').click(); await p.locator('#show-calendar').click(); assert.ok(await p.locator('#calendar-view').isVisible());
     await p.locator('#workspace-nav [data-workspace="all"]').click();
     await p.locator('#bulk-review-open').click(); await p.locator('#bulk-review-confirm').click();
-    assert.equal(await p.locator('.ai-priority-row').count(), 0);
-    assert.equal(await p.locator('#ai-daily-summary').innerText(),'오늘 우선 확인할 규제가 없습니다.');
+    assert.equal(await p.locator('.ai-priority-row').count(), 3); // Review status is independent of priority.
     await p.locator('#bulk-review-undo').click(); assert.equal(await p.locator('.ai-priority-row').count(), 3);
     passed.push('details, persistent reviews, calendar and bulk undo');
     await p.screenshot({ path: `${out}/desktop.png` });
     await p.setViewportSize({ width: 390, height: 844 });
     assert.ok(await p.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
     await p.screenshot({ path: `${out}/mobile.png` });
-    await p.locator('#ai-daily-top [data-action="ai-detail"]').first().click();
+    await p.locator('#priority-list [data-action="ai-detail"]').first().click();
     assert.ok(await p.evaluate(() => document.querySelector('#detail-dialog').getBoundingClientRect().width <= innerWidth));
     await p.screenshot({ path: `${out}/mobile-detail.png` }); passed.push('mobile and drawer');
     const endpoint = 'https://worker.example/analyze'; let calls = 0;
@@ -99,9 +99,14 @@ fs.mkdirSync(out, { recursive: true });
     if(analyzedId.startsWith('kofia_')){assert.ok(stored);assert.match(stored.sourceDocument.content,/투자광고 사후 확인/);}
     passed.push('mock AI cache and verified source retained internally; compact display after reload');
     await ai.locator('#close-detail').click();
-    await ai.evaluate(()=>{const b=document.createElement('button');b.dataset.action='ai-detail';b.dataset.id='kofia_notice_156';document.body.append(b);b.click();b.remove();});
-    await ai.waitForFunction(()=>Object.keys(localStorage).filter(k=>k.startsWith('regwatch_ai_v2_kofia_notice_156')).some(k=>JSON.parse(localStorage.getItem(k)).sourceDocument));
-    const evidence=await ai.evaluate(()=>Object.keys(localStorage).filter(k=>k.startsWith('regwatch_ai_v2_kofia_notice_156')).map(k=>JSON.parse(localStorage.getItem(k))).find(v=>v.sourceDocument));
+    // Use a deterministic live candidate, not a notice ID that expires from real data.
+    await ai.evaluate(today=>{
+      const fixture={id:'kofia_notice_99998',notice_seq:'99998',source:'KOFIA',category:'입법예고',title:'자본시장 금융투자 자산운용 투자광고 AML 내부통제 규정 개정',date:today,notice_end_date:today,dept:'금융투자협회',url:'https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do?revisionSeq=99998'};
+      window.applyCollectedData({items:window.regulatoryData,updated:window.lastUpdated},{...window.kofiaData,items:[fixture,...window.kofiaData.items]});
+      const b=document.createElement('button');b.dataset.action='ai-detail';b.dataset.id=fixture.id;document.body.append(b);b.click();b.remove();
+    },today);
+    await ai.waitForFunction(()=>Object.keys(localStorage).filter(k=>k.startsWith('regwatch_ai_v2_kofia_notice_99998')).some(k=>JSON.parse(localStorage.getItem(k)).sourceDocument));
+    const evidence=await ai.evaluate(()=>Object.keys(localStorage).filter(k=>k.startsWith('regwatch_ai_v2_kofia_notice_99998')).map(k=>JSON.parse(localStorage.getItem(k))).find(v=>v.sourceDocument));
     assert.match(evidence.sourceDocument.content,/투자광고 사후 확인/);
     assert.equal(await ai.locator('.ai-source-evidence').count(),0);
     passed.push('KOFIA source evidence preserved in cache without verbose detail UI');

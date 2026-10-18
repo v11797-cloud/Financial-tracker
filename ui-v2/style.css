@@ -1810,3 +1810,9 @@ mark {
 @media (max-width: 760px) {
   .metrics .all-metric { grid-column: 1 / -1; }
 }
+
+.collection-badge { display:inline-block; border:1px solid #436176; border-radius:4px; padding:2px 6px; font-size:11px; line-height:1.4; }
+.collection-badge.historical { color:#bed0df; background:#1a2938; }
+.collection-badge.recent { color:#a4dfc3; background:#152e28; border-color:#326c56; }
+.collection-legend { color:#9caec4; font-size:12px; line-height:1.7; padding:10px 18px; margin:0; border-top:1px solid var(--line); }
+.collection-detail { line-height:1.7; }

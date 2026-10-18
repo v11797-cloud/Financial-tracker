@@ -6,7 +6,7 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="color-scheme" content="dark">
   <title>UI 2.0 테스트 · Financial Tracker</title>
-  <link rel="stylesheet" href="./style.css?v=20261002-all-monitoring">
+  <link rel="stylesheet" href="./style.css?v=20261007-collection-kind">
   <script src="../data/regulatory_data.js" defer></script>
   <script src="./data/kofia_data.js" defer></script>
   <link rel="stylesheet" href="./ai.css?v=7">
@@ -15,12 +15,20 @@
   <script src="./ai-analysis.js?v=6" defer></script>
   <script src="./ai-presentation.js?v=1" defer></script>
   <script src="./priority.js?v=3" defer></script>
-  <script src="./ai-ui.js?v=9" defer></script>
-  <link rel="stylesheet" href="./gemini-enterprise.css?v=1">
-  <script src="./gemini-enterprise.js?v=2" defer></script>
+  <script src="./ai-ui.js?v=20261016-gemini-import" defer></script>
+  <link rel="stylesheet" href="./gemini-enterprise.css?v=2">
+  <script src="./gemini-enterprise.js?v=6" defer></script>
+  <script src="./gemini-analysis.js?v=3" defer></script>
+  <script src="./gemini-analysis-ui.js?v=5" defer></script>
+  <script src="./regwatch-agent.js?v=1" defer></script>
+  <link rel="stylesheet" href="./regwatch-agent.css?v=1">
+  <link rel="stylesheet" href="./gemini-analysis.css?v=3">
   <script src="./data/law_reasons.js" defer></script>
   <script src="./notice-summary.js?v=2" defer></script>
-  <script src="./app.js?v=20261002-all-monitoring" defer></script>
+  <link rel="stylesheet" href="./workspace.css?v=5">
+  <script src="./workspace-format.js?v=5" defer></script>
+  <script src="./workspace.js?v=7" defer></script>
+  <script src="./app.js?v=20261019-workspace-analysis" defer></script>
   <script src="./collection.js?v=20260916-collection" defer></script>
 </head>
 <body>
@@ -53,7 +61,22 @@
         <div><p class="eyebrow">COMPLIANCE COMMAND CENTER</p><h1>규제 모니터링</h1><p class="subheading" id="today-label">한국시간 기준 규제 현황</p></div>
         <label class="scope-control">업무 관점<select id="scope-select"><option value="all">전체 금융회사</option><option value="asset">자산운용사 관련 후보</option><option value="compliance">준법감시</option><option value="aml">AML</option><option value="internal_control">내부통제</option><option value="risk">리스크</option><option value="investment">운용</option><option value="sales">영업</option><option value="product">상품</option><option value="disclosure">공시</option><option value="it">IT</option><option value="privacy">개인정보</option><option value="finance">재무</option><option value="hr">인사</option></select></label>
       </section>
-      <section id="ai-daily" class="rail-panel ai-daily" aria-labelledby="ai-daily-title" hidden><h2 id="ai-daily-title">AI 오늘의 Regulatory Brief</h2><p class="brief-subtitle">오늘 봐야 할 규제만, 이유와 함께.</p><p id="ai-daily-summary"></p><div id="ai-daily-top"></div><p id="ai-daily-counts" title="현재 업무 관점 기준 · 신규: 오늘 게시 · 우선검토: 제외한 안건을 뺀 전체 후보 · 시행임박: 30일 이내"></p><button id="ai-daily-link" class="text-button">오늘의 우선검토 보기 →</button></section>
+      <section id="my-workspace" class="workspace-panel" aria-labelledby="workspace-title">
+        <header class="ws-header">
+          <div class="ws-heading-group"><h2 id="workspace-title">My Workspace</h2><span id="workspace-summary" class="ws-summary"></span></div>
+          <div class="ws-controls">
+            <button type="button" id="workspace-add" class="ws-button" aria-label="새 메모 추가">+ 추가</button>
+            <details id="workspace-more-menu" class="ws-menu"><summary aria-label="Workspace 더보기">⋯</summary><div class="ws-menu-options"><button type="button" id="workspace-export">데이터 내보내기</button><button type="button" id="workspace-import">데이터 가져오기</button><button type="button" id="workspace-clear">Workspace 비우기</button><details class="ws-help"><summary>저장 안내</summary><p>이 브라우저에만 저장되며 다른 PC와 자동 동기화되지 않습니다. 브라우저 저장소는 암호화된 사내 문서 보관소가 아닙니다. 민감한 회사·고객·계좌 정보, API Key, 비밀번호는 기록하지 마세요. 메모는 외부 AI나 서버에 자동 전송하지 않습니다. 브라우저 데이터 삭제에 대비해 내보내기로 백업하세요.</p></details></div></details>
+            <button type="button" id="workspace-toggle" class="ws-button" aria-label="My Workspace 접기" aria-expanded="true" aria-controls="workspace-body">⌃</button>
+          </div>
+        </header>
+        <div class="ws-gemini-bar"><button id="workspace-gemini-library" type="button" class="text-button">Gemini 분석 보관함</button><span id="workspace-gemini-status" role="status" aria-live="polite"></span><div id="workspace-gemini-handoff"></div></div>
+        <div id="workspace-body"><div id="workspace-blocks" class="ws-blocks"></div></div>
+        <footer class="ws-footer"><span id="workspace-status" role="status" aria-live="polite"></span><button type="button" id="workspace-retry" class="text-button" hidden>저장 다시 시도</button><button type="button" id="workspace-conflict" class="text-button" hidden>다른 탭 내용 불러오기</button><button type="button" id="workspace-raw-export" class="text-button" hidden>기존 저장 데이터 내보내기</button><span id="workspace-notice" role="status"></span><button type="button" id="workspace-undo" class="text-button" hidden>삭제 되돌리기</button></footer>
+        <input type="file" id="workspace-import-file" accept=".json,application/json" aria-label="Workspace 백업 JSON 선택" hidden>
+      </section>
+      <dialog id="workspace-picker" class="ws-dialog" aria-labelledby="workspace-picker-title"><header><h2 id="workspace-picker-title">Workspace에 규제 연결</h2><button type="button" id="workspace-picker-close" class="ws-button" aria-label="규제 연결 닫기">닫기</button></header><div class="ws-picker-sources" role="group" aria-label="규제 선택 범위"><button type="button" class="ws-button" data-ws-source="priority" aria-pressed="true">우선검토</button><button type="button" class="ws-button" data-ws-source="all" aria-pressed="false">전체 규제</button></div><p class="ws-picker-help">우선검토는 현재 업무 관점의 전체 후보와 직접 추가한 안건을 포함합니다. 제외한 안건은 표시하지 않습니다.</p><input type="search" id="workspace-reg-search" aria-label="연결할 규제 검색" placeholder="규제 제목이나 기관으로 검색"><p id="workspace-reg-count" role="status"></p><div id="workspace-reg-results"></div></dialog>
+      <dialog id="workspace-confirm" class="ws-dialog" aria-labelledby="workspace-confirm-title" aria-describedby="workspace-confirm-text"><h2 id="workspace-confirm-title">Workspace 변경 확인</h2><p id="workspace-confirm-text"></p><div class="ws-dialog-actions"><button type="button" id="workspace-confirm-cancel" class="small-button">취소</button><button type="button" id="workspace-confirm-apply" class="small-button">확인</button></div></dialog>
       <div id="data-status" class="data-status" role="status"><span class="status-dot" aria-hidden="true"></span><span id="data-status-text">기존 수집 데이터를 불러오는 중…</span><button id="reload-button" class="text-button">다시 불러오기 ↻</button></div>
       <p id="kofia-status" class="source-status" role="status">금융투자협회 데이터 확인 중…</p>
       <section class="collection-panel" aria-label="자료 재수집">
@@ -93,6 +116,7 @@
             </div>
             <details id="more-law-links" hidden><summary>시행령·시행규칙 및 기타 관리 법령 <span id="law-library-count"></span></summary><div id="law-library-all" class="law-library-links"></div></details>
           </nav>
+          <p class="collection-legend">공포·시행법령의 <strong>과거 자료 추가 수집</strong>은 뒤늦게 수집된 과거 공포 건이나 동일 공포 건의 추가 자료입니다. <strong>새 공포·개정</strong>은 이전 수집일 이후 공포된 새 수집 건이며 최초 수집 후 7일간 표시합니다. 미확인은 확인 기록 기준입니다.</p>
           <div id="list-view">
             <div class="results-toolbar"><p id="result-count" role="status">불러오는 중…</p><label class="sort-label">정렬<select id="sort-select"><option value="latest">최신순</option><option value="priority">검토 우선순</option><option value="effective">시행 임박순</option><option value="oldest">오래된순</option></select></label></div>
             <div class="row-heading" aria-hidden="true"><span>규제 / 담당 부서</span><span>게시·제개정일</span><span>시행 / 의견 마감</span><span>확인</span></div>
@@ -126,6 +150,18 @@
   </div></dialog>
   <dialog id="bulk-review-dialog" class="rules-dialog" aria-labelledby="bulk-review-title"><div class="dialog-top"><h2 id="bulk-review-title">미확인 전체 확인</h2><button id="bulk-review-close" class="icon-button" aria-label="일괄 확인 취소">✕</button></div><div class="rules-content"><p id="bulk-review-description"></p><p>검색·필터·업무 관점과 관계없이 전체 데이터에 적용합니다. 기록은 이 브라우저에만 저장됩니다.</p><p>직접 항목을 검토하지 않아도 확인 완료로 표시됩니다. 처리 후 새로고침 전까지 되돌릴 수 있습니다.</p><button id="bulk-review-confirm" class="small-button">전체 확인 완료로 변경</button></div></dialog>
   <dialog id="priority-excluded-dialog" class="rules-dialog" aria-labelledby="priority-excluded-title"><div class="dialog-top"><h2 id="priority-excluded-title">제외한 우선검토</h2><button id="priority-excluded-close" class="text-button" aria-label="제외한 우선검토 닫기">닫기</button></div><div class="rules-content"><div id="priority-excluded-list"></div><button id="priority-restore-all" class="small-button" aria-label="제외한 모든 우선검토 안건 복원">모두 제외 취소</button><div id="priority-restore-confirmation" hidden><p>제외한 모든 안건을 다시 자동추천 대상에 포함할까요?</p><button id="priority-restore-cancel" class="small-button">취소</button><button id="priority-restore-confirm" class="small-button" aria-label="모든 제외 상태 해제 확인">모두 복원</button></div></div></dialog>
+  <button type="button" id="regwatch-agent-trigger" class="rw-agent-trigger" aria-label="RegWatch Agent" aria-expanded="false" aria-controls="regwatch-agent-panel"><span aria-hidden="true">✦</span><span class="rw-agent-label">RegWatch Agent</span></button>
+  <dialog id="regwatch-agent-panel" class="rw-agent-panel" aria-labelledby="regwatch-agent-title">
+    <header><h2 id="regwatch-agent-title">RegWatch Agent</h2><button id="agent-settings" type="button" class="ws-button" aria-label="Agent 주소 설정" title="Agent 주소 설정">⚙</button><button id="agent-panel-close" type="button" class="ws-button" aria-label="RegWatch Agent 닫기">✕</button></header>
+    <p class="rw-agent-subtitle">Gemini Enterprise 기반 규제 심층분석</p>
+    <div class="rw-agent-context"><span class="ga-muted">현재 선택한 규제</span><h3 id="agent-context-title"></h3><p id="agent-context-meta" class="ga-muted"></p><button id="agent-change-regulation" type="button" class="text-button">규제 변경</button></div>
+    <div id="agent-reg-picker"><label for="agent-reg-source">규제 목록</label><select id="agent-reg-source"><option value="priority">현재 우선검토 목록에서 선택</option><option value="workspace">My Workspace에 저장된 규제에서 선택</option><option value="all">전체 규제 Feed에서 선택</option><option value="free">규제 선택 없이 Gemini Enterprise Agent 열기</option></select><label for="agent-reg-search">분석할 규제 검색</label><input type="search" id="agent-reg-search" aria-label="Agent 분석 대상 검색" placeholder="규제 제목이나 기관 검색"><p id="agent-choice-count" class="ga-muted"></p><select id="agent-reg-choice" size="5" aria-label="분석할 규제"></select></div>
+    <div id="agent-type-field"><label for="agent-analysis-type">분석 유형</label><select id="agent-analysis-type"></select></div>
+    <details id="agent-prompt-preview" class="rw-agent-preview"><summary>실행 전 프롬프트 미리보기</summary><textarea id="agent-prompt" aria-label="Agent 분석 프롬프트 미리보기" readonly></textarea></details>
+    <p id="agent-url-state" class="ga-muted"></p><p id="agent-panel-status" class="ga-muted" role="status" aria-live="polite"></p><a id="agent-manual-open" class="text-button" target="_blank" rel="noopener noreferrer" hidden>회사 Agent 수동으로 열기 ↗</a>
+    <p class="ga-muted">Gemini Enterprise에서 분석한 뒤 답변을 복사해 Workspace에 저장하세요. 이 패널은 실제 분석 진행상태를 확인하지 않습니다.</p>
+    <div class="rw-agent-actions"><button id="agent-launch" type="button" class="small-button ga-start-button">Prompt 복사 + Agent 열기</button><button id="agent-import" type="button" class="small-button">분석 결과 Workspace에 가져오기</button></div>
+  </dialog>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <noscript><p class="noscript">이 대시보드는 JavaScript가 필요합니다. <a href="../index.html">기존 버전 열기</a></p></noscript>
 </body>

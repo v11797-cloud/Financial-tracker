@@ -1,0 +1,32 @@
+{
+  "regulation_id": "",
+  "title": "개정 자금세탁방지 및 공중협박자금조달금지에 관한 업무규정 실무 영향 평가",
+  "regulator": "금융위원회 / 금융정보분석원(KoFIU)",
+  "announcement_date": "2024-11-12",
+  "effective_date": "2025-05-13",
+  "importance": "높음",
+  "summary": "보고책임자 역할과 자격요건 및 업무지침 의결 절차에 관한 분석 내용입니다.",
+  "key_changes": ["업무지침 의결 절차", "보고책임자 직위·경력 요건"],
+  "department_impacts": [
+    {"department": "준법감시부", "impact_level": "높음", "rationale": "업무 감독 및 점검 책임 관련 검토"},
+    {"department": "AML 전담부서", "impact_level": "높음", "rationale": "자격 요건 및 보고 절차 확인"},
+    {"department": "이사회 사무국", "impact_level": "높음", "rationale": "안건 상정 및 개선 승인 절차 검토"},
+    {"department": "인사부", "impact_level": "중간", "rationale": "후보군 관리"}
+  ],
+  "action_items": [
+    {"priority": "1순위", "action": "업무지침 내규 체계 검토", "assigned_department": "준법감시부 / AML 부서", "timeline": "즉시"},
+    {"priority": "2순위", "action": "보고책임자 직위 요건 점검", "assigned_department": "인사부 / 준법감시부", "timeline": "즉시"},
+    {"priority": "3순위", "action": "취약점 보고 절차 검토", "assigned_department": "AML 부서", "timeline": "차기 이사회 전"},
+    {"priority": "4순위", "action": "후보군 경력 산정 검토", "assigned_department": "인사부 / AML 부서", "timeline": "연내 상시 검토"}
+  ],
+  "internal_rules_impact": ["업무지침 개정 여부 검토 필요"],
+  "system_impact": "보고 및 결재선 관련 현행 업무 프로세스 확인 필요",
+  "training_needed": true,
+  "checklist_questions": [
+    "업무지침이 이사회 결의를 거쳐 운영되고 있는가?",
+    "보고책임자의 직위가 기준 요건을 충족하는가?",
+    "겸직 시 직접 감독 절차가 수립되어 있는가?",
+    "취약점 개선 방안이 보고되는가?",
+    "경력 요건을 충족하는 후보군이 확보되어 있는가?"
+  ]
+}

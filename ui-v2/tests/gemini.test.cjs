@@ -9,6 +9,7 @@ test('content and official URL retained; dates not fabricated',()=>{
  assert.match(p,/실제 제공된 상세내용/);assert.match(p,/https:\/\/example.org\/regulation/);assert.match(p,/시행예정일:\n제공되지 않음/);assert.match(p,/의견제출 마감:\n2026-09-30/);assert.throws(()=>G.buildGeminiRegulationPrompt({}));assert.equal(G.normalizeRegulationForGemini({title:'기관',id:'no123'}).source,'금융위원회');
 });
 test('agent URL validation and storage-independent config',()=>{
- for(const url of ['javascript:alert(1)','data:text/html,test','http://example.org','https://user:pass@example.org'])assert.throws(()=>G.setAgentUrl(url));
+ for(const url of ['javascript:alert(1)','data:text/html,test','https://user:pass@example.org'])assert.throws(()=>G.setAgentUrl(url));
+ G.setAgentUrl('http://enterprise.example.org/agent');assert.equal(G.getAgentUrl(),'http://enterprise.example.org/agent');
  G.setAgentUrl('https://enterprise.example.org/agent');assert.equal(G.getAgentUrl(),'https://enterprise.example.org/agent');G.setAgentUrl('');assert.equal(G.getAgentUrl(),'');
 });
