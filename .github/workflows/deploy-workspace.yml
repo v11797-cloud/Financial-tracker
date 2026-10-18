@@ -1,0 +1,59 @@
+name: Deploy UI 2.0 Workspace
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Apply verified Workspace release if pending
+        shell: bash
+        run: |
+          if [ -f regwatch-workspace-20261019.patch ]; then
+            echo 'becdf872599acfa7a93b59a56183d7eff446b08a9533d3e2341e034090eee1f2  regwatch-workspace-20261019.patch' | sha256sum -c -
+            git apply --3way regwatch-workspace-20261019.patch
+            git rm -- regwatch-workspace-20261019.patch
+          fi
+      - name: Verify UI and collectors
+        run: |
+          python -m pip install -r requirements.txt
+          python -m unittest discover -s ui-v2/tests -p 'test_*.py'
+          node --test ui-v2/tests/*.test.cjs
+      - name: Commit verified UI release
+        shell: bash
+        run: |
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Deploy Workspace Gemini analysis and prominent analysis button [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
