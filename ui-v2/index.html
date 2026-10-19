@@ -17,10 +17,11 @@
   <script src="./priority.js?v=3" defer></script>
   <script src="./ai-ui.js?v=20261016-gemini-import" defer></script>
   <link rel="stylesheet" href="./gemini-enterprise.css?v=2">
-  <script src="./gemini-enterprise.js?v=6" defer></script>
+  <script src="./gemini-source.js?v=1" defer></script>
+  <script src="./gemini-enterprise.js?v=7" defer></script>
   <script src="./gemini-analysis.js?v=3" defer></script>
   <script src="./gemini-analysis-ui.js?v=5" defer></script>
-  <script src="./regwatch-agent.js?v=1" defer></script>
+  <script src="./regwatch-agent.js?v=2" defer></script>
   <link rel="stylesheet" href="./regwatch-agent.css?v=1">
   <link rel="stylesheet" href="./gemini-analysis.css?v=3">
   <script src="./data/law_reasons.js" defer></script>
@@ -157,6 +158,7 @@
     <div class="rw-agent-context"><span class="ga-muted">현재 선택한 규제</span><h3 id="agent-context-title"></h3><p id="agent-context-meta" class="ga-muted"></p><button id="agent-change-regulation" type="button" class="text-button">규제 변경</button></div>
     <div id="agent-reg-picker"><label for="agent-reg-source">규제 목록</label><select id="agent-reg-source"><option value="priority">현재 우선검토 목록에서 선택</option><option value="workspace">My Workspace에 저장된 규제에서 선택</option><option value="all">전체 규제 Feed에서 선택</option><option value="free">규제 선택 없이 Gemini Enterprise Agent 열기</option></select><label for="agent-reg-search">분석할 규제 검색</label><input type="search" id="agent-reg-search" aria-label="Agent 분석 대상 검색" placeholder="규제 제목이나 기관 검색"><p id="agent-choice-count" class="ga-muted"></p><select id="agent-reg-choice" size="5" aria-label="분석할 규제"></select></div>
     <div id="agent-type-field"><label for="agent-analysis-type">분석 유형</label><select id="agent-analysis-type"></select></div>
+    <p id="agent-source-status" class="ga-muted" role="status" aria-live="polite"></p>
     <details id="agent-prompt-preview" class="rw-agent-preview"><summary>실행 전 프롬프트 미리보기</summary><textarea id="agent-prompt" aria-label="Agent 분석 프롬프트 미리보기" readonly></textarea></details>
     <p id="agent-url-state" class="ga-muted"></p><p id="agent-panel-status" class="ga-muted" role="status" aria-live="polite"></p><a id="agent-manual-open" class="text-button" target="_blank" rel="noopener noreferrer" hidden>회사 Agent 수동으로 열기 ↗</a>
     <p class="ga-muted">Gemini Enterprise에서 분석한 뒤 답변을 복사해 Workspace에 저장하세요. 이 패널은 실제 분석 진행상태를 확인하지 않습니다.</p>

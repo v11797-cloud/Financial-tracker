@@ -5,11 +5,12 @@
   function publicRegulation(item){
     const r=G.normalizeRegulationForGemini({...item,source:item?.source||item?.institution,dept:item?.dept||item?.institution});
     if(!r.id)throw Error('규제 ID를 확인할 수 없습니다.');
-    return {id:r.id,title:r.title,source:r.source,dept:r.department,category:r.type,date:r.published_date,effective_date:r.effective_date,comment_deadline:r.comment_deadline,keywords:r.keywords,content:r.content,url:r.original_url};
+    const identity=Object.fromEntries(['law_name','prom_no','law_seq','history_seq','notice_seq','source_group'].map(k=>[k,typeof item[k]==='string'?item[k]:'']));
+    return {id:r.id,title:r.title,source:r.source,dept:r.department,category:r.type,date:r.published_date,effective_date:r.effective_date,comment_deadline:r.comment_deadline,keywords:r.keywords,content:r.content,url:r.original_url,...identity};
   }
-  function buildRegWatchAgentPrompt(item,type='asset',view='all'){return G.buildGeminiRegulationPrompt(publicRegulation(item),view,type);}
+  function buildRegWatchAgentPrompt(item,type='asset',view='all',source=null){return G.buildGeminiRegulationPrompt(publicRegulation(item),view,type,source);}
   if(typeof module!=='undefined'&&module.exports){module.exports={publicRegulation,buildRegWatchAgentPrompt,analysisTypes:G.analysisTypes};return;}
-  let api={},selected=null,freeMode=false,launching=false,panel,trigger,previousFocus;
+  let api={},selected=null,freeMode=false,launching=false,panel,trigger,previousFocus,sourceEpoch=0;
   const $=id=>document.getElementById(id);
   const fresh=item=>{const current=api.getItems?.().find(r=>r.id===item.id);return publicRegulation(current||item);};
   function getSelectedAgentRegulation(){if(!selected)return null;selected=fresh(selected);return selected;}
@@ -40,11 +41,18 @@
     $('agent-launch').disabled=launching||(!item&&!freeMode);$('agent-import').disabled=!item;
     $('agent-change-regulation').hidden=!item&&!freeMode;
     updateURL();
-    if($('agent-prompt-preview').open&&item)updatePreview();
+    updatePreview();
   }
-  function updatePreview(){
-    const item=getSelectedAgentRegulation();if(!item)return;
-    $('agent-prompt').value=buildRegWatchAgentPrompt(item,$('agent-analysis-type').value,$('scope-select')?.value||'all');
+  async function updatePreview(){
+    const epoch=++sourceEpoch,item=getSelectedAgentRegulation();
+    if(!item){$('agent-source-status').textContent='';$('agent-prompt').value='';return;}
+    const type=$('agent-analysis-type').value,view=$('scope-select')?.value||'all';
+    $('agent-source-status').textContent='분석에 사용할 원문 본문을 준비하고 있습니다…';
+    $('agent-prompt').value='원문 본문을 준비하고 있습니다…';
+    const source=await G.prepareGeminiAnalysis(item);
+    if(epoch!==sourceEpoch||selected?.id!==item.id)return;
+    $('agent-source-status').textContent=G.sourceDescription(source);
+    $('agent-prompt').value=buildRegWatchAgentPrompt(item,type,view,source);
   }
   function updateURL(){
     const configured=Boolean(G.getAgentUrl());$('agent-url-state').textContent=configured?'회사 Agent 주소 등록됨':'Gemini Enterprise Agent 주소가 설정되지 않았습니다. 우측 위 ⚙에서 등록하세요.';
@@ -63,7 +71,7 @@
     if(freeMode){const opened=G.openGeminiAgent();$('agent-panel-status').textContent=opened?'회사 Agent를 열었습니다. Gemini에서 직접 질문을 입력하세요.':'새 탭이 차단되었습니다. 아래 수동 열기 링크를 이용하세요.';manualLink();return;}
     const context={analysisType:$('agent-analysis-type').value,requestId:`request-${crypto.randomUUID()}`};
     launching=true;$('agent-launch').disabled=true;
-    try{const result=await G.openGeminiEnterpriseAnalysis(item,context);$('agent-panel-status').textContent=result?.opened&&result?.copied?'프롬프트를 복사하고 Agent를 열었습니다. Gemini에서 Ctrl+V 후 분석한 답변을 복사해 결과를 가져오세요.':'프롬프트 미리보기에서 복사 및 새 탭 열기 안내를 확인하세요.';manualLink();}
+    try{const result=await G.openGeminiEnterpriseAnalysis(item,context);$('agent-panel-status').textContent=result?.opened&&result?.copied?`${result.sourceDescription} 프롬프트를 복사했습니다. Gemini에서 Ctrl+V → Enter를 눌러 분석한 뒤 답변을 가져오세요.`:'프롬프트 미리보기에서 복사 및 새 탭 열기 안내를 확인하세요.';manualLink();}
     catch{$('agent-panel-status').textContent='Agent 실행을 준비하지 못했습니다. 잠시 후 다시 시도하세요.';}
     finally{setTimeout(()=>{launching=false;if(panel?.open)renderContext();},1500);}
   }
@@ -79,8 +87,8 @@
     $('agent-change-regulation').addEventListener('click',()=>{selected=null;freeMode=false;$('agent-reg-source').value='priority';renderChoices();renderContext();$('agent-reg-source').focus();});
     $('agent-reg-source').addEventListener('change',()=>{renderChoices();renderContext();});$('agent-reg-search').addEventListener('input',renderChoices);
     $('agent-reg-choice').addEventListener('change',()=>{const item=listItems().find(r=>r.id===$('agent-reg-choice').value);if(item){setSelectedAgentRegulation(item);$('agent-analysis-type').focus();}});
-    $('agent-analysis-type').addEventListener('change',()=>{resetResultHint();if($('agent-prompt-preview').open)updatePreview();});
-    $('scope-select')?.addEventListener('change',()=>{if(panel.open&&$('agent-prompt-preview').open)updatePreview();});
+    $('agent-analysis-type').addEventListener('change',()=>{resetResultHint();updatePreview();});
+    $('scope-select')?.addEventListener('change',()=>{if(panel.open)updatePreview();});
     $('agent-prompt-preview').addEventListener('toggle',()=>{if($('agent-prompt-preview').open)updatePreview();});
     $('agent-launch').addEventListener('click',launchGeminiEnterpriseAgent);$('agent-import').addEventListener('click',openAgentImportModal);
     panel.addEventListener('close',()=>{if(!panel.open&&trigger.getAttribute('aria-expanded')==='true')afterClose();});
