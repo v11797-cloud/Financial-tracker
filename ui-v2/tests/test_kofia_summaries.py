@@ -29,6 +29,19 @@ def hwpx(text):
 
 
 class KofiaSummaryTests(unittest.TestCase):
+    def test_source_transport_uses_working_identity_encoding_and_rejects_redirects(self):
+        class Response:
+            status_code=200
+            def __enter__(self):return self
+            def __exit__(self,*args):pass
+            def iter_content(self,size):yield '<html>협회 원문</html>'.encode()
+        with patch.object(m.requests,'get',return_value=Response()) as request:
+            self.assertIn('협회 원문',m.get('https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1795'))
+            options=request.call_args.kwargs
+            self.assertEqual(options['headers']['Accept-Encoding'],'identity');self.assertIn('FinancialTracker',options['headers']['User-Agent']);self.assertFalse(options['allow_redirects'])
+        response=Response();response.status_code=302
+        with patch.object(m.requests,'get',return_value=response),self.assertRaises(ValueError):m.get('https://law.kofia.or.kr/invalid')
+
     def test_exact_title_date_law_and_history_required(self):
         for changes in ({'title':'다른 규정'}, {'date':'2026-05-13'}, {'history_seq':'1796'}, {'law_seq':'151'}):
             with self.assertRaises(ValueError):

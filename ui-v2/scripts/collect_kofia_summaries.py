@@ -87,7 +87,9 @@ def parse_full(html, item):
 
 
 def get(url, binary=False):
-    response = requests.get(url, timeout=(5, 12), allow_redirects=False, stream=True)
+    # Match the existing working KOFIA collector: compressed responses from this
+    # service can stall. Request an uncompressed response and identify the client.
+    response = requests.get(url, headers={'User-Agent':'FinancialTracker-UI2/1.0', 'Accept-Encoding':'identity'}, timeout=(8, 20), allow_redirects=False, stream=True)
     with response:
         if response.status_code != 200:
             raise ValueError('Official source unavailable')
@@ -130,7 +132,7 @@ def collect(item, fetch=get):
             record.update(status='ready', text=body[:24000], kind=kind, content_url=source,
                           truncated=len(body) > 24000, content_hash=hashlib.sha256(body.encode()).hexdigest())
     except Exception as error:
-        record.update(status='unavailable', text='', error=type(error).__name__)
+        record.update(status='unavailable', text='', error=type(error).__name__, error_detail=str(error)[:160])
     return record
 
 
