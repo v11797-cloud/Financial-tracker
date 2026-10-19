@@ -32,25 +32,21 @@ jobs:
       - name: Apply verified UI release if pending
         shell: bash
         run: |
-          if [ -f regwatch-kofia-transport-20261019.patch ]; then
-            echo '34ca8ec69319191ba3483cedefd9269b3eb11619967538df8d5ab6dfeb38373b  regwatch-kofia-transport-20261019.patch' | sha256sum -c -
-            git apply --3way regwatch-kofia-transport-20261019.patch
-            git rm -- regwatch-kofia-transport-20261019.patch
+          if [ -f regwatch-gemini-source-20261019.patch ]; then
+            echo '34cbff764ce14294f467d0e1d244a7360978ef3ca209cd6d3fd4c39cc6340f63  regwatch-gemini-source-20261019.patch' | sha256sum -c -
+            git apply --3way regwatch-gemini-source-20261019.patch
+            git rm -- regwatch-gemini-source-20261019.patch
           fi
       - name: Verify UI and collectors
         run: |
           python -m pip install -r requirements.txt
           python -m unittest discover -s ui-v2/tests -p 'test_*.py'
           node --test ui-v2/tests/*.test.cjs
-      - name: Collect association revision excerpts
-        run: |
-          python ui-v2/scripts/collect_kofia_summaries.py --limit 180 --max-seconds 300
-          git add -- ui-v2/data/kofia_summaries.json
       - name: Commit verified UI release
         shell: bash
         run: |
           if ! git diff --cached --quiet; then
-            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Connect association revision excerpts and preserve verified sources [skip ci]'
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'Include verified source text in Gemini handoff [skip ci]'
             git pull --rebase origin main
             git push origin HEAD:main
           fi
