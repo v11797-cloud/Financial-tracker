@@ -1,5 +1,21 @@
-window.lastUpdated = "2026-10-18 09:46 KST";
+window.lastUpdated = "2026-10-19 09:59 KST";
 window.regulatoryData = [
+    {
+        "id": "fss_press_242077",
+        "title": "[금감원] 2027 사업연도 주기적 지정 등 감사인 지정결과 사전통지 실시",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=242077&menuNo=200218&pageIndex=1",
+        "date": "2026-10-19",
+        "dept": "금융감독원(회계감독국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_242050",
+        "title": "[금감원] 한국, IOSCO(국제증권감독기구) 주관 글로벌 투자자보호 AI 프로그램 개발 경진대회 본선 입상",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=242050&menuNo=200218&pageIndex=1",
+        "date": "2026-10-18",
+        "dept": "금융감독원(국제업무국(금융중심지지원센터))",
+        "category": "보도자료"
+    },
     {
         "id": "no010101_87944",
         "title": "제2차 국민참여성장펀드, 5,198억원을 모집하고 판매종료",
@@ -143,7 +159,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_241461",
         "title": "[금감원] 바젤은행감독위원회의 단순기본자본비율 규제이행평가(RCAP) 결과",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=241461&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=241461&menuNo=200218&pageIndex=2",
         "date": "2026-10-14",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -355,7 +371,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_238097",
         "title": "[금감원] 투자자 중심 내부감사기능 강화를 위한 증권사 감사 간담회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=238097&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=238097&menuNo=200218&pageIndex=3",
         "date": "2026-10-07",
         "dept": "금융감독원(금융투자검사1국/금융투자검사2국/금융투자검사3국)",
         "category": "보도자료"
@@ -844,7 +860,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_232271",
         "title": "[금감원] 취약계층 보호 및 금융소비자 편의 제고를 위해 은행권 최저생계비 조회용 계좌통합조회서비스를 시행합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232271&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=232271&menuNo=200218&pageIndex=5",
         "date": "2026-09-29",
         "dept": "금융감독원(은행검사2국)",
         "category": "보도자료"
