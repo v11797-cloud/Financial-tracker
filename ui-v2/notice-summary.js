@@ -23,6 +23,41 @@
     }
     host.append(part);
   }
+  function mountKofia(item) {
+    const ai = document.getElementById('ai-detail-section');
+    const host = document.createElement('section'); host.className = 'ai-detail'; host.id = 'notice-summary'; host.setAttribute('aria-live','polite');
+    host.textContent = '협회 제·개정 원문을 불러오는 중입니다…'; ai.before(host); ai.hidden = true;
+    const original = `https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=${encodeURIComponent(item.history_seq || '')}`;
+    load('kofia').then(payload => {
+      if (!host.isConnected) return;
+      host.replaceChildren();
+      const heading = document.createElement('h3'); heading.textContent = '협회 규정 제·개정 요약'; host.append(heading);
+      const record = payload?.schema_version === 1 && payload.source === 'KOFIA' ? payload.items?.[item.id] : null;
+      const valid = /^kofia_revision_\d{1,12}$/.test(item.id) && item.id === `kofia_revision_${item.history_seq}` && /^\d{1,12}$/.test(String(item.law_seq || '')) && ['협회규정','모범규준'].includes(item.source_group) && record && ['id','title','date','law_seq','history_seq','source_group'].every(k=>record[k] === item[k]);
+      const kind = record?.kind, content = typeof record?.text === 'string' ? record.text.trim() : '';
+      let contentUrl = '';
+      try {
+        const url = new URL(record?.content_url || '');
+        const same = url.protocol === 'https:' && url.hostname === 'law.kofia.or.kr' && !url.port && !url.username && !url.password;
+        if (same && ((kind === 'revision_summary' && url.href === original) ||
+          (kind === 'amendment_document' && url.pathname === '/download.do' && url.searchParams.get('gubun') === '104' && /^\d{1,12}$/.test(url.searchParams.get('seq') || '')) ||
+          (kind === 'version_fulltext' && url.pathname === '/service/law/lawFullScreenContent.do' && url.searchParams.get('seq') === String(item.law_seq) && url.searchParams.get('historySeq') === String(item.history_seq)))) contentUrl = url.href;
+      } catch {}
+      if (!valid || record.status !== 'ready' || !content || !contentUrl || record.source_url !== original) {
+        const p = document.createElement('p'); p.textContent = valid && record.status === 'pending'
+          ? '이 제·개정 건은 협회 원문 수집 대기 중입니다. 자동 수집 후 이 화면에 연결됩니다.'
+          : valid && record.status === 'not_provided'
+            ? '협회 원문에 표시할 요약 본문이 없습니다. 아래 협회 원문과 개정문 첨부파일을 확인해 주세요.'
+            : '협회 원문 수집 또는 제·개정 건 확인을 완료하지 못했습니다. 다음 자동 수집 때 다시 시도합니다.';
+        host.append(p); return;
+      }
+      const full = kind === 'version_fulltext', note = document.createElement('p'); note.className = 'brief-meta';
+      note.textContent = full ? '협회가 제공하는 해당 제·개정 시점의 전문 발췌입니다. 변경 전후 차이를 요약한 내용은 아닙니다.' : kind === 'amendment_document' ? '금융투자협회의 해당 제·개정 건에 연결된 개정문 첨부파일에서 발췌했습니다.' : '금융투자협회의 해당 제·개정 건 요약문에서 발췌했습니다.';
+      host.append(note); section(host, full ? '해당 시점 규정 내용' : '제·개정 취지 및 주요 내용',content,8);
+      const source = document.createElement('a'); source.className = 'small-button'; source.textContent = kind === 'amendment_document' ? '협회 개정문 파일 보기 ↗' : full ? '해당 시점 전문 보기 ↗' : '협회 요약 원문 보기 ↗'; source.href = contentUrl; source.target = '_blank'; source.rel = 'noopener noreferrer'; host.append(source);
+      const foot = document.createElement('p'); foot.className = 'brief-meta'; foot.textContent = `원문 수집 ${record.collected_at || '시각 미확인'}${record.source_note ? ' · '+record.source_note : ''}${record.truncated ? ' · 긴 원문의 앞부분만 표시합니다.' : ''} · 세부 조문·표·시행일은 협회 원문을 확인해 주세요.`; host.append(foot);
+    });
+  }
   function mountLaw(item) {
     const ai = document.getElementById('ai-detail-section');
     const host = document.createElement('section'); host.className = 'ai-detail'; host.id = 'notice-summary';
@@ -52,6 +87,7 @@
     const foot = document.createElement('p'); foot.className = 'brief-meta'; foot.textContent = '세부 조문·부칙·조항별 시행일은 공식 원문을 확인해 주세요.'; host.append(foot);
   }
   window.RegWatchNotice = { mount(item) {
+    if (item.source === 'KOFIA' && item.category === '공포법령') { mountKofia(item); return; }
     if (item.category === '공포법령') { mountLaw(item); return; }
     if (!['입법예고','보도자료'].includes(item.category)) return;
     const press = item.category === '보도자료';

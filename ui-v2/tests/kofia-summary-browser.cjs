@@ -1,0 +1,24 @@
+const assert=require('node:assert/strict'),path=require('node:path'),fs=require('node:fs');
+const {chromium}=require(process.env.PLAYWRIGHT_MODULE||'playwright');
+const items=[{id:'kofia_revision_1817',title:'금융투자회사의 금융소비자보호 표준내부통제기준',law_seq:'150',history_seq:'1817',source_group:'모범규준'},{id:'kofia_revision_1814',title:'금융투자회사의 영업 및 업무에 관한 규정',law_seq:'100',history_seq:'1814',source_group:'협회규정'}].map(i=>({...i,source:'KOFIA',category:'공포법령',date:'2026-10-19',law_name:i.title,dept:'금융투자협회',classification_path:[i.source_group,i.title],url:`https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=${i.history_seq}`}));
+const record=(i,kind='revision_summary')=>({...Object.fromEntries(['id','title','date','law_seq','history_seq','source_group'].map(k=>[k,i[k]])),status:'ready',kind,text:'공식 개정 내용: 내부통제 보고 절차 및 담당 부서 점검 범위를 정비합니다.\n<script>window.summaryXSS=true</script>',source_url:i.url,content_url:kind==='version_fulltext'?`https://law.kofia.or.kr/service/law/lawFullScreenContent.do?seq=${i.law_seq}&historySeq=${i.history_seq}`:kind==='amendment_document'?'https://law.kofia.or.kr/download.do?gubun=104&seq=123':i.url,collected_at:'2026-10-19T01:00:00Z'});
+(async()=>{const browser=await chromium.launch({channel:'msedge',headless:true});try{
+ const p=await browser.newPage({viewport:{width:1440,height:1000}}),errors=[];p.on('pageerror',e=>errors.push(e.message));
+ await p.route('https://api.github.com/**',r=>r.fulfill({json:{workflow_runs:[]}}));
+ await p.route('**/data/kofia_data.js*',r=>r.fulfill({contentType:'application/javascript',body:'window.kofiaData='+JSON.stringify({schema_version:1,source:'KOFIA',items})+';'}));
+ let payload={schema_version:1,source:'KOFIA',items:Object.fromEntries(items.map((i,n)=>[i.id,record(i,n?'version_fulltext':'revision_summary')]))},failed=false;
+ await p.route('**/data/kofia_summaries.json',r=>failed?r.fulfill({status:503,body:'unavailable'}):r.fulfill({json:payload}));
+ const base=process.env.BASE_URL||'http://127.0.0.1:8765/Financial-tracker/ui-v2/';await p.goto(base);
+ const open=async i=>{await p.locator(`[data-action="detail"][data-id="${i.id}"]`).click();await p.getByRole('heading',{name:'협회 규정 제·개정 요약',exact:true}).waitFor();};
+ await open(items[0]);assert.match(await p.locator('#notice-summary').innerText(),/공식 개정 내용/);assert.equal(await p.locator('#notice-summary script').count(),0);assert.equal(await p.evaluate(()=>window.summaryXSS),undefined);assert.equal(await p.locator('#ai-detail-section').isVisible(),false);assert.equal(await p.getByRole('link',{name:'협회 요약 원문 보기 ↗',exact:true}).getAttribute('href'),items[0].url);
+ await p.locator('#close-detail').click();await open(items[1]);assert.match(await p.locator('#notice-summary').innerText(),/변경 전후 차이를 요약한 내용은 아닙니다/);assert.equal(await p.getByRole('heading',{name:'해당 시점 규정 내용',exact:true}).count(),1);
+ await p.setViewportSize({width:390,height:844});assert.ok(await p.locator('#notice-summary').evaluate(n=>n.scrollWidth<=n.clientWidth+1));const out=path.resolve('../../work/kofia-revision-summary');fs.mkdirSync(out,{recursive:true});await p.locator('#detail-dialog').screenshot({path:path.join(out,'mobile-test.png')});
+ await p.locator('#close-detail').click();await p.setViewportSize({width:1440,height:1000});
+ for(const changes of [{title:'다른 규정'},{date:'2026-01-01'},{history_seq:'999'},{law_seq:'999'},{content_url:'javascript:alert(1)'},{source_url:'https://example.com'}]){
+  payload.items[items[0].id]={...record(items[0]),...changes};await p.reload();await open(items[0]);assert.match(await p.locator('#notice-summary').innerText(),/확인을 완료하지 못/);assert.ok(!(await p.locator('#notice-summary').innerText()).includes('공식 개정 내용'));await p.locator('#close-detail').click();
+ }
+ for(const status of ['pending','not_provided','unavailable']){payload.items[items[0].id]={...record(items[0]),status,text:''};await p.reload();await open(items[0]);assert.match(await p.locator('#notice-summary').innerText(),status==='pending'?/수집 대기/:status==='not_provided'?/요약 본문이 없습니다/:/완료하지 못/);await p.locator('#close-detail').click();}
+ failed=true;await p.reload();await open(items[0]);assert.match(await p.locator('#notice-summary').innerText(),/완료하지 못/);await p.locator('#close-detail').click();failed=false;
+ payload.items[items[0].id]=record(items[0],'amendment_document');await p.reload();await open(items[0]);assert.equal(await p.getByRole('link',{name:'협회 개정문 파일 보기 ↗',exact:true}).count(),1);await p.locator('#detail-dialog').screenshot({path:path.join(out,'desktop-test.png')});assert.deepEqual(errors,[]);
+ console.log('PASS association/model rules, separate source cache, official summary/attachment/fulltext labels, identity and unsafe URL rejection, pending/missing/failure states, XSS, desktop/mobile.');
+}finally{await browser.close();}})().catch(e=>{console.error(e);process.exit(1)});
