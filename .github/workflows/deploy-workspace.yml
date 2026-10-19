@@ -32,10 +32,10 @@ jobs:
       - name: Apply verified UI release if pending
         shell: bash
         run: |
-          if [ -f regwatch-kofia-summaries-20261019.patch ]; then
-            echo 'ad1e9982221cfc3460d7f3b4f8ea1f4a782bd68756af14a822ccfc1110bbf3bd  regwatch-kofia-summaries-20261019.patch' | sha256sum -c -
-            git apply --3way regwatch-kofia-summaries-20261019.patch
-            git rm -- regwatch-kofia-summaries-20261019.patch
+          if [ -f regwatch-kofia-transport-20261019.patch ]; then
+            echo '34ca8ec69319191ba3483cedefd9269b3eb11619967538df8d5ab6dfeb38373b  regwatch-kofia-transport-20261019.patch' | sha256sum -c -
+            git apply --3way regwatch-kofia-transport-20261019.patch
+            git rm -- regwatch-kofia-transport-20261019.patch
           fi
       - name: Verify UI and collectors
         run: |
