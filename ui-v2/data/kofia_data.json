@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-10-20 10:42 KST",
+  "updated_at": "2026-10-21 10:31 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-10-20 10:42 KST",
+  "classification_checked_at": "2026-10-21 10:31 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
-    "notices": 153,
+    "notices": 155,
     "revisions_scanned": 1445,
     "revisions_included": 966,
     "revisions_excluded": 479,
@@ -14,6 +14,34 @@
     "모범규준": 418
   },
   "items": [
+    {
+      "id": "kofia_notice_160",
+      "title": "무보증사채 수요예측 모범규준",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-10-20",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "160",
+      "notice_end_date": "2026-11-09",
+      "revision_type": "개정"
+    },
+    {
+      "id": "kofia_notice_159",
+      "title": "증권 인수업무 등에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-10-20",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "159",
+      "notice_end_date": "2026-11-09",
+      "revision_type": "개정"
+    },
     {
       "id": "kofia_revision_1817",
       "title": "금융투자회사의 금융소비자보호 표준내부통제기준",

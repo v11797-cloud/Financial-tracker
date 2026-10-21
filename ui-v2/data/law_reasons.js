@@ -2693,9 +2693,8 @@ window.lawReasons = {
       "prom_no": "02556",
       "date": "1966-06-08",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15455&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15455&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법시행령_01676_1964-03-11": {
       "id": "law_국민은행법시행령_01676_1964-03-11",
