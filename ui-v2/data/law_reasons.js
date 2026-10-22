@@ -2635,9 +2635,8 @@ window.lawReasons = {
       "prom_no": "06663",
       "date": "1973-05-03",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15567&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15567&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "HTTPError"
     },
     "law_국민은행법_02571_1973-03-05": {
       "id": "law_국민은행법_02571_1973-03-05",
@@ -2693,8 +2692,9 @@ window.lawReasons = {
       "prom_no": "02556",
       "date": "1966-06-08",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15455&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15455&chrClsCd=010201"
     },
     "law_국민은행법시행령_01676_1964-03-11": {
       "id": "law_국민은행법시행령_01676_1964-03-11",
@@ -2750,9 +2750,8 @@ window.lawReasons = {
       "prom_no": "00400",
       "date": "1962-01-27",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=54526&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=54526&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "HTTPError"
     },
     "law_미군정청에의하여의용된보험업법_00973_1962-01-15": {
       "id": "law_미군정청에의하여의용된보험업법_00973_1962-01-15",
