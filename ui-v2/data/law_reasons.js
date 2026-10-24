@@ -2722,9 +2722,8 @@ window.lawReasons = {
       "prom_no": "01212",
       "date": "1963-02-19",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15453&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15453&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법시행령_01077_1962-12-15": {
       "id": "law_국민은행법시행령_01077_1962-12-15",
@@ -2750,9 +2749,8 @@ window.lawReasons = {
       "prom_no": "00400",
       "date": "1962-01-27",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=54526&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=54526&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_미군정청에의하여의용된보험업법_00973_1962-01-15": {
       "id": "law_미군정청에의하여의용된보험업법_00973_1962-01-15",
