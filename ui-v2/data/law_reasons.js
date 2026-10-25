@@ -2722,8 +2722,9 @@ window.lawReasons = {
       "prom_no": "01212",
       "date": "1963-02-19",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15453&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15453&chrClsCd=010201"
     },
     "law_국민은행법시행령_01077_1962-12-15": {
       "id": "law_국민은행법시행령_01077_1962-12-15",
@@ -2731,8 +2732,9 @@ window.lawReasons = {
       "prom_no": "01077",
       "date": "1962-12-15",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15452&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15452&chrClsCd=010201"
     },
     "law_국민은행법_01201_1962-12-07": {
       "id": "law_국민은행법_01201_1962-12-07",
@@ -2749,8 +2751,9 @@ window.lawReasons = {
       "prom_no": "00400",
       "date": "1962-01-27",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=54526&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=54526&chrClsCd=010201"
     },
     "law_미군정청에의하여의용된보험업법_00973_1962-01-15": {
       "id": "law_미군정청에의하여의용된보험업법_00973_1962-01-15",
@@ -2804,9 +2807,8 @@ window.lawReasons = {
       "prom_no": "01267",
       "date": "1957-04-04",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17041&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17041&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",
