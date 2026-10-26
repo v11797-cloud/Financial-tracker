@@ -2654,9 +2654,8 @@ window.lawReasons = {
       "prom_no": "06343",
       "date": "1972-09-01",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15566&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15566&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법시행령_04141_1969-10-20": {
       "id": "law_국민은행법시행령_04141_1969-10-20",
@@ -2674,9 +2673,8 @@ window.lawReasons = {
       "prom_no": "03656",
       "date": "1968-12-09",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15456&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15456&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법_02043_1968-07-25": {
       "id": "law_국민은행법_02043_1968-07-25",
@@ -2807,8 +2805,9 @@ window.lawReasons = {
       "prom_no": "01267",
       "date": "1957-04-04",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17041&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17041&chrClsCd=010201"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",
