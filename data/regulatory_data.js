@@ -1,8 +1,16 @@
-window.lastUpdated = "2026-10-27 10:56 KST";
+window.lastUpdated = "2026-10-28 11:06 KST";
 window.regulatoryData = [
     {
+        "id": "fss_press_246237",
+        "title": "[금감원] 이찬진 금융감독원장, 은행지주 이사회 의장 간담회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246237&menuNo=200218&pageIndex=1",
+        "date": "2026-10-28",
+        "dept": "금융감독원(은행검사1국/은행검사2국/은행감독국/디지털금융총괄국)",
+        "category": "보도자료"
+    },
+    {
         "id": "no010101_87997",
-        "title": "2026년 3분기 공적자금 운용현황. 금일 등록된 게시글",
+        "title": "2026년 3분기 공적자금 운용현황",
         "url": "https://www.fsc.go.kr/no010101/87997?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-27",
         "dept": "금융위원회(구조개선정책과)",
@@ -22,6 +30,30 @@ window.regulatoryData = [
         "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244915&menuNo=200218&pageIndex=1",
         "date": "2026-10-27",
         "dept": "금융감독원(기업공시국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_87998",
+        "title": "군부대로 ‘찾아가는 재무상담소’, 군복무 청년에게 1:1 맞춤형 재무상담 제공",
+        "url": "https://www.fsc.go.kr/no010101/87998?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-27",
+        "dept": "금융위원회(청년정책과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_245702",
+        "title": "[금감원] 일본계 자본의 JYP 주식 공개매수 보도 관련 투자자 유의사항",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=245702&menuNo=200218&pageIndex=1",
+        "date": "2026-10-27",
+        "dept": "금융감독원(기업공시국/조사1국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_245254",
+        "title": "[금감원] 투자한도 100%는 상품의 원리금 보장성 표시가 아닙니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=245254&menuNo=200218&pageIndex=1",
+        "date": "2026-10-27",
+        "dept": "금융감독원(연금감독실)",
         "category": "보도자료"
     },
     {
@@ -99,7 +131,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243351",
         "title": "[금감원] 26.8월말 국내은행의 원화대출 연체율 현황(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243351&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243351&menuNo=200218&pageIndex=2",
         "date": "2026-10-23",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -155,7 +187,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243282",
         "title": "[금감원] 유명 가상자산거래소의 블록체인 네트워크를 사칭한 가짜 체인 사기에 주의하세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243282&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243282&menuNo=200218&pageIndex=2",
         "date": "2026-10-22",
         "dept": "금융감독원(가상자산조사국)",
         "category": "보도자료"
@@ -195,7 +227,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87969",
         "title": "초국가범죄 범정부 대응 1년, “국경 넘어 끝까지 추적”… 기관 간 공조 강화로 초국가범죄 대응의 틀 바꿨다",
-        "url": "https://www.fsc.go.kr/no010101/87969?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87969?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-21",
         "dept": "금융위원회(금융정보분석원)",
         "category": "보도자료"
@@ -403,7 +435,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87938",
         "title": "잠든 선불충전금, 잊지 말고 사용하세요. - 빅테크 3개사, 장기간 미사용 선불의 이용자 통지 및 환급 촉진",
-        "url": "https://www.fsc.go.kr/no010101/87938?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87938?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-15",
         "dept": "금융위원회(디지털금융총괄과)",
         "category": "보도자료"
@@ -515,7 +547,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_240528",
         "title": "[금감원] 투자자들이 공시정보를 손쉽게 분석, 활용할 수 있도록 Open DART 개선 및 XBRL 택사노미 정비를 추진합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=240528&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=240528&menuNo=200218&pageIndex=4",
         "date": "2026-10-13",
         "dept": "금융감독원(기업공시국)",
         "category": "보도자료"
@@ -523,7 +555,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_240494",
         "title": "[금감원] 2027년 K-IFRS 제1118호 시행, 준비상황을 점검하세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=240494&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=240494&menuNo=200218&pageIndex=4",
         "date": "2026-10-13",
         "dept": "금융감독원(회계감독국)",
         "category": "보도자료"
@@ -591,7 +623,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_239804",
         "title": "[금감원] 금융감독원, PEF 운용사에 대한 내부통제 점검 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=239804&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=239804&menuNo=200218&pageIndex=4",
         "date": "2026-10-12",
         "dept": "금융감독원(자산운용감독국)",
         "category": "보도자료"
@@ -725,7 +757,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_237663",
         "title": "[금감원] 취업준비생의 자산관리 역량 향상과 금융사기 피해 예방을 위한 2026년 청년 금융특강을 실시합니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=237663&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=237663&menuNo=200218&pageIndex=5",
         "date": "2026-10-06",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -757,7 +789,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_237413",
         "title": "[금감원] 전환하고 싶어요 한 마디면 보험료가 할인됩니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=237413&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=237413&menuNo=200218&pageIndex=5",
         "date": "2026-10-05",
         "dept": "금융감독원(보험검사2국/보험검사1국)",
         "category": "보도자료"
