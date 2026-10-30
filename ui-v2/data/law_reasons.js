@@ -2807,8 +2807,9 @@ window.lawReasons = {
       "prom_no": "01267",
       "date": "1957-04-04",
       "text": "",
-      "status": "unavailable",
-      "error": "URLError"
+      "status": "not_provided",
+      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=17041&lsRvsGubun=Rsn",
+      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=17041&chrClsCd=010201"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",
