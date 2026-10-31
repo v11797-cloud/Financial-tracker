@@ -1865,9 +1865,8 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2016-06-01",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000048773&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000048773&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01": {
       "id": "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01",
@@ -2654,9 +2653,8 @@ window.lawReasons = {
       "prom_no": "06343",
       "date": "1972-09-01",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/lsRvsDocInfoR.do?lsiSeq=15566&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/lsInfoP.do?lsiSeq=15566&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "law_국민은행법시행령_04141_1969-10-20": {
       "id": "law_국민은행법시행령_04141_1969-10-20",
