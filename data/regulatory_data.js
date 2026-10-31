@@ -1,8 +1,8 @@
-window.lastUpdated = "2026-10-30 11:29 KST";
+window.lastUpdated = "2026-10-31 11:09 KST";
 window.regulatoryData = [
     {
         "id": "no010101_88029",
-        "title": "한국의 풀뿌리 금융,  미소금융이 다시 한번 도약합니다. - 미소금융 재원 기부 협약식 개최. 금일 등록된 게시글",
+        "title": "한국의 풀뿌리 금융,  미소금융이 다시 한번 도약합니다. - 미소금융 재원 기부 협약식 개최",
         "url": "https://www.fsc.go.kr/no010101/88029?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-30",
         "dept": "금융위원회(서민금융과)",
@@ -10,7 +10,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88028",
-        "title": "국민성장펀드가 국내 최대 태양광 발전소 건설과 반도체 밸류체인 경쟁력 강화를 지원합니다.. 금일 등록된 게시글",
+        "title": "국민성장펀드가 국내 최대 태양광 발전소 건설과 반도체 밸류체인 경쟁력 강화를 지원합니다.",
         "url": "https://www.fsc.go.kr/no010101/88028?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-30",
         "dept": "금융위원회(국민성장펀드총괄과)",
@@ -18,7 +18,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88027",
-        "title": "퇴직연금 기능강화를 위한 노사정 합의로 노동자의 든든한 노후소득 보장체계 구축. 금일 등록된 게시글",
+        "title": "퇴직연금 기능강화를 위한 노사정 합의로 노동자의 든든한 노후소득 보장체계 구축",
         "url": "https://www.fsc.go.kr/no010101/88027?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-30",
         "dept": "금융위원회(자산운용과)",
@@ -31,6 +31,42 @@ window.regulatoryData = [
         "date": "2026-10-30",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
+    },
+    {
+        "id": "no030101_88038",
+        "title": "금융시장동향(26.10.30)",
+        "url": "https://www.fsc.go.kr/no030101/88038?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-30",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_88039",
+        "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
+        "url": "https://www.fsc.go.kr/no010101/88039?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-30",
+        "dept": "금융위원회(가상자산검사과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_88031",
+        "title": "제9회 ‘회계의 날’ 기념식 및 회계업계 간담회 개최",
+        "url": "https://www.fsc.go.kr/no010101/88031?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-10-30",
+        "dept": "금융위원회(회계제도팀)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_notice_4466",
+        "title": "전자금융감독규정시행세칙",
+        "law_name": "전자금융감독규정시행세칙",
+        "date": "2026-10-30",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4466",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4466&menuNo=200489",
+        "notice_end_date": "2026-11-19"
     },
     {
         "id": "fss_press_247561",
@@ -123,7 +159,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88013",
         "title": "사업보고서 등에 대한 조사·감리결과 조치 - 제19차 증권선물위원회(’26.10.28.) 조치 의결",
-        "url": "https://www.fsc.go.kr/no010101/88013?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88013?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-28",
         "dept": "금융위원회(회계제도팀)",
         "category": "보도자료"
@@ -131,7 +167,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88012",
         "title": "미공개중요정보를 이용한 내부자등에 대한 중대범죄수사청 고발·통보 등 조치(2건)  - 제19차 증권선물위원회(10.28.) 의결",
-        "url": "https://www.fsc.go.kr/no010101/88012?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88012?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-28",
         "dept": "금융위원회(자본시장조사총괄과)",
         "category": "보도자료"
@@ -299,7 +335,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87984",
         "title": "여신전문금융업감독규정 개정안  규정변경예고(‘26.10.23.~12.2.) 실시",
-        "url": "https://www.fsc.go.kr/no010101/87984?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87984?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-23",
         "dept": "금융위원회(중소금융과)",
         "category": "보도자료"
@@ -339,7 +375,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87977",
         "title": "우주항공 · 양자 산업을 국민성장펀드의 지원대상산업에 추가하고자 합니다.   - 한국산업은행법 시행령 개정령안 입법예고(10.22~12.1일)",
-        "url": "https://www.fsc.go.kr/no010101/87977?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87977?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-22",
         "dept": "금융위원회(국민성장펀드총괄과)",
         "category": "보도자료"
@@ -519,7 +555,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87950",
         "title": "금융시장동향(26.10.16)",
-        "url": "https://www.fsc.go.kr/no030101/87950?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87950?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-16",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1104,7 +1140,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87830",
         "title": "금융시장동향(26.09.30)",
-        "url": "https://www.fsc.go.kr/no030101/87830?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87830?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
         "dept": "금융위원회",
         "category": "금융시장동향"
