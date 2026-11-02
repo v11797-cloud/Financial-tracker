@@ -667,9 +667,8 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2024-07-01",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000082677&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000082677&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26": {
       "id": "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26",
