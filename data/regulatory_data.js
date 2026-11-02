@@ -1,5 +1,37 @@
-window.lastUpdated = "2026-11-01 11:01 KST";
+window.lastUpdated = "2026-11-02 11:14 KST";
 window.regulatoryData = [
+    {
+        "id": "no010101_88048",
+        "title": "금융정보분석원, 국제자금세탁방지기구(FATF) 총회 참석. 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no010101/88048?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-02",
+        "dept": "금융위원회(금융정보분석원)",
+        "category": "보도자료"
+    },
+    {
+        "id": "notice_4188",
+        "title": "「예금자보호법」 일부개정법률안 입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4188&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "notice_4187",
+        "title": "「금융산업의 구조개선에 관한 법률」 일부개정법률안 입법예고",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4187&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-02",
+        "dept": "금융위원회",
+        "category": "입법예고"
+    },
+    {
+        "id": "fss_press_249656",
+        "title": "[금감원] 자동 가입되는 시민안전보험, 보험금 청구까지 꼭 챙기세요",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249656&menuNo=200218&pageIndex=1",
+        "date": "2026-11-01",
+        "dept": "금융감독원(보험상품분쟁1국)",
+        "category": "보도자료"
+    },
     {
         "id": "no010101_88029",
         "title": "한국의 풀뿌리 금융,  미소금융이 다시 한번 도약합니다. - 미소금융 재원 기부 협약식 개최",
@@ -127,7 +159,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88019",
         "title": "☎1375(일상치료)로,  빚의 고통은 덜고 희망의 빛은 더하겠습니다. - 금융위원회·신용회복위원회, 채무상담 대표번호 ☎1375 개통식 개최 -",
-        "url": "https://www.fsc.go.kr/no010101/88019?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88019?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(복합지원팀,서민금융과)",
         "category": "보도자료"
@@ -271,7 +303,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87989",
         "title": "민·관 합동으로 「지표금리 개편방안(3.30일)」을  차질 없이 추진하고 있습니다.",
-        "url": "https://www.fsc.go.kr/no010101/87989?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87989?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-26",
         "dept": "금융위원회(금융시장분석과)",
         "category": "보도자료"
@@ -279,7 +311,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243940",
         "title": "[금감원] 고수익 아르바이트와 통장매매의 유혹! 나도 모르게 금융사기 범죄자가 될 수 있습니다!",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243940&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243940&menuNo=200218&pageIndex=3",
         "date": "2026-10-26",
         "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
@@ -447,7 +479,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243106",
         "title": "[금감원] 안정적인 노후생활을 위한 소비자 유의사항 안내",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243106&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243106&menuNo=200218&pageIndex=4",
         "date": "2026-10-21",
         "dept": "금융감독원(연금감독실)",
         "category": "보도자료"
@@ -735,7 +767,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_241492",
         "title": "[금감원] 금감원, 중소금융업권과 함께 준법제보 활성화 방안을 마련하여 시행합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=241492&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=241492&menuNo=200218&pageIndex=5",
         "date": "2026-10-14",
         "dept": "금융감독원(중소금융검사1국/중소금융검사2국/중소금융검사3국)",
         "category": "보도자료"
@@ -1204,7 +1236,7 @@ window.regulatoryData = [
     {
         "id": "notice_4178",
         "title": "「신용정보업감독규정」 일부개정고시(안) 규정변경 예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4178&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4178&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-01",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -1228,7 +1260,7 @@ window.regulatoryData = [
     {
         "id": "notice_4177",
         "title": "｢은행업감독규정｣ 일부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4177&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4177&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-30",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -2369,7 +2401,7 @@ window.regulatoryData = [
     {
         "id": "notice_4168",
         "title": "「단기매매차익 반환 및 불공정거래 조사·신고 등에 관한 규정」일부개정고시안 행정예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4168&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4168&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-04",
         "dept": "금융위원회",
         "category": "입법예고"
@@ -2453,7 +2485,7 @@ window.regulatoryData = [
     {
         "id": "notice_4167",
         "title": "「전기통신금융사기 신고포상금에 관한 규정」일부개정고시안 규정변경예고",
-        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4167&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/po040301/view?noticeId=4167&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-09-03",
         "dept": "금융위원회",
         "category": "입법예고"
