@@ -1,9 +1,9 @@
 window.kofiaData = {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-11-02 11:16 KST",
+  "updated_at": "2026-11-03 12:56 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-11-02 11:16 KST",
+  "classification_checked_at": "2026-11-03 12:56 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
     "notices": 157,
