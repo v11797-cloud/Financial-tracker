@@ -1,8 +1,8 @@
-window.lastUpdated = "2026-11-02 11:14 KST";
+window.lastUpdated = "2026-11-03 12:54 KST";
 window.regulatoryData = [
     {
         "id": "no010101_88048",
-        "title": "금융정보분석원, 국제자금세탁방지기구(FATF) 총회 참석. 금일 등록된 게시글",
+        "title": "금융정보분석원, 국제자금세탁방지기구(FATF) 총회 참석",
         "url": "https://www.fsc.go.kr/no010101/88048?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-02",
         "dept": "금융위원회(금융정보분석원)",
@@ -23,6 +23,50 @@ window.regulatoryData = [
         "date": "2026-11-02",
         "dept": "금융위원회",
         "category": "입법예고"
+    },
+    {
+        "id": "no030101_88055",
+        "title": "금융시장동향(26.11.02)",
+        "url": "https://www.fsc.go.kr/no030101/88055?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-02",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_88054",
+        "title": "글로벌 해킹 위협에 대비한 국내 가상자산사업자의 사고대응력 제고를 위해 긴밀하고 신속하게  대응해 나가겠습니다.",
+        "url": "https://www.fsc.go.kr/no010101/88054?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-02",
+        "dept": "금융위원회(금융안전과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_88052",
+        "title": "생산적 금융의 온기를 지방과 중소기업까지 이어갑니다.   - 이억원 금융위원장, 제6차 생산적 금융 대전환 회의 개최",
+        "url": "https://www.fsc.go.kr/no010101/88052?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-02",
+        "dept": "금융위원회(은행과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_notice_4485",
+        "title": "보험업감독업무시행세칙",
+        "law_name": "보험업감독업무시행세칙",
+        "date": "2026-11-02",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4485",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4485&menuNo=200489",
+        "notice_end_date": "2026-12-14"
+    },
+    {
+        "id": "fss_press_249670",
+        "title": "[금감원] 사회초년생 청년 운전자가 자동차보험 할인혜택을 쉽게 받을 수 있도록 가입 절차를 개선합니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249670&menuNo=200218&pageIndex=1",
+        "date": "2026-11-02",
+        "dept": "금융감독원(보험감독국)",
+        "category": "보도자료"
     },
     {
         "id": "fss_press_249656",
@@ -143,7 +187,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88021",
         "title": "보험사기 연루 보험업종사자에 대한 등록취소·업무정지 등 제재",
-        "url": "https://www.fsc.go.kr/no010101/88021?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88021?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(보험과)",
         "category": "보도자료"
@@ -151,7 +195,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88020",
         "title": "“금융회사의 부실 확산에 신속·선제적으로 대응하여 금융시장의 안정 및 소비자 보호를 위한  ｢금융회사 신속정리제도｣ 도입을 추진합니다.”",
-        "url": "https://www.fsc.go.kr/no010101/88020?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88020?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(구조개선정책과)",
         "category": "보도자료"
@@ -255,7 +299,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87997",
         "title": "2026년 3분기 공적자금 운용현황",
-        "url": "https://www.fsc.go.kr/no010101/87997?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87997?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-27",
         "dept": "금융위원회(구조개선정책과)",
         "category": "보도자료"
@@ -271,7 +315,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_244915",
         "title": "[금감원] 26.9월중 기업의 직접금융 조달실적",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244915&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244915&menuNo=200218&pageIndex=3",
         "date": "2026-10-27",
         "dept": "금융감독원(기업공시국)",
         "category": "보도자료"
@@ -327,7 +371,7 @@ window.regulatoryData = [
     {
         "id": "no010101_87994",
         "title": "제1차 국민참여성장펀드 자산운용보고서 공시",
-        "url": "https://www.fsc.go.kr/no010101/87994?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/87994?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-26",
         "dept": "금융위원회(국민지역참여지원과)",
         "category": "보도자료"
@@ -343,7 +387,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_244231",
         "title": "[금감원] 금융감독원이 발급한 무효확인서를 토대로 최초 형사 무죄 판결이 확정되었습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244231&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244231&menuNo=200218&pageIndex=3",
         "date": "2026-10-26",
         "dept": "금융감독원(민생침해대응총괄국)",
         "category": "보도자료"
@@ -351,7 +395,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243965",
         "title": "[금감원] 간호조무사 대상 보험사기 예방교육 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243965&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243965&menuNo=200218&pageIndex=3",
         "date": "2026-10-26",
         "dept": "금융감독원(보험사기대응단)",
         "category": "보도자료"
@@ -547,7 +591,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87963",
         "title": "금융시장동향(26.10.19)",
-        "url": "https://www.fsc.go.kr/no030101/87963?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87963?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-19",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -759,7 +803,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_241493",
         "title": "[금감원] 증권사의 영업점 개설 계좌와 관련한 매매수수료 차등 부과 관행을 바로 잡겠습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=241493&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=241493&menuNo=200218&pageIndex=5",
         "date": "2026-10-14",
         "dept": "금융감독원(자본시장감독국/연금감독실)",
         "category": "보도자료"
@@ -1065,7 +1109,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87848",
         "title": "금융시장동향(26.10.01)",
-        "url": "https://www.fsc.go.kr/no030101/87848?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87848?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-02",
         "dept": "금융위원회",
         "category": "금융시장동향"
