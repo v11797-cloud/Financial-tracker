@@ -1,8 +1,8 @@
-window.lastUpdated = "2026-11-06 12:19 KST";
+window.lastUpdated = "2026-11-07 11:39 KST";
 window.regulatoryData = [
     {
         "id": "no010101_88099",
-        "title": "현재 유포되고 있는 부동산 대책 관련 게시글의 보도에 유의하여 주시기 바랍니다.. 금일 등록된 게시글",
+        "title": "현재 유포되고 있는 부동산 대책 관련 게시글의 보도에 유의하여 주시기 바랍니다.",
         "url": "https://www.fsc.go.kr/no010101/88099?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-06",
         "dept": "금융위원회(금융정책과)",
@@ -10,18 +10,34 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88098",
-        "title": "금융권은 개인정보 유출 사고에 따른 보이스피싱 예방에 총력 대응하고 있습니다.. 금일 등록된 게시글",
+        "title": "금융권은 개인정보 유출 사고에 따른 보이스피싱 예방에 총력 대응하고 있습니다.",
         "url": "https://www.fsc.go.kr/no010101/88098?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-06",
         "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
     },
     {
-        "id": "fss_press_249759",
-        "title": "[금감원] 국내외 주식시장 변동성 확대로 단계별 대응조치 가동",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249759&menuNo=200218&pageIndex=1",
+        "id": "no030101_88101",
+        "title": "금융시장동향(26.11.06)",
+        "url": "https://www.fsc.go.kr/no030101/88101?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-06",
-        "dept": "금융감독원(금융시장안정국)",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "no010101_88100",
+        "title": "국내외 주식시장 변동성 확대로 단계별 대응조치 가동",
+        "url": "https://www.fsc.go.kr/no010101/88100?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-06",
+        "dept": "금융위원회(자본시장과,금융시장분석과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_249765",
+        "title": "[금감원] 정부와 퇴직연금사업자가 함께 안정성과 수익성을 갖춘 퇴직연금 생태계를 만들어 나가겠습니다.",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249765&menuNo=200218&pageIndex=1",
+        "date": "2026-11-06",
+        "dept": "금융감독원(연금감독실)",
         "category": "보도자료"
     },
     {
@@ -123,7 +139,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88071",
         "title": "코너스톤투자자 제도 등 도입 관련  자본시장법 시행령 개정안 국무회의 의결",
-        "url": "https://www.fsc.go.kr/no010101/88071?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88071?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-03",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -291,7 +307,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_247561",
         "title": "[금감원] 26년 3분기 등록 ABS 발행 실적",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247561&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247561&menuNo=200218&pageIndex=3",
         "date": "2026-10-29",
         "dept": "금융감독원(기업공시국)",
         "category": "보도자료"
@@ -323,7 +339,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88023",
         "title": "금융위원장, ‘금융분야 재난대응 안전한국훈련’ 주관",
-        "url": "https://www.fsc.go.kr/no010101/88023?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88023?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(감사담당관)",
         "category": "보도자료"
@@ -331,7 +347,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88021",
         "title": "보험사기 연루 보험업종사자에 대한 등록취소·업무정지 등 제재",
-        "url": "https://www.fsc.go.kr/no010101/88021?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88021?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(보험과)",
         "category": "보도자료"
@@ -339,7 +355,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88020",
         "title": "“금융회사의 부실 확산에 신속·선제적으로 대응하여 금융시장의 안정 및 소비자 보호를 위한  ｢금융회사 신속정리제도｣ 도입을 추진합니다.”",
-        "url": "https://www.fsc.go.kr/no010101/88020?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88020?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(구조개선정책과)",
         "category": "보도자료"
@@ -347,7 +363,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88019",
         "title": "☎1375(일상치료)로,  빚의 고통은 덜고 희망의 빛은 더하겠습니다. - 금융위원회·신용회복위원회, 채무상담 대표번호 ☎1375 개통식 개최 -",
-        "url": "https://www.fsc.go.kr/no010101/88019?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88019?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-29",
         "dept": "금융위원회(복합지원팀,서민금융과)",
         "category": "보도자료"
@@ -451,7 +467,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_244991",
         "title": "[금감원] 증권업계 신용융자 자율관리 강화를 위한 증권사 CRO 간담회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244991&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=244991&menuNo=200218&pageIndex=4",
         "date": "2026-10-27",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -571,7 +587,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87988",
         "title": "금융시장동향(26.10.23)",
-        "url": "https://www.fsc.go.kr/no030101/87988?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87988?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-23",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -1087,7 +1103,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87904",
         "title": "금융시장동향(26.10.08)",
-        "url": "https://www.fsc.go.kr/no030101/87904?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87904?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-08",
         "dept": "금융위원회",
         "category": "금융시장동향"
