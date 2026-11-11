@@ -1,5 +1,49 @@
-window.lastUpdated = "2026-11-10 13:35 KST";
+window.lastUpdated = "2026-11-11 11:40 KST";
 window.regulatoryData = [
+    {
+        "id": "no030101_88114",
+        "title": "금융시장동향(26.11.10). 금일 등록된 게시글",
+        "url": "https://www.fsc.go.kr/no030101/88114?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-11",
+        "dept": "금융위원회",
+        "category": "금융시장동향"
+    },
+    {
+        "id": "fss_press_249801",
+        "title": "[금감원] 증권사의 '주식정보 제공서비스' 이용시 숨어있는 이용료를 미리 확인하고 이용하세요",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249801&menuNo=200218&pageIndex=1",
+        "date": "2026-11-11",
+        "dept": "금융감독원(자본시장감독국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_notice_4506",
+        "title": "증권의 발행 및 공시 등에 관한 규정 시행세칙",
+        "law_name": "증권의 발행 및 공시 등에 관한 규정 시행세칙",
+        "date": "2026-11-10",
+        "category": "입법예고",
+        "source": "FSS",
+        "dept": "금융감독원",
+        "notice_seq": "4506",
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4506&menuNo=200489",
+        "notice_end_date": "2026-11-30"
+    },
+    {
+        "id": "fss_press_249795",
+        "title": "[금감원] 금융감독원, 부동산신탁사 임원 간담회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249795&menuNo=200218&pageIndex=1",
+        "date": "2026-11-10",
+        "dept": "금융감독원(금융투자검사1국/금융투자검사3국/자산운용감독국)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_249790",
+        "title": "[금감원] 이찬진 금융감독원장, 회계법인CEO 및 전문가 간담회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249790&menuNo=200218&pageIndex=1",
+        "date": "2026-11-10",
+        "dept": "금융감독원(회계감독국/회계감리1국/감사인감리국)",
+        "category": "보도자료"
+    },
     {
         "id": "no010101_88104",
         "title": "다음 금융은 이미 시작됐다 「코리아 핀테크 위크 2026」, 11월 25일 개막",
@@ -15,6 +59,22 @@ window.regulatoryData = [
         "date": "2026-11-09",
         "dept": "금융위원회",
         "category": "금융시장동향"
+    },
+    {
+        "id": "fss_press_249776",
+        "title": "[금감원] 보이스피싱 피해로 멈춘 일상, 금융권이 '다시, 일상으로' 이어드립니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249776&menuNo=200218&pageIndex=1",
+        "date": "2026-11-09",
+        "dept": "금융감독원(금융사기대응단)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_249775",
+        "title": "[금감원] 상장사 대상 '2026년도 찾아가는 불공정거래 예방교육' 실시",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249775&menuNo=200218&pageIndex=1",
+        "date": "2026-11-09",
+        "dept": "금융감독원(조사1국/조사2국/조사3국/조사4국)",
+        "category": "보도자료"
     },
     {
         "id": "fss_press_249770",
@@ -107,7 +167,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249746",
         "title": "[금감원] 포용금융, 이제 차주의 체감성과도 살펴보겠습니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249746&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249746&menuNo=200218&pageIndex=2",
         "date": "2026-11-05",
         "dept": "금융감독원(중소금융감독국/여신금융감독국)",
         "category": "보도자료"
@@ -123,7 +183,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249719",
         "title": "[금감원] 베트남, 인도네시아 보험감독당국 초청 세미나 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249719&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249719&menuNo=200218&pageIndex=2",
         "date": "2026-11-04",
         "dept": "금융감독원(국제업무국(금융중심지지원센터))",
         "category": "보도자료"
@@ -255,7 +315,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249670",
         "title": "[금감원] 사회초년생 청년 운전자가 자동차보험 할인혜택을 쉽게 받을 수 있도록 가입 절차를 개선합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249670&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249670&menuNo=200218&pageIndex=3",
         "date": "2026-11-02",
         "dept": "금융감독원(보험감독국)",
         "category": "보도자료"
@@ -263,7 +323,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249656",
         "title": "[금감원] 자동 가입되는 시민안전보험, 보험금 청구까지 꼭 챙기세요",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249656&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249656&menuNo=200218&pageIndex=3",
         "date": "2026-11-01",
         "dept": "금융감독원(보험상품분쟁1국)",
         "category": "보도자료"
@@ -295,7 +355,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_248185",
         "title": "[금감원] 2026년 9월 외국인 증권투자 동향",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=248185&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=248185&menuNo=200218&pageIndex=3",
         "date": "2026-10-30",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -403,7 +463,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_247849",
         "title": "[금감원] 보험회사 계리담당 부서장 간담회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247849&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=247849&menuNo=200218&pageIndex=3",
         "date": "2026-10-29",
         "dept": "금융감독원(계리리스크감독국)",
         "category": "보도자료"
@@ -411,7 +471,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_246237",
         "title": "[금감원] 이찬진 금융감독원장, 은행지주 이사회 의장 간담회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246237&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246237&menuNo=200218&pageIndex=4",
         "date": "2026-10-28",
         "dept": "금융감독원(은행검사1국/은행검사2국/은행감독국/디지털금융총괄국)",
         "category": "보도자료"
@@ -419,7 +479,7 @@ window.regulatoryData = [
     {
         "id": "no030101_88011",
         "title": "금융시장동향(26.10.27)",
-        "url": "https://www.fsc.go.kr/no030101/88011?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/88011?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-28",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -475,7 +535,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_246791",
         "title": "[금감원] 금융회사 민원, 분쟁업무 모범관행 설명회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246791&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246791&menuNo=200218&pageIndex=4",
         "date": "2026-10-28",
         "dept": "금융감독원(소비자소통국/소비자권익보호국)",
         "category": "보도자료"
@@ -483,7 +543,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_246528",
         "title": "[금감원] 건전한 경쟁질서 확립 및 투자자 피해 예방을 위해 증권업계 이벤트 실시 기준을 대폭 강화합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246528&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=246528&menuNo=200218&pageIndex=4",
         "date": "2026-10-28",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -547,7 +607,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243940",
         "title": "[금감원] 고수익 아르바이트와 통장매매의 유혹! 나도 모르게 금융사기 범죄자가 될 수 있습니다!",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243940&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243940&menuNo=200218&pageIndex=5",
         "date": "2026-10-26",
         "dept": "금융감독원(금융사기대응단)",
         "category": "보도자료"
@@ -587,7 +647,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243965",
         "title": "[금감원] 간호조무사 대상 보험사기 예방교육 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243965&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243965&menuNo=200218&pageIndex=5",
         "date": "2026-10-26",
         "dept": "금융감독원(보험사기대응단)",
         "category": "보도자료"
@@ -595,7 +655,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_243716",
         "title": "[금감원] 꼬리 자르기 사채 조직, 몸통까지 쫓는다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243716&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=243716&menuNo=200218&pageIndex=5",
         "date": "2026-10-25",
         "dept": "금융감독원(민생침해대응총괄국)",
         "category": "보도자료"
@@ -923,7 +983,7 @@ window.regulatoryData = [
     {
         "id": "no030101_87921",
         "title": "금융시장동향(26.10.13)",
-        "url": "https://www.fsc.go.kr/no030101/87921?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no030101/87921?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-14",
         "dept": "금융위원회",
         "category": "금융시장동향"
@@ -2054,7 +2114,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4365",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4365&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4365&menuNo=200489",
+        "notice_end_date": "2026-10-08"
     },
     {
         "id": "no010101_87731",
@@ -2121,7 +2182,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4345",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4345&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4345&menuNo=200489",
+        "notice_end_date": "2026-09-28"
     },
     {
         "id": "no030101_87718",
@@ -2428,7 +2490,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4325",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4325&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4325&menuNo=200489",
+        "notice_end_date": "2026-09-21"
     },
     {
         "id": "no030101_87669",
@@ -2694,9 +2757,10 @@ window.regulatoryData = [
         "date": "2026-09-04",
         "category": "입법예고",
         "source": "FSS",
-        "dept": "금융감독원",
+        "dept": "금융감독원 · 자산운용 관련",
         "notice_seq": "4305",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4305&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4305&menuNo=200489",
+        "notice_end_date": "2026-10-14"
     },
     {
         "id": "no030101_87642",
@@ -3671,7 +3735,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4285",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4285&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4285&menuNo=200489",
+        "notice_end_date": "2026-08-18"
     },
     {
         "id": "notice_4157",
@@ -3725,7 +3790,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4265",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4265&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4265&menuNo=200489",
+        "notice_end_date": "2026-07-20"
     },
     {
         "id": "no030101_87198",
@@ -3824,7 +3890,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4245",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4245&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4245&menuNo=200489",
+        "notice_end_date": "2026-08-03"
     },
     {
         "id": "no030101_87175",
@@ -3867,7 +3934,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4225",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4225&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4225&menuNo=200489",
+        "notice_end_date": "2026-07-29"
     },
     {
         "id": "no030101_87146",
@@ -3918,7 +3986,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4206",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4206&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4206&menuNo=200489",
+        "notice_end_date": "2026-06-30"
     },
     {
         "id": "fss_notice_4205",
@@ -3929,7 +3998,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4205",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4205&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4205&menuNo=200489",
+        "notice_end_date": "2026-07-21"
     },
     {
         "id": "notice_4153",
@@ -3959,7 +4029,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4165",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4165&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4165&menuNo=200489",
+        "notice_end_date": "2026-07-10"
     },
     {
         "id": "notice_4151",
@@ -3986,7 +4057,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4145",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4145&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4145&menuNo=200489",
+        "notice_end_date": "2026-06-10"
     },
     {
         "id": "fss_notice_4125",
@@ -3997,7 +4069,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4125",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4125&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4125&menuNo=200489",
+        "notice_end_date": "2026-06-10"
     },
     {
         "id": "notice_4149",
@@ -4051,7 +4124,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4105",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4105&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4105&menuNo=200489",
+        "notice_end_date": "2026-05-15"
     },
     {
         "id": "law_금융소비자 보호에 관한 법률 시행령_36287_2026-04-28",
@@ -4125,7 +4199,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4065",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4065&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4065&menuNo=200489",
+        "notice_end_date": "2026-05-18"
     },
     {
         "id": "notice_4144",
@@ -4171,7 +4246,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4045",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4045&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4045&menuNo=200489",
+        "notice_end_date": "2026-04-17"
     },
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21503_2026-10-01",
@@ -4244,7 +4320,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4025",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4025&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4025&menuNo=200489",
+        "notice_end_date": "2026-03-23"
     },
     {
         "id": "fss_notice_4005",
@@ -4255,7 +4332,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "4005",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4005&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=4005&menuNo=200489",
+        "notice_end_date": "2026-03-26"
     },
     {
         "id": "fss_notice_3985",
@@ -4266,7 +4344,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "3985",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3985&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3985&menuNo=200489",
+        "notice_end_date": "2026-03-25"
     },
     {
         "id": "law_자본시장과 금융투자업에 관한 법률_21448_2026-03-06",
@@ -4299,7 +4378,8 @@ window.regulatoryData = [
         "source": "FSS",
         "dept": "금융감독원",
         "notice_seq": "3965",
-        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3965&menuNo=200489"
+        "url": "https://www.fss.or.kr/fss/job/lrgRegItnPrvntc/view.do?lrgSlno=3965&menuNo=200489",
+        "notice_end_date": "2026-03-04"
     },
     {
         "id": "fss_notice_3945",
