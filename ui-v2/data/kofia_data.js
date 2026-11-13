@@ -1,19 +1,109 @@
 window.kofiaData = {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-11-12 12:43 KST",
+  "updated_at": "2026-11-13 12:21 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-11-12 12:43 KST",
+  "classification_checked_at": "2026-11-13 12:21 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
-    "notices": 157,
-    "revisions_scanned": 1445,
-    "revisions_included": 966,
+    "notices": 158,
+    "revisions_scanned": 1449,
+    "revisions_included": 970,
     "revisions_excluded": 479,
-    "협회규정": 548,
-    "모범규준": 418
+    "협회규정": 550,
+    "모범규준": 420
   },
   "items": [
+    {
+      "id": "kofia_revision_1818",
+      "title": "제3자 IT리스크관리 가이드라인",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1818",
+      "date": "2026-11-13",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "381",
+      "history_seq": "1818",
+      "law_name": "제3자 IT리스크관리 가이드라인",
+      "revision_type": "전문개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "제3자 IT리스크관리 가이드라인"
+      ]
+    },
+    {
+      "id": "kofia_revision_1822",
+      "title": "무보증사채 수요예측 모범규준",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1822",
+      "date": "2026-11-12",
+      "dept": "금융투자협회 · 모범규준",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "159",
+      "history_seq": "1822",
+      "law_name": "무보증사채 수요예측 모범규준",
+      "revision_type": "개정",
+      "source_group": "모범규준",
+      "classification_path": [
+        "모범규준",
+        "무보증사채 수요예측 모범규준"
+      ]
+    },
+    {
+      "id": "kofia_revision_1821",
+      "title": "자율규제위원회 운영 및 제재에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1821",
+      "date": "2026-11-12",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "135",
+      "history_seq": "1821",
+      "law_name": "자율규제위원회 운영 및 제재에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "자율규제위원회 운영 및 제재에 관한 규정"
+      ]
+    },
+    {
+      "id": "kofia_revision_1820",
+      "title": "증권 인수업무 등에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1820",
+      "date": "2026-11-12",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "140",
+      "history_seq": "1820",
+      "law_name": "증권 인수업무 등에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "증권 인수업무 등에 관한 규정"
+      ]
+    },
+    {
+      "id": "kofia_notice_163",
+      "title": "금융투자회사의 금융소비자보호 표준내부통제기준",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-11-12",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "163",
+      "notice_end_date": "2026-12-01",
+      "revision_type": "개정"
+    },
     {
       "id": "kofia_notice_162",
       "title": "자율규제위원회 운영 및 제재에 관한 규정",

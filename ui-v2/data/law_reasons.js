@@ -173,9 +173,8 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2026-07-06",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108855&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108855&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01": {
       "id": "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01",
@@ -219,9 +218,8 @@ window.lawReasons = {
       "prom_no": "9999",
       "date": "2026-04-20",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2200000108629&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2200000108629&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15": {
       "id": "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15",
@@ -373,9 +371,8 @@ window.lawReasons = {
       "prom_no": "5",
       "date": "2025-12-05",
       "text": "",
-      "status": "not_provided",
-      "source_url": "https://www.law.go.kr/LSW/admRulRvsInfoR.do?admRulSeq=2100000271738&lsRvsGubun=Rsn",
-      "original_url": "https://www.law.go.kr/LSW/admRulInfoP.do?admRulSeq=2100000271738&chrClsCd=010201"
+      "status": "unavailable",
+      "error": "URLError"
     },
     "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01": {
       "id": "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01",
