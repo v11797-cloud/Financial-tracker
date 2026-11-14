@@ -1,8 +1,8 @@
-window.lastUpdated = "2026-11-13 12:19 KST";
+window.lastUpdated = "2026-11-14 11:58 KST";
 window.regulatoryData = [
     {
         "id": "no030101_88141",
-        "title": "금융시장동향(26.11.12). 금일 등록된 게시글",
+        "title": "금융시장동향(26.11.12)",
         "url": "https://www.fsc.go.kr/no030101/88141?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회",
@@ -10,7 +10,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88140",
-        "title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주. 금일 등록된 게시글",
+        "title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주",
         "url": "https://www.fsc.go.kr/no010101/88140?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회(금융정책과)",
@@ -18,7 +18,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88139",
-        "title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다. 금일 등록된 게시글",
+        "title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다",
         "url": "https://www.fsc.go.kr/no010101/88139?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회(자본시장과,자산운용과,공정시장과)",
@@ -26,7 +26,7 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88138",
-        "title": "261112(보도참고) 지배구조 개선방안(’11.12일 발표) 관련 설명자료. 금일 등록된 게시글",
+        "title": "261112(보도참고) 지배구조 개선방안(’11.12일 발표) 관련 설명자료",
         "url": "https://www.fsc.go.kr/no010101/88138?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회(금융정책과,공정시장과)",
@@ -34,10 +34,34 @@ window.regulatoryData = [
     },
     {
         "id": "no010101_88137",
-        "title": "‘26년도 상반기 기술금융 테크평가 및  품질심사평가 결과. 금일 등록된 게시글",
+        "title": "‘26년도 상반기 기술금융 테크평가 및  품질심사평가 결과",
         "url": "https://www.fsc.go.kr/no010101/88137?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회(산업금융과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_88146",
+        "title": "신진창 금융위원회 부위원장,  씨티그룹 국제부문 총 책임자 면담",
+        "url": "https://www.fsc.go.kr/no010101/88146?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-13",
+        "dept": "금융위원회(글로벌금융과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_88143",
+        "title": "지역기업과의 동행, 6개 정책금융기관이 현장에서 함께 합니다.",
+        "url": "https://www.fsc.go.kr/no010101/88143?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-13",
+        "dept": "금융위원회(산업금융과,국민성장펀드총괄과)",
+        "category": "보도자료"
+    },
+    {
+        "id": "no010101_88142",
+        "title": "잠자고 있는 포인트, 지역화폐로 바꿔 골목상권에서 쓴다",
+        "url": "https://www.fsc.go.kr/no010101/88142?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "date": "2026-11-13",
+        "dept": "금융위원회(중소금융과)",
         "category": "보도자료"
     },
     {
@@ -59,7 +83,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88125",
         "title": "금융회사 지배구조의  공정성과 투명성을 제고합니다.",
-        "url": "https://www.fsc.go.kr/no010101/88125?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88125?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-12",
         "dept": "금융위원회(금융정책과,공정시장과)",
         "category": "보도자료"
@@ -67,7 +91,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88124",
         "title": "2026년 10월 가계대출 동향(잠정)",
-        "url": "https://www.fsc.go.kr/no010101/88124?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88124?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-12",
         "dept": "금융위원회(금융정책과)",
         "category": "보도자료"
@@ -75,7 +99,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88123",
         "title": "미공개 무상증자정보를 이용한 내부자등에 대한 중대범죄수사청 고발·통보 조치 의결",
-        "url": "https://www.fsc.go.kr/no010101/88123?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88123?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-12",
         "dept": "금융위원회(자본시장조사총괄과)",
         "category": "보도자료"
@@ -271,7 +295,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88085",
         "title": "｢“취재정보로 매매해 ○○억 부당이득”···○○신문 조사 마무리｣ 보도 관련",
-        "url": "https://www.fsc.go.kr/no010101/88085?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88085?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-05",
         "dept": "금융위원회(조사과)",
         "category": "보도자료"
@@ -327,7 +351,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88084",
         "title": "한국, 아시아지배구조협회(ACGA)    기업지배구조 순위 역대급 ‘5위’ 달성",
-        "url": "https://www.fsc.go.kr/no010101/88084?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88084?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-04",
         "dept": "금융위원회(공정시장과)",
         "category": "보도자료"
@@ -335,7 +359,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88082",
         "title": "홍콩 H지수 ELS 관련 은행·증권사 검사 결과 조치 - 제19차 금융위원회(11.4.) 의결",
-        "url": "https://www.fsc.go.kr/no010101/88082?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88082?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-04",
         "dept": "금융위원회(금융소비자정책과)",
         "category": "보도자료"
@@ -343,7 +367,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88081",
         "title": "계리가정보고서 도입 등  ｢보험업감독규정｣ 개정안 금융위원회 의결",
-        "url": "https://www.fsc.go.kr/no010101/88081?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88081?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-04",
         "dept": "금융위원회(보험과)",
         "category": "보도자료"
@@ -351,7 +375,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88074",
         "title": "2027년 금융위원회 예산안에 대해  자세히 설명드립니다.",
-        "url": "https://www.fsc.go.kr/no010101/88074?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88074?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-03",
         "dept": "금융위원회(혁신기획재정담당관)",
         "category": "보도자료"
@@ -359,7 +383,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88071",
         "title": "코너스톤투자자 제도 등 도입 관련  자본시장법 시행령 개정안 국무회의 의결",
-        "url": "https://www.fsc.go.kr/no010101/88071?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88071?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-03",
         "dept": "금융위원회(자본시장과)",
         "category": "보도자료"
@@ -383,7 +407,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88048",
         "title": "금융정보분석원, 국제자금세탁방지기구(FATF) 총회 참석",
-        "url": "https://www.fsc.go.kr/no010101/88048?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88048?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-02",
         "dept": "금융위원회(금융정보분석원)",
         "category": "보도자료"
@@ -415,7 +439,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88054",
         "title": "글로벌 해킹 위협에 대비한 국내 가상자산사업자의 사고대응력 제고를 위해 긴밀하고 신속하게  대응해 나가겠습니다.",
-        "url": "https://www.fsc.go.kr/no010101/88054?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88054?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-02",
         "dept": "금융위원회(금융안전과)",
         "category": "보도자료"
@@ -423,7 +447,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88052",
         "title": "생산적 금융의 온기를 지방과 중소기업까지 이어갑니다.   - 이억원 금융위원장, 제6차 생산적 금융 대전환 회의 개최",
-        "url": "https://www.fsc.go.kr/no010101/88052?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88052?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-02",
         "dept": "금융위원회(은행과)",
         "category": "보도자료"
@@ -499,7 +523,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88039",
         "title": "불법 가상자산 취급업자(특금법상 미신고 가상자산사업자)에 대한 수사의뢰(DAXA, 3건) 및 접속차단(2건) 요청",
-        "url": "https://www.fsc.go.kr/no010101/88039?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88039?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-10-30",
         "dept": "금융위원회(가상자산검사과)",
         "category": "보도자료"
