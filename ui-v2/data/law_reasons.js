@@ -2578,7 +2578,7 @@ window.lawReasons = {
       "date": "1980-10-13",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "law_국민은행법시행령_09004_1978-05-03": {
       "id": "law_국민은행법시행령_09004_1978-05-03",
