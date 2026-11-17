@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-11-16 11:40 KST",
+  "updated_at": "2026-11-17 14:02 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-11-16 11:40 KST",
+  "classification_checked_at": "2026-11-17 14:02 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
     "notices": 158,
@@ -34,6 +34,25 @@
       ]
     },
     {
+      "id": "kofia_revision_1823",
+      "title": "자율규제위원회 운영 및 제재에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1823",
+      "date": "2026-11-12",
+      "dept": "금융투자협회 · 협회규정",
+      "category": "공포법령",
+      "source": "KOFIA",
+      "source_type": "최신 제·개정정보",
+      "law_seq": "135",
+      "history_seq": "1823",
+      "law_name": "자율규제위원회 운영 및 제재에 관한 규정",
+      "revision_type": "개정",
+      "source_group": "협회규정",
+      "classification_path": [
+        "협회규정",
+        "자율규제위원회 운영 및 제재에 관한 규정"
+      ]
+    },
+    {
       "id": "kofia_revision_1822",
       "title": "무보증사채 수요예측 모범규준",
       "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1822",
@@ -50,25 +69,6 @@
       "classification_path": [
         "모범규준",
         "무보증사채 수요예측 모범규준"
-      ]
-    },
-    {
-      "id": "kofia_revision_1821",
-      "title": "자율규제위원회 운영 및 제재에 관한 규정",
-      "url": "https://law.kofia.or.kr/service/revision/revisionView.do?historySeq=1821",
-      "date": "2026-11-12",
-      "dept": "금융투자협회 · 협회규정",
-      "category": "공포법령",
-      "source": "KOFIA",
-      "source_type": "최신 제·개정정보",
-      "law_seq": "135",
-      "history_seq": "1821",
-      "law_name": "자율규제위원회 운영 및 제재에 관한 규정",
-      "revision_type": "개정",
-      "source_group": "협회규정",
-      "classification_path": [
-        "협회규정",
-        "자율규제위원회 운영 및 제재에 관한 규정"
       ]
     },
     {
