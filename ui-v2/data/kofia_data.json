@@ -1,12 +1,12 @@
 {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-11-17 14:02 KST",
+  "updated_at": "2026-11-18 13:06 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-11-17 14:02 KST",
+  "classification_checked_at": "2026-11-18 13:06 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
-    "notices": 158,
+    "notices": 159,
     "revisions_scanned": 1449,
     "revisions_included": 970,
     "revisions_excluded": 479,
@@ -14,6 +14,20 @@
     "모범규준": 420
   },
   "items": [
+    {
+      "id": "kofia_notice_164",
+      "title": "금융투자회사 표준내부통제기준",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-11-18",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "164",
+      "notice_end_date": "2026-12-07",
+      "revision_type": "개정"
+    },
     {
       "id": "kofia_revision_1818",
       "title": "제3자 IT리스크관리 가이드라인",
