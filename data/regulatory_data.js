@@ -1,5 +1,13 @@
-window.lastUpdated = "2026-11-19 13:03 KST";
+window.lastUpdated = "2026-11-20 12:56 KST";
 window.regulatoryData = [
+    {
+        "id": "fss_press_249933",
+        "title": "[금감원] 금융감독원, 가상자산사업자 대상 침해사고 대응 간담회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249933&menuNo=200218&pageIndex=1",
+        "date": "2026-11-20",
+        "dept": "금융감독원(가상자산감독국/디지털금융총괄국)",
+        "category": "보도자료"
+    },
     {
         "id": "no030101_88170",
         "title": "금융시장동향(26.11.18). 금일 등록된 게시글",
@@ -41,6 +49,22 @@ window.regulatoryData = [
         "category": "보도자료"
     },
     {
+        "id": "fss_press_249922",
+        "title": "[금감원] 금융감독원, 퇴직연금 사업자 임원 간담회 개최",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249922&menuNo=200218&pageIndex=1",
+        "date": "2026-11-19",
+        "dept": "금융감독원(연금감독실)",
+        "category": "보도자료"
+    },
+    {
+        "id": "fss_press_249919",
+        "title": "[금감원] 깜빡 잊고 지나가버린 지난 3년간 실손보험금, ‘실손24’를 통해 한방에 청구하고 받을 수 있습니다",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249919&menuNo=200218&pageIndex=1",
+        "date": "2026-11-19",
+        "dept": "금융감독원(보험상품분쟁2국)",
+        "category": "보도자료"
+    },
+    {
         "id": "no010101_88162",
         "title": "全금융권이 상시적으로 철저하게 보안 관리에 임하도록 IT자산 식별·관리를 의무화하고 취약점 점검·평가 제도를 내실화하겠습니다.",
         "url": "https://www.fsc.go.kr/no010101/88162?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
@@ -67,7 +91,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249902",
         "title": "[금감원] 26.9월말 국내은행의 원화대출 연체율 현황(잠정)",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249902&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249902&menuNo=200218&pageIndex=2",
         "date": "2026-11-18",
         "dept": "금융감독원(은행리스크감독국)",
         "category": "보도자료"
@@ -115,7 +139,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249890",
         "title": "[금감원] 회계부정, 안심하고 신고하세요. 국민권익위원회-금융감독원, 신고자 보호 강화를 위한 업무협약 체결",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249890&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249890&menuNo=200218&pageIndex=2",
         "date": "2026-11-17",
         "dept": "금융감독원(회계감리2국)",
         "category": "보도자료"
@@ -123,7 +147,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249888",
         "title": "[금감원] 금융감독원, 금융권 침해사고 관련 대부업권 설명회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249888&menuNo=200218&pageIndex=1",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249888&menuNo=200218&pageIndex=2",
         "date": "2026-11-17",
         "dept": "금융감독원(서민금융보호국/디지털금융총괄국)",
         "category": "보도자료"
@@ -195,7 +219,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249856",
         "title": "[금감원] 금융감독원, 2026 세계투자자주간 실시",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249856&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249856&menuNo=200218&pageIndex=3",
         "date": "2026-11-15",
         "dept": "금융감독원(국제업무국(금융중심지지원센터)/민생침해대응총괄국/금융사기대응단)",
         "category": "보도자료"
@@ -203,7 +227,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249855",
         "title": "[금감원] 금융소비자 중심의 금융감독 실현을 위한 제5차 금융소비자보호자문위원회 개최",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249855&menuNo=200218&pageIndex=2",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249855&menuNo=200218&pageIndex=3",
         "date": "2026-11-15",
         "dept": "금융감독원(소비자보호감독총괄국)",
         "category": "보도자료"
@@ -219,7 +243,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88140",
         "title": "서울 가격상승폭 둔화·매물 증가…수도권 내년 1분기까지 4만 호 이상 입주",
-        "url": "https://www.fsc.go.kr/no010101/88140?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88140?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회(금융정책과)",
         "category": "보도자료"
@@ -227,7 +251,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88139",
         "title": "신뢰받는 자본시장, 현장에서 묻고 답을 찾다",
-        "url": "https://www.fsc.go.kr/no010101/88139?srchCtgry=&curPage=1&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88139?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-13",
         "dept": "금융위원회(자본시장과,자산운용과,공정시장과)",
         "category": "보도자료"
@@ -323,7 +347,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249814",
         "title": "[금감원] 26.6월말 금융복합기업집단 자본적정성 비율",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249814&menuNo=200218&pageIndex=3",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249814&menuNo=200218&pageIndex=4",
         "date": "2026-11-12",
         "dept": "금융감독원(감독혁신국)",
         "category": "보도자료"
@@ -371,7 +395,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88118",
         "title": "건설노동자, 플랫폼노동자와 프리랜서에 대한 포용금융으로 금융이용 문턱 낮아진다",
-        "url": "https://www.fsc.go.kr/no010101/88118?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88118?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-11",
         "dept": "금융위원회(금융데이터정책과,은행과)",
         "category": "보도자료"
@@ -407,7 +431,7 @@ window.regulatoryData = [
     {
         "id": "no010101_88104",
         "title": "다음 금융은 이미 시작됐다 「코리아 핀테크 위크 2026」, 11월 25일 개막",
-        "url": "https://www.fsc.go.kr/no010101/88104?srchCtgry=&curPage=2&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
+        "url": "https://www.fsc.go.kr/no010101/88104?srchCtgry=&curPage=3&srchKey=&srchText=&srchBeginDt=&srchEndDt=",
         "date": "2026-11-09",
         "dept": "금융위원회(디지털금융총괄과)",
         "category": "보도자료"
@@ -439,7 +463,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249770",
         "title": "[금감원] 증시 변동성 완화를 위한 신용공여 담보비율 유지의무 면제조치 시행",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249770&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249770&menuNo=200218&pageIndex=5",
         "date": "2026-11-08",
         "dept": "금융감독원(자본시장감독국)",
         "category": "보도자료"
@@ -447,7 +471,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249769",
         "title": "[금감원] 군장병 대상 금융교육강사 양성 연수를 실시합니다",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249769&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249769&menuNo=200218&pageIndex=5",
         "date": "2026-11-08",
         "dept": "금융감독원(금융교육국)",
         "category": "보도자료"
@@ -487,7 +511,7 @@ window.regulatoryData = [
     {
         "id": "fss_press_249765",
         "title": "[금감원] 정부와 퇴직연금사업자가 함께 안정성과 수익성을 갖춘 퇴직연금 생태계를 만들어 나가겠습니다.",
-        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249765&menuNo=200218&pageIndex=4",
+        "url": "https://www.fss.or.kr/fss/bbs/B0000188/view.do?nttId=249765&menuNo=200218&pageIndex=5",
         "date": "2026-11-06",
         "dept": "금융감독원(연금감독실)",
         "category": "보도자료"
