@@ -174,7 +174,7 @@ window.lawReasons = {
       "date": "2026-07-06",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01": {
       "id": "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01",
@@ -219,7 +219,7 @@ window.lawReasons = {
       "date": "2026-04-20",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15": {
       "id": "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15",
@@ -372,7 +372,7 @@ window.lawReasons = {
       "date": "2025-12-05",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01": {
       "id": "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01",
@@ -381,7 +381,7 @@ window.lawReasons = {
       "date": "2025-12-01",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11": {
       "id": "law_자본시장과 금융투자업에 관한 법률_21134_2025-11-11",
@@ -544,7 +544,7 @@ window.lawReasons = {
       "date": "2024-12-28",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "law_전자금융거래법 시행령_35038_2024-12-27": {
       "id": "law_전자금융거래법 시행령_35038_2024-12-27",
@@ -625,7 +625,7 @@ window.lawReasons = {
       "date": "2024-07-19",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "admrul_가상자산업 감독규정 시행세칙_9999_2024-07-19": {
       "id": "admrul_가상자산업 감독규정 시행세칙_9999_2024-07-19",
@@ -634,7 +634,7 @@ window.lawReasons = {
       "date": "2024-07-19",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "admrul_가상자산업감독규정_2024-37_2024-07-10": {
       "id": "admrul_가상자산업감독규정_2024-37_2024-07-10",
@@ -661,7 +661,7 @@ window.lawReasons = {
       "date": "2024-07-01",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26": {
       "id": "admrul_금융회사 지배구조 감독규정_2024-26_2024-06-26",
@@ -1858,7 +1858,7 @@ window.lawReasons = {
       "date": "2016-06-01",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01": {
       "id": "law_금융회사의 지배구조에 관한 법률_14271_2016-08-01",
