@@ -2785,7 +2785,7 @@ window.lawReasons = {
       "date": "1957-04-04",
       "text": "",
       "status": "unavailable",
-      "error": "ValueError"
+      "error": "URLError"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",
