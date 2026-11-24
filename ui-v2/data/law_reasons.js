@@ -174,7 +174,7 @@ window.lawReasons = {
       "date": "2026-07-06",
       "text": "",
       "status": "unavailable",
-      "error": "ValueError"
+      "error": "URLError"
     },
     "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01": {
       "id": "admrul_재정경제부 공무원의 가상자산 보유 제한에 관한 지침_159_2026-06-01",
@@ -219,7 +219,7 @@ window.lawReasons = {
       "date": "2026-04-20",
       "text": "",
       "status": "unavailable",
-      "error": "ValueError"
+      "error": "URLError"
     },
     "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15": {
       "id": "admrul_자본시장특별사법경찰 집무규칙_183_2026-04-15",
@@ -372,7 +372,7 @@ window.lawReasons = {
       "date": "2025-12-05",
       "text": "",
       "status": "unavailable",
-      "error": "ValueError"
+      "error": "URLError"
     },
     "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01": {
       "id": "admrul_금융소비자보호에 관한 감독규정 시행세칙_9999_2025-12-01",
@@ -2785,7 +2785,7 @@ window.lawReasons = {
       "date": "1957-04-04",
       "text": "",
       "status": "unavailable",
-      "error": "URLError"
+      "error": "ValueError"
     },
     "law_농업은행법_00437_1957-02-14": {
       "id": "law_농업은행법_00437_1957-02-14",

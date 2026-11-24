@@ -1,12 +1,12 @@
 window.kofiaData = {
   "schema_version": 1,
   "source": "KOFIA",
-  "updated_at": "2026-11-23 12:39 KST",
+  "updated_at": "2026-11-24 15:53 KST",
   "classification_url": "https://law.kofia.or.kr/service/law/lawCurrentPartTree.do",
-  "classification_checked_at": "2026-11-23 12:39 KST",
+  "classification_checked_at": "2026-11-24 15:53 KST",
   "scope": "모든 예고 + 현행 분류 협회규정·모범규준의 제·개정 이력",
   "counts": {
-    "notices": 159,
+    "notices": 161,
     "revisions_scanned": 1449,
     "revisions_included": 970,
     "revisions_excluded": 479,
@@ -14,6 +14,34 @@ window.kofiaData = {
     "모범규준": 420
   },
   "items": [
+    {
+      "id": "kofia_notice_166",
+      "title": "금융투자회사의 리스크관리 모범규준",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-11-23",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "166",
+      "notice_end_date": "2026-12-12",
+      "revision_type": "개정"
+    },
+    {
+      "id": "kofia_notice_165",
+      "title": "금융투자회사의 영업 및 업무에 관한 규정",
+      "url": "https://law.kofia.or.kr/service/revisionNotice/revisionNoticeView.do",
+      "date": "2026-11-23",
+      "dept": "금융투자협회",
+      "category": "입법예고",
+      "source": "KOFIA",
+      "source_type": "규정 제·개정예고",
+      "source_method": "POST",
+      "notice_seq": "165",
+      "notice_end_date": "2026-12-13",
+      "revision_type": "개정"
+    },
     {
       "id": "kofia_notice_164",
       "title": "금융투자회사 표준내부통제기준",
